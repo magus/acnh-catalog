@@ -16,8 +16,8 @@ export default function NotFound() {
 const Container = styled.div`
   color: #000;
   background: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
-    'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue',
+    'Lucida Grande', sans-serif;
   height: 100vh;
   text-align: center;
   display: flex;

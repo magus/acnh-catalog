@@ -52,9 +52,7 @@ function searchCatalog(fullQuery) {
 
         result[0].query = q;
         result[0].obj = result.obj;
-        allResults[result.obj.id].name.push(
-          JSON.parse(JSON.stringify(result[0])),
-        );
+        allResults[result.obj.id].name.push(JSON.parse(JSON.stringify(result[0])));
       });
 
     // variantResults
@@ -72,18 +70,13 @@ function searchCatalog(fullQuery) {
 
         result[0].query = q;
         result[0].obj = result.obj;
-        allResults[result.obj.id].variant.push(
-          JSON.parse(JSON.stringify(result[0])),
-        );
+        allResults[result.obj.id].variant.push(JSON.parse(JSON.stringify(result[0])));
       });
   });
 
   const sortedResults = Object.values(allResults).sort((a, b) => {
     const combinedMatches = (_) => _.name.length + _.variant.length;
-    const highestScore = (_) =>
-      Math.max(
-        ...[..._.name.map((n) => n.score), ..._.variant.map((n) => n.score)],
-      );
+    const highestScore = (_) => Math.max(...[..._.name.map((n) => n.score), ..._.variant.map((n) => n.score)]);
 
     if (combinedMatches(a) > combinedMatches(b)) return -1;
     if (combinedMatches(a) < combinedMatches(b)) return +1;
@@ -136,24 +129,13 @@ function App() {
     }
   };
 
-  const filteredResults = time(
-    'search',
-    () => (inputValue && searchCatalog(inputValue)) || [],
-  );
+  const filteredResults = time('search', () => (inputValue && searchCatalog(inputValue)) || []);
 
   const pendingItems = React.useMemo(() => {
     return (
       <div className="items">
         {sortedSetList(items).map((item, i) => {
-          return (
-            <Item
-              key={item.id}
-              item={item}
-              pending
-              onBuy={buyItem(item.id)}
-              onDelete={deleteItem(item.id)}
-            />
-          );
+          return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
         })}
       </div>
     );
@@ -163,14 +145,7 @@ function App() {
     return (
       <div className="items">
         {sortedSetList(lookup).map((item, i) => {
-          return (
-            <Item
-              key={item.id}
-              item={item}
-              isCatalog
-              onDelete={deleteCatalog(item.id)}
-            />
-          );
+          return <Item key={item.id} item={item} isCatalog onDelete={deleteCatalog(item.id)} />;
         })}
       </div>
     );
@@ -180,11 +155,7 @@ function App() {
     <div className="container">
       <GlobalStyle />
 
-      <img
-        alt="animal crossing icon"
-        className="app-icon"
-        src="images/app-icon.png"
-      />
+      <img alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
 
       <div className="input">
         <input
@@ -212,26 +183,14 @@ function App() {
             let hName;
             let hVariant;
             if (combinedResult.name.length) {
-              combinedResult.name[0].indexes = [
-                ...combinedResult.name.map((_) => _.indexes),
-              ].flat();
+              combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
 
-              hName = fuzzysort.highlight(
-                combinedResult.name[0],
-                '<b>',
-                '</b>',
-              );
+              hName = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
             }
 
             if (combinedResult.variant.length) {
-              combinedResult.variant[0].indexes = [
-                ...combinedResult.variant.map((_) => _.indexes),
-              ].flat();
-              hVariant = fuzzysort.highlight(
-                combinedResult.variant[0],
-                '<b>',
-                '</b>',
-              );
+              combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
+              hVariant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
             }
 
             return (
@@ -267,16 +226,7 @@ function App() {
   );
 }
 
-function Item({
-  item,
-  name,
-  variant,
-  isCatalog,
-  pending,
-  onClick,
-  onBuy,
-  onDelete,
-}) {
+function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
   const deleteButton = (pending || isCatalog) && (
     <button onClick={onDelete}>
       <span role="img" aria-label="delete">

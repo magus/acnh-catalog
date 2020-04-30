@@ -11,9 +11,7 @@ export default function useReducerState() {
   // initialize lookup from local storage
   React.useEffect(() => {
     try {
-      const initialLookup = new Set(
-        JSON.parse(localStorage.getItem(LocalStorage.Lookup)),
-      );
+      const initialLookup = new Set(JSON.parse(localStorage.getItem(LocalStorage.Lookup)));
       dispatch('init-lookup', { initialLookup });
     } catch (err) {
       console.error('Unable to initialize lookup');
@@ -22,10 +20,7 @@ export default function useReducerState() {
 
   // write every change to local storage
   React.useEffect(() => {
-    localStorage.setItem(
-      LocalStorage.Lookup,
-      JSON.stringify([...state.lookup]),
-    );
+    localStorage.setItem(LocalStorage.Lookup, JSON.stringify([...state.lookup]));
   });
 
   return [state, dispatch];

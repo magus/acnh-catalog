@@ -16,12 +16,11 @@ const keyMirror = function keyMirror(obj) {
 };
 function keyByField(list, key) {
   const map = {};
-  list.forEach(item => {
+  list.forEach((item) => {
     map[item[key]] = item;
   });
   return map;
 }
-
 
 const TYPES = keyMirror({
   tops: true,
@@ -29,8 +28,8 @@ const TYPES = keyMirror({
   onepiece: true,
 
   // headwear
-  helmet: true,   // covers face
-  cap: true,      // does not cover face
+  helmet: true, // covers face
+  cap: true, // does not cover face
 
   accessory: true,
   socks: true,
@@ -44,7 +43,6 @@ const TYPES = keyMirror({
   fossil: true,
   music: true, // 'k.k. song'
 
-
   furniture: true, // ftr
   doordecoration: true, // housedoordeco
   tool: true,
@@ -52,9 +50,9 @@ const TYPES = keyMirror({
 
 const TYPES_RENAMES = {
   'k.k. song': TYPES.music,
-  'ftr': TYPES.furniture,
-  'housedoordeco': TYPES.doordecoration,
-}
+  ftr: TYPES.furniture,
+  housedoordeco: TYPES.doordecoration,
+};
 
 // MAIN
 
@@ -68,7 +66,7 @@ const PARSED_TYPES = new Set();
 catalogLines.forEach((line, id) => {
   if (!line) return;
 
-  const [_type, _name, ..._variants] = line.split('\t')
+  const [_type, _name, ..._variants] = line.split('\t');
 
   const rawType = sanitize(_type);
   const type = TYPES_RENAMES[rawType] || rawType;
@@ -79,7 +77,7 @@ catalogLines.forEach((line, id) => {
 
   PARSED_TYPES.add(type);
 
-  ITEM_CATALOG.push({ id: id + 1, type, name, variants })
+  ITEM_CATALOG.push({ id: id + 1, type, name, variants });
 
   // // selectively log some for debugging
   // if (type === TYPES.doordecoration) {
@@ -87,16 +85,12 @@ catalogLines.forEach((line, id) => {
   // }
 });
 
-
 // console.log('PARSED_TYPES', [...PARSED_TYPES]);
 
 console.log('ITEM_CATALOG', ITEM_CATALOG.length, 'items');
 
-
-
 fs.writeFileSync('item-catalog.json', JSON.stringify(ITEM_CATALOG, null, 2));
 fs.writeFileSync('item-catalog-by-id.json', JSON.stringify(keyByField(ITEM_CATALOG, 'id'), null, 2));
-
 
 // for each variant, create an item entry
 const ITEM_VARIANTS_CATALOG = [];
@@ -113,5 +107,5 @@ ITEM_CATALOG.forEach((item) => {
 
 console.log('ITEM_VARIANTS_CATALOG', ITEM_VARIANTS_CATALOG.length, 'items');
 
-fs.writeFileSync('item-variants-catalog.json', JSON.stringify(ITEM_VARIANTS_CATALOG, null, 2))
-fs.writeFileSync('item-variants-catalog-by-id.json', JSON.stringify(keyByField(ITEM_VARIANTS_CATALOG, 'id'), null, 2))
+fs.writeFileSync('item-variants-catalog.json', JSON.stringify(ITEM_VARIANTS_CATALOG, null, 2));
+fs.writeFileSync('item-variants-catalog-by-id.json', JSON.stringify(keyByField(ITEM_VARIANTS_CATALOG, 'id'), null, 2));

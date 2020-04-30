@@ -10,18 +10,14 @@ export default class MyDocument extends Document {
 
     ctx.renderPage = () => {
       return originalRenderPage({
-        enhanceApp: (App) => (props) =>
-          sheets.collectStyles(<App {...props} />),
+        enhanceApp: (App) => (props) => sheets.collectStyles(<App {...props} />),
       });
     };
 
     const initialProps = await Document.getInitialProps(ctx);
 
     // Styles fragment is rendered after the app and page rendering finish.
-    const styles = [
-      ...React.Children.toArray(initialProps.styles),
-      sheets.getStyleElement(),
-    ];
+    const styles = [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()];
 
     return {
       ...initialProps,
@@ -45,35 +41,17 @@ export default class MyDocument extends Document {
           */}
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="48x48"
-            href="/favicon-48x48.png"
-          />
+          <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
 
-          <link
-            rel="apple-touch-icon"
-            sizes="1024x1024"
-            href="/apple-touch-icon-1024x1024.png"
-          />
+          <link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png" />
 
           <meta name="theme-color" content="#51ab66" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-title" content="Catalog" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-          />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-          <meta
-            name="description"
-            content="Catalog for Animal Crossing New Horizons"
-          />
-          <meta
-            name="keywords"
-            content="Animal Crossing, Games, Nintendo, Items, Catalog"
-          />
+          <meta name="description" content="Catalog for Animal Crossing New Horizons" />
+          <meta name="keywords" content="Animal Crossing, Games, Nintendo, Items, Catalog" />
 
           {this.props.styleTags}
         </Head>
