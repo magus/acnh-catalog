@@ -100,7 +100,7 @@ function searchCatalog(fullQuery) {
   return sortedResults.slice(0, 20);
 }
 
-export default function App() {
+function App() {
   const [state, dispatch] = useReducerState();
   const refs = React.useRef({
     input: React.createRef(),
@@ -312,3 +312,5 @@ function Item({
     </div>
   );
 }
+
+export default App;

@@ -28,3 +28,13 @@ yarn-error.log*
 # Environment Variables
 .env
 .env.build
+
+
+# next-offline
+# we created a symmlink from static/service-worker.js to the public folder
+# > ln -s $PWD/.next/static/service-worker.js public
+# this allows us to serve the service worker locally
+# (the static folder is served by now so cannot be simulated locally)
+/public/service-worker.js
+
+.now
