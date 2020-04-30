@@ -137,6 +137,7 @@ function App() {
   };
 
   const filteredResults = time(
+    'search',
     () => (inputValue && searchCatalog(inputValue)) || [],
   );
 
@@ -232,8 +233,6 @@ function App() {
                 '</b>',
               );
             }
-
-            console.debug(hName, hVariant, result);
 
             return (
               <Item

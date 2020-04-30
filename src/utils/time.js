@@ -1,4 +1,4 @@
-export default function time(operation) {
+export default function time(name = '<unknown>', operation) {
   // immediately call without wrapper if window or performance are unavialable
   if (!process.browser) {
     return operation();
@@ -9,7 +9,7 @@ export default function time(operation) {
   const start = window.performance.now();
   const result = operation();
   const elapsedMs = performance.now() - start;
-  console.debug(humanTime(elapsedMs));
+  console.debug(name, 'time', humanTime(elapsedMs));
   return result;
 }
 
