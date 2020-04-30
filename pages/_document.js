@@ -33,7 +33,48 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          />
+
+          {/*
+          manifest.json provides metadata used when your web app is added to the
+          homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+          */}
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="48x48"
+            href="/favicon-48x48.png"
+          />
+
+          <link
+            rel="apple-touch-icon"
+            sizes="1024x1024"
+            href="/apple-touch-icon-1024x1024.png"
+          />
+
+          <meta name="theme-color" content="#51ab66" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-title" content="Catalog" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
+
+          <meta
+            name="description"
+            content="Catalog for Animal Crossing New Horizons"
+          />
+          <meta
+            name="keywords"
+            content="Animal Crossing, Games, Nintendo, Items, Catalog"
+          />
+
           {this.props.styleTags}
         </Head>
         <body>

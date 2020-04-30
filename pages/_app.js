@@ -1,8 +1,12 @@
+import Head from 'next/head';
 // import App from 'next/app'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>Catalog</title>
+      </Head>
       <Component {...pageProps} />
       <style jsx global>{`
         html,
