@@ -252,7 +252,7 @@ function App() {
 
       {/* is searching or has no pending items */}
       {inputValue || items.size === 0 ? null : (
-        <button className="clear" onClick={handleClearAll}>
+        <button className="clear-all" onClick={handleClearAll}>
           clear all
         </button>
       )}
