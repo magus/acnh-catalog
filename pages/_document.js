@@ -27,30 +27,13 @@ export default class MyDocument extends Document {
       ...initialProps,
       styles,
     };
-
-    return { ...page, styleTags };
   }
+
   render() {
     return (
       <html>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-
-          <style jsx global>{`
-            html,
-            body {
-              height: 100%;
-              padding: 0;
-              margin: 0;
-              font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-                Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-                sans-serif;
-            }
-
-            * {
-              box-sizing: border-box;
-            }
-          `}</style>
           {this.props.styleTags}
         </Head>
         <body>
