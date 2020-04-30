@@ -39,19 +39,75 @@ export default class MyDocument extends Document {
           manifest.json provides metadata used when your web app is added to the
           homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
           */}
-          <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="description" content="Catalog for Animal Crossing New Horizons" />
+          <meta name="keywords" content="Animal Crossing, Games, Nintendo, Items, Catalog" />
+          <meta name="theme-color" content="#ffffff" />
 
-          <link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png" />
-
-          <meta name="theme-color" content="#51ab66" />
+          {/* iOS */}
+          <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+          <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+          <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+          <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+          <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+          <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+          <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+          <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <meta name="apple-mobile-web-app-title" content="Catalog" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-title" content="Catalog" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-640x1136.png"
+            media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-750x1294.png"
+            media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-1242x2148.png"
+            media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-1125x2436.png"
+            media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-1536x2048.png"
+            media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-1668x2224.png"
+            media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+          />
+          <link
+            rel="apple-touch-startup-image"
+            href="/images/splash/launch-2048x2732.png"
+            media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+          />
 
-          <meta name="description" content="Catalog for Animal Crossing New Horizons" />
-          <meta name="keywords" content="Animal Crossing, Games, Nintendo, Items, Catalog" />
+          {/* Android */}
+          <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+
+          {/* Safari */}
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#19ae5e" />
+
+          {/* Windows */}
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+          <meta name="application-name" content="Catalog" />
 
           {this.props.styleTags}
         </Head>
