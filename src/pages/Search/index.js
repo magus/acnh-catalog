@@ -76,21 +76,36 @@ function searchCatalog(fullQuery) {
 
   const sortedResults = Object.values(allResults).sort((a, b) => {
     const combinedMatches = (_) => _.name.length + _.variant.length;
+    const nameMatches = (_) => _.name.length;
     const highestScore = (_) => Math.max(...[..._.name.map((n) => n.score), ..._.variant.map((n) => n.score)]);
+    const sortName = (_) => {
+      const eitherResult = _.name[0] || _.variant[0];
+      const item = eitherResult.obj;
+      return `${item.name}${item.variant || ''}`;
+    };
 
     if (combinedMatches(a) > combinedMatches(b)) return -1;
     if (combinedMatches(a) < combinedMatches(b)) return +1;
 
-    // if matches same, use highest score
-    if (combinedMatches(a) === combinedMatches(b)) {
-      if (highestScore(a) > highestScore(b)) return -1;
-      if (highestScore(a) < highestScore(b)) return +1;
-    }
+    // if count of matches same, use name matches
+    if (nameMatches(a) > nameMatches(b)) return -1;
+    if (nameMatches(a) < nameMatches(b)) return +1;
+
+    // if name matches are same, use highest score
+    if (highestScore(a) > highestScore(b)) return -1;
+    if (highestScore(a) < highestScore(b)) return +1;
+
+    // if same scores, use alpha
+    if (sortName(a) < sortName(b)) return -1;
+    if (sortName(a) > sortName(b)) return +1;
 
     return 0;
   });
 
-  return sortedResults.slice(0, 20);
+  // trim results to top 20
+  const trimmedResults = sortedResults.slice(0, 20);
+
+  return trimmedResults;
 }
 
 function App() {
