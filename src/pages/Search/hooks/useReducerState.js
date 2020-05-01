@@ -28,11 +28,20 @@ export default function useReducerState() {
 
 const initialState = {
   input: '',
+  search: '',
   items: new Set(),
   lookup: new Set(),
 };
 
+// mutates state passed, use only after cloning state
+function resetInputSearch(nextState) {
+  // always reset input
+  nextState.input = initialState.input;
+  nextState.search = initialState.search;
+}
 function reducer(state, action) {
+  console.debug('useReducerState', action.type, { ...action }, { ...state });
+
   switch (action.type) {
     case 'init-lookup': {
       return {
@@ -50,8 +59,9 @@ function reducer(state, action) {
         nextState.items = items;
       }
 
-      // always reset input
-      nextState.input = initialState.input;
+      // always reset input and search
+      resetInputSearch(nextState);
+
       return nextState;
     }
     case '-item': {
@@ -85,12 +95,20 @@ function reducer(state, action) {
         ...state,
         input: action.value,
       };
-    case 'reset-input':
+    case 'reset-input': {
+      const nextState = { ...state };
+
+      // always reset input and search
+      resetInputSearch(nextState);
+
+      return nextState;
+    }
+
+    case 'search':
       return {
         ...state,
-        input: initialState.input,
+        search: state.input,
       };
-
     default:
       throw new Error(`invalid dispatch: ${JSON.stringify(action)}`);
   }

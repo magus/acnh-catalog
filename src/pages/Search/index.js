@@ -1,4 +1,5 @@
 import React from 'react';
+import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
 
 import Item from 'src/components/Item';
@@ -116,8 +117,9 @@ function App() {
     input: React.createRef(),
   });
 
-  const { input: inputValue, items, lookup } = state;
+  const { input: inputValue, search, items, lookup } = state;
 
+  const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
   const handleClearAll = () => dispatch('reset-items');
   const addItem = (id) => () => dispatch('+item', { id });
   const buyItem = (id) => () => dispatch('buy-item', { id });
@@ -133,7 +135,17 @@ function App() {
 
   const handleInputChange = (e) => {
     const { value } = e.target;
+
+    // keep input up to date
     dispatch('input', { value });
+
+    // debounced search on input value changes
+    if (value) {
+      debouncedSearch.current();
+    } else {
+      // clear the input/search if there is no value
+      dispatch('reset-input');
+    }
   };
 
   const handleClear = () => {
@@ -146,7 +158,7 @@ function App() {
     }
   };
 
-  const filteredResults = time('search', () => (inputValue && searchCatalog(inputValue)) || []);
+  const filteredResults = time('search', () => (search && searchCatalog(search)) || []);
 
   const pendingItems = React.useMemo(() => {
     return (

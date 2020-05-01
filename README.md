@@ -2,8 +2,6 @@
 
 ## TODO
 
-- Debounce search queries to ease cache/server load
-
 - Fallback image failures to a generic leaf icon
 
 - Find a better item catalog
