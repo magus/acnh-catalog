@@ -1,5 +1,16 @@
 # Animal Crossing New Horizons Catalog
 
+## TODO
+
+- Fallback image failures to a generic leaf icon
+
+-
+
+- Find a better item catalog
+  - A lot of items have variants that do not match villager db
+  - e.g. Nose Drip, Laptop, Floor Lamp
+
+
 ## Getting Started
 
 First, run the development server:
