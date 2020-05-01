@@ -150,6 +150,10 @@ export const GlobalStyle = createGlobalStyle`
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .item-actions {
