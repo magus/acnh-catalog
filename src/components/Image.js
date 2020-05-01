@@ -1,11 +1,12 @@
 import React from 'react';
 
-export default function Image({ src, fallback, ...otherProps }) {
+export default function Image({ src, fallback, className, ...otherProps }) {
   const [source, setSource] = React.useState(null);
+  const combinedClassNames = ['Image', source === null ? 'Image-loading' : '', className].join(' ');
 
   // immediately return img if window unavialable
   if (!process.browser) {
-    return <img src={source} {...otherProps} />;
+    return <img className={combinedClassNames} src={source} {...otherProps} />;
   }
 
   const imageRef = React.useRef(new window.Image());
@@ -23,5 +24,5 @@ export default function Image({ src, fallback, ...otherProps }) {
     image.src = src;
   }, []);
 
-  return <img src={source} {...otherProps} />;
+  return <img className={combinedClassNames} src={source} {...otherProps} />;
 }

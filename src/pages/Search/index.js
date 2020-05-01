@@ -3,6 +3,7 @@ import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
 
 import Item from 'src/components/Item';
+import Image from 'src/components/Image';
 
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
@@ -184,7 +185,7 @@ function App() {
     <div className="container">
       <GlobalStyle />
 
-      <img alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
+      <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
 
       <div className="input">
         <input
