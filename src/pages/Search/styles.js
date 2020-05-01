@@ -23,6 +23,17 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 0;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container {
     --bg-color: #fff;
     --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -32,7 +43,12 @@ export const GlobalStyle = createGlobalStyle`
 
     margin: 0;
     padding: 20px;
-    height: 100vh;
+  }
+
+  .item-container {
+    margin: 134px 0 0 0; /* 64 (icon) + 54 (input) + 16 (input margin) */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     position: relative;
     background-color: var(--bg-color);
     color: var(--font-color);
@@ -58,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .input input {
-    margin: 0 4px 8px 0;
+    margin: 0 4px 0 0;
   }
 
   input {
@@ -102,11 +118,6 @@ export const GlobalStyle = createGlobalStyle`
 
   button:hover {
     background: rgb(203, 213, 224);
-  }
-
-  #searchResults {
-    overflow: overlay;
-    -webkit-overflow-scrolling: touch;
   }
 
   .clear-all {

@@ -184,77 +184,83 @@ function App() {
   }, [items, lookup]);
 
   return (
-    <div className="container" style={{ ...keyboardPaddingBottom }}>
+    <div className="container">
       <GlobalStyle />
 
-      <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
-      <div className="input">
-        <input
-          className="transition-colors ease-in-out"
-          ref={refs.current.input}
-          onKeyDown={handleKeyDown(filteredResults[0])}
-          onChange={handleInputChange}
-          {...inputFocusEvents}
-          type="search"
-          autoComplete="off"
-          spellCheck="false"
-          placeholder="Type to lookup items..."
-          autoCorrect="off"
-          autoCapitalize="none"
-          value={inputValue}
-        />
+      <div className="item-container">
+        {/* search results */}
+        <div id="searchResults" className="items">
+          {filteredResults.map((combinedResult) => {
+            const result = combinedResult.name[0] || combinedResult.variant[0];
 
-        <button onClick={handleClear}>clear</button>
+            if (!result) return null;
+
+            let hName;
+            let hVariant;
+            if (combinedResult.name.length) {
+              combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
+
+              hName = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
+            }
+
+            if (combinedResult.variant.length) {
+              combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
+              hVariant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
+            }
+
+            return (
+              <Item
+                key={result.obj.id}
+                item={result.obj}
+                name={hName}
+                variant={hVariant}
+                isCatalog={lookup.has(result.obj.id)}
+                onClick={addItem(result.obj.id)}
+                onBuy={buyItem(result.obj.id)}
+                onDelete={deleteCatalog(result.obj.id)}
+              />
+            );
+          })}
+        </div>
+
+        {/* is searching or has no pending items */}
+        {inputValue || items.size === 0 ? null : (
+          <button className="clear-all" onClick={handleClearAll}>
+            clear all
+          </button>
+        )}
+
+        {inputValue ? null : (
+          <>
+            {pendingItems}
+            {catalogItems}
+          </>
+        )}
+
+        <div style={{ height: 1, width: 1, ...keyboardPaddingBottom }} />
       </div>
 
-      {/* search results */}
-      <div id="searchResults" className="items">
-        {filteredResults.map((combinedResult) => {
-          const result = combinedResult.name[0] || combinedResult.variant[0];
+      <div className="sticky-header">
+        <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
+        <div className="input">
+          <input
+            className="transition-colors ease-in-out"
+            ref={refs.current.input}
+            onKeyDown={handleKeyDown(filteredResults[0])}
+            onChange={handleInputChange}
+            {...inputFocusEvents}
+            type="search"
+            autoComplete="off"
+            spellCheck="false"
+            placeholder="Search..."
+            autoCorrect="off"
+            autoCapitalize="none"
+            value={inputValue}
+          />
 
-          if (!result) return null;
-
-          let hName;
-          let hVariant;
-          if (combinedResult.name.length) {
-            combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
-
-            hName = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
-          }
-
-          if (combinedResult.variant.length) {
-            combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
-            hVariant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
-          }
-
-          return (
-            <Item
-              key={result.obj.id}
-              item={result.obj}
-              name={hName}
-              variant={hVariant}
-              isCatalog={lookup.has(result.obj.id)}
-              onClick={addItem(result.obj.id)}
-              onBuy={buyItem(result.obj.id)}
-              onDelete={deleteCatalog(result.obj.id)}
-            />
-          );
-        })}
+          <button onClick={handleClear}>clear</button>
+        </div>
       </div>
-
-      {/* is searching or has no pending items */}
-      {inputValue || items.size === 0 ? null : (
-        <button className="clear-all" onClick={handleClearAll}>
-          clear all
-        </button>
-      )}
-
-      {inputValue ? null : (
-        <>
-          {pendingItems}
-          {catalogItems}
-        </>
-      )}
     </div>
   );
 }

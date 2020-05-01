@@ -42,10 +42,10 @@ export default function useKeyboard() {
     onBlur: onInputFocusEvents,
   };
 
-  const { extraPaddingBottom } = refs.current;
-  const keyboardPaddingBottom = {
-    paddingBottom: extraPaddingBottom,
-  };
+  const keyboardPaddingBottom = {};
+  if (isKeyboardVisible) {
+    keyboardPaddingBottom.paddingBottom = refs.current.extraPaddingBottom;
+  }
 
   return { isKeyboardVisible, inputFocusEvents, keyboardPaddingBottom };
 }
