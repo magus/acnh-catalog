@@ -123,6 +123,7 @@ export const GlobalStyle = createGlobalStyle`
   .item {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     margin: 0 0 8px 0;
     padding: 8px;
@@ -135,6 +136,11 @@ export const GlobalStyle = createGlobalStyle`
 
   .item:hover {
     background: rgb(237, 242, 247);
+  }
+
+  .item-image {
+    height: 36px;
+    margin: 0 8px 0 0;
   }
 
   .item-name {

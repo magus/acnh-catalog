@@ -1,6 +1,8 @@
 import React from 'react';
 import fuzzysort from 'fuzzysort';
 
+import Item from 'src/components/Item';
+
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
 import time from 'utils/time';
@@ -237,42 +239,6 @@ function App() {
           {catalogItems}
         </>
       )}
-    </div>
-  );
-}
-
-function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
-  const deleteButton = (pending || isCatalog) && (
-    <button onClick={onDelete}>
-      <span role="img" aria-label="delete">
-        ❌
-      </span>
-    </button>
-  );
-
-  const buyButton = (pending || !isCatalog) && (
-    <button onClick={onBuy}>
-      <span role="img" aria-label="buy" className="item-actions--buy" />
-    </button>
-  );
-
-  const _name = name || item.name;
-  const _variant = variant || item.variant;
-
-  return (
-    <div key={item.id} className="item" onClick={onClick}>
-      <div className="item-name">
-        <span dangerouslySetInnerHTML={{ __html: _name }} />
-        <span
-          dangerouslySetInnerHTML={{
-            __html: !_variant ? '' : ` (${_variant})`,
-          }}
-        />
-      </div>
-      <div className="item-actions">
-        {deleteButton}
-        {buyButton}
-      </div>
     </div>
   );
 }
