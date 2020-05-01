@@ -2,9 +2,9 @@
 
 ## TODO
 
-- Fallback image failures to a generic leaf icon
+- Debounce search queries to ease cache/server load
 
--
+- Fallback image failures to a generic leaf icon
 
 - Find a better item catalog
   - A lot of items have variants that do not match villager db
