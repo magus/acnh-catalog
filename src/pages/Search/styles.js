@@ -139,6 +139,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .item-image {
+    width: 36px;
     height: 36px;
     margin: 0 8px 0 0;
   }
@@ -162,9 +163,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .item-actions--buy {
-    width: 24px;
-    background-size: 24px;
-    height: 24px;
+    width: 36px;
+    background-size: 36px;
+    height: 36px;
     display: block;
     background-image: url(images/bells.png);
     background-repeat: no-repeat;
@@ -179,5 +180,9 @@ export const GlobalStyle = createGlobalStyle`
 
   .transition-colors {
     transition-property: background-color, border-color, color, fill, stroke !important;
+  }
+
+  .no-padding {
+    padding: 0;
   }
 `;
