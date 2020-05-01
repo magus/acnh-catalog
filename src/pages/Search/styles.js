@@ -146,7 +146,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .item-name {
     flex: 1;
-    line-height: 46px;
+    line-height: 23px;
   }
 
   .item-actions {
