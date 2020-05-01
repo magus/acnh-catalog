@@ -2,7 +2,7 @@ import React from 'react';
 
 // Images from villagerdb
 // e.g. 3D Glasses (white)  https://villagerdb.com/images/items/full/3d-glasses-vv-white.png
-// e.g. No. 3 Shirt         https://villagerdb.com/images/items/medium/no-3-shirt.904cbc6.png
+// e.g. No. 3 Shirt         https://villagerdb.com/images/items/medium/no-3-shirt.png
 
 const getVillagerDBImage = (item) => {
   const { name, variant } = item;
