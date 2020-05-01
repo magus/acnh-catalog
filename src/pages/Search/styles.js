@@ -147,6 +147,9 @@ export const GlobalStyle = createGlobalStyle`
   .item-name {
     flex: 1;
     line-height: 23px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .item-actions {

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Text from 'src/components/Text';
 import Image from 'src/components/Image';
 
 export default function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
@@ -25,12 +26,14 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
       <Image className="item-image" src={getVillagerDBImage(item)} fallback="images/app-icon.png" />
 
       <div className="item-name">
-        <span dangerouslySetInnerHTML={{ __html: _name }} />
-        <span
-          dangerouslySetInnerHTML={{
-            __html: !_variant ? '' : ` (${_variant})`,
-          }}
-        />
+        <Text>
+          <span dangerouslySetInnerHTML={{ __html: _name }} />
+          <span
+            dangerouslySetInnerHTML={{
+              __html: !_variant ? '' : ` (${_variant})`,
+            }}
+          />
+        </Text>
       </div>
       <div className="item-actions">
         {deleteButton}
