@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'src/components/Image';
+
 export default function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
   const deleteButton = (pending || isCatalog) && (
     <button onClick={onDelete}>
@@ -20,7 +22,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
 
   return (
     <div key={item.id} className="item" onClick={onClick}>
-      <img className="item-image" src={getVillagerDBImage(item)} />
+      <Image className="item-image" src={getVillagerDBImage(item)} fallback="images/app-icon.png" />
 
       <div className="item-name">
         <span dangerouslySetInnerHTML={{ __html: _name }} />
