@@ -32,9 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 
     margin: 0;
     padding: 20px;
-    height: 100%;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+    height: 100vh;
     position: relative;
     background-color: var(--bg-color);
     color: var(--font-color);
