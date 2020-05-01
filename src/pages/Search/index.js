@@ -4,6 +4,7 @@ import fuzzysort from 'fuzzysort';
 
 import Item from 'src/components/Item';
 import Image from 'src/components/Image';
+import useKeyboard from 'src/hooks/useKeyboard';
 
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
@@ -113,6 +114,7 @@ function searchCatalog(fullQuery) {
 }
 
 function App() {
+  const { inputFocusEvents, keyboardPaddingBottom } = useKeyboard();
   const [state, dispatch] = useReducerState();
   const refs = React.useRef({
     input: React.createRef(),
@@ -159,7 +161,7 @@ function App() {
     }
   };
 
-  const filteredResults = time('search', () => (search && searchCatalog(search)) || []);
+  const filteredResults = (search && time('search', () => searchCatalog(search))) || [];
 
   const pendingItems = React.useMemo(() => {
     return (
@@ -182,17 +184,17 @@ function App() {
   }, [items, lookup]);
 
   return (
-    <div className="container">
+    <div className="container" style={{ ...keyboardPaddingBottom }}>
       <GlobalStyle />
 
       <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
-
       <div className="input">
         <input
           className="transition-colors ease-in-out"
           ref={refs.current.input}
           onKeyDown={handleKeyDown(filteredResults[0])}
           onChange={handleInputChange}
+          {...inputFocusEvents}
           type="search"
           autoComplete="off"
           spellCheck="false"
@@ -203,40 +205,41 @@ function App() {
         />
 
         <button onClick={handleClear}>clear</button>
+      </div>
 
-        <div id="searchResults" className="items">
-          {filteredResults.map((combinedResult) => {
-            const result = combinedResult.name[0] || combinedResult.variant[0];
+      {/* search results */}
+      <div id="searchResults" className="items">
+        {filteredResults.map((combinedResult) => {
+          const result = combinedResult.name[0] || combinedResult.variant[0];
 
-            if (!result) return null;
+          if (!result) return null;
 
-            let hName;
-            let hVariant;
-            if (combinedResult.name.length) {
-              combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
+          let hName;
+          let hVariant;
+          if (combinedResult.name.length) {
+            combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
 
-              hName = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
-            }
+            hName = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
+          }
 
-            if (combinedResult.variant.length) {
-              combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
-              hVariant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
-            }
+          if (combinedResult.variant.length) {
+            combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
+            hVariant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
+          }
 
-            return (
-              <Item
-                key={result.obj.id}
-                item={result.obj}
-                name={hName}
-                variant={hVariant}
-                isCatalog={lookup.has(result.obj.id)}
-                onClick={addItem(result.obj.id)}
-                onBuy={buyItem(result.obj.id)}
-                onDelete={deleteCatalog(result.obj.id)}
-              />
-            );
-          })}
-        </div>
+          return (
+            <Item
+              key={result.obj.id}
+              item={result.obj}
+              name={hName}
+              variant={hVariant}
+              isCatalog={lookup.has(result.obj.id)}
+              onClick={addItem(result.obj.id)}
+              onBuy={buyItem(result.obj.id)}
+              onDelete={deleteCatalog(result.obj.id)}
+            />
+          );
+        })}
       </div>
 
       {/* is searching or has no pending items */}

@@ -107,9 +107,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #searchResults {
-    position: absolute;
-    top: 100%;
-    background: var(--bg-color);
+    overflow: overlay;
+    -webkit-overflow-scrolling: touch;
   }
 
   .clear-all {
