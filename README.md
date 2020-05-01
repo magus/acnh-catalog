@@ -6,6 +6,14 @@
   - A lot of items have variants that do not match villager db
   - e.g. Nose Drip, Laptop, Floor Lamp
 
+- Lighthouse CI Github Action
+  - deploy to zeit, use preview url for lighthouse ci github action
+    - https://hackernoon.com/how-to-run-lighthouse-performance-audit-using-github-actions-and-zeit-ff4738xm
+  - https://github.com/treosh/lighthouse-ci-action
+    - uses https://github.com/GoogleChrome/lighthouse-ci
+  - diff lighthouse reports: https://googlechrome.github.io/lighthouse-ci/viewer/
+
+
 
 ## Getting Started
 
