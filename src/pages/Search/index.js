@@ -105,7 +105,7 @@ function searchCatalog(fullQuery) {
   });
 
   // trim results to top 20
-  const trimmedResults = sortedResults.slice(0, 20);
+  const trimmedResults = sortedResults.slice(0, 10);
 
   return trimmedResults;
 }
