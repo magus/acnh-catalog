@@ -79,13 +79,14 @@ function searchCatalog(fullQuery) {
       });
   });
 
+  const getEitherMatchResult = (_) => _.name[0] || _.variant[0];
+
   const sortedResults = Object.values(allResults).sort((a, b) => {
     const combinedMatches = (_) => _.name.length + _.variant.length;
     const nameMatches = (_) => _.name.length;
     const highestScore = (_) => Math.max(...[..._.name.map((n) => n.score), ..._.variant.map((n) => n.score)]);
     const sortName = (_) => {
-      const eitherResult = _.name[0] || _.variant[0];
-      const item = eitherResult.obj;
+      const item = getEitherMatchResult(_).obj;
       return `${item.name}${item.variant || ''}`;
     };
 
@@ -110,7 +111,42 @@ function searchCatalog(fullQuery) {
   // trim results to top 20
   const trimmedResults = sortedResults.slice(0, 10);
 
-  return trimmedResults;
+  // convert to format for use in render etc.
+  return trimmedResults.map((combinedResult) => {
+    const result = getEitherMatchResult(combinedResult);
+
+    if (!result) return null;
+
+    // e.g.
+    // {
+    //   item: {
+    //     id: 273,
+    //     name: '3d glasses',
+    //     variant: 'white',
+    //     type: 'accessory',
+    //   },
+    //   name: '3d <b>gla</b>sses',
+    //   variant: '<b>w</b>hite',
+    //   combinedResult: { name: [ ... ], variant: [ ... ] },
+    // }
+    const customSearchResult = {
+      item: result.obj,
+      combinedResult,
+    };
+
+    // build search highlight html
+    if (combinedResult.name.length) {
+      combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
+      customSearchResult.name = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
+    }
+
+    if (combinedResult.variant.length) {
+      combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
+      customSearchResult.variant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
+    }
+
+    return customSearchResult;
+  });
 }
 
 function App() {
@@ -132,7 +168,7 @@ function App() {
   const handleKeyDown = (firstMatch) => (e) => {
     if (e.key === 'Enter' && firstMatch) {
       // dispatch first matching result id, if any
-      addItem(firstMatch.obj.id)();
+      addItem(firstMatch.item.id)();
     }
   };
 
@@ -190,34 +226,21 @@ function App() {
       <div className="item-container">
         {/* search results */}
         <div id="searchResults" className="items">
-          {filteredResults.map((combinedResult) => {
-            const result = combinedResult.name[0] || combinedResult.variant[0];
-
+          {filteredResults.map((result) => {
             if (!result) return null;
 
-            let hName;
-            let hVariant;
-            if (combinedResult.name.length) {
-              combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
-
-              hName = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
-            }
-
-            if (combinedResult.variant.length) {
-              combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
-              hVariant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
-            }
+            const { id } = result.item;
 
             return (
               <Item
-                key={result.obj.id}
-                item={result.obj}
-                name={hName}
-                variant={hVariant}
-                isCatalog={lookup.has(result.obj.id)}
-                onClick={addItem(result.obj.id)}
-                onBuy={buyItem(result.obj.id)}
-                onDelete={deleteCatalog(result.obj.id)}
+                key={id}
+                item={result.item}
+                name={result.name}
+                variant={result.variant}
+                isCatalog={lookup.has(id)}
+                onClick={addItem(id)}
+                onBuy={buyItem(id)}
+                onDelete={deleteCatalog(id)}
               />
             );
           })}
