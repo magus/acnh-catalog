@@ -45,7 +45,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
 // Convert spaces to `-` and remove `.`
 // e.g. `3d glasses` becomes `3d-glasses`
 // e.g. `No. 3` becomes `No-3`
-const villagerDBUrlName = (str) => str.replace(/\s/g, '-').replace(/\.|\(|\)/g, '');
+const villagerDBUrlName = (str) => str.replace(/\s/g, '-').replace(/\.|\'|\(|\)/g, '');
 const getVillagerDBImage = (item) => {
   const { name, variant } = item;
 
