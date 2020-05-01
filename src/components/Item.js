@@ -1,21 +1,5 @@
 import React from 'react';
 
-// Images from villagerdb
-// e.g. 3D Glasses (white)  https://villagerdb.com/images/items/full/3d-glasses-vv-white.png
-// e.g. No. 3 Shirt         https://villagerdb.com/images/items/medium/no-3-shirt.png
-
-const getVillagerDBImage = (item) => {
-  const { name, variant } = item;
-  // Convert spaces to `-`
-  // e.g. `3d glasses` becomes `3d-glasses`
-  const hName = name.replace(/\s/g, '-').replace(/\./g, '');
-
-  if (variant) {
-    return `https://villagerdb.com/images/items/full/${hName}-vv-${variant}.png`;
-  }
-
-  return `https://villagerdb.com/images/items/full/${hName}.png`;
-};
 export default function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
   const deleteButton = (pending || isCatalog) && (
     <button onClick={onDelete}>
@@ -53,3 +37,24 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
     </div>
   );
 }
+
+// Images from villagerdb
+// e.g. 3D Glasses (white)  https://villagerdb.com/images/items/full/3d-glasses-vv-white.png
+// e.g. No. 3 Shirt         https://villagerdb.com/images/items/medium/no-3-shirt.png
+
+// Convert spaces to `-` and remove `.`
+// e.g. `3d glasses` becomes `3d-glasses`
+// e.g. `No. 3` becomes `No-3`
+const villagerDBUrlName = (str) => str.replace(/\s/g, '-').replace(/\.|\(|\)/g, '');
+const getVillagerDBImage = (item) => {
+  const { name, variant } = item;
+
+  const sName = villagerDBUrlName(name);
+
+  if (variant) {
+    const sVariant = villagerDBUrlName(variant);
+    return `https://villagerdb.com/images/items/full/${sName}-vv-${sVariant}.png`;
+  }
+
+  return `https://villagerdb.com/images/items/full/${sName}.png`;
+};
