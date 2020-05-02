@@ -2,10 +2,6 @@
 
 ## TODO
 
-- do not alpha sort items (easier to track in same order)
-
-- tapping remove on item shifts hover state to another item, just remove hover state
-
 - add tiny button to show tags below search that let you filter everything to the matches category
 - wallpaper accessory etc.  will make easier to use
 
