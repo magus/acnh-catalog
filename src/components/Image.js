@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Image({ src, fallback, className, ...otherProps }) {
   const [source, setSource] = React.useState(null);
-  const combinedClassNames = ['Image ', source === null ? 'Image-loading' : '', className].join(' ');
+  const combinedClassNames = ['Image', source === null ? 'Image-loading' : '', className].join(' ');
 
   // immediately return img if window unavialable
   if (!process.browser) {
