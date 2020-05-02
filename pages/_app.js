@@ -1,27 +1,17 @@
 import Head from 'next/head';
+import { createGlobalStyle } from 'styled-components';
 // import App from 'next/app'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
+      <GlobalStyle />
+
       <Head>
         <title>Catalog</title>
       </Head>
-      <Component {...pageProps} />
-      <style jsx global>{`
-        html,
-        body {
-          height: 100%;
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-            Droid Sans, Helvetica Neue, sans-serif;
-        }
 
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      <Component {...pageProps} />
     </>
   );
 }
@@ -38,4 +28,38 @@ function MyApp({ Component, pageProps }) {
 //   return { ...appProps }
 // }
 
-export default MyApp;
+const GlobalStyle = createGlobalStyle`
+  :root {
+    --bg-color: #fff;
+    --font-color: rgb(26, 32, 44);
+    --button-color: rgb(226, 232, 240);
+    --button-border-color: rgb(226, 232, 240);
+    --button-text: rgb(45, 55, 72);
+
+    @media (prefers-color-scheme: dark) {
+      --bg-color: #000;
+      --font-color: #fff;
+      --button-color: rgb(34,41,47);
+      --button-border-color: rgb(226, 232, 240);
+      --button-text: #fff;
+    }
+
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue',
+      sans-serif;
+    --font-size: 18px;
+  }
+
+  html,
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+    background-color: var(--bg-color);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+`;

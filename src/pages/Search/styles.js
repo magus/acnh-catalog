@@ -27,6 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     padding: 20px 20px 0;
     background-color: var(--bg-color);
     display: flex;
@@ -35,12 +36,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .container {
-    --bg-color: #fff;
-    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
-    --font-size: 18px;
-    --font-color: rgb(26, 32, 44);
-
     margin: 0;
     padding: 20px;
   }
@@ -83,21 +78,21 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 28px;
     display: block;
     width: calc(100% - 4px);
-    border-radius: 0.5rem;
 
     outline: 0;
     font-family: var(--font-family);
     font-size: var(--font-size);
     color: var(--font-color);
 
-    background-color: rgb(237, 242, 247);
+    background-color: var(--button-color);
     border: 1px solid transparent; /* 2 */
+    border-color: var(--button-border-color);
+    border-radius: 0.5rem;
     transition-duration: 0.1s !important;
   }
 
   input:focus {
     background-color: var(--bg-color);
-    border: 1px solid #e2e8f0; /* 2 */
   }
 
   button {
@@ -105,19 +100,15 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0.5rem 1rem;
     height: 46px;
     vertical-align: middle;
+    border-color: var(--button-border-color);
     border-radius: 0.25rem;
-    border-color: transparent;
-    background-color: rgb(226, 232, 240);
+    background-color: var(--button-color);
     cursor: pointer;
 
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: 700;
-    color: rgb(45, 55, 72);
-  }
-
-  button:hover {
-    background: rgb(203, 213, 224);
+    color: var(--button-text);
   }
 
   .clear-all {
@@ -135,15 +126,14 @@ export const GlobalStyle = createGlobalStyle`
 
     margin: 0 0 8px 0;
     padding: 8px;
+    background-color: var(--button-color);
+    border: 1px solid transparent; /* 2 */
+    border-color: var(--button-border-color);
     border-radius: 0.25rem !important;
     box-shadow: 0 6px 8px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 
     transition: background 250ms;
-  }
-
-  .item:hover {
-    background: rgb(237, 242, 247);
   }
 
   .item-image {
@@ -194,7 +184,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .Image-loading {
-    background-color: rgb(237, 242, 247);
+    background-color: var(--button-color);
   }
 
   .ease-in-out {
