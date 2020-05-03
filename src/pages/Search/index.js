@@ -122,7 +122,7 @@ function searchCatalog(fullQuery, typeFilters) {
   });
 
   // trim results to top 20
-  const trimmedResults = sortedResults.slice(0, 10);
+  const trimmedResults = sortedResults.slice(0, 20);
 
   // convert to format for use in render etc.
   return trimmedResults.map((combinedResult) => {
