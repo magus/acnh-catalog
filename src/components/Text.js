@@ -25,7 +25,8 @@ export default function Text({ children, fontSize, minFontSize = 12 }) {
     let iters = 0;
     const maxIters = Math.log2(max - min) + 1;
 
-    if (!isTruncated(container)) return console.debug('no shrink required');
+    // console.debug('no shrink required')
+    if (!isTruncated(container)) return;
 
     console.debug('shrink', { min, max });
 
