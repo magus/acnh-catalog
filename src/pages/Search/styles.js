@@ -179,7 +179,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .Image-loading {
-    background-color: var(--button-color);
+    background-color: var(--button-border-color);
   }
 
   .ease-in-out {
