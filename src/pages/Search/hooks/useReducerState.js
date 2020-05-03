@@ -41,7 +41,8 @@ function resetInputSearch(nextState) {
   nextState.search = initialState.search;
 }
 function reducer(state, action) {
-  console.debug('useReducerState', action.type, { ...action }, { ...state });
+  const before = { ...state };
+  console.debug('useReducerState', { action, before });
 
   switch (action.type) {
     case 'init-lookup': {
