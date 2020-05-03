@@ -47,15 +47,17 @@ function sortedSetList(set) {
   );
 }
 
-function searchCatalog(fullQuery) {
+function searchCatalog(fullQuery, typeFilters) {
   const queries = fullQuery.split(/\s/);
+
+  const filteredCatalog = typeFilters.size === 0 ? ITEM_CATALOG : ITEM_CATALOG.filter(filterItem(typeFilters));
 
   // search against substrings
   const allResults = {};
   queries.forEach((q) => {
     // nameResults
     fuzzysort
-      .go(q, ITEM_CATALOG, {
+      .go(q, filteredCatalog, {
         keys: ['name'],
         // don't return bad results
         threshold: -999,
@@ -73,7 +75,7 @@ function searchCatalog(fullQuery) {
 
     // variantResults
     fuzzysort
-      .go(q, ITEM_CATALOG, {
+      .go(q, filteredCatalog, {
         keys: ['variant'],
         // don't return bad results
         threshold: -999,
@@ -141,7 +143,8 @@ function searchCatalog(fullQuery) {
     //   combinedResult: { name: [ ... ], variant: [ ... ] },
     // }
     const customSearchResult = {
-      item: result.obj,
+      ...result.obj,
+      originalItem: result.obj,
       combinedResult,
     };
 
@@ -210,36 +213,65 @@ function App() {
     }
   };
 
-  const filteredResults = (search && time('search', () => searchCatalog(search))) || [];
+  const filteredResults = React.useMemo(() => {
+    const searchResults = (search && time('search', () => searchCatalog(search, typeFilters))) || [];
+    return searchResults.filter(filterItem(typeFilters));
+  }, [search, typeFilters]);
+
+  const renderSearchResults = React.useMemo(() => {
+    if (!filteredResults.length) return null;
+
+    return (
+      <div id="searchResults" className="items">
+        {filteredResults.map((item) => {
+          return (
+            <Item
+              key={item.id}
+              item={item.originalItem}
+              name={item.name}
+              variant={item.variant}
+              isCatalog={lookup.has(item.id)}
+              onClick={addItem(item.id)}
+              onBuy={buyItem(item.id)}
+              onDelete={deleteCatalog(item.id)}
+            />
+          );
+        })}
+      </div>
+    );
+  }, [filteredResults]);
 
   const pendingItems = React.useMemo(() => {
+    const filteredItems = sortedSetList(items).filter(filterItem(typeFilters));
+
+    if (!filteredItems.length) return null;
+
     return (
-      <>
-        <h1>Wishlist</h1>
+      <ItemsContainer>
+        <ItemsContainerName>Wishlist</ItemsContainerName>
         <div className="items">
-          {sortedSetList(items)
-            .filter(filterItem(typeFilters))
-            .map((item, i) => {
-              return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
-            })}
+          {filteredItems.map((item, i) => {
+            return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
+          })}
         </div>
-      </>
+      </ItemsContainer>
     );
   }, [items, lookup, typeFilters]);
 
   const catalogItems = React.useMemo(() => {
-    const catalog = sortedSetList(lookup);
-    const filteredCatalog = catalog.filter(filterItem(typeFilters));
+    const filteredCatalog = sortedSetList(lookup).filter(filterItem(typeFilters));
+
+    if (!filteredCatalog.length) return null;
 
     return (
-      <>
-        <h1>Catalog</h1>
+      <ItemsContainer>
+        <ItemsContainerName>Catalog</ItemsContainerName>
         <div className="items">
           {filteredCatalog.map((item, i) => {
             return <Item key={item.id} item={item} isCatalog onDelete={deleteCatalog(item.id)} />;
           })}
         </div>
-      </>
+      </ItemsContainer>
     );
   }, [items, lookup, typeFilters]);
 
@@ -281,30 +313,7 @@ function App() {
 
       <div className="item-container">
         {/* search results */}
-        <div id="searchResults" className="items">
-          {filteredResults.map((result) => {
-            if (!result) return null;
-
-            const { id } = result.item;
-
-            if (!filterItem(typeFilters)(result.item)) {
-              return null;
-            }
-
-            return (
-              <Item
-                key={id}
-                item={result.item}
-                name={result.name}
-                variant={result.variant}
-                isCatalog={lookup.has(id)}
-                onClick={addItem(id)}
-                onBuy={buyItem(id)}
-                onDelete={deleteCatalog(id)}
-              />
-            );
-          })}
-        </div>
+        {renderSearchResults}
 
         {/* is searching or has no pending items */}
         {inputValue || items.size === 0 ? null : (
@@ -329,7 +338,7 @@ function App() {
 export default App;
 
 const Filters = styled.div`
-  margin: 4px 0 8px 0;
+  margin: 8px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -338,8 +347,16 @@ const Filters = styled.div`
 
 const FilterButton = styled.button`
   margin: 0 4px 4px 0;
-  font-size: 12px;
+  font-size: 16px;
   padding: 4px 2px;
   height: auto;
-  opacity: ${(props) => props.active || 0.2};
+  opacity: ${(props) => props.active || 0.4};
+`;
+
+const ItemsContainer = styled.div`
+  width: 100%;
+`;
+
+const ItemsContainerName = styled.div`
+  font-weight: 800;
 `;
