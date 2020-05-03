@@ -2,9 +2,6 @@
 
 ## TODO
 
-- add tiny button to show tags below search that let you filter everything to the matches category
-- wallpaper accessory etc.  will make easier to use
-
 - Find a better item catalog
   - A lot of items have variants that do not match villager db
   - e.g. Nose Drip, Laptop, Floor Lamp
