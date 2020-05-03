@@ -25,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
 
   .sticky-header {
     width: 100%;
-    padding: 20px 20px 0;
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
@@ -34,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .container {
     margin: 0;
-    padding: 20px;
+    padding: 8px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
