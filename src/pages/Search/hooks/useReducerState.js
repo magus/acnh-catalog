@@ -38,7 +38,7 @@ const initialState = {
 
   input: '',
   search: '',
-  typeFilter: '',
+  typeFilters: new Set(),
   items: new Set(),
   lookup: new Set(),
 };
@@ -60,6 +60,7 @@ function reducer(state, action) {
         lookup: action.initialLookup,
       };
     }
+
     case '+item': {
       const nextState = { ...state };
 
@@ -101,6 +102,7 @@ function reducer(state, action) {
         items: new Set(),
       };
     }
+
     case 'input':
       return {
         ...state,
@@ -114,12 +116,23 @@ function reducer(state, action) {
 
       return nextState;
     }
-
     case 'search':
       return {
         ...state,
         search: state.input,
       };
+
+    case 'filter': {
+      const typeFilters = new Set(state.typeFilters);
+      const { filterType } = action;
+      if (typeFilters.has(filterType)) {
+        typeFilters.delete(filterType);
+      } else {
+        typeFilters.add(filterType);
+      }
+      return { ...state, typeFilters };
+    }
+
     default:
       throw new Error(`invalid dispatch: ${JSON.stringify(action)}`);
   }

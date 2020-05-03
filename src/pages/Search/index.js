@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
 
@@ -21,6 +22,8 @@ const TYPE = Object.freeze(
     return _;
   }, {}),
 );
+
+const filterItem = (typeFilters) => (item) => (typeFilters.size ? typeFilters.has(item.type) : true);
 
 function sortedSetList(set) {
   return (
@@ -163,7 +166,7 @@ function App() {
     input: React.createRef(),
   });
 
-  const { input: inputValue, search, items, lookup } = state;
+  const { input: inputValue, search, typeFilters, items, lookup } = state;
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
   const handleClearAll = () => dispatch('reset-items');
@@ -171,6 +174,7 @@ function App() {
   const buyItem = (id) => () => dispatch('buy-item', { id });
   const deleteItem = (id) => () => dispatch('-item', { id });
   const deleteCatalog = (id) => () => dispatch('-lookup', { id });
+  const onFilterClick = (filterType) => () => dispatch('filter', { filterType });
 
   const handleKeyDown = (firstMatch) => (e) => {
     if (e.key === 'Enter' && firstMatch) {
@@ -208,23 +212,34 @@ function App() {
 
   const pendingItems = React.useMemo(() => {
     return (
-      <div className="items">
-        {sortedSetList(items).map((item, i) => {
-          return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
-        })}
-      </div>
+      <>
+        <h1>Wishlist</h1>
+        <div className="items">
+          {sortedSetList(items)
+            .filter(filterItem(typeFilters))
+            .map((item, i) => {
+              return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
+            })}
+        </div>
+      </>
     );
-  }, [items, lookup]);
+  }, [items, lookup, typeFilters]);
 
   const catalogItems = React.useMemo(() => {
+    const catalog = sortedSetList(lookup);
+    const filteredCatalog = catalog.filter(filterItem(typeFilters));
+
     return (
-      <div className="items">
-        {sortedSetList(lookup).map((item, i) => {
-          return <Item key={item.id} item={item} isCatalog onDelete={deleteCatalog(item.id)} />;
-        })}
-      </div>
+      <>
+        <h1>Catalog</h1>
+        <div className="items">
+          {filteredCatalog.map((item, i) => {
+            return <Item key={item.id} item={item} isCatalog onDelete={deleteCatalog(item.id)} />;
+          })}
+        </div>
+      </>
     );
-  }, [items, lookup]);
+  }, [items, lookup, typeFilters]);
 
   return (
     <div className="container">
@@ -251,11 +266,15 @@ function App() {
           <button onClick={handleClear}>clear</button>
         </div>
 
-        <div className="typeFilters">
-          {TYPES.map((type) => (
-            <button>{type}</button>
-          ))}
-        </div>
+        <Filters>
+          {TYPES.map((type) => {
+            return (
+              <FilterButton key={type} active={typeFilters.has(type)} onClick={onFilterClick(type)}>
+                {type}
+              </FilterButton>
+            );
+          })}
+        </Filters>
       </div>
 
       <div className="item-container">
@@ -265,6 +284,10 @@ function App() {
             if (!result) return null;
 
             const { id } = result.item;
+
+            if (!filterItem(typeFilters)(result.item)) {
+              return null;
+            }
 
             return (
               <Item
@@ -302,3 +325,19 @@ function App() {
 }
 
 export default App;
+
+const Filters = styled.div`
+  margin: 4px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
+`;
+
+const FilterButton = styled.button`
+  margin: 0 4px 4px 0;
+  font-size: 12px;
+  padding: 4px 2px;
+  height: auto;
+  opacity: ${(props) => props.active || 0.2};
+`;
