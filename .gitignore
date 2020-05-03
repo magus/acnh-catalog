@@ -37,4 +37,13 @@ yarn-error.log*
 # (the static folder is served by now so cannot be simulated locally)
 /public/service-worker.js
 
+# now generates files, ignore them
 .now
+
+# scripts
+# ignore everything
+/scripts/*
+# ... except for
+!/scripts/acnh-catalog.tsv
+!/scripts/parse-acnh-catalog.js
+

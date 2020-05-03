@@ -85,7 +85,8 @@ catalogLines.forEach((line, id) => {
   // }
 });
 
-// console.log('PARSED_TYPES', [...PARSED_TYPES]);
+console.log('PARSED_TYPES', PARSED_TYPES.size, 'types');
+fs.writeFileSync('types.json', JSON.stringify([...PARSED_TYPES], null, 2));
 
 console.log('ITEM_CATALOG', ITEM_CATALOG.length, 'items');
 
