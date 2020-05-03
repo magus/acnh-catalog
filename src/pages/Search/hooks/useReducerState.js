@@ -20,13 +20,22 @@ export default function useReducerState() {
 
   // write every change to local storage
   React.useEffect(() => {
-    localStorage.setItem(LocalStorage.Lookup, JSON.stringify([...state.lookup]));
+    // use the init flag to detect whether this is an initial state
+    // we shouldn't ever write the initial state (may happen accidentally)
+    if (state.init) {
+      console.debug('writing', `localStorage[${LocalStorage.Lookup}]`);
+      localStorage.setItem(LocalStorage.Lookup, JSON.stringify([...state.lookup]));
+    }
   });
 
   return [state, dispatch];
 }
 
 const initialState = {
+  // init is false until the user interacts with the lookup catalog
+  // prevents accidental writes of initial state of empty catalog
+  init: false,
+
   input: '',
   search: '',
   typeFilter: '',
@@ -78,13 +87,13 @@ function reducer(state, action) {
       const lookup = new Set(state.lookup);
       lookup.add(action.id);
 
-      return { ...state, items, lookup };
+      return { ...state, init: true, items, lookup };
     }
     case '-lookup': {
       const lookup = new Set(state.lookup);
       lookup.delete(action.id);
 
-      return { ...state, lookup };
+      return { ...state, init: true, lookup };
     }
     case 'reset-items': {
       return {
