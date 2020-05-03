@@ -6,6 +6,7 @@ import fuzzysort from 'fuzzysort';
 import Item from 'src/components/Item';
 import Image from 'src/components/Image';
 import useKeyboard from 'src/hooks/useKeyboard';
+import usePreventZoom from 'src/hooks/usePreventZoom';
 
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
@@ -160,6 +161,7 @@ function searchCatalog(fullQuery) {
 }
 
 function App() {
+  usePreventZoom();
   const { inputFocusEvents, keyboardPaddingBottom } = useKeyboard();
   const [state, dispatch] = useReducerState();
   const refs = React.useRef({
