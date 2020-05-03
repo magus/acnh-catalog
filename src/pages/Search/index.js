@@ -350,7 +350,11 @@ const FilterButton = styled.button`
   font-size: 16px;
   padding: 4px 2px;
   height: auto;
+  background-color: var(--button-color);
+  color: var(--font-color);
   opacity: ${(props) => props.active || 0.4};
+  color: ${(props) => (props.active ? 'var(--button-color)' : 'var(--font-color)')};
+  background-color: ${(props) => (props.active ? 'var(--font-color)' : 'var(--button-color)')};
 `;
 
 const ItemsContainer = styled.div`
