@@ -29,6 +29,7 @@ export default function useReducerState() {
 const initialState = {
   input: '',
   search: '',
+  typeFilter: '',
   items: new Set(),
   lookup: new Set(),
 };

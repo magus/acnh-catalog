@@ -9,11 +9,18 @@ import useKeyboard from 'src/hooks/useKeyboard';
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
 import time from 'utils/time';
+import TYPES from './data/types.json';
 import ITEM_CATALOG from './data/item-variants-catalog.json';
 
 import { GlobalStyle } from './styles.js';
 
-const ITEM_CATALOG_BY_ID = keyByField(ITEM_CATALOG, 'id');
+const ITEM_CATALOG_BY_ID = Object.freeze(keyByField(ITEM_CATALOG, 'id'));
+const TYPE = Object.freeze(
+  TYPES.reduce((_, type) => {
+    _[type] = type;
+    return _;
+  }, {}),
+);
 
 function sortedSetList(set) {
   return (
@@ -223,6 +230,34 @@ function App() {
     <div className="container">
       <GlobalStyle />
 
+      <div className="sticky-header">
+        <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
+        <div className="input">
+          <input
+            className="transition-colors ease-in-out"
+            ref={refs.current.input}
+            onKeyDown={handleKeyDown(filteredResults[0])}
+            onChange={handleInputChange}
+            {...inputFocusEvents}
+            type="search"
+            autoComplete="off"
+            spellCheck="false"
+            placeholder="Search..."
+            autoCorrect="off"
+            autoCapitalize="none"
+            value={inputValue}
+          />
+
+          <button onClick={handleClear}>clear</button>
+        </div>
+
+        <div className="typeFilters">
+          {TYPES.map((type) => (
+            <button>{type}</button>
+          ))}
+        </div>
+      </div>
+
       <div className="item-container">
         {/* search results */}
         <div id="searchResults" className="items">
@@ -261,28 +296,6 @@ function App() {
         )}
 
         <div style={{ height: 1, width: 1, ...keyboardPaddingBottom }} />
-      </div>
-
-      <div className="sticky-header">
-        <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
-        <div className="input">
-          <input
-            className="transition-colors ease-in-out"
-            ref={refs.current.input}
-            onKeyDown={handleKeyDown(filteredResults[0])}
-            onChange={handleInputChange}
-            {...inputFocusEvents}
-            type="search"
-            autoComplete="off"
-            spellCheck="false"
-            placeholder="Search..."
-            autoCorrect="off"
-            autoCapitalize="none"
-            value={inputValue}
-          />
-
-          <button onClick={handleClear}>clear</button>
-        </div>
       </div>
     </div>
   );

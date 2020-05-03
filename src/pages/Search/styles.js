@@ -24,9 +24,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 20px 20px 0;
     background-color: var(--bg-color);
@@ -38,12 +35,11 @@ export const GlobalStyle = createGlobalStyle`
   .container {
     margin: 0;
     padding: 20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .item-container {
-    margin: 134px 0 0 0; /* 64 (icon) + 54 (input) + 16 (input margin) */
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
     position: relative;
     background-color: var(--bg-color);
     color: var(--font-color);
