@@ -35,10 +35,17 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          {/*
+
+          Defined in _app.js to prevent default viewport definition
+          from overriding this definition and breaking zoom behavior
+
           <meta
+            key="meta-viewport"
             name="viewport"
-            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
           />
+          */}
 
           {/*
           manifest.json provides metadata used when your web app is added to the
