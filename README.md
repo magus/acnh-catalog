@@ -39,16 +39,6 @@
 - Double check light and dark themes look ok
 - Google Analytics
 
-- use villagerdb dataset to check and enhance my dataset
-- https://github.com/jefflomacy/villagerdb/blob/master/data/items/3d-glasses.json
-  - A lot of items have variants that do not match villager db
-  - e.g. Nose Drip, Laptop, Floor Lamp
-
-  - script to automate collating datasets
-  WARN items in tsv but NOT in villagerdb
-  INFO items in villagerdb but NOT in tsv
-  run from a zip download to make it easy to reproduce dataset and update it if needed
-
 
 
 ## TODO
