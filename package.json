@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "now": "^18.0.0",
     "prettier": "^2.0.5"
   }
