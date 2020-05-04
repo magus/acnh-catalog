@@ -171,7 +171,7 @@ function App() {
     input: React.createRef(),
   });
 
-  const { input: inputValue, search, typeFilters, items, lookup } = state;
+  const { input: inputValue, search, placeholder, typeFilters, items, lookup } = state;
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
   const handleClearAll = () => dispatch('reset-items');
@@ -291,7 +291,7 @@ function App() {
             type="search"
             autoComplete="off"
             spellCheck="false"
-            placeholder="Search..."
+            placeholder={placeholder}
             autoCorrect="off"
             autoCapitalize="none"
             value={inputValue}

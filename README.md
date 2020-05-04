@@ -4,13 +4,9 @@
 
 - persist wishlist, recent searches to local storage
 
-- instead of search placeholder text put in a random item from the entire catalog
-
 - only show clear all button when more than 20 items are saved, show it at the BOTTOM of each catalog grouping and make it REQUIRE a confirmation with a DELAY before the confirm button is even PRESSABLE (super safe because it’s irreversible)
 
 - search bar
-  http://www.entypo.com/
-  images/icons has svgs
   move clear button into search bar as visually small x with large tap target X icon
   add search icon attached to bar (straight border between)
   return key should blur input (might be default) just try removing keydown handler, otherwise code explicitly

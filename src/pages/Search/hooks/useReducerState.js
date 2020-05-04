@@ -1,5 +1,9 @@
 import React from 'react';
 
+import ITEM_CATALOG from 'src/data/items.json';
+
+const randItem = () => ITEM_CATALOG[Math.floor(Math.random() * ITEM_CATALOG.length)];
+
 const LocalStorage = {
   Lookup: 'ACNHCatalogLookup--Lookup',
 };
@@ -45,6 +49,7 @@ const initialState = {
 
   input: '',
   search: '',
+  placeholder: 'Search...',
   typeFilters: new Set(),
   items: new Set(),
   lookup: new Set(),
@@ -64,6 +69,7 @@ function reducer(state, action) {
     case 'init-lookup': {
       return {
         ...state,
+        placeholder: randItem().name,
         lookup: action.initialLookup,
       };
     }
