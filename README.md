@@ -6,13 +6,6 @@
 
 - persist wishlist, recent searches to local storage
 
-- search optimization
-  - lig blue
-  does not match lighthouse (blue) properly
-  above not matching because blue is matching too many items and not under the 200 limit
-  increase limit to 1000 and observe query performance and compre against 200 limit
-
-
 - instead of search placeholder text put in a random item from the entire catalog
 
 - load source for image immediately to avoid any delay and give immediate results for cached images (otherwise it’s delayed by render > load > state > render cycle)

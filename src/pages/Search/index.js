@@ -61,7 +61,7 @@ function searchCatalog(fullQuery, typeFilters) {
         keys: ['name'],
         // don't return bad results
         threshold: -999,
-        limit: 200,
+        limit: 1000,
       })
       .forEach((result) => {
         if (!allResults[result.obj.id]) {
@@ -79,7 +79,7 @@ function searchCatalog(fullQuery, typeFilters) {
         keys: ['variant'],
         // don't return bad results
         threshold: -999,
-        limit: 200,
+        limit: 1000,
       })
       .forEach((result) => {
         if (!allResults[result.obj.id]) {
