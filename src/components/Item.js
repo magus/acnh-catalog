@@ -50,16 +50,10 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
 // Convert spaces to `-` and remove `.`
 // e.g. `3d glasses` becomes `3d-glasses`
 // e.g. `No. 3` becomes `No-3`
-const villagerDBUrlName = (str) => str.replace(/\s/g, '-').replace(/\.|\'|\(|\)/g, '');
 const getVillagerDBImage = (item) => {
-  const { name, variant } = item;
-
-  const sName = villagerDBUrlName(name);
-
-  if (variant) {
-    const sVariant = villagerDBUrlName(variant);
-    return `https://villagerdb.com/images/items/full/${sName}-vv-${sVariant}.png`;
+  if (item.variant_slug) {
+    return `https://villagerdb.com/images/items/full/${item.name_slug}-vv-${item.variant_slug}.png`;
   }
 
-  return `https://villagerdb.com/images/items/full/${sName}.png`;
+  return `https://villagerdb.com/images/items/full/${item.name_slug}.png`;
 };

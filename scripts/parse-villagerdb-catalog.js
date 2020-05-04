@@ -50,8 +50,10 @@ NH_ITEMS.map((_) => {
   const nhData = _.games.nh;
   item.orderable = nhData.orderable;
 
-  if (nhData.variations) {
-    Object.keys(nhData.variations).forEach((variant_slug) => {
+  // Single variation items should not be included
+  const variationSlugs = (nhData.variations && Object.keys(nhData.variations)) || [];
+  if (variationSlugs.length > 1) {
+    variationSlugs.forEach((variant_slug) => {
       const variant = nhData.variations[variant_slug];
       VILLAGER_DB_ITEMS.push({ ...item, variant_slug, variant });
     });

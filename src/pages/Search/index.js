@@ -11,8 +11,8 @@ import usePreventZoom from 'src/hooks/usePreventZoom';
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
 import time from 'utils/time';
-import TYPES from './data/types.json';
-import ITEM_CATALOG from './data/item-variants-catalog.json';
+import TYPES from 'src/data/categories.json';
+import ITEM_CATALOG from 'src/data/items.json';
 
 import { GlobalStyle } from './styles.js';
 
@@ -24,7 +24,7 @@ const TYPE = Object.freeze(
   }, {}),
 );
 
-const filterItem = (typeFilters) => (item) => (typeFilters.size ? typeFilters.has(item.type) : true);
+const filterItem = (typeFilters) => (item) => (typeFilters.size ? typeFilters.has(item.category) : true);
 
 function sortedSetList(set) {
   return (

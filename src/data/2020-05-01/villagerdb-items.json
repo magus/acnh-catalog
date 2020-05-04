@@ -21,8 +21,6 @@
     "category": "Tops",
     "name": "A Tee",
     "name_slug": "a-tee",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 3
   },
   {
@@ -231,8 +229,6 @@
     "name": "Acorn Pochette",
     "name_slug": "acorn-pochette",
     "orderable": false,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 27
   },
   {
@@ -320,8 +316,6 @@
     "category": "Dresses",
     "name": "Adventure Dress",
     "name_slug": "adventure-dress",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 38
   },
   {
@@ -1011,8 +1005,6 @@
     "name": "Ancient Administrator Hat",
     "name_slug": "ancient-administrator-hat",
     "orderable": false,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 125
   },
   {
@@ -1364,8 +1356,6 @@
     "name": "Annyeong Tee",
     "name_slug": "annyeong-tee",
     "orderable": true,
-    "variant_slug": "light-blue",
-    "variant": "Light blue",
     "id": 171
   },
   {
@@ -1854,8 +1844,6 @@
     "name": "Apple Dress",
     "name_slug": "apple-dress",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 228
   },
   {
@@ -1863,8 +1851,6 @@
     "name": "Apple Hat",
     "name_slug": "apple-hat",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 229
   },
   {
@@ -2513,8 +2499,6 @@
     "name": "Armor Shoes",
     "name_slug": "armor-shoes",
     "orderable": false,
-    "variant_slug": "gray",
-    "variant": "Gray",
     "id": 311
   },
   {
@@ -4356,8 +4340,6 @@
     "name": "Bamboo Hat",
     "name_slug": "bamboo-hat",
     "orderable": false,
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 529
   },
   {
@@ -4647,8 +4629,6 @@
     "name": "Bandage",
     "name_slug": "bandage",
     "orderable": true,
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 564
   },
   {
@@ -4816,8 +4796,6 @@
     "category": "Hats",
     "name": "Barrette",
     "name_slug": "barrette",
-    "variant_slug": "pink",
-    "variant": "Pink",
     "id": 586
   },
   {
@@ -5022,8 +5000,6 @@
     "name": "Basket Pack",
     "name_slug": "basket-pack",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 610
   },
   {
@@ -5728,8 +5704,6 @@
     "name": "Beak",
     "name_slug": "beak",
     "orderable": true,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 690
   },
   {
@@ -5804,8 +5778,6 @@
     "category": "Tops",
     "name": "Bear Tee",
     "name_slug": "bear-tee",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 699
   },
   {
@@ -6417,8 +6389,6 @@
     "name": "Big-star Tee",
     "name_slug": "big-star-tee",
     "orderable": true,
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 780
   },
   {
@@ -6542,8 +6512,6 @@
     "category": "Dresses",
     "name": "Bingata Dress",
     "name_slug": "bingata-dress",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 796
   },
   {
@@ -7583,8 +7551,6 @@
     "category": "Hats",
     "name": "Blue Rose Crown",
     "name_slug": "blue-rose-crown",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 935
   },
   {
@@ -8271,8 +8237,6 @@
     "category": "Dresses",
     "name": "Bone Costume",
     "name_slug": "bone-costume",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 1023
   },
   {
@@ -8351,8 +8315,6 @@
     "category": "Tops",
     "name": "Bone Tee",
     "name_slug": "bone-tee",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 1032
   },
   {
@@ -8378,8 +8340,6 @@
     "category": "Tops",
     "name": "Bonjour Tee",
     "name_slug": "bonjour-tee",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 1036
   },
   {
@@ -9600,16 +9560,12 @@
     "category": "Tops",
     "name": "Bug Aloha Shirt",
     "name_slug": "bug-aloha-shirt",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 1192
   },
   {
     "category": "Accessories",
     "name": "Bug Cage",
     "name_slug": "bug-cage",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 1193
   },
   {
@@ -10048,8 +10004,6 @@
     "name": "Bunny Day Bag",
     "name_slug": "bunny-day-bag",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 1243
   },
   {
@@ -10071,8 +10025,6 @@
     "name": "Bunny Day Crown",
     "name_slug": "bunny-day-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 1246
   },
   {
@@ -10406,8 +10358,6 @@
     "category": "Accessories",
     "name": "Butterfly Backpack",
     "name_slug": "butterfly-backpack",
-    "variant_slug": "pink",
-    "variant": "Pink",
     "id": 1288
   },
   {
@@ -10948,8 +10898,6 @@
     "category": "Tops",
     "name": "Camper Tee",
     "name_slug": "camper-tee",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 1357
   },
   {
@@ -11201,8 +11149,6 @@
     "name": "Canvas Backpack",
     "name_slug": "canvas-backpack",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 1388
   },
   {
@@ -11222,8 +11168,6 @@
     "category": "Hats",
     "name": "Captain's Hat",
     "name_slug": "captains-hat",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 1391
   },
   {
@@ -13404,8 +13348,6 @@
     "name": "Chef's Hat",
     "name_slug": "chefs-hat",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 1647
   },
   {
@@ -13541,8 +13483,6 @@
     "name": "Cherry-blossom Pochette",
     "name_slug": "cherry-blossom-pochette",
     "orderable": false,
-    "variant_slug": "pink",
-    "variant": "Pink",
     "id": 1664
   },
   {
@@ -13578,16 +13518,12 @@
     "name": "Cherry Dress",
     "name_slug": "cherry-dress",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 1669
   },
   {
     "category": "Hats",
     "name": "Cherry Hat",
     "name_slug": "cherry-hat",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 1670
   },
   {
@@ -13760,16 +13696,12 @@
     "name": "Chic Mum Crown",
     "name_slug": "chic-mum-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 1694
   },
   {
     "category": "Hats",
     "name": "Chic Rose Crown",
     "name_slug": "chic-rose-crown",
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 1695
   },
   {
@@ -13782,8 +13714,6 @@
     "category": "Hats",
     "name": "Chic Tulip Crown",
     "name_slug": "chic-tulip-crown",
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 1697
   },
   {
@@ -13835,8 +13765,6 @@
     "category": "Tops",
     "name": "Chick Tee",
     "name_slug": "chick-tee",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 1704
   },
   {
@@ -13931,8 +13859,6 @@
     "category": "Dresses",
     "name": "China Poblana",
     "name_slug": "china-poblana",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 1716
   },
   {
@@ -14017,8 +13943,6 @@
     "category": "Dresses",
     "name": "Chiton",
     "name_slug": "chiton",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 1726
   },
   {
@@ -14074,8 +13998,6 @@
     "category": "Tops",
     "name": "Ciao Tee",
     "name_slug": "ciao-tee",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 1735
   },
   {
@@ -14873,8 +14795,6 @@
     "name": "Coin Headpiece",
     "name_slug": "coin-headpiece",
     "orderable": false,
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 1838
   },
   {
@@ -15976,8 +15896,6 @@
     "category": "Bottoms",
     "name": "Comic Shorts",
     "name_slug": "comic-shorts",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 1968
   },
   {
@@ -16031,8 +15949,6 @@
     "category": "Hats",
     "name": "Composer's Wig",
     "name_slug": "composers-wig",
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 1976
   },
   {
@@ -16290,8 +16206,6 @@
     "name": "Cool Hyacinth Crown",
     "name_slug": "cool-hyacinth-crown",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2008
   },
   {
@@ -16312,8 +16226,6 @@
     "name": "Cool Pansy Crown",
     "name_slug": "cool-pansy-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 2011
   },
   {
@@ -16334,8 +16246,6 @@
     "name": "Cool Windflower Crown",
     "name_slug": "cool-windflower-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 2014
   },
   {
@@ -16689,8 +16599,6 @@
     "name": "Cosmos Crown",
     "name_slug": "cosmos-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 2057
   },
   {
@@ -17421,8 +17329,6 @@
     "name": "Crown",
     "name_slug": "crown",
     "orderable": true,
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 2146
   },
   {
@@ -17518,8 +17424,6 @@
     "name": "Cucumber Pack",
     "name_slug": "cucumber-pack",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 2159
   },
   {
@@ -17607,8 +17511,6 @@
     "name": "Curly Mustache",
     "name_slug": "curly-mustache",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 2170
   },
   {
@@ -17920,8 +17822,6 @@
     "name": "Cute Lily Crown",
     "name_slug": "cute-lily-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 2209
   },
   {
@@ -17994,8 +17894,6 @@
     "category": "Hats",
     "name": "Cute Rose Crown",
     "name_slug": "cute-rose-crown",
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 2218
   },
   {
@@ -18848,8 +18746,6 @@
     "category": "Tops",
     "name": "Dal Apron",
     "name_slug": "dal-apron",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2321
   },
   {
@@ -18857,16 +18753,12 @@
     "name": "Dal Backpack",
     "name_slug": "dal-backpack",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2322
   },
   {
     "category": "Hats",
     "name": "Dal Cap",
     "name_slug": "dal-cap",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2323
   },
   {
@@ -18874,8 +18766,6 @@
     "name": "Dal Eye Mask",
     "name_slug": "dal-eye-mask",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2324
   },
   {
@@ -18921,8 +18811,6 @@
     "category": "Tops",
     "name": "Dal Pilot Jacket",
     "name_slug": "dal-pilot-jacket",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 2330
   },
   {
@@ -18930,8 +18818,6 @@
     "name": "Dal Slippers",
     "name_slug": "dal-slippers",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2331
   },
   {
@@ -18939,8 +18825,6 @@
     "name": "Dal Sunglasses",
     "name_slug": "dal-sunglasses",
     "orderable": false,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 2332
   },
   {
@@ -18948,8 +18832,6 @@
     "name": "DAL Tee",
     "name_slug": "dal-tee",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 2333
   },
   {
@@ -19114,8 +18996,6 @@
     "category": "Tops",
     "name": "Danger Tank",
     "name_slug": "danger-tank",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 2354
   },
   {
@@ -19150,8 +19030,6 @@
     "category": "Hats",
     "name": "Dark Cosmos Crown",
     "name_slug": "dark-cosmos-crown",
-    "variant_slug": "dark-red",
-    "variant": "Dark red",
     "id": 2359
   },
   {
@@ -19165,8 +19043,6 @@
     "category": "Hats",
     "name": "Dark Lily Crown",
     "name_slug": "dark-lily-crown",
-    "variant_slug": "dark-red",
-    "variant": "Dark red",
     "id": 2361
   },
   {
@@ -19192,8 +19068,6 @@
     "category": "Hats",
     "name": "Dark Tulip Crown",
     "name_slug": "dark-tulip-crown",
-    "variant_slug": "dark-red",
-    "variant": "Dark red",
     "id": 2365
   },
   {
@@ -22400,8 +22274,6 @@
     "name": "Doctor's Mask",
     "name_slug": "doctors-mask",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 2748
   },
   {
@@ -23294,16 +23166,12 @@
     "category": "Tops",
     "name": "Dragon Jacket",
     "name_slug": "dragon-jacket",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 2856
   },
   {
     "category": "Dresses",
     "name": "Dragon Suit",
     "name_slug": "dragon-suit",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 2857
   },
   {
@@ -24399,8 +24267,6 @@
     "name": "Earth-egg Outfit",
     "name_slug": "earth-egg-outfit",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 2991
   },
   {
@@ -24408,8 +24274,6 @@
     "name": "Earth-egg Shell",
     "name_slug": "earth-egg-shell",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 2992
   },
   {
@@ -24417,8 +24281,6 @@
     "name": "Earth-egg Shoes",
     "name_slug": "earth-egg-shoes",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 2993
   },
   {
@@ -24847,8 +24709,6 @@
     "name": "Egg Party Dress",
     "name_slug": "egg-party-dress",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 3048
   },
   {
@@ -24856,8 +24716,6 @@
     "name": "Egg Party Hat",
     "name_slug": "egg-party-hat",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 3049
   },
   {
@@ -24865,8 +24723,6 @@
     "name": "Egg-sushi Costume",
     "name_slug": "egg-sushi-costume",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 3050
   },
   {
@@ -24874,8 +24730,6 @@
     "name": "Eggshell",
     "name_slug": "eggshell",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 3051
   },
   {
@@ -24888,8 +24742,6 @@
     "category": "Tops",
     "name": "Eight-ball Tee",
     "name_slug": "eight-ball-tee",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 3053
   },
   {
@@ -24937,8 +24789,6 @@
     "name": "Elder Mask",
     "name_slug": "elder-mask",
     "orderable": false,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 3059
   },
   {
@@ -26774,8 +26624,6 @@
     "name": "Eye Patch",
     "name_slug": "eye-patch",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 3284
   },
   {
@@ -26783,8 +26631,6 @@
     "name": "Facial Mask",
     "name_slug": "facial-mask",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 3285
   },
   {
@@ -26967,8 +26813,6 @@
     "name": "Fake Nose",
     "name_slug": "fake-nose",
     "orderable": true,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 3308
   },
   {
@@ -27917,8 +27761,6 @@
     "category": "Dresses",
     "name": "Festive Dress",
     "name_slug": "festive-dress",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 3422
   },
   {
@@ -28318,8 +28160,6 @@
     "category": "Tops",
     "name": "Fischerhemd",
     "name_slug": "fischerhemd",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 3472
   },
   {
@@ -28505,16 +28345,12 @@
     "name": "Fish Pochette",
     "name_slug": "fish-pochette",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 3493
   },
   {
     "category": "Tops",
     "name": "Fish-print Tee",
     "name_slug": "fish-print-tee",
-    "variant_slug": "avocado",
-    "variant": "Avocado",
     "id": 3494
   },
   {
@@ -28938,8 +28774,6 @@
     "category": "Tops",
     "name": "Five-ball Tee",
     "name_slug": "five-ball-tee",
-    "variant_slug": "orange",
-    "variant": "Orange",
     "id": 3543
   },
   {
@@ -28953,8 +28787,6 @@
     "category": "Tops",
     "name": "Flame Tee",
     "name_slug": "flame-tee",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 3545
   },
   {
@@ -30855,8 +30687,6 @@
     "category": "Dresses",
     "name": "Folk-dance Outfit",
     "name_slug": "folk-dance-outfit",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 3776
   },
   {
@@ -30888,8 +30718,6 @@
     "name": "Food Mess",
     "name_slug": "food-mess",
     "orderable": true,
-    "variant_slug": "pasta",
-    "variant": "Pasta",
     "id": 3780
   },
   {
@@ -31374,8 +31202,6 @@
     "category": "Tops",
     "name": "Four-ball Tee",
     "name_slug": "four-ball-tee",
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 3840
   },
   {
@@ -32044,8 +31870,6 @@
     "name": "Frog Tee",
     "name_slug": "frog-tee",
     "orderable": true,
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 3925
   },
   {
@@ -34614,8 +34438,6 @@
     "category": "Dresses",
     "name": "Gizzard-shad-sushi Costume",
     "name_slug": "gizzard-shad-sushi-costume",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 4246
   },
   {
@@ -34662,8 +34484,6 @@
     "name": "Glass-bottle Glasses",
     "name_slug": "glass-bottle-glasses",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 4252
   },
   {
@@ -34724,8 +34544,6 @@
     "category": "Hats",
     "name": "Glengarry",
     "name_slug": "glengarry",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 4259
   },
   {
@@ -34792,8 +34610,6 @@
     "name": "Goatee",
     "name_slug": "goatee",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 4268
   },
   {
@@ -34866,8 +34682,6 @@
     "category": "Shoes",
     "name": "Gold-armor Shoes",
     "name_slug": "gold-armor-shoes",
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 4277
   },
   {
@@ -34875,8 +34689,6 @@
     "name": "Gold Armor",
     "name_slug": "gold-armor",
     "orderable": false,
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 4278
   },
   {
@@ -34905,8 +34717,6 @@
     "name": "Gold Helmet",
     "name_slug": "gold-helmet",
     "orderable": false,
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 4282
   },
   {
@@ -34964,8 +34774,6 @@
     "name": "Gold Rose Crown",
     "name_slug": "gold-rose-crown",
     "orderable": false,
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 4290
   },
   {
@@ -35494,8 +35302,6 @@
     "category": "Dresses",
     "name": "Grape Dress",
     "name_slug": "grape-dress",
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 4363
   },
   {
@@ -35503,8 +35309,6 @@
     "name": "Grape Hat",
     "name_slug": "grape-hat",
     "orderable": true,
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 4364
   },
   {
@@ -35518,8 +35322,6 @@
     "name": "Grass Skirt",
     "name_slug": "grass-skirt",
     "orderable": false,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 4366
   },
   {
@@ -35708,8 +35510,6 @@
     "name": "Green Grass Skirt",
     "name_slug": "green-grass-skirt",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 4393
   },
   {
@@ -36114,8 +35914,6 @@
     "category": "Dresses",
     "name": "Hakama With Crest",
     "name_slug": "hakama-with-crest",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 4449
   },
   {
@@ -36146,16 +35944,12 @@
     "category": "Tops",
     "name": "Hallo Tee",
     "name_slug": "hallo-tee",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 4453
   },
   {
     "category": "Hats",
     "name": "Halo",
     "name_slug": "halo",
-    "variant_slug": "gold",
-    "variant": "Gold",
     "id": 4454
   },
   {
@@ -36647,8 +36441,6 @@
     "name": "Handlebar Mustache",
     "name_slug": "handlebar-mustache",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 4511
   },
   {
@@ -37107,8 +36899,6 @@
     "category": "Tops",
     "name": "Hawk Jacket",
     "name_slug": "hawk-jacket",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 4570
   },
   {
@@ -37214,8 +37004,6 @@
     "category": "Hats",
     "name": "Headkerchief",
     "name_slug": "headkerchief",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 4583
   },
   {
@@ -37557,8 +37345,6 @@
     "name": "Hello Tee",
     "name_slug": "hello-tee",
     "orderable": true,
-    "variant_slug": "gray",
-    "variant": "Gray",
     "id": 4624
   },
   {
@@ -37756,8 +37542,6 @@
     "name": "Hi Tee",
     "name_slug": "hi-tee",
     "orderable": true,
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 4649
   },
   {
@@ -37959,16 +37743,12 @@
     "name": "Hmd",
     "name_slug": "hmd",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 4674
   },
   {
     "category": "Hats",
     "name": "Hockey Mask",
     "name_slug": "hockey-mask",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 4675
   },
   {
@@ -37976,16 +37756,12 @@
     "name": "Hoi Tee",
     "name_slug": "hoi-tee",
     "orderable": true,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 4676
   },
   {
     "category": "Tops",
     "name": "Hola Tee",
     "name_slug": "hola-tee",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 4677
   },
   {
@@ -38348,16 +38124,12 @@
     "name": "Hot-dog Costume",
     "name_slug": "hot-dog-costume",
     "orderable": true,
-    "variant_slug": "mustard",
-    "variant": "Mustard",
     "id": 4725
   },
   {
     "category": "Hats",
     "name": "Hot-dog Hood",
     "name_slug": "hot-dog-hood",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 4726
   },
   {
@@ -38716,8 +38488,6 @@
     "category": "Hats",
     "name": "Hyacinth Crown",
     "name_slug": "hyacinth-crown",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 4768
   },
   {
@@ -38878,8 +38648,6 @@
     "category": "Dresses",
     "name": "Icy Dress",
     "name_slug": "icy-dress",
-    "variant_slug": "ice-blue",
-    "variant": "Ice blue",
     "id": 4790
   },
   {
@@ -39102,8 +38870,6 @@
     "category": "Hats",
     "name": "Imitation Cow Skull",
     "name_slug": "imitation-cow-skull",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 4817
   },
   {
@@ -39647,8 +39413,6 @@
     "category": "Dresses",
     "name": "Iron Armor",
     "name_slug": "iron-armor",
-    "variant_slug": "gray",
-    "variant": "Gray",
     "id": 4882
   },
   {
@@ -41399,8 +41163,6 @@
     "category": "Dresses",
     "name": "Junihitoe Kimono",
     "name_slug": "junihitoe-kimono",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 5094
   },
   {
@@ -42314,16 +42076,12 @@
     "name": "Kiwi Dress",
     "name_slug": "kiwi-dress",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5214
   },
   {
     "category": "Hats",
     "name": "Kiwi Hat",
     "name_slug": "kiwi-hat",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5215
   },
   {
@@ -42818,8 +42576,6 @@
     "name": "Knight's Helmet",
     "name_slug": "knights-helmet",
     "orderable": false,
-    "variant_slug": "gray",
-    "variant": "Gray",
     "id": 5285
   },
   {
@@ -43019,8 +42775,6 @@
     "name": "Knitted-grass Backpack",
     "name_slug": "knitted-grass-backpack",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5309
   },
   {
@@ -43065,8 +42819,6 @@
     "name": "Konnichiwa Tee",
     "name_slug": "konnichiwa-tee",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5316
   },
   {
@@ -43150,8 +42902,6 @@
     "category": "Shoes",
     "name": "Kung-fu Shoes",
     "name_slug": "kung-fu-shoes",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 5326
   },
   {
@@ -45171,8 +44921,6 @@
     "name": "Leaf-egg Outfit",
     "name_slug": "leaf-egg-outfit",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5565
   },
   {
@@ -45180,8 +44928,6 @@
     "name": "Leaf-egg Shell",
     "name_slug": "leaf-egg-shell",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5566
   },
   {
@@ -45189,8 +44935,6 @@
     "name": "Leaf-egg Shoes",
     "name_slug": "leaf-egg-shoes",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5567
   },
   {
@@ -45205,8 +44949,6 @@
     "name": "Leaf Mask",
     "name_slug": "leaf-mask",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5569
   },
   {
@@ -45257,8 +44999,6 @@
     "name": "Leaf",
     "name_slug": "leaf",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5575
   },
   {
@@ -45855,8 +45595,6 @@
     "name": "Lily Crown",
     "name_slug": "lily-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 5650
   },
   {
@@ -45985,8 +45723,6 @@
     "category": "Dresses",
     "name": "Lively Plaid Dress",
     "name_slug": "lively-plaid-dress",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 5667
   },
   {
@@ -47481,8 +47217,6 @@
     "name": "Log Pack",
     "name_slug": "log-pack",
     "orderable": false,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 5844
   },
   {
@@ -48602,8 +48336,6 @@
     "category": "Hats",
     "name": "Lovely Cosmos Crown",
     "name_slug": "lovely-cosmos-crown",
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 5976
   },
   {
@@ -50226,8 +49958,6 @@
     "name": "Maple-leaf Pochette",
     "name_slug": "maple-leaf-pochette",
     "orderable": false,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 6172
   },
   {
@@ -50654,8 +50384,6 @@
     "category": "Hats",
     "name": "Matronly Bun",
     "name_slug": "matronly-bun",
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 6227
   },
   {
@@ -51240,8 +50968,6 @@
     "name": "Milkmaid Hat",
     "name_slug": "milkmaid-hat",
     "orderable": false,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6300
   },
   {
@@ -51477,8 +51203,6 @@
     "category": "Tops",
     "name": "Misty Tee",
     "name_slug": "misty-tee",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 6331
   },
   {
@@ -52035,16 +51759,12 @@
     "name": "Mohawk Wig",
     "name_slug": "mohawk-wig",
     "orderable": true,
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 6398
   },
   {
     "category": "Dresses",
     "name": "Moldy Dress",
     "name_slug": "moldy-dress",
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 6399
   },
   {
@@ -53012,8 +52732,6 @@
     "category": "Tops",
     "name": "Morning Coat",
     "name_slug": "morning-coat",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 6520
   },
   {
@@ -53906,8 +53624,6 @@
     "category": "Hats",
     "name": "Mum Crown",
     "name_slug": "mum-crown",
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 6626
   },
   {
@@ -53948,16 +53664,12 @@
     "category": "Hats",
     "name": "Mummy Mask",
     "name_slug": "mummy-mask",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6631
   },
   {
     "category": "Dresses",
     "name": "Mummy Outfit",
     "name_slug": "mummy-outfit",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6632
   },
   {
@@ -54468,8 +54180,6 @@
     "category": "Tops",
     "name": "Mvp Tee",
     "name_slug": "mvp-tee",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6691
   },
   {
@@ -55108,8 +54818,6 @@
     "category": "Tops",
     "name": "Ni Hao Tee",
     "name_slug": "ni-hao-tee",
-    "variant_slug": "pink",
-    "variant": "Pink",
     "id": 6770
   },
   {
@@ -55149,8 +54857,6 @@
     "name": "Night-vision Goggles",
     "name_slug": "night-vision-goggles",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 6776
   },
   {
@@ -55202,8 +54908,6 @@
     "category": "Tops",
     "name": "Nine-ball Tee",
     "name_slug": "nine-ball-tee",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 6782
   },
   {
@@ -55357,8 +55061,6 @@
     "name": "No. 1 Shirt",
     "name_slug": "no-1-shirt",
     "orderable": true,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 6801
   },
   {
@@ -55366,8 +55068,6 @@
     "name": "No. 2 Shirt",
     "name_slug": "no-2-shirt",
     "orderable": true,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 6802
   },
   {
@@ -55375,8 +55075,6 @@
     "name": "No. 3 Shirt",
     "name_slug": "no-3-shirt",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 6803
   },
   {
@@ -55384,8 +55082,6 @@
     "name": "No. 4 Shirt",
     "name_slug": "no-4-shirt",
     "orderable": true,
-    "variant_slug": "pink",
-    "variant": "Pink",
     "id": 6804
   },
   {
@@ -55729,8 +55425,6 @@
     "name": "Noh Mask",
     "name_slug": "noh-mask",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6845
   },
   {
@@ -55738,8 +55432,6 @@
     "name": "Nook Inc. Aloha Shirt",
     "name_slug": "nook-inc-aloha-shirt",
     "orderable": true,
-    "variant_slug": "ivory",
-    "variant": "Ivory",
     "id": 6846
   },
   {
@@ -55747,8 +55439,6 @@
     "name": "Nook Inc. Bandanna",
     "name_slug": "nook-inc-bandanna",
     "orderable": true,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 6847
   },
   {
@@ -55756,8 +55446,6 @@
     "name": "Nook Inc. Blouson",
     "name_slug": "nook-inc-blouson",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 6848
   },
   {
@@ -55772,8 +55460,6 @@
     "name": "Nook Inc. Cap",
     "name_slug": "nook-inc-cap",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 6850
   },
   {
@@ -55781,8 +55467,6 @@
     "name": "Nook Inc. Eye Mask",
     "name_slug": "nook-inc-eye-mask",
     "orderable": true,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 6851
   },
   {
@@ -55797,8 +55481,6 @@
     "name": "Nook Inc. Knapsack",
     "name_slug": "nook-inc-knapsack",
     "orderable": true,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 6853
   },
   {
@@ -55820,8 +55502,6 @@
     "name": "Nook Inc. Slippers",
     "name_slug": "nook-inc-slippers",
     "orderable": false,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6856
   },
   {
@@ -55829,8 +55509,6 @@
     "name": "Nook Inc. Socks",
     "name_slug": "nook-inc-socks",
     "orderable": false,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 6857
   },
   {
@@ -55838,8 +55516,6 @@
     "name": "Nook Inc. Tee",
     "name_slug": "nook-inc-tee",
     "orderable": true,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 6858
   },
   {
@@ -55942,8 +55618,6 @@
     "name": "Nose Drip",
     "name_slug": "nose-drip",
     "orderable": true,
-    "variant_slug": "light-blue",
-    "variant": "Light blue",
     "id": 6872
   },
   {
@@ -56472,16 +56146,12 @@
     "category": "Hats",
     "name": "Ok Motors Cap",
     "name_slug": "ok-motors-cap",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6937
   },
   {
     "category": "Tops",
     "name": "Ok Motors Jacket",
     "name_slug": "ok-motors-jacket",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 6938
   },
   {
@@ -56724,8 +56394,6 @@
     "category": "Tops",
     "name": "One-ball Tee",
     "name_slug": "one-ball-tee",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 6971
   },
   {
@@ -56827,8 +56495,6 @@
     "category": "Dresses",
     "name": "Orange Dress",
     "name_slug": "orange-dress",
-    "variant_slug": "orange",
-    "variant": "Orange",
     "id": 6985
   },
   {
@@ -56854,8 +56520,6 @@
     "name": "Orange Hat",
     "name_slug": "orange-hat",
     "orderable": false,
-    "variant_slug": "orange",
-    "variant": "Orange",
     "id": 6988
   },
   {
@@ -59193,8 +58857,6 @@
     "category": "Dresses",
     "name": "Palatial Tank Dress",
     "name_slug": "palatial-tank-dress",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 7259
   },
   {
@@ -59287,8 +58949,6 @@
     "category": "Hats",
     "name": "Pansy Crown",
     "name_slug": "pansy-crown",
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 7272
   },
   {
@@ -59574,8 +59234,6 @@
     "category": "Hats",
     "name": "Paper Bag",
     "name_slug": "paper-bag",
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 7308
   },
   {
@@ -60454,16 +60112,12 @@
     "name": "Peach Dress",
     "name_slug": "peach-dress",
     "orderable": false,
-    "variant_slug": "peach",
-    "variant": "Peach",
     "id": 7416
   },
   {
     "category": "Hats",
     "name": "Peach Hat",
     "name_slug": "peach-hat",
-    "variant_slug": "peach",
-    "variant": "Peach",
     "id": 7417
   },
   {
@@ -60635,8 +60289,6 @@
     "name": "Pear Dress",
     "name_slug": "pear-dress",
     "orderable": false,
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 7440
   },
   {
@@ -60644,8 +60296,6 @@
     "name": "Pear Hat",
     "name_slug": "pear-hat",
     "orderable": false,
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 7441
   },
   {
@@ -60698,8 +60348,6 @@
     "category": "Bottoms",
     "name": "Pearl Skirt",
     "name_slug": "pearl-skirt",
-    "variant_slug": "navy-blue",
-    "variant": "Navy blue",
     "id": 7448
   },
   {
@@ -61140,8 +60788,6 @@
     "category": "Dresses",
     "name": "Pharaoh's Outfit",
     "name_slug": "pharaohs-outfit",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 7503
   },
   {
@@ -61419,8 +61065,6 @@
     "name": "Pig Nose",
     "name_slug": "pig-nose",
     "orderable": true,
-    "variant_slug": "pink",
-    "variant": "Pink",
     "id": 7538
   },
   {
@@ -61428,8 +61072,6 @@
     "name": "Pigtail",
     "name_slug": "pigtail",
     "orderable": false,
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 7539
   },
   {
@@ -61825,16 +61467,12 @@
     "category": "Hats",
     "name": "Pineapple Cap",
     "name_slug": "pineapple-cap",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 7588
   },
   {
     "category": "Dresses",
     "name": "Pineapple Dress",
     "name_slug": "pineapple-dress",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 7589
   },
   {
@@ -62810,8 +62448,6 @@
     "name": "Pleather Mask",
     "name_slug": "pleather-mask",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 7712
   },
   {
@@ -63312,8 +62948,6 @@
     "category": "Hats",
     "name": "Police Cap",
     "name_slug": "police-cap",
-    "variant_slug": "navy-blue",
-    "variant": "Navy blue",
     "id": 7774
   },
   {
@@ -63588,8 +63222,6 @@
     "category": "Hats",
     "name": "Pompadour Wig",
     "name_slug": "pompadour-wig",
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 7808
   },
   {
@@ -64239,8 +63871,6 @@
     "name": "Post-op Patch",
     "name_slug": "post-op-patch",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 7886
   },
   {
@@ -64772,16 +64402,12 @@
     "name": "Privacy Mask",
     "name_slug": "privacy-mask",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 7950
   },
   {
     "category": "Tops",
     "name": "Privét Tee",
     "name_slug": "privet-tee",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 7951
   },
   {
@@ -65296,8 +64922,6 @@
     "category": "Hats",
     "name": "Purple Hyacinth Crown",
     "name_slug": "purple-hyacinth-crown",
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 8016
   },
   {
@@ -65332,8 +64956,6 @@
     "category": "Hats",
     "name": "Purple Pansy Crown",
     "name_slug": "purple-pansy-crown",
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 8021
   },
   {
@@ -65399,8 +65021,6 @@
     "category": "Hats",
     "name": "Purple Windflower Crown",
     "name_slug": "purple-windflower-crown",
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 8031
   },
   {
@@ -65594,8 +65214,6 @@
     "name": "Rabbit Tee",
     "name_slug": "rabbit-tee",
     "orderable": true,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 8057
   },
   {
@@ -67088,8 +66706,6 @@
     "name": "Recycled Boots",
     "name_slug": "recycled-boots",
     "orderable": false,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 8236
   },
   {
@@ -67519,8 +67135,6 @@
     "category": "Accessories",
     "name": "Reflector",
     "name_slug": "reflector",
-    "variant_slug": "gray",
-    "variant": "Gray",
     "id": 8297
   },
   {
@@ -70257,8 +69871,6 @@
     "name": "Rose Crown",
     "name_slug": "rose-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 8625
   },
   {
@@ -70545,8 +70157,6 @@
     "category": "Accessories",
     "name": "Rounded Beard",
     "name_slug": "rounded-beard",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 8661
   },
   {
@@ -70578,16 +70188,12 @@
     "name": "Royal Crown",
     "name_slug": "royal-crown",
     "orderable": true,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 8666
   },
   {
     "category": "Tops",
     "name": "Royal Shirt",
     "name_slug": "royal-shirt",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 8667
   },
   {
@@ -71590,8 +71196,6 @@
     "name": "Samurai Wig",
     "name_slug": "samurai-wig",
     "orderable": false,
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 8792
   },
   {
@@ -72226,8 +71830,6 @@
     "category": "Dresses",
     "name": "School Smock",
     "name_slug": "school-smock",
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 8869
   },
   {
@@ -72420,8 +72022,6 @@
     "category": "Dresses",
     "name": "Security Uniform",
     "name_slug": "security-uniform",
-    "variant_slug": "navy-blue",
-    "variant": "Navy blue",
     "id": 8897
   },
   {
@@ -72735,8 +72335,6 @@
     "name": "Seven-ball Tee",
     "name_slug": "seven-ball-tee",
     "orderable": true,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 8934
   },
   {
@@ -73021,8 +72619,6 @@
     "category": "Accessories",
     "name": "Shattered Glasses",
     "name_slug": "shattered-glasses",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 8967
   },
   {
@@ -73713,8 +73309,6 @@
     "name": "Shellfish Pochette",
     "name_slug": "shellfish-pochette",
     "orderable": false,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9047
   },
   {
@@ -74975,8 +74569,6 @@
     "category": "Hats",
     "name": "Simple Mum Crown",
     "name_slug": "simple-mum-crown",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 9200
   },
   {
@@ -75728,8 +75320,6 @@
     "category": "Tops",
     "name": "Six-ball Tee",
     "name_slug": "six-ball-tee",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 9296
   },
   {
@@ -75781,8 +75371,6 @@
     "category": "Hats",
     "name": "Skeleton Hood",
     "name_slug": "skeleton-hood",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9302
   },
   {
@@ -76153,8 +75741,6 @@
     "name": "Sky-egg Outfit",
     "name_slug": "sky-egg-outfit",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 9348
   },
   {
@@ -76162,8 +75748,6 @@
     "name": "Sky-egg Shell",
     "name_slug": "sky-egg-shell",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 9349
   },
   {
@@ -76171,8 +75755,6 @@
     "name": "Sky-egg Shoes",
     "name_slug": "sky-egg-shoes",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 9350
   },
   {
@@ -77200,8 +76782,6 @@
     "name": "Snowflake Pochette",
     "name_slug": "snowflake-pochette",
     "orderable": false,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9475
   },
   {
@@ -77255,8 +76835,6 @@
     "category": "Hats",
     "name": "Snowperson Head",
     "name_slug": "snowperson-head",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9483
   },
   {
@@ -77926,8 +77504,6 @@
     "category": "Shoes",
     "name": "Space Boots",
     "name_slug": "space-boots",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9563
   },
   {
@@ -77935,8 +77511,6 @@
     "name": "Space Helmet",
     "name_slug": "space-helmet",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9564
   },
   {
@@ -77974,8 +77548,6 @@
     "category": "Dresses",
     "name": "Space Suit",
     "name_slug": "space-suit",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9569
   },
   {
@@ -78192,8 +77764,6 @@
     "category": "Tops",
     "name": "Spider-web Tee",
     "name_slug": "spider-web-tee",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 9597
   },
   {
@@ -78987,8 +78557,6 @@
     "category": "Hats",
     "name": "Stagehand Hat",
     "name_slug": "stagehand-hat",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 9693
   },
   {
@@ -79615,8 +79183,6 @@
     "category": "Hats",
     "name": "Star Head",
     "name_slug": "star-head",
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 9765
   },
   {
@@ -79696,8 +79262,6 @@
     "name": "Star Pochette",
     "name_slug": "star-pochette",
     "orderable": false,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 9774
   },
   {
@@ -79831,8 +79395,6 @@
     "category": "Tops",
     "name": "Starry Tank",
     "name_slug": "starry-tank",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9790
   },
   {
@@ -80076,8 +79638,6 @@
     "name": "Sticky Rice",
     "name_slug": "sticky-rice",
     "orderable": true,
-    "variant_slug": "white",
-    "variant": "White",
     "id": 9822
   },
   {
@@ -80192,8 +79752,6 @@
     "name": "Stone-egg Outfit",
     "name_slug": "stone-egg-outfit",
     "orderable": false,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 9837
   },
   {
@@ -80201,8 +79759,6 @@
     "name": "Stone-egg Shell",
     "name_slug": "stone-egg-shell",
     "orderable": false,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 9838
   },
   {
@@ -80210,8 +79766,6 @@
     "name": "Stone-egg Shoes",
     "name_slug": "stone-egg-shoes",
     "orderable": false,
-    "variant_slug": "yellow",
-    "variant": "Yellow",
     "id": 9839
   },
   {
@@ -80531,8 +80085,6 @@
     "name": "Straw Pochette",
     "name_slug": "straw-pochette",
     "orderable": true,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 9877
   },
   {
@@ -80540,8 +80092,6 @@
     "name": "Straw Umbrella Hat",
     "name_slug": "straw-umbrella-hat",
     "orderable": false,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 9878
   },
   {
@@ -80562,8 +80112,6 @@
     "category": "Dresses",
     "name": "Strawberry Dress",
     "name_slug": "strawberry-dress",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 9881
   },
   {
@@ -80571,8 +80119,6 @@
     "name": "Strawberry Hat",
     "name_slug": "strawberry-hat",
     "orderable": true,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 9882
   },
   {
@@ -81802,8 +81348,6 @@
     "name": "Superhero Mask",
     "name_slug": "superhero-mask",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 10030
   },
   {
@@ -83147,8 +82691,6 @@
     "name": "Tackle Bag",
     "name_slug": "tackle-bag",
     "orderable": false,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 10193
   },
   {
@@ -84523,8 +84065,6 @@
     "name": "Thief's Costume",
     "name_slug": "thiefs-costume",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 10365
   },
   {
@@ -84567,8 +84107,6 @@
     "category": "Tops",
     "name": "Three-ball Tee",
     "name_slug": "three-ball-tee",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 10370
   },
   {
@@ -85236,8 +84774,6 @@
     "category": "Tops",
     "name": "Tie-dye Shirt",
     "name_slug": "tie-dye-shirt",
-    "variant_slug": "rainbow",
-    "variant": "Rainbow",
     "id": 10448
   },
   {
@@ -85407,8 +84943,6 @@
     "category": "Tops",
     "name": "Tiger Jacket",
     "name_slug": "tiger-jacket",
-    "variant_slug": "green",
-    "variant": "Green",
     "id": 10470
   },
   {
@@ -85926,8 +85460,6 @@
     "name": "Tool Bag",
     "name_slug": "tool-bag",
     "orderable": true,
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 10533
   },
   {
@@ -86557,8 +86089,6 @@
     "name": "Traditional Straw Coat",
     "name_slug": "traditional-straw-coat",
     "orderable": false,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 10609
   },
   {
@@ -86884,8 +86414,6 @@
     "category": "Tops",
     "name": "Tree Sweater",
     "name_slug": "tree-sweater",
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 10648
   },
   {
@@ -87531,8 +87059,6 @@
     "name": "Tulip Crown",
     "name_slug": "tulip-crown",
     "orderable": false,
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 10726
   },
   {
@@ -87610,8 +87136,6 @@
     "category": "Dresses",
     "name": "Tuna-sushi Costume",
     "name_slug": "tuna-sushi-costume",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 10736
   },
   {
@@ -88015,8 +87539,6 @@
     "name": "Two-ball Tee",
     "name_slug": "two-ball-tee",
     "orderable": true,
-    "variant_slug": "blue",
-    "variant": "Blue",
     "id": 10785
   },
   {
@@ -89192,8 +88714,6 @@
     "name": "Vest With Binoculars",
     "name_slug": "vest-with-binoculars",
     "orderable": true,
-    "variant_slug": "beige",
-    "variant": "Beige",
     "id": 10923
   },
   {
@@ -89661,32 +89181,24 @@
     "category": "Shoes",
     "name": "Visual-punk Boots",
     "name_slug": "visual-punk-boots",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 10980
   },
   {
     "category": "Dresses",
     "name": "Visual-punk Dress",
     "name_slug": "visual-punk-dress",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 10981
   },
   {
     "category": "Dresses",
     "name": "Visual-punk Outfit",
     "name_slug": "visual-punk-outfit",
-    "variant_slug": "black",
-    "variant": "Black",
     "id": 10982
   },
   {
     "category": "Hats",
     "name": "Visual-punk Wig",
     "name_slug": "visual-punk-wig",
-    "variant_slug": "hair-color",
-    "variant": "Hair Color",
     "id": 10983
   },
   {
@@ -90553,8 +90065,6 @@
     "name": "Water-egg Outfit",
     "name_slug": "water-egg-outfit",
     "orderable": false,
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 11088
   },
   {
@@ -90562,8 +90072,6 @@
     "name": "Water-egg Shell",
     "name_slug": "water-egg-shell",
     "orderable": false,
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 11089
   },
   {
@@ -90571,8 +90079,6 @@
     "name": "Water-egg Shoes",
     "name_slug": "water-egg-shoes",
     "orderable": false,
-    "variant_slug": "purple",
-    "variant": "Purple",
     "id": 11090
   },
   {
@@ -90844,16 +90350,12 @@
     "category": "Dresses",
     "name": "Watermelon Dress",
     "name_slug": "watermelon-dress",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 11121
   },
   {
     "category": "Hats",
     "name": "Watermelon Hat",
     "name_slug": "watermelon-hat",
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 11122
   },
   {
@@ -90951,8 +90453,6 @@
     "name": "Welding Mask",
     "name_slug": "welding-mask",
     "orderable": true,
-    "variant_slug": "red",
-    "variant": "Red",
     "id": 11135
   },
   {
@@ -90985,8 +90485,6 @@
     "name": "Western Pants",
     "name_slug": "western-pants",
     "orderable": true,
-    "variant_slug": "brown",
-    "variant": "Brown",
     "id": 11140
   },
   {
@@ -91663,8 +91161,6 @@
     "category": "Hats",
     "name": "Windflower Crown",
     "name_slug": "windflower-crown",
-    "variant_slug": "colorful",
-    "variant": "Colorful",
     "id": 11228
   },
   {
@@ -91900,8 +91396,6 @@
     "name": "Wood-egg Outfit",
     "name_slug": "wood-egg-outfit",
     "orderable": false,
-    "variant_slug": "orange",
-    "variant": "Orange",
     "id": 11257
   },
   {
@@ -91909,8 +91403,6 @@
     "name": "Wood-egg Shell",
     "name_slug": "wood-egg-shell",
     "orderable": false,
-    "variant_slug": "orange",
-    "variant": "Orange",
     "id": 11258
   },
   {
@@ -91918,8 +91410,6 @@
     "name": "Wood-egg Shoes",
     "name_slug": "wood-egg-shoes",
     "orderable": false,
-    "variant_slug": "orange",
-    "variant": "Orange",
     "id": 11259
   },
   {
@@ -96003,8 +95493,6 @@
     "category": "Shoes",
     "name": "Zap Boots",
     "name_slug": "zap-boots",
-    "variant_slug": "white",
-    "variant": "White",
     "id": 11729
   },
   {
@@ -96408,8 +95896,6 @@
     "name": "Zigzag Shirt",
     "name_slug": "zigzag-shirt",
     "orderable": true,
-    "variant_slug": "red-green-gold",
-    "variant": "Red, green & gold",
     "id": 11778
   },
   {
