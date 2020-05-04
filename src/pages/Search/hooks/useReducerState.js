@@ -1,12 +1,43 @@
 import React from 'react';
 
 import ITEM_CATALOG from 'src/data/items.json';
+import keyMirror from 'src/utils/keyMirror';
 
 const randItem = () => ITEM_CATALOG[Math.floor(Math.random() * ITEM_CATALOG.length)];
 
-const LocalStorage = {
-  Lookup: 'ACNHCatalogLookup--Lookup',
+const LOCAL_STORAGE_KEY = 'ACNHCatalog--State';
+
+const VERSION = keyMirror({
+  v1: true,
+  v2: true,
+});
+
+const MigrationStrategy = {
+  // no-op this is the first version
+  // once a v2 releases, v1 will read in a state and mutate it to v2, if necessary
+  // etc. etc.
+  [VERSION.v1]: (storedState) => {
+    return {
+      lookup: new Set(storedState.lookup),
+    };
+  },
+  [VERSION.v2]: (state) => state,
 };
+
+// All stored state must have a version which maps to storage key
+// We only need to maintain one version of this function since all
+// versions will write only the latest version to the store.
+// Migration strategies above will enforce all previous state can
+// migrate to the latest version properly.
+function buildStoredState(state) {
+  const storedState = {
+    version: VERSION.v1,
+  };
+
+  storedState.lookup = [...state.lookup];
+
+  return JSON.stringify(storedState);
+}
 
 export default function useReducerState() {
   const [state, _dispatch] = React.useReducer(reducer, initialState);
@@ -14,18 +45,30 @@ export default function useReducerState() {
 
   // initialize lookup from local storage
   React.useEffect(() => {
-    console.debug('reading', `localStorage[${LocalStorage.Lookup}]`);
+    console.debug('reading', `localStorage[${LOCAL_STORAGE_KEY}]`);
     try {
-      const parsedLookup = JSON.parse(localStorage.getItem(LocalStorage.Lookup));
-      if (parsedLookup.length) {
-        console.debug('restoring lookup');
-        const initialLookup = new Set(parsedLookup);
-        dispatch('init-lookup', { initialLookup });
+      const storedRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
+      if (!storedRaw) {
+        console.debug('No stored data');
       } else {
-        console.debug('no lookup found');
+        const storedState = JSON.parse(storedRaw);
+        if (!storedState) {
+          console.debug('Invalid stored data');
+        } else {
+          const migrationStrategy = MigrationStrategy[storedState.version];
+          if (!migrationStrategy) {
+            console.debug('Missing migration strategy', storedState.version);
+          } else {
+            const migratedState = migrationStrategy(storedState);
+            console.debug(storedState.version, 'state migrated successfully');
+
+            // dispatch state with init-lookup
+            dispatch('init-lookup', { migratedState });
+          }
+        }
       }
     } catch (err) {
-      console.error('Unable to initialize lookup');
+      console.debug('Failed to initialize from localStorage', err);
     }
   }, []);
 
@@ -34,8 +77,8 @@ export default function useReducerState() {
     // use the init flag to detect whether this is an initial state
     // we shouldn't ever write the initial state (may happen accidentally)
     if (state.init) {
-      console.debug('writing', `localStorage[${LocalStorage.Lookup}]`);
-      localStorage.setItem(LocalStorage.Lookup, JSON.stringify([...state.lookup]));
+      console.debug('writing', `localStorage[${LOCAL_STORAGE_KEY}]`);
+      localStorage.setItem(LOCAL_STORAGE_KEY, buildStoredState(state));
     }
   });
 
@@ -61,6 +104,7 @@ function resetInputSearch(nextState) {
   nextState.input = initialState.input;
   nextState.search = initialState.search;
 }
+
 function reducer(state, action) {
   const before = { ...state };
   console.debug('useReducerState', { action, before });
@@ -69,8 +113,8 @@ function reducer(state, action) {
     case 'init-lookup': {
       return {
         ...state,
+        ...action.migratedState,
         placeholder: randItem().name,
-        lookup: action.initialLookup,
       };
     }
 

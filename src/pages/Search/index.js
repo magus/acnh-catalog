@@ -239,7 +239,7 @@ function App() {
         })}
       </div>
     );
-  }, [filteredResults]);
+  }, [lookup, filteredResults]);
 
   const pendingItems = React.useMemo(() => {
     const filteredItems = sortedSetList(items).filter(filterItem(typeFilters));
