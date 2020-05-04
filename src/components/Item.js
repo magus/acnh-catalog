@@ -2,10 +2,11 @@ import React from 'react';
 
 import Text from 'src/components/Text';
 import Image from 'src/components/Image';
+import preventBubble from 'src/utils/preventBubble';
 
 export default function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
   const deleteButton = (pending || isCatalog) && (
-    <button onClick={onDelete}>
+    <button onClick={preventBubble(onDelete)}>
       <div className="item-actions--delete" role="img" aria-label="delete">
         ❌
       </div>
@@ -13,7 +14,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
   );
 
   const buyButton = (pending || !isCatalog) && (
-    <button className="no-padding" onClick={onBuy}>
+    <button className="no-padding" onClick={preventBubble(onBuy)}>
       <span role="img" aria-label="buy" className="item-actions--buy" />
     </button>
   );
