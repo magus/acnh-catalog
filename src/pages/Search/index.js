@@ -24,7 +24,7 @@ const TYPE = Object.freeze(
   }, {}),
 );
 
-const filterItem = (typeFilters) => (item) => (typeFilters.size ? typeFilters.has(item.category) : true);
+const filterItem = (filters) => (item) => (filters.size ? filters.has(item.category) : true);
 
 function sortedSetList(set) {
   return (
@@ -47,10 +47,10 @@ function sortedSetList(set) {
   );
 }
 
-function searchCatalog(fullQuery, typeFilters) {
+function searchCatalog(fullQuery, filters) {
   const queries = fullQuery.split(/\s/);
 
-  const filteredCatalog = typeFilters.size === 0 ? ITEM_CATALOG : ITEM_CATALOG.filter(filterItem(typeFilters));
+  const filteredCatalog = filters.size === 0 ? ITEM_CATALOG : ITEM_CATALOG.filter(filterItem(filters));
 
   // search against substrings
   const allResults = {};
@@ -171,15 +171,15 @@ function App() {
     input: React.createRef(),
   });
 
-  const { input: inputValue, search, placeholder, typeFilters, items, lookup } = state;
+  const { input: inputValue, search, placeholder, filters, wishlist, catalog } = state;
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
-  const handleClearAll = () => dispatch('reset-items');
-  const addItem = (id) => () => dispatch('+item', { id });
-  const buyItem = (id) => () => dispatch('buy-item', { id });
-  const deleteItem = (id) => () => dispatch('-item', { id });
-  const deleteCatalog = (id) => () => dispatch('-lookup', { id });
-  const onFilterClick = (filterType) => () => dispatch('filter', { filterType });
+  const handleClearAll = () => dispatch('reset-wishlist');
+  const addItem = (id) => () => dispatch('+wishlist', { id });
+  const deleteItem = (id) => () => dispatch('-wishlist', { id });
+  const buyItem = (id) => () => dispatch('+catalog', { id });
+  const deleteCatalog = (id) => () => dispatch('-catalog', { id });
+  const onFilterClick = (filter) => () => dispatch('filter', { filter });
 
   const handleKeyDown = (firstMatch) => (e) => {
     if (e.key === 'Enter' && firstMatch) {
@@ -214,9 +214,9 @@ function App() {
   };
 
   const filteredResults = React.useMemo(() => {
-    const searchResults = (search && time('search', () => searchCatalog(search, typeFilters))) || [];
-    return searchResults.filter(filterItem(typeFilters));
-  }, [search, typeFilters]);
+    const searchResults = (search && time('search', () => searchCatalog(search, filters))) || [];
+    return searchResults.filter(filterItem(filters));
+  }, [search, filters]);
 
   const renderSearchResults = React.useMemo(() => {
     if (!filteredResults.length) return null;
@@ -230,7 +230,7 @@ function App() {
               item={item.originalItem}
               name={item.name}
               variant={item.variant}
-              isCatalog={lookup.has(item.id)}
+              isCatalog={catalog.has(item.id)}
               onClick={addItem(item.id)}
               onBuy={buyItem(item.id)}
               onDelete={deleteCatalog(item.id)}
@@ -239,10 +239,10 @@ function App() {
         })}
       </div>
     );
-  }, [lookup, filteredResults]);
+  }, [catalog, filteredResults]);
 
   const pendingItems = React.useMemo(() => {
-    const filteredItems = sortedSetList(items).filter(filterItem(typeFilters));
+    const filteredItems = sortedSetList(wishlist).filter(filterItem(filters));
 
     if (!filteredItems.length) return null;
 
@@ -256,10 +256,10 @@ function App() {
         </div>
       </ItemsContainer>
     );
-  }, [items, lookup, typeFilters]);
+  }, [wishlist, catalog, filters]);
 
   const catalogItems = React.useMemo(() => {
-    const filteredCatalog = sortedSetList(lookup).filter(filterItem(typeFilters));
+    const filteredCatalog = sortedSetList(catalog).filter(filterItem(filters));
 
     if (!filteredCatalog.length) return null;
 
@@ -273,7 +273,7 @@ function App() {
         </div>
       </ItemsContainer>
     );
-  }, [items, lookup, typeFilters]);
+  }, [wishlist, catalog, filters]);
 
   return (
     <div className="container">
@@ -303,7 +303,7 @@ function App() {
         <Filters>
           {TYPES.map((type) => {
             return (
-              <FilterButton key={type} active={typeFilters.has(type)} onClick={onFilterClick(type)}>
+              <FilterButton key={type} active={filters.has(type)} onClick={onFilterClick(type)}>
                 {type}
               </FilterButton>
             );
@@ -316,7 +316,7 @@ function App() {
         {renderSearchResults}
 
         {/* is searching or has no pending items */}
-        {inputValue || items.size === 0 ? null : (
+        {inputValue || wishlist.size === 0 ? null : (
           <button className="clear-all" onClick={handleClearAll}>
             clear all
           </button>
