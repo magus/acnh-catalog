@@ -53,6 +53,12 @@
 
 ## TODO
 
+- Create an item update script
+  - Go through our existing item database
+  - Update existing items
+  - Find any new items and log them out and assign them NEW ids
+  - NEVER reassign ids (would break users who saved items)
+
 - Move CSS variables to them (styled-components)
 
 - Lighthouse CI Github Action
@@ -63,6 +69,9 @@
   - diff lighthouse reports: https://googlechrome.github.io/lighthouse-ci/viewer/
 
 
+
+- There is an invisible tagging system in the game that is used to sort items inside storage
+  e.g. Sewing items, stuffed bears, kitchen items, etc.
 
 ## Getting Started
 
