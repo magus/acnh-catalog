@@ -6,9 +6,6 @@
 
 - instead of search placeholder text put in a random item from the entire catalog
 
-- load source for image immediately to avoid any delay and give immediate results for cached images (otherwise it’s delayed by render > load > state > render cycle)
-  - remove loading class entirely, just use error state to load fallback and do not do anything in successful load maybe?
-
 - only show clear all button when more than 20 items are saved, show it at the BOTTOM of each catalog grouping and make it REQUIRE a confirmation with a DELAY before the confirm button is even PRESSABLE (super safe because it’s irreversible)
 
 - search bar
