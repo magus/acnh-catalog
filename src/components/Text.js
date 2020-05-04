@@ -12,7 +12,7 @@ export default function Text({ children, fontSize, minFontSize = 12 }) {
 
   const shrink = () => {
     const container = containerRef.current;
-    console.debug({ container });
+    // console.debug({ container });
 
     container.style.fontSize = null;
     // void container.offsetWidth;
@@ -28,11 +28,11 @@ export default function Text({ children, fontSize, minFontSize = 12 }) {
     // console.debug('no shrink required')
     if (!isTruncated(container)) return;
 
-    console.debug('shrink', { min, max });
+    // console.debug('shrink', { min, max });
 
     // font size can be adjusted
     while (max > min && min < max) {
-      console.debug({ min, max });
+      // console.debug({ min, max });
       if (iters > maxIters) return console.error('exceeded expected log(n) performance');
       iters++;
 
@@ -43,18 +43,18 @@ export default function Text({ children, fontSize, minFontSize = 12 }) {
       if (truncated) {
         // decrease max
         max = newFontSize - 1;
-        console.debug('decreasing max', max);
+        // console.debug('decreasing max', max);
       } else {
         // Record new max found font size
         if (newFontSize > found) found = newFontSize;
 
         // increase min
         min = newFontSize + 1;
-        console.debug('increasing min', min);
+        // console.debug('increasing min', min);
       }
     }
 
-    console.debug('found font size', { iters, found, min, max });
+    // console.debug('found font size', { iters, found, min, max });
     setFontSize(found);
   };
 
