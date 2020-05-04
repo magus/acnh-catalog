@@ -42,8 +42,9 @@ yarn-error.log*
 
 # scripts
 # ignore everything
-/scripts/*
+scripts/*
 # ... except for
-!/scripts/acnh-catalog.tsv
-!/scripts/parse-acnh-catalog.js
+!scripts/acnh-catalog.tsv
+!scripts/parse-acnh-catalog.js
+!scripts/parse-villagerdb-catalog.js
 
