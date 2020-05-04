@@ -23,7 +23,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
 
   return (
     <div key={item.id} className="item" onClick={onClick}>
-      <Image className="item-image" src={getVillagerDBImage(item)} fallback="images/app-icon.png" />
+      <Image className="item-image" src={getVillagerDBImage(item)} fallback="images/app-icon.3a3ded.svg" />
 
       <div className="item-name">
         <Text>

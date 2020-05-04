@@ -2,8 +2,6 @@
 
 ## Launch
 
-- bell icon and app icon need to be TRIPLED in pixel size so higher retina display shows better quality, the bells icon looks BLURRY on iphone. confirm using pixel count fixes things otherwise find a new bell icon on nookazon or villager db maybe
-
 - persist wishlist, recent searches to local storage
 
 - instead of search placeholder text put in a random item from the entire catalog

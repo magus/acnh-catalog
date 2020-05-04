@@ -167,7 +167,7 @@ export const GlobalStyle = createGlobalStyle`
     background-size: 36px;
     height: 36px;
     display: block;
-    background-image: url(images/bells.png);
+    background-image: url(images/bells.36ea30.png);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;

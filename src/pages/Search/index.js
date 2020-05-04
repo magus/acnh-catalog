@@ -280,7 +280,7 @@ function App() {
       <GlobalStyle />
 
       <div className="sticky-header">
-        <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.png" />
+        <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.3a3ded.svg" />
         <div className="input">
           <input
             className="transition-colors ease-in-out"
