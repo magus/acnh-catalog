@@ -6,9 +6,9 @@ import Image from 'src/components/Image';
 export default function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
   const deleteButton = (pending || isCatalog) && (
     <button onClick={onDelete}>
-      <span role="img" aria-label="delete">
+      <div className="item-actions--delete" role="img" aria-label="delete">
         ❌
-      </span>
+      </div>
     </button>
   );
 
