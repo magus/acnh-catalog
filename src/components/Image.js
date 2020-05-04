@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PLACEHOLDER_TIMEOUT_MS = 200;
+const PLACEHOLDER_TIMEOUT_MS = 1000;
 
 export default function Image({ src, fallback, className, ...otherProps }) {
   const [source, setSource] = React.useState(src);
@@ -18,24 +18,31 @@ export default function Image({ src, fallback, className, ...otherProps }) {
   React.useEffect(() => {
     const startLoad = Date.now();
     const image = imageRef.current;
+
+    // Begin a timer to show loading placeholder
+    // Returns a function to cancel timer and clear loading state
     const clearLoadingTimeout = (() => {
       const timeoutId = setTimeout(() => {
         setLoading(true);
       }, PLACEHOLDER_TIMEOUT_MS);
 
-      return () => clearTimeout(timeoutId);
+      // Ensure we stop the loading timer and clear loading
+      return () => {
+        setLoading(false);
+        clearTimeout(timeoutId);
+      };
     })();
 
     image.onload = () => {
       // console.debug('Image', image.src);
-      // Ensure we stop the loading timer
       clearLoadingTimeout();
-      setLoading(false);
     };
     image.onerror = (err) => {
       console.error('Image', err);
-      setSource(fallback);
-      setLoading(false);
+      if (fallback) {
+        clearLoadingTimeout();
+        setSource(fallback);
+      }
     };
 
     // begin loading image
