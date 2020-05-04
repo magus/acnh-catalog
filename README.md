@@ -2,8 +2,6 @@
 
 ## Launch
 
-- persist wishlist, recent searches to local storage
-
 - only show clear all button when more than 20 items are saved, show it at the BOTTOM of each catalog grouping and make it REQUIRE a confirmation with a DELAY before the confirm button is even PRESSABLE (super safe because it’s irreversible)
 
 - search bar
@@ -11,13 +9,10 @@
   add search icon attached to bar (straight border between)
   return key should blur input (might be default) just try removing keydown handler, otherwise code explicitly
   search button instead of return key
-  show 5 most recent searches when the search bar is focused. each search should trigger a save to local storage. absolute position below the search bar, like below. initialize it with “suggested queries” but remove all the seeded initial “suggested queries” once the first real user search is performed by just saving that one in a fresh array. ensure no duplicates are stored, keep most recent at the top and ensure we always unshift in new items then slice(0,5) to truncate to most recent 5
   try using green and lighter green background for highlighting the bold next in variants. use a custom span tag with class to style weight, color and a light background
 
 - footer and github readme note to villagerdb, icons and nintendo thanking
 
-
-- Remove source maps
 - Open Graph tags for SEO
   - Demo image with search results and description etc for nice cards
 - Double check light and dark themes look ok
