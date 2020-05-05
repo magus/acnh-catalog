@@ -2,10 +2,6 @@
 
 ## Launch
 
-- create context for modal at root of app, allows sending modal through a context hook
-
-- only show clear all button when more than 20 items are saved, show it at the BOTTOM of each catalog grouping and make it REQUIRE a confirmation with a DELAY before the confirm button is even PRESSABLE (super safe because it’s irreversible)
-
 - position transition for search results
   - https://www.framer.com/api/motion/examples/#position-transitions
 - stagger animation for search results
