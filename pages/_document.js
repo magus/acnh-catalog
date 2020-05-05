@@ -2,6 +2,11 @@ import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
+const OG = {
+  Title: 'Catalog',
+  Description: 'Discover and save items into your personal Animal Crossing New Horizons catalog!',
+};
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     // Render app and page and get the context of the page with collected side effects
@@ -56,15 +61,31 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="description" content="Catalog for Animal Crossing New Horizons" />
-          <meta name="keywords" content="Animal Crossing, Games, Nintendo, Items, Catalog" />
           <meta name="theme-color" content="#ffffff" />
+
+          {/* seo & open graph tags */}
+          <meta property="og:title" content={OG.Title} />
+          <meta property="og:description" content={OG.Description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://accat.now.sh" />
+          <meta property="og:image" content="/images/demo.png" />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:creator" content="magusnn" />
+          <meta property="twitter:creator:id" content="23604692" />
+          <meta
+            property="twitter:image:alt"
+            content="Image of website with search field with 'cher bloss' entered showing item results from Animal Crossing New Horizons"
+          />
+
+          <meta property="og:locale" content="en_US" />
+          <meta name="description" content={OG.Description} />
+          <meta name="keywords" content="Animal Crossing, Games, Nintendo, Items, Catalog" />
 
           {/* iOS */}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <meta name="apple-mobile-web-app-title" content="Catalog" />
+          <meta name="apple-mobile-web-app-title" content={OG.Title} />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-title" content="Catalog" />
+          <meta name="apple-mobile-web-app-title" content={OG.Title} />
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
           <link
             rel="apple-touch-startup-image"
@@ -111,7 +132,7 @@ export default class MyDocument extends Document {
           {/* Windows */}
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-          <meta name="application-name" content="Catalog" />
+          <meta name="application-name" content={OG.Title} />
 
           {this.props.styleTags}
         </Head>

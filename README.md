@@ -6,8 +6,12 @@
 
 - footer and github readme note to villagerdb, icons and nintendo thanking
 
-- Open Graph tags for SEO
-  - Demo image with search results and description etc for nice cards
+- validate and test open graph tags for SEO
+  - send in dm on twitter to self
+  - https://cards-dev.twitter.com/validator
+  - https://developers.facebook.com/tools/debug/
+  - https://opengraphcheck.com/
+
 
 - Google Analytics
 
