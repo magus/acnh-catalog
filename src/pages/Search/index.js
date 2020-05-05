@@ -183,13 +183,6 @@ function App() {
   const deleteCatalog = (id) => () => dispatch('-catalog', { id });
   const onFilterClick = (filter) => () => dispatch('filter', { filter });
 
-  const handleKeyDown = (firstMatch) => (e) => {
-    if (e.key === 'Enter' && firstMatch) {
-      // dispatch first matching result id, if any
-      addItem(firstMatch.item.id)();
-    }
-  };
-
   const handleInputChange = (e) => {
     const { value } = e.target;
 
@@ -287,7 +280,6 @@ function App() {
           <input
             className="transition-colors ease-in-out"
             ref={refs.current.input}
-            onKeyDown={handleKeyDown(filteredResults[0])}
             onChange={handleInputChange}
             {...inputFocusEvents}
             type="search"
