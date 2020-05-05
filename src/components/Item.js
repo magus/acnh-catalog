@@ -14,7 +14,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
   );
 
   const buyButton = (pending || !isCatalog) && (
-    <button className="no-padding" onClick={preventBubble(onBuy)}>
+    <button onClick={preventBubble(onBuy)}>
       <span role="img" aria-label="buy" className="item-actions--buy" />
     </button>
   );

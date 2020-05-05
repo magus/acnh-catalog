@@ -233,6 +233,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .item-actions button {
     margin: 0 0 0 8px;
+    padding: 0;
     width: 64px;
     display: flex;
     flex-direction: row;
@@ -241,12 +242,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .item-actions--delete {
-    width: 100%;
-    height: 100%;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 23px;
   }
 
   .item-actions--buy {
@@ -275,10 +274,6 @@ export const GlobalStyle = createGlobalStyle`
 
   .transition-colors {
     transition-property: background-color, border-color, color, fill, stroke !important;
-  }
-
-  .no-padding {
-    padding: 0;
   }
 
   /* clears the 'X' from Internet Explorer */
