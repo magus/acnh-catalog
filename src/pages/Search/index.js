@@ -153,14 +153,17 @@ function searchCatalog(fullQuery, filters) {
     };
 
     // build search highlight html
+    const highlightOpen = '<span class="searchResult-highlight">';
+    const highlightClose = '</span>';
+
     if (combinedResult.name.length) {
       combinedResult.name[0].indexes = [...combinedResult.name.map((_) => _.indexes)].flat();
-      customSearchResult.name = fuzzysort.highlight(combinedResult.name[0], '<b>', '</b>');
+      customSearchResult.name = fuzzysort.highlight(combinedResult.name[0], highlightOpen, highlightClose);
     }
 
     if (combinedResult.variant.length) {
       combinedResult.variant[0].indexes = [...combinedResult.variant.map((_) => _.indexes)].flat();
-      customSearchResult.variant = fuzzysort.highlight(combinedResult.variant[0], '<b>', '</b>');
+      customSearchResult.variant = fuzzysort.highlight(combinedResult.variant[0], highlightOpen, highlightClose);
     }
 
     return customSearchResult;

@@ -94,6 +94,7 @@ export const GlobalStyle = createGlobalStyle`
     right: 0;
     color: #fff;
     background-color: rgb(39,121,189);
+    border-color: rgb(39,121,189);
     border-radius: 2rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -143,6 +144,12 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .searchResult-highlight {
+    font-weight: 800;
+    color: rgb(25, 174, 94);
+    background-color: rgb(227, 252, 236);
   }
 
 
