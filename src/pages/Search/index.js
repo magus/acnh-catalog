@@ -5,6 +5,8 @@ import fuzzysort from 'fuzzysort';
 
 import Item from 'src/components/Item';
 import Image from 'src/components/Image';
+import Search from 'src/components/icons/Search';
+import X from 'src/components/icons/X';
 import useKeyboard from 'src/hooks/useKeyboard';
 import usePreventZoom from 'src/hooks/usePreventZoom';
 
@@ -297,7 +299,12 @@ function App() {
             value={inputValue}
           />
 
-          <button onClick={handleClear}>clear</button>
+          <button className="icon-button input--clear" onClick={handleClear}>
+            <X color="#fff" />
+          </button>
+          <button className="icon-button input--search">
+            <Search color="#fff" />
+          </button>
         </div>
 
         <Filters>

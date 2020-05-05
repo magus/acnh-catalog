@@ -64,7 +64,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .input input {
-    margin: 0 4px 0 0;
+    padding-right: 48px;
+  }
+
+  .input--clear {
+    width: 48px;
+    position: absolute;
+    right: 48px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .input--search {
+    width: 48px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background-color: rgb(39,121,189);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   input {
@@ -105,6 +123,14 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 700;
     color: var(--button-text);
   }
+
+  .icon-button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   .clear-all {
     margin: 0 0 8px 0;
@@ -202,4 +228,15 @@ export const GlobalStyle = createGlobalStyle`
   .no-padding {
     padding: 0;
   }
+
+  /* clears the 'X' from Internet Explorer */
+  input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+  input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+  /* clears the 'X' from Chrome */
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 `;

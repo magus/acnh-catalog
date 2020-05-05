@@ -5,8 +5,6 @@
 - only show clear all button when more than 20 items are saved, show it at the BOTTOM of each catalog grouping and make it REQUIRE a confirmation with a DELAY before the confirm button is even PRESSABLE (super safe because it’s irreversible)
 
 - search bar
-  move clear button into search bar as visually small x with large tap target X icon
-  add search icon attached to bar (straight border between)
   return key should blur input (might be default) just try removing keydown handler, otherwise code explicitly
   search button instead of return key
   try using green and lighter green background for highlighting the bold next in variants. use a custom span tag with class to style weight, color and a light background
