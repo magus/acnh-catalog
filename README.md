@@ -2,13 +2,12 @@
 
 ## Launch
 
-
 - position transition for search results
   - https://www.framer.com/api/motion/examples/#position-transitions
 - stagger animation for search results
   - https://www.framer.com/api/motion/types/#orchestration.staggerchildren
 
-- footer and github readme note to villagerdb, icons and nintendo thanking
+- footer and github readme note to villagerdb and nintendo thanking
 
 - validate and test open graph tags for SEO
   - send in dm on twitter to self

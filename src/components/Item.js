@@ -24,7 +24,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
 
   return (
     <div key={item.id} className="item" onClick={onClick}>
-      <Image className="item-image" src={getVillagerDBImage(item)} fallback="images/app-icon.3a3ded.svg" />
+      <Image className="item-image" src={getS3Image(item)} fallback="images/app-icon.3a3ded.svg" />
 
       <div className="item-name">
         <Text>
@@ -44,6 +44,12 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
   );
 }
 
+// e.g. https://accat-images.s3-us-west-1.amazonaws.com/thumb/apples-poster-235.png
+const getS3Image = (item, type = 'thumb') => {
+  const path = `https://accat-images.s3-us-west-1.amazonaws.com/${type}`;
+  const filename = `${item.name_slug}${item.variant_slug ? '-' + item.variant_slug : ''}-${item.id}.png`;
+  return `${path}/${filename}`;
+};
 // Images from villagerdb
 // full / medium / thumb
 // e.g. 3D Glasses (white)  https://villagerdb.com/images/items/full/3d-glasses-vv-white.png

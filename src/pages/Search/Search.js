@@ -394,6 +394,7 @@ const FilterButton = styled.button`
 `;
 
 const ItemsContainer = styled.div`
+  margin: 40px 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -401,6 +402,7 @@ const ItemsContainer = styled.div`
 `;
 
 const ItemsContainerName = styled.div`
+  margin: 0 0 16px 0;
   font-weight: 800;
 `;
 
