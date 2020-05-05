@@ -2,8 +2,6 @@
 
 ## Launch
 
-- update og:title to Animal Crossing Catalog
-
 - center filters (see how it looks)
 
 - footer and github readme note to villagerdb and nintendo thanking

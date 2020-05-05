@@ -3,7 +3,8 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 const OG = {
-  Title: 'Catalog',
+  Title: 'Animal Crossing Catalog',
+  AppName: 'Catalog',
   Description: 'Discover and save items into your personal Animal Crossing New Horizons catalog!',
 };
 
@@ -83,9 +84,9 @@ export default class MyDocument extends Document {
 
           {/* iOS */}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <meta name="apple-mobile-web-app-title" content={OG.Title} />
+          <meta name="apple-mobile-web-app-title" content={OG.AppName} />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-title" content={OG.Title} />
+          <meta name="apple-mobile-web-app-title" content={OG.AppName} />
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
           <link
             rel="apple-touch-startup-image"
@@ -132,7 +133,7 @@ export default class MyDocument extends Document {
           {/* Windows */}
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-          <meta name="application-name" content={OG.Title} />
+          <meta name="application-name" content={OG.AppName} />
 
           {this.props.styleTags}
         </Head>
