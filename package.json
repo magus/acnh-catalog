@@ -22,6 +22,7 @@
     "stylis-plugin-rtl": "^1.0.0"
   },
   "devDependencies": {
+    "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "now": "^18.0.0",
