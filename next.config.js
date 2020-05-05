@@ -7,6 +7,11 @@ const nextConfig = {
 
   // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
   // turn on the SW in dev mode so that we can actually test it
+  // NOTE
+  // Must run > ln -s $PWD/.next/static/service-worker.js public
+  // This will symmlink the generated service-worker into public folder so its served
+  // HOWEVER we must delete it to allow local build / deploy to work
+  // > rm public/service-worker.js
   // generateInDevMode: true,
 
   workboxOpts: {

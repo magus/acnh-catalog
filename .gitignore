@@ -35,7 +35,7 @@ yarn-error.log*
 # > ln -s $PWD/.next/static/service-worker.js public
 # this allows us to serve the service worker locally
 # (the static folder is served by now so cannot be simulated locally)
-/public/service-worker.js
+public/service-worker.js
 
 # now generates files, ignore them
 .now
