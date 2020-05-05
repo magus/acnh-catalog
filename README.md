@@ -4,14 +4,11 @@
 
 - only show clear all button when more than 20 items are saved, show it at the BOTTOM of each catalog grouping and make it REQUIRE a confirmation with a DELAY before the confirm button is even PRESSABLE (super safe because it’s irreversible)
 
-- search bar
-  try using green and lighter green background for highlighting the bold next in variants. use a custom span tag with class to style weight, color and a light background
-
 - footer and github readme note to villagerdb, icons and nintendo thanking
 
 - Open Graph tags for SEO
   - Demo image with search results and description etc for nice cards
-- Double check light and dark themes look ok
+
 - Google Analytics
 
 

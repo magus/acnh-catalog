@@ -86,6 +86,11 @@ export const GlobalStyle = createGlobalStyle`
     right: 48px;
     background-color: transparent;
     border: none;
+
+    path {
+      fill: var(--font-color);
+    }
+
   }
 
   .input--search {
@@ -94,10 +99,17 @@ export const GlobalStyle = createGlobalStyle`
     right: 0;
     color: #fff;
     background-color: rgb(39,121,189);
-    border-color: rgb(39,121,189);
     border-radius: 2rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    @media (prefers-color-scheme: light) {
+      border-color: rgb(39,121,189);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--button-border-color);
+    }
   }
 
   input {
@@ -112,7 +124,11 @@ export const GlobalStyle = createGlobalStyle`
     font-size: var(--font-size);
     color: var(--font-color);
 
-    background-color: var(--button-color);
+    background-color: rgb(226, 232, 240);
+    @media (prefers-color-scheme: dark) {
+      background-color: rgb(34,41,47);
+    }
+
     border: 1px solid transparent; /* 2 */
     border-color: var(--button-border-color);
     border-radius: 2rem !important;
@@ -168,7 +184,8 @@ export const GlobalStyle = createGlobalStyle`
 
     margin: 0 0 8px 0;
     padding: 8px;
-    background-color: var(--button-color);
+    background-color: var(--bg-color);
+
     border: 1px solid transparent; /* 2 */
     border-color: var(--button-border-color);
     border-radius: 0.25rem !important;
