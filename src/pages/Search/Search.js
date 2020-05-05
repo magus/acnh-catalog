@@ -378,7 +378,7 @@ const Filters = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2px;
+  justify-content: center;
 `;
 
 const FilterButton = styled.button`

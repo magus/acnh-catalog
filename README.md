@@ -2,8 +2,6 @@
 
 ## Launch
 
-- center filters (see how it looks)
-
 - footer and github readme note to villagerdb and nintendo thanking
 
 - validate and test open graph tags for SEO
