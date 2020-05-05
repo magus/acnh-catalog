@@ -44,13 +44,6 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
   }
 
-  .container {
-    margin: 0;
-    padding: 8px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .item-container {
     position: relative;
     background-color: var(--bg-color);
@@ -144,6 +137,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0.5rem 1rem;
     height: 46px;
     vertical-align: middle;
+    border: 1px solid transparent;
     border-color: var(--button-border-color);
     border-radius: 0.25rem;
     background-color: var(--button-color);
@@ -153,6 +147,26 @@ export const GlobalStyle = createGlobalStyle`
     font-size: var(--font-size);
     font-weight: 700;
     color: var(--button-text);
+  }
+
+  button:disabled {
+    opacity: 0.4;
+  }
+
+  button.subtle {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    height: 46px;
+    vertical-align: middle;
+    border-color: transparent;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--font-color);
   }
 
   .icon-button {

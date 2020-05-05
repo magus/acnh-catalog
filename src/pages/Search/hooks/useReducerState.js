@@ -178,7 +178,15 @@ function reducer(state, action) {
     case 'reset-wishlist': {
       return {
         ...state,
+        init: true,
         wishlist: new Set(),
+      };
+    }
+    case 'reset-catalog': {
+      return {
+        ...state,
+        init: true,
+        catalog: new Set(),
       };
     }
 
