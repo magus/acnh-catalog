@@ -26,6 +26,8 @@ const TYPE = Object.freeze(
   }, {}),
 );
 
+const noop = () => {};
+
 const filterItem = (filters) => (item) => (filters.size ? filters.has(item.category) : true);
 
 function sortedSetList(set) {
@@ -183,6 +185,16 @@ function App() {
   const deleteCatalog = (id) => () => dispatch('-catalog', { id });
   const onFilterClick = (filter) => () => dispatch('filter', { filter });
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      const input = refs.current.input.current;
+      if (input) {
+        // ensure input loses focus on search click
+        input.blur();
+      }
+    }
+  };
+
   const handleInputChange = (e) => {
     const { value } = e.target;
 
@@ -276,13 +288,17 @@ function App() {
 
       <div className="sticky-header">
         <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.3a3ded.svg" />
-        <div className="input">
+
+        <form action="#" className="input">
           <input
             className="transition-colors ease-in-out"
             ref={refs.current.input}
             onChange={handleInputChange}
+            onKeyDown={handleKeyDown}
             {...inputFocusEvents}
             type="search"
+            id="search"
+            name="search"
             autoComplete="off"
             spellCheck="false"
             placeholder={placeholder}
@@ -290,14 +306,15 @@ function App() {
             autoCapitalize="none"
             value={inputValue}
           />
-
-          <button className="icon-button input--clear" onClick={handleClear}>
-            <X color="#fff" />
-          </button>
-          <button className="icon-button input--search">
+          {!inputValue ? null : (
+            <button className="icon-button input--clear" onClick={handleClear}>
+              <X color="#fff" />
+            </button>
+          )}
+          <button onClick={noop} className="icon-button input--search">
             <Search color="#fff" />
           </button>
-        </div>
+        </form>
 
         <Filters>
           {TYPES.map((type) => {

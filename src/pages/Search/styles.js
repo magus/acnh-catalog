@@ -19,6 +19,19 @@ export const GlobalStyle = createGlobalStyle`
     text-indent: 0;
   }
 
+
+  /* reset ios input fields */
+  textarea,
+  input.text,
+  input[type="text"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="search"],
+  .input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+
   #__next {
     height: 100%;
   }
@@ -81,6 +94,7 @@ export const GlobalStyle = createGlobalStyle`
     right: 0;
     color: #fff;
     background-color: rgb(39,121,189);
+    border-radius: 2rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -100,7 +114,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--button-color);
     border: 1px solid transparent; /* 2 */
     border-color: var(--button-border-color);
-    border-radius: 0.5rem;
+    border-radius: 2rem !important;
     transition-duration: 0.1s !important;
   }
 
