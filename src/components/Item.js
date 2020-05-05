@@ -45,16 +45,17 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
 }
 
 // Images from villagerdb
+// full / medium / thumb
 // e.g. 3D Glasses (white)  https://villagerdb.com/images/items/full/3d-glasses-vv-white.png
 // e.g. No. 3 Shirt         https://villagerdb.com/images/items/medium/no-3-shirt.png
 
 // Convert spaces to `-` and remove `.`
 // e.g. `3d glasses` becomes `3d-glasses`
 // e.g. `No. 3` becomes `No-3`
-const getVillagerDBImage = (item) => {
+const getVillagerDBImage = (item, type = 'thumb') => {
   if (item.variant_slug) {
-    return `https://villagerdb.com/images/items/full/${item.name_slug}-vv-${item.variant_slug}.png`;
+    return `https://villagerdb.com/images/items/${type}/${item.name_slug}-vv-${item.variant_slug}.png`;
   }
 
-  return `https://villagerdb.com/images/items/full/${item.name_slug}.png`;
+  return `https://villagerdb.com/images/items/${type}/${item.name_slug}.png`;
 };
