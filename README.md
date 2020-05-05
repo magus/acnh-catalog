@@ -2,6 +2,8 @@
 
 ## Launch
 
+- center filters (see how it looks)
+
 - position transition for search results
   - https://www.framer.com/api/motion/examples/#position-transitions
 - stagger animation for search results
