@@ -2,16 +2,9 @@
 
 ## Launch
 
-- change og:image to full url
-
 - update og:title to Animal Crossing Catalog
 
 - center filters (see how it looks)
-
-- position transition for search results
-  - https://www.framer.com/api/motion/examples/#position-transitions
-- stagger animation for search results
-  - https://www.framer.com/api/motion/types/#orchestration.staggerchildren
 
 - footer and github readme note to villagerdb and nintendo thanking
 
@@ -27,6 +20,11 @@
 
 
 ## TODO
+
+- position transition for search results
+  - https://www.framer.com/api/motion/examples/#position-transitions
+- stagger animation for search results
+  - https://www.framer.com/api/motion/types/#orchestration.staggerchildren
 
 - Create an item update script
   - Go through our existing item database
