@@ -2,6 +2,10 @@
 
 ## Launch
 
+- change og:image to full url
+
+- update og:title to Animal Crossing Catalog
+
 - center filters (see how it looks)
 
 - position transition for search results
