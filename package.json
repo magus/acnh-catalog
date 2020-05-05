@@ -11,6 +11,7 @@
     "deploy:purge": "now rm acnh-catalog --safe"
   },
   "dependencies": {
+    "framer-motion": "^1.10.3",
     "fuzzysort": "^1.1.4",
     "lodash": "^4.17.15",
     "next": "^9.3.6",
