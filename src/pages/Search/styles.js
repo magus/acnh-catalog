@@ -164,7 +164,7 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
 
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 200;
     color: var(--font-color);
   }
