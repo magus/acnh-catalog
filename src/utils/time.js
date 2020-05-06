@@ -10,7 +10,7 @@ export default function time(name = '<unknown>', operation) {
   const result = operation();
   const elapsedMs = performance.now() - start;
   console.debug(name, 'time', humanTime(elapsedMs));
-  return result;
+  return { result, elapsedMs };
 }
 
 function humanTime(milliseconds) {

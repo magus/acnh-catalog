@@ -9,6 +9,7 @@ import Image from 'src/components/Image';
 import Search from 'src/components/icons/Search';
 import X from 'src/components/icons/X';
 import useKeyboard from 'src/hooks/useKeyboard';
+import useGoogleAnalytics from 'src/hooks/useGoogleAnalytics';
 
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
@@ -169,6 +170,7 @@ function searchCatalog(fullQuery, filters) {
 }
 
 export default function App() {
+  const analytics = useGoogleAnalytics();
   const { inputFocusEvents, keyboardPaddingBottom } = useKeyboard();
   const modal = React.useContext(ModalProvider.Context);
   const [state, dispatch] = useReducerState();
@@ -244,8 +246,19 @@ export default function App() {
   };
 
   const filteredResults = React.useMemo(() => {
-    const searchResults = (search && time('search', () => searchCatalog(search, filters))) || [];
-    return searchResults.filter(filterItem(filters));
+    if (search) {
+      const timed = time('search', () => searchCatalog(search, filters));
+
+      analytics.event('search', {
+        category: 'search',
+        label: `${search} (${[...filters].join('-') || 'all'})`,
+        value: Math.round(timed.elapsedMs),
+      });
+
+      return timed.result.filter(filterItem(filters));
+    }
+
+    return [];
   }, [search, filters]);
 
   const renderSearchResults = React.useMemo(() => {

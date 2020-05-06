@@ -11,9 +11,6 @@
   - https://opengraphcheck.com/
 
 
-- Google Analytics
-
-
 
 ## TODO
 
