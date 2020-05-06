@@ -353,9 +353,9 @@ export default function App() {
         </form>
 
         <Filters>
-          {Object.values(CATEGORIES).map((categories) => {
+          {Object.values(CATEGORIES).map((categories, i) => {
             return (
-              <div>
+              <FilterGroup key={i}>
                 {categories.map((category) => {
                   return (
                     <FilterButton key={category} active={filters.has(category)} onClick={onFilterClick(category)}>
@@ -363,7 +363,7 @@ export default function App() {
                     </FilterButton>
                   );
                 })}
-              </div>
+              </FilterGroup>
             );
           })}
         </Filters>
@@ -371,8 +371,8 @@ export default function App() {
 
       {!initialized ? (
         <InitLog>
-          {initializedLog.map((row) => (
-            <InitLogRow error={row.error} dangerouslySetInnerHTML={{ __html: row.log }} />
+          {initializedLog.map((row, i) => (
+            <InitLogRow key={i} error={row.error} dangerouslySetInnerHTML={{ __html: row.log }} />
           ))}
         </InitLog>
       ) : (
@@ -400,6 +400,10 @@ const Filters = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+`;
+
+const FilterGroup = styled.div`
+  margin: 4px 0;
 `;
 
 const FilterButton = styled.button`
