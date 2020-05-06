@@ -39,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
     --app-color-light: rgb(227, 252, 236);
     --error-color: rgb(227, 52, 47);
     --gray-color: rgb(226, 232, 240);
+    --blue-color: rgb(52,144,220);
 
     --bg-color: #fff;
     --font-color: rgb(26, 32, 44);

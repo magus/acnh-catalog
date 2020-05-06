@@ -4,6 +4,7 @@ import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
 
 import ModalProvider from 'src/components/ModalProvider';
+import Filters from 'src/components/Filters';
 import NoResults from 'src/components/NoResults';
 import Item from 'src/components/Item';
 import Image from 'src/components/Image';
@@ -15,7 +16,7 @@ import useGoogleAnalytics from 'src/hooks/useGoogleAnalytics';
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
 import time from 'utils/time';
-import CATEGORIES from 'src/data/categories.json';
+
 import ITEM_CATALOG from 'src/data/items.json';
 
 const ITEM_CATALOG_BY_ID = Object.freeze(keyByField(ITEM_CATALOG, 'id'));
@@ -369,21 +370,7 @@ export default function App() {
           </button>
         </form>
 
-        <Filters>
-          {Object.values(CATEGORIES).map((categories, i) => {
-            return (
-              <FilterGroup key={i}>
-                {categories.map((category) => {
-                  return (
-                    <FilterButton key={category} active={filters.has(category)} onClick={onFilterClick(category)}>
-                      {category}
-                    </FilterButton>
-                  );
-                })}
-              </FilterGroup>
-            );
-          })}
-        </Filters>
+        <Filters filters={filters} onFilterClick={onFilterClick} />
       </div>
 
       {!initialized ? (
@@ -411,29 +398,6 @@ export default function App() {
     </>
   );
 }
-
-const Filters = styled.div`
-  margin: 8px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-`;
-
-const FilterGroup = styled.div`
-  margin: 4px 0;
-`;
-
-const FilterButton = styled.button`
-  margin: 0 4px 4px 0;
-  font-size: 16px;
-  padding: 4px 2px;
-  height: auto;
-  background-color: var(--button-color);
-  color: var(--font-color);
-  opacity: ${(props) => props.active || 0.4};
-  color: ${(props) => (props.active ? 'var(--button-color)' : 'var(--font-color)')};
-  background-color: ${(props) => (props.active ? 'var(--font-color)' : 'var(--button-color)')};
-`;
 
 const ItemsContainer = styled.div`
   margin: 40px 0 0 0;
