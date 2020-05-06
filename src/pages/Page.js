@@ -15,6 +15,11 @@ export default function Providers({ children }) {
 function ModalPortal() {
   const modal = React.useContext(ModalProvider.Context);
 
+  // prevent scroll while modal is open
+  React.useEffect(() => {
+    document.body.style.overflow = modal.isVisible ? 'hidden' : null;
+  }, [modal.isVisible]);
+
   return (
     <ModalProvider.Modal
       isVisible={modal.isVisible}

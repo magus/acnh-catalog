@@ -143,21 +143,25 @@ function ModalButton({ options, handleDismiss }) {
 }
 
 const OuterContainer = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(11, 11, 11, 0.8);
 `;
 
 const ModalContainer = styled.div`
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
