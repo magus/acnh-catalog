@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function NoResults() {
+export default function NoResults({ empty }) {
+  if (empty) {
+    return (
+      <NoResultsText>
+        Empty.<Smaller>Try searching and saving items here!</Smaller>
+      </NoResultsText>
+    );
+  }
+
   return (
     <NoResultsText>
       No matches found.<Smaller>Try adjusting your search or filters.</Smaller>

@@ -2,11 +2,6 @@
 
 ## TODO
 
-- icon for wishlist and catalog
-  replace delete icon with wishlist icon so both fit
-  add icon to the wishlist/catalog titles (so user can associate)
-
-
 - position transition for search results
   - https://www.framer.com/api/motion/examples/#position-transitions
 - stagger animation for search results

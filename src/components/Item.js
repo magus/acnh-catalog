@@ -2,20 +2,20 @@ import React from 'react';
 
 import Text from 'src/components/Text';
 import Image from 'src/components/Image';
+import CatalogIcon from 'src/components/icons/CatalogIcon';
+import WishlistIcon from 'src/components/icons/Wishlist';
 import preventBubble from 'src/utils/preventBubble';
 
-export default function Item({ item, name, variant, isCatalog, pending, onClick, onBuy, onDelete }) {
-  const deleteButton = (pending || isCatalog) && (
-    <button onClick={preventBubble(onDelete)}>
-      <div className="item-actions--delete" role="img" aria-label="delete">
-        ❌
-      </div>
+export default function Item({ item, name, variant, isWishlist, isCatalog, isSearch, onClick, onWislist, onCatalog }) {
+  const wishlistButton = !isCatalog && (
+    <button onClick={preventBubble(onWislist)}>
+      <WishlistIcon active={isWishlist} />
     </button>
   );
 
-  const buyButton = (pending || !isCatalog) && (
-    <button onClick={preventBubble(onBuy)}>
-      <span role="img" aria-label="buy" className="item-actions--buy" />
+  const buyButton = (
+    <button onClick={preventBubble(onCatalog)}>
+      <CatalogIcon active={isCatalog} />
     </button>
   );
 
@@ -37,7 +37,7 @@ export default function Item({ item, name, variant, isCatalog, pending, onClick,
         </Text>
       </div>
       <div className="item-actions">
-        {deleteButton}
+        {wishlistButton}
         {buyButton}
       </div>
     </div>

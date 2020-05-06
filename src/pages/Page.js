@@ -59,7 +59,7 @@ const Container = styled.div`
 const Footer = styled.footer`
   margin: 48px 24px 24px;
   font-size: 12px;
-  color: rgb(135, 149, 161);
+  color: var(--gray-color);
 `;
 
 const Copyright = styled.div`

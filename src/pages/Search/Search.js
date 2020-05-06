@@ -10,6 +10,8 @@ import Item from 'src/components/Item';
 import Image from 'src/components/Image';
 import Search from 'src/components/icons/Search';
 import X from 'src/components/icons/X';
+import CatalogIcon from 'src/components/icons/CatalogIcon';
+import WishlistIcon from 'src/components/icons/Wishlist';
 import useKeyboard from 'src/hooks/useKeyboard';
 import useGoogleAnalytics from 'src/hooks/useGoogleAnalytics';
 
@@ -257,6 +259,13 @@ export default function App() {
     return [];
   }, [search, filters]);
 
+  const buildItemProps = (item) => ({
+    isCatalog: catalog.has(item.id),
+    isWishlist: wishlist.has(item.id),
+    onWislist: wishlist.has(item.id) ? deleteItem(item.id) : addItem(item.id),
+    onCatalog: catalog.has(item.id) ? deleteCatalog(item.id) : buyItem(item.id),
+  });
+
   const renderSearchResults = React.useMemo(() => {
     if (!search) return null;
 
@@ -273,27 +282,25 @@ export default function App() {
               item={item.originalItem}
               name={item.name}
               variant={item.variant}
-              isCatalog={catalog.has(item.id)}
-              onClick={addItem(item.id)}
-              onBuy={buyItem(item.id)}
-              onDelete={deleteCatalog(item.id)}
+              isSearch
+              {...buildItemProps(item)}
             />
           );
         })}
       </div>
     );
-  }, [catalog, filteredResults]);
+  }, [catalog, wishlist, filteredResults]);
 
   const wishlistItems = React.useMemo(() => {
     const filteredItems = sortedSetList(wishlist).filter(filterItem(filters));
 
     const items = !filteredItems.length ? (
-      <NoResults />
+      <NoResults empty={!search} />
     ) : (
       <>
         <div className="items">
           {filteredItems.map((item, i) => {
-            return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
+            return <Item key={item.id} item={item} {...buildItemProps(item)} />;
           })}
         </div>
 
@@ -305,7 +312,9 @@ export default function App() {
 
     return (
       <ItemsContainer>
-        <ItemsContainerName>Wishlist</ItemsContainerName>
+        <ItemsContainerName>
+          <WishlistIcon active /> {`Wishlist (${filteredItems.length})`}
+        </ItemsContainerName>
         {items}
       </ItemsContainer>
     );
@@ -320,7 +329,7 @@ export default function App() {
       <>
         <div className="items">
           {filteredCatalog.map((item, i) => {
-            return <Item key={item.id} item={item} isCatalog onDelete={deleteCatalog(item.id)} />;
+            return <Item key={item.id} item={item} {...buildItemProps(item)} />;
           })}
         </div>
 
@@ -332,7 +341,9 @@ export default function App() {
 
     return (
       <ItemsContainer>
-        <ItemsContainerName>Catalog</ItemsContainerName>
+        <ItemsContainerName>
+          <CatalogIcon active /> {`Catalog (${filteredCatalog.length})`}
+        </ItemsContainerName>
         {items}
       </ItemsContainer>
     );
@@ -410,6 +421,13 @@ const ItemsContainer = styled.div`
 const ItemsContainerName = styled.div`
   margin: 0 0 16px 0;
   font-weight: 800;
+  align-items: center;
+  display: flex;
+
+  img,
+  svg {
+    width: 32px;
+  }
 `;
 
 const ClearAllButton = styled.button`

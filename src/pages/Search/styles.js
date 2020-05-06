@@ -248,16 +248,8 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 23px;
   }
 
-  .item-actions--buy {
-    width: 36px;
-    background-size: 36px;
-    height: 36px;
-    display: block;
-    background-image: url(images/bells.36ea30.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+  button img {
+    max-width: 36px;
   }
 
   .Image {
