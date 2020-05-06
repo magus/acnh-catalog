@@ -2,8 +2,6 @@
 
 ## Launch
 
-- footer and github readme note to villagerdb and nintendo thanking
-
 - validate and test open graph tags for SEO
   - send in dm on twitter to self
   - https://cards-dev.twitter.com/validator

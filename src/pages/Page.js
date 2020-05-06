@@ -33,14 +33,30 @@ function Page({ children }) {
     <Container>
       {children}
 
+      <Footer>
+        <Copyright>© 2020</Copyright>
+        <div>Thanks to VillagerDB, Nintendo and the amazing Animal Crossing community.</div>
+      </Footer>
+
       <ModalPortal />
     </Container>
   );
 }
 
 const Container = styled.div`
-  margin: 0;
+  max-width: 640px;
+  margin: 0 auto;
   padding: 8px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+`;
+
+const Footer = styled.footer`
+  margin: 48px 24px 24px;
+  font-size: 12px;
+  color: rgb(135, 149, 161);
+`;
+
+const Copyright = styled.div`
+  margin: 8px 0;
 `;
