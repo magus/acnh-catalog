@@ -1,25 +1,31 @@
-[
-  "Accessories",
-  "Tops",
-  "Wallpaper",
-  "Art",
-  "Dresses",
-  "Fossils",
-  "Furniture",
-  "Bottoms",
-  "Hats",
-  "Usables",
-  "Photos",
-  "Socks",
-  "Music",
-  "Bugs",
-  "Flooring",
-  "Fish",
-  "Shoes",
-  "Umbrellas",
-  "Fruit",
-  "Tools",
-  "Flowers",
-  "Bushes and Trees",
-  "Seashells"
-]
+{
+  "Furniture": [
+    "Flooring",
+    "Furniture",
+    "Wallpaper"
+  ],
+  "Clothes": [
+    "Accessories",
+    "Bottoms",
+    "Dresses",
+    "Hats",
+    "Shoes",
+    "Socks",
+    "Tops",
+    "Umbrellas"
+  ],
+  "Misc": [
+    "Art",
+    "Bugs",
+    "Bushes and Trees",
+    "Fish",
+    "Flowers",
+    "Fossils",
+    "Fruit",
+    "Music",
+    "Photos",
+    "Seashells",
+    "Tools",
+    "Usables"
+  ]
+}

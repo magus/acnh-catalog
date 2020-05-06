@@ -14,16 +14,10 @@ import useGoogleAnalytics from 'src/hooks/useGoogleAnalytics';
 import useReducerState from './hooks/useReducerState';
 import keyByField from 'utils/keyByField';
 import time from 'utils/time';
-import TYPES from 'src/data/categories.json';
+import CATEGORIES from 'src/data/categories.json';
 import ITEM_CATALOG from 'src/data/items.json';
 
 const ITEM_CATALOG_BY_ID = Object.freeze(keyByField(ITEM_CATALOG, 'id'));
-const TYPE = Object.freeze(
-  TYPES.reduce((_, type) => {
-    _[type] = type;
-    return _;
-  }, {}),
-);
 
 const noop = () => {};
 
@@ -359,11 +353,17 @@ export default function App() {
         </form>
 
         <Filters>
-          {TYPES.map((type) => {
+          {Object.values(CATEGORIES).map((categories) => {
             return (
-              <FilterButton key={type} active={filters.has(type)} onClick={onFilterClick(type)}>
-                {type}
-              </FilterButton>
+              <div>
+                {categories.map((category) => {
+                  return (
+                    <FilterButton key={category} active={filters.has(category)} onClick={onFilterClick(category)}>
+                      {category}
+                    </FilterButton>
+                  );
+                })}
+              </div>
             );
           })}
         </Filters>
@@ -400,7 +400,6 @@ const Filters = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 `;
 
 const FilterButton = styled.button`
