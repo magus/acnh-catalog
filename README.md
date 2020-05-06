@@ -1,15 +1,5 @@
 # Animal Crossing New Horizons Catalog
 
-## Launch
-
-- validate and test open graph tags for SEO
-  - send in dm on twitter to self
-  - https://cards-dev.twitter.com/validator
-  - https://developers.facebook.com/tools/debug/
-  - https://opengraphcheck.com/
-
-
-
 ## TODO
 
 - position transition for search results
