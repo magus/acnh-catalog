@@ -149,7 +149,6 @@ function reducer(state, action) {
       return {
         ...state,
         ...action.restoredState,
-        placeholder: randItem().name,
       };
     }
     case '+init-log': {
@@ -161,6 +160,7 @@ function reducer(state, action) {
     case 'init': {
       return {
         ...state,
+        placeholder: randItem().name,
         initialized: true,
       };
     }
