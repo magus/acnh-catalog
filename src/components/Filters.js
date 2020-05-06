@@ -28,8 +28,8 @@ export default function Filters({ filters, onFilterClick }) {
             if (!showFilters && !active) return null;
 
             return (
-              <>
-                <Gap active={j === 0} />
+              <React.Fragment key={`${category}-filter`}>
+                <Gap active={showFilters && j === 0} />
                 <FilterButton
                   layoutTransition={spring}
                   key={category}
@@ -38,7 +38,7 @@ export default function Filters({ filters, onFilterClick }) {
                 >
                   {category}
                 </FilterButton>
-              </>
+              </React.Fragment>
             );
           });
         })}
