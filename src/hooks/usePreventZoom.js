@@ -27,7 +27,7 @@ export default function usePreventZoom() {
 
     function handleTouchEnd(event) {
       var now = new Date().getTime();
-      if (now - lastTouchEnd < 300) {
+      if (now - lastTouchEnd < 500) {
         event.preventDefault();
       }
       lastTouchEnd = now;
