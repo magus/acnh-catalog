@@ -85,7 +85,7 @@ export default class MyDocument extends Document {
           <meta property="og:description" content={OG.Description} />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://accat.now.sh" />
-          <meta property="og:image" content="https://accat.now.sh/images/demo.png" />
+          <meta property="og:image" content="https://accat.now.sh/images/demo.54cb5b.png" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:creator" content="magusnn" />
           <meta property="twitter:creator:id" content="23604692" />
