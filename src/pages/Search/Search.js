@@ -4,6 +4,7 @@ import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
 
 import ModalProvider from 'src/components/ModalProvider';
+import NoResults from 'src/components/NoResults';
 import Item from 'src/components/Item';
 import Image from 'src/components/Image';
 import Search from 'src/components/icons/Search';
@@ -256,7 +257,11 @@ export default function App() {
   }, [search, filters]);
 
   const renderSearchResults = React.useMemo(() => {
-    if (!filteredResults.length) return null;
+    if (!search) return null;
+
+    if (!filteredResults.length) {
+      return <NoResults />;
+    }
 
     return (
       <div id="searchResults" className="items">
@@ -281,11 +286,10 @@ export default function App() {
   const wishlistItems = React.useMemo(() => {
     const filteredItems = sortedSetList(wishlist).filter(filterItem(filters));
 
-    if (!filteredItems.length) return null;
-
-    return (
-      <ItemsContainer>
-        <ItemsContainerName>Wishlist</ItemsContainerName>
+    const items = !filteredItems.length ? (
+      <NoResults />
+    ) : (
+      <>
         <div className="items">
           {filteredItems.map((item, i) => {
             return <Item key={item.id} item={item} pending onBuy={buyItem(item.id)} onDelete={deleteItem(item.id)} />;
@@ -295,6 +299,13 @@ export default function App() {
         <ClearAllButton className="clear-all" onClick={handleClearAll('WISHLIST')}>
           Clear Wishlist
         </ClearAllButton>
+      </>
+    );
+
+    return (
+      <ItemsContainer>
+        <ItemsContainerName>Wishlist</ItemsContainerName>
+        {items}
       </ItemsContainer>
     );
   }, [wishlist, catalog, filters]);
@@ -302,11 +313,10 @@ export default function App() {
   const catalogItems = React.useMemo(() => {
     const filteredCatalog = sortedSetList(catalog).filter(filterItem(filters));
 
-    if (!filteredCatalog.length) return null;
-
-    return (
-      <ItemsContainer>
-        <ItemsContainerName>Catalog</ItemsContainerName>
+    const items = !filteredCatalog.length ? (
+      <NoResults />
+    ) : (
+      <>
         <div className="items">
           {filteredCatalog.map((item, i) => {
             return <Item key={item.id} item={item} isCatalog onDelete={deleteCatalog(item.id)} />;
@@ -316,6 +326,13 @@ export default function App() {
         <ClearAllButton className="clear-all" onClick={handleClearAll('CATALOG')}>
           Clear Catalog
         </ClearAllButton>
+      </>
+    );
+
+    return (
+      <ItemsContainer>
+        <ItemsContainerName>Catalog</ItemsContainerName>
+        {items}
       </ItemsContainer>
     );
   }, [wishlist, catalog, filters]);
