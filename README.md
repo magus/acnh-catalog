@@ -2,10 +2,14 @@
 
 ## TODO
 
+
 - position transition for search results
   - https://www.framer.com/api/motion/examples/#position-transitions
 - stagger animation for search results
   - https://www.framer.com/api/motion/types/#orchestration.staggerchildren
+
+- swipe to delete items?
+
 
 - Create an item update script
   - Go through our existing item database
