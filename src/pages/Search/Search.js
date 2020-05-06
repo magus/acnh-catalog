@@ -178,7 +178,7 @@ export default function App() {
     input: React.createRef(),
   });
 
-  const { input: inputValue, search, placeholder, filters, wishlist, catalog } = state;
+  const { initialized, initializedLog, input: inputValue, search, placeholder, filters, wishlist, catalog } = state;
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
   const handleClearAll = (type) => () => {
@@ -369,19 +369,28 @@ export default function App() {
         </Filters>
       </div>
 
-      <div className="item-container">
-        {/* search results */}
-        {renderSearchResults}
+      {!initialized ? (
+        <InitLog>
+          {initializedLog.map((row) => (
+            <InitLogRow error={row.error} dangerouslySetInnerHTML={{ __html: row.log }} />
+          ))}
+        </InitLog>
+      ) : (
+        <div className="item-container">
+          {/* search results */}
+          {renderSearchResults}
 
-        {inputValue ? null : (
-          <>
-            {wishlistItems}
-            {catalogItems}
-          </>
-        )}
+          {inputValue ? null : (
+            <>
+              {wishlistItems}
+              {catalogItems}
+            </>
+          )}
+        </div>
+      )}
 
-        <div style={{ height: 1, width: 1, ...keyboardPaddingBottom }} />
-      </div>
+      {/* handle keyboard and padding to allow scrolling entire view */}
+      <div style={{ height: 1, width: 1, ...keyboardPaddingBottom }} />
     </>
   );
 }
@@ -421,4 +430,24 @@ const ItemsContainerName = styled.div`
 
 const ClearAllButton = styled.button`
   align-self: flex-end;
+`;
+
+const InitLog = styled.div`
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const InitLogRow = styled.div`
+  padding: 8px 16px;
+  border-color: ${(props) => (props.error ? 'var(--error-color)' : 'var(--app-color)')};
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 1px;
+  font-weight: 200;
+
+  b {
+    font-weight: 800;
+    color: var(--app-color);
+  }
 `;

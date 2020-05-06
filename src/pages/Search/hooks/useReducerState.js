@@ -20,6 +20,8 @@ const VERSION = keyMirror({
   v2: true,
 });
 
+const CURRENT_VERSION = VERSION.v2;
+
 // once a version releases, previous versions must all be updated
 // to mutate from their stored schema to latest version
 const RestoreState = {
@@ -46,7 +48,7 @@ const RestoreState = {
 // migrate to the latest version properly.
 function buildStoredState(state) {
   const storedState = {
-    version: VERSION.v2,
+    version: CURRENT_VERSION,
   };
 
   storedState.catalog = [...state.catalog];
@@ -65,17 +67,22 @@ export default function useReducerState() {
     try {
       const storedRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
       if (!storedRaw) {
+        dispatch('+init-log', { log: 'No stored data found.' });
         console.debug('No stored data');
       } else {
         const storedState = JSON.parse(storedRaw);
         if (!storedState) {
           console.debug('Invalid stored data');
         } else {
+          dispatch('+init-log', { log: 'Found stored data.' });
+          dispatch('+init-log', { log: 'Restoring...' });
           const restoreState = RestoreState[storedState.version];
           if (!restoreState) {
-            console.debug('Missing restore state function', storedState.version);
+            dispatch('+init-log', { log: `Cannot restore <b>${storedState.version}</b> state`, error: true });
+            throw new Error(`Missing restore state function ${storedState.version}`);
           } else {
             const restoredState = restoreState(storedState);
+            dispatch('+init-log', { log: `Restored <b>${storedState.version}</b> state` });
             console.debug(storedState.version, 'state migrated successfully');
 
             // dispatch state with init-lookup
@@ -83,16 +90,22 @@ export default function useReducerState() {
           }
         }
       }
+
+      // give some time for user to read logs
+      dispatch('+init-log', { log: 'Initializing...' });
+      setTimeout(() => dispatch('init'), 1000);
     } catch (err) {
-      console.debug('Failed to initialize from localStorage', err);
+      dispatch('+init-log', { log: 'Unable to read stored state.', error: true });
+      dispatch('+init-log', { log: err.message, error: true });
+      console.error('Unable to read stored state', err);
     }
   }, []);
 
   // write every change to local storage
   React.useEffect(() => {
-    // use the init flag to detect whether this is an initial state
+    // use the write flag to detect whether this is an initial state
     // we shouldn't ever write the initial state (may happen accidentally)
-    if (state.init) {
+    if (state.write) {
       console.debug('writing', `localStorage[${LOCAL_STORAGE_KEY}]`);
       localStorage.setItem(LOCAL_STORAGE_KEY, buildStoredState(state));
     }
@@ -102,9 +115,15 @@ export default function useReducerState() {
 }
 
 const initialState = {
-  // init is false until the user interacts with the lookup catalog
-  // prevents accidental writes of initial state of empty catalog
-  init: false,
+  // write is false until the user interacts with state to be saved
+  // this should help prevent accidental writes of initial states
+  write: false,
+
+  // initialized is false until we have restored from localStorage
+  // this should make it clearer that the app is initalizing
+  // and prevent actions in intermediate state
+  initialized: false,
+  initializedLog: [{ log: `Catalog <b>${CURRENT_VERSION}</b>` }],
 
   input: '',
   search: '',
@@ -133,9 +152,21 @@ function reducer(state, action) {
         placeholder: randItem().name,
       };
     }
+    case '+init-log': {
+      return {
+        ...state,
+        initializedLog: [...state.initializedLog, { ...action }],
+      };
+    }
+    case 'init': {
+      return {
+        ...state,
+        initialized: true,
+      };
+    }
 
     case '+wishlist': {
-      const nextState = { ...state, init: true };
+      const nextState = { ...state, write: true };
 
       // add only if not already in lookup
       if (!state.catalog.has(action.id)) {
@@ -152,10 +183,10 @@ function reducer(state, action) {
     case '-wishlist': {
       const wishlist = new Set(state.wishlist);
       wishlist.delete(action.id);
-      return { ...state, init: true, wishlist };
+      return { ...state, write: true, wishlist };
     }
     case '+catalog': {
-      const nextState = { ...state, init: true };
+      const nextState = { ...state, write: true };
       const wishlist = new Set(state.wishlist);
       wishlist.delete(action.id);
       nextState.wishlist = wishlist;
@@ -173,19 +204,19 @@ function reducer(state, action) {
       const catalog = new Set(state.catalog);
       catalog.delete(action.id);
 
-      return { ...state, init: true, catalog };
+      return { ...state, write: true, catalog };
     }
     case 'reset-wishlist': {
       return {
         ...state,
-        init: true,
+        write: true,
         wishlist: new Set(),
       };
     }
     case 'reset-catalog': {
       return {
         ...state,
-        init: true,
+        write: true,
         catalog: new Set(),
       };
     }

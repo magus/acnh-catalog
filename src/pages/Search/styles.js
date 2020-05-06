@@ -178,8 +178,8 @@ export const GlobalStyle = createGlobalStyle`
 
   .searchResult-highlight {
     font-weight: 800;
-    color: rgb(25, 174, 94);
-    background-color: rgb(227, 252, 236);
+    color: var(--app-color);
+    background-color: var(--app-color-light);
   }
 
 

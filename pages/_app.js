@@ -35,6 +35,10 @@ export default function MyApp({ Component, pageProps }) {
 
 const GlobalStyle = createGlobalStyle`
   :root {
+    --app-color: rgb(25, 174, 94);
+    --app-color-light: rgb(227, 252, 236);
+    --error-color: rgb(227, 52, 47);
+
     --bg-color: #fff;
     --font-color: rgb(26, 32, 44);
     --button-color: rgb(226, 232, 240);
