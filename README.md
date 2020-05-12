@@ -2,14 +2,45 @@
 
 ## TODO
 
+- remove copyright add note i have no claim etc to animal crossing
+
+
+Animal Crossing is a registered trademark of Nintendo. This site has no claim to any intellectual property associated with Animal Crossing.
+
+- fake loading bar, linear to 70% then increment by one every half second until 99% never hit 100
+
+- "imp part" vs "part imp", are the indices arrays needing to be joined in sorted order and removing duplicates (set > array)
+
+- focus input and (if necessary) scroll it into view after clicking search result (after scrolling down on search results we likely want to tap search and add another)
+
+- allow faster input of multiple items, esp variations maybe by not dismissing search (remove reset input, add a settings dictionary that opens a simple modal with checkboxes to enable/disable "Clear search after adding items"
+
+- we can hide catalog over 50 items, power users aren't scrolling it (we may want to consider virtualizing as well since we know item heights it should be easy)
+
+- empty / no results showing up wrong for wishlist/catalog, use search OR filters.size to set empty boolean
+
+- hasura backend for storing lists
+  - triple dot menu for wishlist / catalog
+  - show clear, import, share and compare
+  - requires a backend to read/write eg hasura
+  - <id, secret, version, list, name, timestamp>
+  - generate and save secret to localStorage
+  - when publishing id generated server side and returned, need to store this to allow writes to UPDATE the published list)
+  - use same secret for all publishes done for that user
+  - anyone read <id, version, name, list, timestamp>
+  - only with secret can authorize write to row
+  - share modal shows url to easily copy to clipboard
+  - compare shows confirmation of name & timestamp ("compare WISHLIST (published <time ago> (date)")
+  - require current version of list matches version to compare/import (This share was generated on an old version of Catalog. Ask the original owner to share their updates.
+
+- add DIY flag (gamedata.recipe)
+- add DIY filter button
+
 
 - position transition for search results
   - https://www.framer.com/api/motion/examples/#position-transitions
 - stagger animation for search results
   - https://www.framer.com/api/motion/types/#orchestration.staggerchildren
-
-- swipe to delete items?
-
 
 - Create an item update script
   - Go through our existing item database
