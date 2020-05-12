@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_PATH=. next dev",
-    "build": "NODE_PATH=. next build",
-    "start": "NODE_PATH=. next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "deploy": "now",
     "deploy:prod": "now --prod",
     "deploy:purge": "now rm acnh-catalog --safe"
@@ -14,10 +14,10 @@
     "framer-motion": "^1.10.3",
     "fuzzysort": "^1.1.4",
     "lodash": "^4.17.15",
-    "next": "^9.3.6",
+    "next": "^9.4.0",
     "next-offline": "^5.0.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "styled-components": "^5.1.0",
     "stylis-plugin-rtl": "^1.0.0"
   },

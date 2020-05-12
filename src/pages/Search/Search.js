@@ -16,8 +16,8 @@ import useKeyboard from 'src/hooks/useKeyboard';
 import useGoogleAnalytics from 'src/hooks/useGoogleAnalytics';
 
 import useReducerState from './hooks/useReducerState';
-import keyByField from 'utils/keyByField';
-import time from 'utils/time';
+import keyByField from 'src/utils/keyByField';
+import time from 'src/utils/time';
 
 import ITEM_CATALOG from 'src/data/items.json';
 
