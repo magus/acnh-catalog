@@ -11,6 +11,8 @@
 - includes images for items we can reuse
 - donate to cdn after successful setup https://acnhcdn.com/
 
+
+
 Animal Crossing is a registered trademark of Nintendo. This site has no claim to any intellectual property associated with Animal Crossing.
 
 - fake loading bar, linear to 70% then increment by one every half second until 99% never hit 100
@@ -21,7 +23,9 @@ Animal Crossing is a registered trademark of Nintendo. This site has no claim to
 
 - allow faster input of multiple items, esp variations maybe by not dismissing search (remove reset input, add a settings dictionary that opens a simple modal with checkboxes to enable/disable "Clear search after adding items"
 
-- we can hide catalog over 50 items, power users aren't scrolling it (we may want to consider virtualizing as well since we know item heights it should be easy)
+
+- catalog / wishlist tabs at top, can do virtualized list if we do it this way for perf, then a browse becomes possible with all items listed to scroll through
+- alternative is hide catalog over 50 items, power users aren't scrolling it (we may want to consider virtualizing as well since we know item heights it should be easy)
 
 - empty / no results showing up wrong for wishlist/catalog, use search OR filters.size to set empty boolean
 
