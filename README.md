@@ -23,6 +23,7 @@ Animal Crossing is a registered trademark of Nintendo. This site has no claim to
 
 - allow faster input of multiple items, esp variations maybe by not dismissing search (remove reset input, add a settings dictionary that opens a simple modal with checkboxes to enable/disable "Clear search after adding items"
 
+- modal to bottom sheet, height based on content and each option as a row
 
 - catalog / wishlist tabs at top, can do virtualized list if we do it this way for perf, then a browse becomes possible with all items listed to scroll through
 - alternative is hide catalog over 50 items, power users aren't scrolling it (we may want to consider virtualizing as well since we know item heights it should be easy)
@@ -42,6 +43,8 @@ Animal Crossing is a registered trademark of Nintendo. This site has no claim to
   - share modal shows url to easily copy to clipboard
   - compare shows confirmation of name & timestamp ("compare WISHLIST (published <time ago> (date)")
   - require current version of list matches version to compare/import (This share was generated on an old version of Catalog. Ask the original owner to share their updates.
+
+
 
 - add DIY flag (gamedata.recipe)
 - add DIY filter button
