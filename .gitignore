@@ -41,10 +41,12 @@ public/service-worker.js
 .now
 
 # scripts
-# ignore everything
-scripts/*
-# ... except for
-!scripts/acnh-catalog.tsv
-!scripts/parse-acnh-catalog.js
-!scripts/parse-villagerdb-catalog.js
+# ignore script credentials and outputs
+scripts/acnh-spreadsheet/export-spreadsheet/tokens.json
+scripts/acnh-spreadsheet/export-spreadsheet/credentials.json
+scripts/acnh-spreadsheet/export-spreadsheet/node_modules
+scripts/acnh-spreadsheet/export-spreadsheet/cache
+scripts/acnh-spreadsheet/export-spreadsheet/out
+scripts/acnh-spreadsheet/output/*
+scripts/villagerdb/output/*
 

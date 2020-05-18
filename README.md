@@ -4,14 +4,6 @@
 
 - remove copyright add note i have no claim etc to animal crossing
 
-- acnh database: https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/edit#gid=1316241644
-- editors copy: https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM
-- parsing out to json: https://github.com/acdb-team/google-sheets-to-json/blob/master/src/index.ts
-- run on latest sheet, compare against existing, output differences and generate new 
-- includes images for items we can reuse
-- donate to cdn after successful setup https://acnhcdn.com/
-
-
 
 Animal Crossing is a registered trademark of Nintendo. This site has no claim to any intellectual property associated with Animal Crossing.
 
