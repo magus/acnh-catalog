@@ -4,6 +4,9 @@
 
 - donate to cdn after successful setup https://acnhcdn.com/
 
+- sentry for bugs?
+
+
 - remove copyright add note i have no claim etc to animal crossing
 
 
