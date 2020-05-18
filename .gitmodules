@@ -1,0 +1,3 @@
+[submodule "scripts/acnh-spreadsheet/google-sheets-to-json"]
+	path = scripts/acnh-spreadsheet/google-sheets-to-json
+	url = git@github.com:acdb-team/google-sheets-to-json.git
