@@ -48,6 +48,7 @@ const minimalItems = ACNH_SPREADSHEET.map((item) => {
     image: variantImage,
     closetImage,
     albumImage,
+    iconImage,
   } = item;
 
   let variant;
@@ -62,10 +63,10 @@ const minimalItems = ACNH_SPREADSHEET.map((item) => {
     name = capitalize(`${originalName}`);
   }
 
-  const imageUrl = closetImage || albumImage || inventoryImage || variantImage;
+  const imageUrl = closetImage || albumImage || iconImage || inventoryImage || variantImage;
 
   // // images?
-  // if (!image) {
+  // if (!imageUrl) {
   //   console.error(item);
   //   process.exit(1);
   // }

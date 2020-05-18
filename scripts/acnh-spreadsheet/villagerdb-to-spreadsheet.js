@@ -118,7 +118,7 @@ const villagerDBLookup = keyByField(VILLAGER_DB_ITEMS, (_) =>
 const notInVillagerDB = [];
 const NEW_ITEMS = [];
 const ACNH_SPREADSHEET = [];
-SPREADSHEET_ITEMS.forEach((item) => {
+[...SPREADSHEET_ITEMS, ...SPREADSHEET_CREATURES].forEach((item) => {
   const spreadsheetItemName = item.name.toLowerCase();
 
   function buildACNHSpreadsheetItem(id = 'UNASSIGNED', item, variant) {
@@ -170,7 +170,10 @@ SPREADSHEET_ITEMS.forEach((item) => {
       return lookup(`${name}${variantNameLower}`, variant);
     }
 
-    if (item.variants.length === 1) {
+    if (!item.variants) {
+      // no variants
+      lookup(name);
+    } else if (item.variants.length === 1) {
       // single variant, lookup by name
       lookup(name, item.variants[0]);
     } else {
@@ -193,18 +196,20 @@ SPREADSHEET_ITEMS.forEach((item) => {
     }
   }
 
-  if (!item.variants || item.variants.length === 0) {
-    console.error(item);
-    throw new Error('Unexpected item format must have variants');
-  }
+  // if (!item.variants || item.variants.length === 0) {
+  //   console.error(item);
+  //   throw new Error('Unexpected item format must have variants');
+  // }
 
-  if (item.sourceSheet === 'Photos') {
-    // explicitly ignore photos
-  } else if (SPREADHSEET_VILLAGERDB_SKIP_NAME[spreadsheetItemName]) {
-    // explicitly skip these items
-  } else if (SPREADHSEET_VILLAGERDB_SKIP_REGEX.some((regex) => regex.test(spreadsheetItemName))) {
-    // explicitly skip any regex matches
-  } else if (SPREADSHEET_VILLAGERDB_MAP[spreadsheetItemName]) {
+  // if (item.sourceSheet === 'Photos') {
+  //   // explicitly ignore photos
+  // } else if (SPREADHSEET_VILLAGERDB_SKIP_NAME[spreadsheetItemName]) {
+  //   // explicitly skip these items
+  // } else if (SPREADHSEET_VILLAGERDB_SKIP_REGEX.some((regex) => regex.test(spreadsheetItemName))) {
+  //   // explicitly skip any regex matches
+  // }
+
+  if (SPREADSHEET_VILLAGERDB_MAP[spreadsheetItemName]) {
     // map match, handle explicitly
     const villagerDBName = SPREADSHEET_VILLAGERDB_MAP[spreadsheetItemName];
     handleLookup(villagerDBName.toLowerCase());
@@ -316,11 +321,23 @@ NEW_ITEMS.forEach((item) => {
   ACNH_SPREADSHEET.push({ ...item, __id });
 });
 
-if (Object.keys(keyByField(ACNH_SPREADSHEET, (_) => _.__id)).length !== ACNH_SPREADSHEET.length) {
+const ACNH_SPREADSHEET_LOOKUP = keyByField(ACNH_SPREADSHEET, (_) => _.__id);
+
+if (Object.keys(ACNH_SPREADSHEET_LOOKUP).length !== ACNH_SPREADSHEET.length) {
   console.debug(Object.keys(keyByField(ACNH_SPREADSHEET, (_) => _.__id)).length);
   console.debug(ACNH_SPREADSHEET.length);
   throw new Error('number of unique keys does not match number of items');
 }
+
+// Double check villagerdb items vs ACNH_SPREADSHEET
+VILLAGER_DB_ITEMS.forEach((item) => {
+  // if (!ACNH_SPREADSHEET_LOOKUP[item.id]) {
+  //   console.warn(item.id, 'missing', JSON.stringify(item));
+  // }
+  if (!ACNH_SPREADSHEET_LOOKUP[item.id] && item.category !== 'Photos') {
+    console.warn(item.id, 'missing', JSON.stringify(item));
+  }
+});
 
 sampleArray('ACNH_SPREADSHEET', ACNH_SPREADSHEET);
 fs.writeFileSync('ACNH_SPREADSHEET.json', JSON.stringify(ACNH_SPREADSHEET, null, 2));
