@@ -1,11 +1,5 @@
 # ACNH Spreadsheet
 
-## TODO
-
-- run on latest sheet, compare against existing, output differences and generate new
-- includes images for items we can reuse
-- donate to cdn after successful setup https://acnhcdn.com/
-
 ## Guide
 
 - `scripts/acnh-spreadsheet/google-sheets-to-json` contains scripts build using `yarn build`
