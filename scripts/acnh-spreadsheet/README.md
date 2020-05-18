@@ -17,8 +17,10 @@
 
 ## History
 
+### May 17, 2020
 - Initially we used data from villagerdb and moved to the community ACNH spreadsheet
 - `villagerdb-to-spreadsheet.js` was used to parse, compare and reconcile this migration
+- `catalog-items-from-spreadsheet.js` was used to filter the exhaustive `ACNH_SPREADSHEET.json` output to minimal set
 
 
 ## Resources

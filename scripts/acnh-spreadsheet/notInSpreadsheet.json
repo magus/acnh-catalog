@@ -1,0 +1,151 @@
+[
+  {
+    "category": "Tops",
+    "name": "Beige Winter-solstice Sweater",
+    "name_slug": "beige-winter-solstice-sweater",
+    "id": 720
+  },
+  {
+    "category": "Usables",
+    "name": "Bells",
+    "name_slug": "bells",
+    "orderable": false,
+    "id": 735
+  },
+  {
+    "category": "Wallpaper",
+    "name": "Gold Screen Wall",
+    "name_slug": "gold-screen-wall",
+    "orderable": false,
+    "id": 4293
+  },
+  {
+    "category": "Furniture",
+    "name": "Large Mailbox",
+    "name_slug": "large-mailbox",
+    "id": 5508
+  },
+  {
+    "category": "Furniture",
+    "name": "Oil Barrel Bathtub",
+    "name_slug": "oil-barrel-bathtub",
+    "orderable": false,
+    "variant_slug": "no-coating",
+    "variant": "No coating",
+    "id": 6919
+  },
+  {
+    "category": "Furniture",
+    "name": "Oil Barrel Bathtub",
+    "name_slug": "oil-barrel-bathtub",
+    "orderable": false,
+    "variant_slug": "green",
+    "variant": "Green",
+    "id": 6920
+  },
+  {
+    "category": "Furniture",
+    "name": "Oil Barrel Bathtub",
+    "name_slug": "oil-barrel-bathtub",
+    "orderable": false,
+    "variant_slug": "yellow",
+    "variant": "Yellow",
+    "id": 6921
+  },
+  {
+    "category": "Furniture",
+    "name": "Oil Barrel Bathtub",
+    "name_slug": "oil-barrel-bathtub",
+    "orderable": false,
+    "variant_slug": "red",
+    "variant": "Red",
+    "id": 6922
+  },
+  {
+    "category": "Furniture",
+    "name": "Oil Barrel Bathtub",
+    "name_slug": "oil-barrel-bathtub",
+    "orderable": false,
+    "variant_slug": "white",
+    "variant": "White",
+    "id": 6923
+  },
+  {
+    "category": "Furniture",
+    "name": "Oil Barrel Bathtub",
+    "name_slug": "oil-barrel-bathtub",
+    "orderable": false,
+    "variant_slug": "retro",
+    "variant": "Retro",
+    "id": 6924
+  },
+  {
+    "category": "Furniture",
+    "name": "Ordinary Mailbox",
+    "name_slug": "ordinary-mailbox",
+    "id": 7008
+  },
+  {
+    "category": "Tops",
+    "name": "Red Handmade Cape",
+    "name_slug": "red-handmade-cape",
+    "id": 8266
+  },
+  {
+    "category": "Hats",
+    "name": "Red Handmade Crown",
+    "name_slug": "red-handmade-crown",
+    "id": 8267
+  },
+  {
+    "category": "Flowers",
+    "name": "Red Tulip",
+    "name_slug": "red-tulip",
+    "id": 8287
+  },
+  {
+    "category": "Furniture",
+    "name": "Rustic Mailbox",
+    "name_slug": "rustic-mailbox",
+    "id": 8717
+  },
+  {
+    "category": "Furniture",
+    "name": "Square Mailbox",
+    "name_slug": "square-mailbox",
+    "orderable": false,
+    "id": 9668
+  },
+  {
+    "category": "Wallpaper",
+    "name": "White Brick Wall",
+    "name_slug": "white-brick-wall",
+    "orderable": true,
+    "id": 11165
+  },
+  {
+    "category": "Flowers",
+    "name": "White Tulip",
+    "name_slug": "white-tulip",
+    "id": 11192
+  },
+  {
+    "category": "Furniture",
+    "name": "Wooden Mailbox",
+    "name_slug": "wooden-mailbox",
+    "orderable": false,
+    "id": 11401
+  },
+  {
+    "category": "Hats",
+    "name": "Yellow Summer-solstice Crown",
+    "name_slug": "yellow-summer-solstice-crown",
+    "id": 11699
+  },
+  {
+    "category": "Flowers",
+    "name": "Yellow Tulip",
+    "name_slug": "yellow-tulip",
+    "id": 11701
+  }
+]
