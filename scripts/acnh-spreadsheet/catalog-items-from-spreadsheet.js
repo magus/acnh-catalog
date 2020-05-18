@@ -33,14 +33,33 @@ sampleArray('ACNH_SPREADSHEET', ACNH_SPREADSHEET);
 //   "id": 11247
 // }
 
+function capitalize(text) {
+  return text.replace(/\b\w/g, function (m) {
+    return m.toUpperCase();
+  });
+}
+
 const minimalItems = ACNH_SPREADSHEET.map((item) => {
-  const { __id, name, sourceSheet: category, inventoryImage, image: variantImage, closetImage, albumImage } = item;
+  const {
+    __id,
+    name: originalName,
+    sourceSheet: category,
+    inventoryImage,
+    image: variantImage,
+    closetImage,
+    albumImage,
+  } = item;
 
   let variant;
   if (item.variation && item.pattern) {
     variant = `${item.variation} / ${item.pattern}`;
   } else if (item.variation || item.pattern) {
-    variant = item.variation || item.pattern;
+    variant = `${item.variation || item.pattern}`;
+  }
+
+  let name;
+  if (originalName) {
+    name = capitalize(`${originalName}`);
   }
 
   const imageUrl = closetImage || albumImage || inventoryImage || variantImage;
@@ -67,6 +86,9 @@ minimalItems.forEach((item) => {
 
   // images?
   if (!item.image) return err('missing image');
+  if (!item.name) return err('missing name');
+  if (item.name && typeof item.name !== 'string') return err('name must be a string');
+  if (item.variant && typeof item.variant !== 'string') return err('variant must be a string');
 
   validItems.push(item);
 });
