@@ -18,22 +18,33 @@ const VERSION = keyMirror({
   //   wishlist: [1, 2, ...],
   // }
   v2: true,
+
+  // no-op from v2, but changed item database (acnh-spreadsheet)
+  v3: true,
 });
 
-const CURRENT_VERSION = VERSION.v2;
+const CURRENT_VERSION = VERSION.v3;
 
 // once a version releases, previous versions must all be updated
 // to mutate from their stored schema to latest version
 const RestoreState = {
-  // v1 -> v2
+  // v1 -> v3
   [VERSION.v1]: (storedState) => {
     return {
       catalog: new Set(storedState.lookup),
     };
   },
 
-  // v2 -> v2 (noop)
+  // v2 -> v3 (noop)
   [VERSION.v2]: (storedState) => {
+    return {
+      catalog: new Set(storedState.catalog),
+      wishlist: new Set(storedState.wishlist),
+    };
+  },
+
+  // v3 -> v3 (noop)
+  [VERSION.v3]: (storedState) => {
     return {
       catalog: new Set(storedState.catalog),
       wishlist: new Set(storedState.wishlist),
