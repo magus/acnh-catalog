@@ -222,8 +222,6 @@ export const GlobalStyle = createGlobalStyle`
     text-overflow: ellipsis;
     overflow: hidden;
 
-    text-transform: capitalize;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;

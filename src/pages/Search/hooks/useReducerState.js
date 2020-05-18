@@ -134,6 +134,8 @@ const initialState = {
   // this should make it clearer that the app is initalizing
   // and prevent actions in intermediate state
   initialized: false,
+  initializedState: false,
+  initializedSearch: false,
   initializedLog: [{ log: `Catalog <b>${CURRENT_VERSION}</b>` }],
 
   input: '',
@@ -172,7 +174,15 @@ function reducer(state, action) {
       return {
         ...state,
         placeholder: randItem().name,
-        initialized: true,
+        initializedState: true,
+        initialized: state.initializedSearch,
+      };
+    }
+    case 'init-search': {
+      return {
+        ...state,
+        initializedSearch: true,
+        initialized: state.initializedState,
       };
     }
 

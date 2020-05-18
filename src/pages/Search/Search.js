@@ -176,6 +176,13 @@ export default function App() {
     input: React.createRef(),
   });
 
+  // on mount
+  React.useEffect(() => {
+    // initialize search by warming query engine
+    time('search', () => searchCatalog('f', filters));
+    dispatch('init-search');
+  }, []);
+
   const { initialized, initializedLog, input: inputValue, search, placeholder, filters, wishlist, catalog } = state;
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
@@ -253,7 +260,7 @@ export default function App() {
         value: Math.round(timed.elapsedMs),
       });
 
-      return timed.result.filter(filterItem(filters));
+      return timed.result;
     }
 
     return [];
