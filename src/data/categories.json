@@ -1,31 +1,30 @@
 {
   "Furniture": [
-    "Flooring",
-    "Furniture",
-    "Wallpaper"
+    "Housewares",
+    "Miscellaneous",
+    "Wall-mounted",
+    "Wallpaper",
+    "Floors",
+    "Rugs"
   ],
   "Clothes": [
-    "Accessories",
-    "Bottoms",
-    "Dresses",
-    "Hats",
-    "Shoes",
-    "Socks",
     "Tops",
+    "Bottoms",
+    "Dress-Up",
+    "Headwear",
+    "Accessories",
+    "Socks",
+    "Shoes",
+    "Bags",
     "Umbrellas"
   ],
   "Misc": [
-    "Art",
-    "Bugs",
-    "Bushes and Trees",
-    "Fish",
-    "Flowers",
-    "Fossils",
-    "Fruit",
-    "Music",
-    "Photos",
-    "Seashells",
+    "Fencing",
+    "Posters",
     "Tools",
-    "Usables"
+    "Music",
+    "Fossils",
+    "Other",
+    "Art"
   ]
 }

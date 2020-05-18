@@ -24,7 +24,7 @@ export default function Item({ item, name, variant, isWishlist, isCatalog, isSea
 
   return (
     <div key={item.id} className="item" onClick={onClick}>
-      <Image className="item-image" src={getS3Image(item)} fallback="images/app-icon.3a3ded.svg" />
+      <Image className="item-image" src={getACNHCDNImage(item)} fallback="images/app-icon.3a3ded.svg" />
 
       <div className="item-name">
         <Text>
@@ -43,6 +43,8 @@ export default function Item({ item, name, variant, isWishlist, isCatalog, isSea
     </div>
   );
 }
+
+const getACNHCDNImage = (item) => `https://acnhcdn.com/latest/${item.image}`;
 
 // e.g. https://accat-images.s3-us-west-1.amazonaws.com/thumb/apples-poster-235.png
 const getS3Image = (item, type = 'thumb') => {
