@@ -2,12 +2,7 @@
 
 ## Guide
 
-- `scripts/acnh-spreadsheet/google-sheets-to-json` contains scripts build using `yarn build`
-- Copied output from `scripts/acnh-spreadsheet/google-sheets-to-json/build` to `scripts/acnh-spreadsheet/export-spreadsheet`
-- Visit [Google Sheets API Quickstart](https://developers.google.com/sheets/api/quickstart/nodejs) and click `Enable the Google Sheets API` to create `credentials.json`
-- Copy `credentials.json` to `scripts/acnh-spreadsheet/export-spreadsheet` in order to authenticate the script
-- `cd export-spreadsheet` and run `node index.js`
-
+- `google-sheets-to-json` contains scripts to pull from Google Sheets via API
 
 ## History
 
