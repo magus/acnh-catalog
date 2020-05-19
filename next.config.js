@@ -47,13 +47,13 @@ module.exports = withSourceMaps(
       // https://developers.google.com/web/tools/workbox/modules/workbox-strategies
       runtimeCaching: [
         {
-          // villagedb images from cache first
-          urlPattern: /^https?:\/\/villagerdb\.com\/.*\.png$/,
+          // acnhcdn images from cache first
+          urlPattern: /^https?:\/\/acnhcdn\.com\/.*\.png$/,
           handler: 'CacheFirst',
           options: {
-            cacheName: 'villagerdb-images',
+            cacheName: 'acnhcdn-images',
             cacheableResponse: {
-              statuses: [0, 200, 304], // villagerdb responds with 304 on success
+              statuses: [0, 200, 304], // some cdns may respond with 304 on success
             },
             expiration: {
               maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
@@ -61,9 +61,9 @@ module.exports = withSourceMaps(
             },
           },
         },
-        // non-villagedb image https calls
+        // non-acnhcdn image https calls
         {
-          urlPattern: /^((?!villagerdb).)*$/,
+          urlPattern: /^((?!acnhcdn).)*$/,
           handler: 'NetworkFirst',
           options: {
             cacheName: 'https-calls',
