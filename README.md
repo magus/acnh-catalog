@@ -6,12 +6,13 @@
 
 - sentry for bugs?
 
-
 - remove copyright add note i have no claim etc to animal crossing
 
 
 Animal Crossing is a registered trademark of Nintendo. This site has no claim to any intellectual property associated with Animal Crossing.
 
+
+- disable or hide input while loading
 - fake loading bar, linear to 70% then increment by one every half second until 99% never hit 100
 
 - "imp part" vs "part imp", are the indices arrays needing to be joined in sorted order and removing duplicates (set > array)
