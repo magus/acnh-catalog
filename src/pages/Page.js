@@ -36,7 +36,7 @@ function Page({ children }) {
 
   return (
     <Container>
-      {children}
+      <div>{children}</div>
 
       <Footer>
         <div>
@@ -59,7 +59,11 @@ function Page({ children }) {
 }
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 640px;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 8px;
   overflow: auto;

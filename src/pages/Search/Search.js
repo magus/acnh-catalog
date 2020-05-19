@@ -446,7 +446,7 @@ const ClearAllButton = styled.button`
 `;
 
 const InitLog = styled.div`
-  margin: 24px;
+  margin: 72px 24px;
   display: flex;
   flex-direction: column;
 `;
