@@ -39,8 +39,18 @@ function Page({ children }) {
       {children}
 
       <Footer>
-        <Copyright>© 2020</Copyright>
-        <div>Thanks to VillagerDB, Nintendo and the amazing Animal Crossing community.</div>
+        <div>
+          Special thanks to the{' '}
+          <CommunityLink
+            target="_blank"
+            rel="noopener"
+            href="https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/edit"
+          >
+            amazing Animal Crossing community
+          </CommunityLink>
+          .
+        </div>
+        <div>This is a fan-made website and is in no way affiliated with Nintendo.</div>
       </Footer>
 
       <ModalPortal />
@@ -64,4 +74,12 @@ const Footer = styled.footer`
 
 const Copyright = styled.div`
   margin: 8px 0;
+`;
+
+const CommunityLink = styled.a`
+  text-decoration: none;
+  color: var(--blue-color);
+  :visited {
+    color: var(--blue-color);
+  }
 `;
