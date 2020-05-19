@@ -1,6 +1,15 @@
 import Head from 'next/head';
-import { createGlobalStyle } from 'styled-components';
-// import App from 'next/app'
+import styled, { createGlobalStyle } from 'styled-components';
+import App from 'next/app';
+import sentry from '../src/utils/sentry';
+
+const { Sentry, captureException } = sentry();
+
+if (process.browser) {
+  window.addEventListener('error', (event) => {
+    captureException(event.error, { errorSource: 'browser.window.error' });
+  });
+}
 
 // Will be called once for every metric that has to be reported.
 // https://nextjs.org/blog/next-9-4#integrated-web-vitals-reporting
@@ -29,23 +38,92 @@ export function reportWebVitals(metric) {
   }
 }
 
-export default function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <GlobalStyle />
+export default class MyApp extends App {
+  static getDerivedStateFromProps(props, state) {
+    // If there was an error generated within getInitialProps, and we haven't
+    // yet seen an error, we add it to this.state here
+    return {
+      hasError: props.hasError || state.hasError || false,
+      errorEventId: props.errorEventId || state.errorEventId || undefined,
+    };
+  }
 
-      <Head>
-        <meta
-          key="meta-viewport"
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <title>Catalog</title>
-      </Head>
+  static getDerivedStateFromError() {
+    // React Error Boundary here allows us to set state flagging the error (and
+    // later render a fallback UI).
+    return { hasError: true };
+  }
 
-      <Component {...pageProps} />
-    </>
-  );
+  constructor() {
+    super(...arguments);
+
+    this.state = {
+      hasError: false,
+      errorEventId: undefined,
+    };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    const errorEventId = captureException(error, {
+      errorInfo,
+      errorSource: 'componentDidCatch',
+    });
+
+    // Store the event id at this point as we don't have access to it within
+    // `getDerivedStateFromError`.
+    this.setState({ errorEventId });
+  }
+
+  componentDidMount() {
+    window.addEventListener('error', (event) => {
+      captureException(event.error, { errorSource: 'browser._app.window.error' });
+    });
+  }
+
+  render() {
+    const { Component, pageProps } = this.props;
+
+    return (
+      <>
+        <GlobalStyle />
+
+        <Head>
+          <meta
+            key="meta-viewport"
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          />
+          <title>Catalog</title>
+        </Head>
+
+        {this.state.hasError ? (
+          <Container>
+            <div>
+              <H1>Sorry, something went wrong.</H1>
+              <Options>
+                <Choice
+                  onClick={() => {
+                    Sentry.showReportDialog({ eventId: this.state.errorEventId });
+                  }}
+                >
+                  Report
+                </Choice>
+                <Choice
+                  onClick={() => {
+                    window.location.reload(true);
+                  }}
+                >
+                  Reload
+                </Choice>
+              </Options>
+            </div>
+          </Container>
+        ) : (
+          <Component {...pageProps} />
+        )}
+      </>
+    );
+  }
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -54,11 +132,21 @@ export default function MyApp({ Component, pageProps }) {
 // be server-side rendered.
 //
 // MyApp.getInitialProps = async (appContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
-//
-//   return { ...appProps }
-// }
+//   try {
+//     // calls page's `getInitialProps` and fills `appProps.pageProps`
+//     const appProps = await App.getInitialProps(appContext);
+
+//     return { ...appProps };
+//   } catch (error) {
+//     // Capture errors that happen during a page's getInitialProps.
+//     // This will work on both client and server sides.
+//     const errorEventId = captureException(error, ctx);
+//     return {
+//       hasError: true,
+//       errorEventId,
+//     };
+//   }
+// };
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -69,6 +157,7 @@ const GlobalStyle = createGlobalStyle`
     --blue-color: rgb(52,144,220);
 
     --bg-color: #fff;
+    --font-color-rgb: 26, 32, 44;
     --font-color: rgb(26, 32, 44);
     --button-color: rgb(226, 232, 240);
     --button-border-color: rgb(226, 232, 240);
@@ -76,7 +165,8 @@ const GlobalStyle = createGlobalStyle`
 
     @media (prefers-color-scheme: dark) {
       --bg-color: #000;
-      --font-color: #fff;
+      --font-color-rgb: 255, 255, 255;
+      --font-color: rgb(255, 255, 255);
       --button-color: rgb(34,41,47);
       --button-border-color: rgb(226, 232, 240);
       --button-text: #fff;
@@ -101,4 +191,50 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
+  button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    height: 46px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-color: var(--button-border-color);
+    border-radius: 0.25rem;
+    background-color: var(--button-color);
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: 700;
+    color: var(--button-text);
+  }
+`;
+
+const Container = styled.div`
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue',
+    'Lucida Grande', sans-serif;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const H1 = styled.h1`
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  vertical-align: top;
+`;
+
+const Options = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const Choice = styled.button`
+  margin: 0 8px;
 `;

@@ -132,23 +132,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--bg-color);
   }
 
-  button {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    height: 46px;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    border-color: var(--button-border-color);
-    border-radius: 0.25rem;
-    background-color: var(--button-color);
-    cursor: pointer;
-
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: 700;
-    color: var(--button-text);
-  }
-
   button:disabled {
     opacity: 0.4;
   }

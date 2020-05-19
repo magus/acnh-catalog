@@ -14,8 +14,6 @@ export default function NotFound() {
 }
 
 const Container = styled.div`
-  color: #000;
-  background: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue',
     'Lucida Grande', sans-serif;
   height: 100vh;
@@ -28,7 +26,7 @@ const Container = styled.div`
 
 const H1 = styled.h1`
   display: inline-block;
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(var(--font-color-rgb), 0.3);
   margin: 0;
   margin-right: 20px;
   padding: 10px 23px 10px 0;
