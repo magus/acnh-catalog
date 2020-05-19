@@ -34,9 +34,14 @@ sampleArray('ACNH_SPREADSHEET', ACNH_SPREADSHEET);
 // }
 
 function capitalize(text) {
-  return text.replace(/\b\w/g, function (m) {
-    return m.toUpperCase();
-  });
+  return (
+    text
+      // capitalize first character (\w) after each word start (\b)
+      .replace(/\b\w/g, (_) => _.toUpperCase())
+      // fix the 'S which results from above regex
+      // e.g. admiral's photo > Admiral'S Photo
+      .replace(/'S/g, "'s")
+  );
 }
 
 const minimalItems = ACNH_SPREADSHEET.map((item) => {
