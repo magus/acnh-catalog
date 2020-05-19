@@ -361,34 +361,38 @@ export default function App() {
       <div className="sticky-header">
         <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.3a3ded.svg" />
 
-        <form action="#" className="input">
-          <input
-            className="transition-colors ease-in-out"
-            ref={refs.current.input}
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
-            {...inputFocusEvents}
-            type="search"
-            id="search"
-            name="search"
-            autoComplete="off"
-            spellCheck="false"
-            placeholder={placeholder}
-            autoCorrect="off"
-            autoCapitalize="none"
-            value={inputValue}
-          />
-          {!inputValue ? null : (
-            <button className="icon-button input--clear" onClick={handleClear}>
-              <X color="#fff" />
-            </button>
-          )}
-          <button onClick={noop} className="icon-button input--search">
-            <Search color="#fff" />
-          </button>
-        </form>
+        {!initialized ? null : (
+          <>
+            <form action="#" className="input">
+              <input
+                className="transition-colors ease-in-out"
+                ref={refs.current.input}
+                onChange={handleInputChange}
+                onKeyDown={handleKeyDown}
+                {...inputFocusEvents}
+                type="search"
+                id="search"
+                name="search"
+                autoComplete="off"
+                spellCheck="false"
+                placeholder={placeholder}
+                autoCorrect="off"
+                autoCapitalize="none"
+                value={inputValue}
+              />
+              {!inputValue ? null : (
+                <button className="icon-button input--clear" onClick={handleClear}>
+                  <X color="#fff" />
+                </button>
+              )}
+              <button onClick={noop} className="icon-button input--search">
+                <Search color="#fff" />
+              </button>
+            </form>
 
-        <Filters filters={filters} onFilterClick={onFilterClick} />
+            <Filters filters={filters} onFilterClick={onFilterClick} />
+          </>
+        )}
       </div>
 
       {!initialized ? (

@@ -46,11 +46,11 @@ function Page({ children }) {
             rel="noopener"
             href="https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/edit"
           >
-            amazing Animal Crossing community
+            amazing ACNH community
           </CommunityLink>
           .
         </div>
-        <div>This is a fan-made website and is in no way affiliated with Nintendo.</div>
+        <div>This website is in no way affiliated with Nintendo.</div>
       </Footer>
 
       <ModalPortal />
