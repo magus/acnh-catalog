@@ -73,7 +73,9 @@ const minimalItems = ACNH_SPREADSHEET.map((item) => {
 
   let image;
   if (imageUrl) {
-    image = imageUrl.replace('https://acnhcdn.com/latest/', '');
+    // replace acnhcdn host and path with empty string
+    // rebuild in apps with 'https://acnhcdn.com/latest/<image>'
+    image = imageUrl.replace(/https\:\/\/acnhcdn\.com\/.*?\//, '');
   }
 
   return { id: __id, category, name, variant, image };

@@ -29402,7 +29402,7 @@
     "id": 8662,
     "category": "Miscellaneous",
     "name": "Rover'S Briefcase",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrTrunkXct.png"
+    "image": "FtrIcon/FtrTrunkXct.png"
   },
   {
     "id": 8725,
@@ -43398,7 +43398,7 @@
     "id": 2022,
     "category": "Tops",
     "name": "Coral Nook Inc. Aloha Shirt",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/TopsTexTopYshirtsHNookpink0.png"
+    "image": "ClosetIcon/TopsTexTopYshirtsHNookpink0.png"
   },
   {
     "id": 2073,
@@ -44820,7 +44820,7 @@
     "id": 4402,
     "category": "Tops",
     "name": "Green Nook Inc. Aloha Shirt",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/TopsTexTopYshirtsHNookgreen0.png"
+    "image": "ClosetIcon/TopsTexTopYshirtsHNookgreen0.png"
   },
   {
     "id": 4418,
@@ -44993,7 +44993,7 @@
     "id": 8266,
     "category": "Tops",
     "name": "Handmade Cape",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/TopsTexTopCoatHChildren0.png"
+    "image": "ClosetIcon/TopsTexTopCoatHChildren0.png"
   },
   {
     "id": 4548,
@@ -49437,7 +49437,7 @@
     "id": 720,
     "category": "Tops",
     "name": "Winter-Solstice Sweater",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/TopsTexTopOuterLWintersolstice0.png"
+    "image": "ClosetIcon/TopsTexTopOuterLWintersolstice0.png"
   },
   {
     "id": 11586,
@@ -77454,189 +77454,189 @@
     "category": "Housewares",
     "name": "Wedding Arch",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingArch_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingArch_Remake_0_0.png"
   },
   {
     "id": "avJ",
     "category": "Housewares",
     "name": "Wedding Arch",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingArch_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingArch_Remake_1_0.png"
   },
   {
     "id": "TQC",
     "category": "Housewares",
     "name": "Wedding Arch",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingArch_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingArch_Remake_2_0.png"
   },
   {
     "id": "GbM",
     "category": "Housewares",
     "name": "Wedding Bench",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingChairL_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingChairL_Remake_0_0.png"
   },
   {
     "id": "fvZ",
     "category": "Housewares",
     "name": "Wedding Bench",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingChairL_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingChairL_Remake_1_0.png"
   },
   {
     "id": "vIw",
     "category": "Housewares",
     "name": "Wedding Bench",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingChairL_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingChairL_Remake_2_0.png"
   },
   {
     "id": "dBL",
     "category": "Housewares",
     "name": "Wedding Chair",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingChairS_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingChairS_Remake_0_0.png"
   },
   {
     "id": "NKt",
     "category": "Housewares",
     "name": "Wedding Chair",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingChairS_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingChairS_Remake_1_0.png"
   },
   {
     "id": "zwO",
     "category": "Housewares",
     "name": "Wedding Chair",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingChairS_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingChairS_Remake_2_0.png"
   },
   {
     "id": "Kjc",
     "category": "Housewares",
     "name": "Wedding Flower Stand",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingFlower_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingFlower_Remake_0_0.png"
   },
   {
     "id": "kxS",
     "category": "Housewares",
     "name": "Wedding Flower Stand",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingFlower_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingFlower_Remake_1_0.png"
   },
   {
     "id": "ASt",
     "category": "Housewares",
     "name": "Wedding Flower Stand",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingFlower_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingFlower_Remake_2_0.png"
   },
   {
     "id": "cpW",
     "category": "Housewares",
     "name": "Wedding Head Table",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingTableM_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingTableM_Remake_0_0.png"
   },
   {
     "id": "BVD",
     "category": "Housewares",
     "name": "Wedding Head Table",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingTableM_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingTableM_Remake_1_0.png"
   },
   {
     "id": "fYr",
     "category": "Housewares",
     "name": "Wedding Head Table",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingTableM_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingTableM_Remake_2_0.png"
   },
   {
     "id": "Dxg",
     "category": "Housewares",
     "name": "Wedding Pipe Organ",
     "variant": "White",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingOrgan_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingOrgan_Remake_0_0.png"
   },
   {
     "id": "amI",
     "category": "Housewares",
     "name": "Wedding Pipe Organ",
     "variant": "Dark brown",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingOrgan_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingOrgan_Remake_1_0.png"
   },
   {
     "id": "Twq",
     "category": "Housewares",
     "name": "Wedding Pipe Organ",
     "variant": "Natural",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingOrgan_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingOrgan_Remake_2_0.png"
   },
   {
     "id": "jdC",
     "category": "Housewares",
     "name": "Wedding Table",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingTableL_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingTableL_Remake_0_0.png"
   },
   {
     "id": "UBM",
     "category": "Housewares",
     "name": "Wedding Table",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingTableL_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingTableL_Remake_1_0.png"
   },
   {
     "id": "nGU",
     "category": "Housewares",
     "name": "Wedding Table",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingTableL_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingTableL_Remake_2_0.png"
   },
   {
     "id": "GwP",
     "category": "Housewares",
     "name": "Wedding Welcome Board",
     "variant": "Cute / Message",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingBoard_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingBoard_Remake_0_0.png"
   },
   {
     "id": "qxE",
     "category": "Housewares",
     "name": "Wedding Welcome Board",
     "variant": "Cute / Reese & Cyrus",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingBoard_Remake_0_1.png"
+    "image": "FtrIcon/FtrWeddingBoard_Remake_0_1.png"
   },
   {
     "id": "YIW",
     "category": "Housewares",
     "name": "Wedding Welcome Board",
     "variant": "Chic / Message",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingBoard_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingBoard_Remake_1_0.png"
   },
   {
     "id": "iFt",
     "category": "Housewares",
     "name": "Wedding Welcome Board",
     "variant": "Chic / Reese & Cyrus",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingBoard_Remake_1_1.png"
+    "image": "FtrIcon/FtrWeddingBoard_Remake_1_1.png"
   },
   {
     "id": "WQm",
     "category": "Housewares",
     "name": "Wedding Welcome Board",
     "variant": "Garden / Message",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingBoard_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingBoard_Remake_2_0.png"
   },
   {
     "id": "ltx",
     "category": "Housewares",
     "name": "Wedding Welcome Board",
     "variant": "Garden / Reese & Cyrus",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingBoard_Remake_2_1.png"
+    "image": "FtrIcon/FtrWeddingBoard_Remake_2_1.png"
   },
   {
     "id": "eUv",
@@ -77733,42 +77733,42 @@
     "category": "Miscellaneous",
     "name": "Wedding Cake",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingCake_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingCake_Remake_0_0.png"
   },
   {
     "id": "vSa",
     "category": "Miscellaneous",
     "name": "Wedding Cake",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingCake_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingCake_Remake_1_0.png"
   },
   {
     "id": "zyG",
     "category": "Miscellaneous",
     "name": "Wedding Cake",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingCake_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingCake_Remake_2_0.png"
   },
   {
     "id": "OEL",
     "category": "Miscellaneous",
     "name": "Wedding Candle Set",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingCandle_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingCandle_Remake_0_0.png"
   },
   {
     "id": "WKD",
     "category": "Miscellaneous",
     "name": "Wedding Candle Set",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingCandle_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingCandle_Remake_1_0.png"
   },
   {
     "id": "fbN",
     "category": "Miscellaneous",
     "name": "Wedding Candle Set",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingCandle_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingCandle_Remake_2_0.png"
   },
   {
     "id": "fbZ",
@@ -77793,21 +77793,21 @@
     "category": "Wall-mounted",
     "name": "Wedding Decoration",
     "variant": "Cute",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingFlowerWall_Remake_0_0.png"
+    "image": "FtrIcon/FtrWeddingFlowerWall_Remake_0_0.png"
   },
   {
     "id": "Aln",
     "category": "Wall-mounted",
     "name": "Wedding Decoration",
     "variant": "Chic",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingFlowerWall_Remake_1_0.png"
+    "image": "FtrIcon/FtrWeddingFlowerWall_Remake_1_0.png"
   },
   {
     "id": "brj",
     "category": "Wall-mounted",
     "name": "Wedding Decoration",
     "variant": "Garden",
-    "image": "https://acnhcdn.com/1.2.0/FtrIcon/FtrWeddingFlowerWall_Remake_2_0.png"
+    "image": "FtrIcon/FtrWeddingFlowerWall_Remake_2_0.png"
   },
   {
     "id": "dYk",
@@ -99787,13 +99787,13 @@
     "id": "xIY",
     "category": "Dress-Up",
     "name": "Cake Dress",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/TopsTexOnepieceDressNWedding.png"
+    "image": "ClosetIcon/TopsTexOnepieceDressNWedding.png"
   },
   {
     "id": "RBC",
     "category": "Dress-Up",
     "name": "Wedding Tuxedo",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/TopsTexOnepieceOverallLJune0.png"
+    "image": "ClosetIcon/TopsTexOnepieceOverallLJune0.png"
   },
   {
     "id": "OVr",
@@ -99805,13 +99805,13 @@
     "id": "LRR",
     "category": "Shoes",
     "name": "Wedding Pumps",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/ShoesLowcutJunepumps0.png"
+    "image": "ClosetIcon/ShoesLowcutJunepumps0.png"
   },
   {
     "id": "fNe",
     "category": "Shoes",
     "name": "Wedding Shoes",
-    "image": "https://acnhcdn.com/1.2.0/ClosetIcon/ShoesLowcutJuneshoes0.png"
+    "image": "ClosetIcon/ShoesLowcutJuneshoes0.png"
   },
   {
     "id": "EXO",
