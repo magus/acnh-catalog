@@ -58,6 +58,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .app-icon {
+    margin: 8px 0 0 0;
     width: 64px;
     height: 64px;
   }

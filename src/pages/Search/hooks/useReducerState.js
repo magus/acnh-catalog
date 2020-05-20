@@ -6,6 +6,8 @@ import keyMirror from 'src/utils/keyMirror';
 const randItem = () => ITEM_CATALOG[Math.floor(Math.random() * ITEM_CATALOG.length)];
 const sleep = async (timeMs) => new Promise((resolve) => setTimeout(resolve, timeMs));
 
+const LOG_DELAY = 500;
+
 const LOCAL_STORAGE_KEY = 'ACNHCatalog--State';
 
 const VERSION = keyMirror({
@@ -77,13 +79,13 @@ export default function useReducerState() {
   React.useEffect(() => {
     async function main() {
       console.debug('reading', `localStorage[${LOCAL_STORAGE_KEY}]`);
-      await sleep(1000);
+      await sleep(LOG_DELAY);
 
       try {
         const storedRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
         if (!storedRaw) {
           dispatch('+init-log', { log: 'No stored data found.' });
-          await sleep(1000);
+          await sleep(LOG_DELAY);
           console.debug('No stored data');
         } else {
           const storedState = JSON.parse(storedRaw);
@@ -91,16 +93,16 @@ export default function useReducerState() {
             console.debug('Invalid stored data');
           } else {
             dispatch('+init-log', { log: 'Loading saved data...' });
-            await sleep(1000);
+            await sleep(LOG_DELAY);
             const restoreState = RestoreState[storedState.version];
             if (!restoreState) {
               dispatch('+init-log', { log: `Cannot load <b>${storedState.version}</b> state`, error: true });
-              await sleep(1000);
+              await sleep(LOG_DELAY);
               throw new Error(`Missing restore state function ${storedState.version}`);
             } else {
               const restoredState = restoreState(storedState);
               dispatch('+init-log', { log: `Loaded <b>${storedState.version}</b> state!` });
-              await sleep(1000);
+              await sleep(LOG_DELAY);
               console.debug(storedState.version, 'state migrated successfully');
 
               // dispatch state with init-lookup
@@ -111,13 +113,13 @@ export default function useReducerState() {
 
         // give some time for user to read logs
         dispatch('+init-log', { log: 'Launching...' });
-        await sleep(1000);
+        await sleep(LOG_DELAY);
         dispatch('init');
       } catch (err) {
         dispatch('+init-log', { log: 'Unable to read stored state.', error: true });
-        await sleep(1000);
+        await sleep(LOG_DELAY);
         dispatch('+init-log', { log: err.message, error: true });
-        await sleep(1000);
+        await sleep(LOG_DELAY);
         console.error('Unable to read stored state', err);
       }
     }
@@ -150,6 +152,7 @@ const initialState = {
   initializedState: false,
   initializedSearch: false,
   initializedLog: [{ log: `Catalog <b>${CURRENT_VERSION}</b>` }],
+  loadPercent: 0,
 
   input: '',
   search: '',
@@ -178,24 +181,35 @@ function reducer(state, action) {
       };
     }
     case '+init-log': {
+      const loadPercent = Math.min(100, state.loadPercent + 20);
+
       return {
         ...state,
         initializedLog: [...state.initializedLog, { ...action }],
+        loadPercent,
       };
     }
     case 'init': {
+      const initialized = state.initializedSearch;
+      const loadPercent = initialized ? 100 : Math.min(95, state.loadPercent + 20);
+
       return {
         ...state,
         placeholder: randItem().name,
         initializedState: true,
-        initialized: state.initializedSearch,
+        initialized,
+        loadPercent,
       };
     }
     case 'init-search': {
+      const initialized = state.initializedState;
+      const loadPercent = initialized ? 95 : Math.min(95, state.loadPercent + 20);
+
       return {
         ...state,
         initializedSearch: true,
-        initialized: state.initializedState,
+        initialized,
+        loadPercent,
       };
     }
 

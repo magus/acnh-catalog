@@ -172,11 +172,26 @@ export default function App() {
   const analytics = useGoogleAnalytics();
   const { inputFocusEvents, keyboardPaddingBottom } = useKeyboard();
   const modal = React.useContext(ModalProvider.Context);
+
   const [isInitLogExited, didInitLogExit] = React.useState(false);
+  const [hideLoadingBar, removeLoadingBar] = React.useState(false);
+
   const [state, dispatch] = useReducerState();
   const refs = React.useRef({
     input: React.createRef(),
   });
+
+  const {
+    initialized,
+    initializedLog,
+    loadPercent,
+    input: inputValue,
+    search,
+    placeholder,
+    filters,
+    wishlist,
+    catalog,
+  } = state;
 
   // on mount
   React.useEffect(() => {
@@ -184,8 +199,6 @@ export default function App() {
     time('search', () => searchCatalog('f', filters));
     dispatch('init-search');
   }, []);
-
-  const { initialized, initializedLog, input: inputValue, search, placeholder, filters, wishlist, catalog } = state;
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
   const handleClearAll = (type) => () => {
@@ -361,6 +374,27 @@ export default function App() {
   return (
     <>
       <div className="sticky-header">
+        <AnimatePresence>
+          {hideLoadingBar ? null : (
+            <motion.div exit={{ opacity: 0 }}>
+              <LoadingBarContainer>
+                <LoadingBarProgress
+                  onAnimationComplete={() => {
+                    if (loadPercent === 100) {
+                      removeLoadingBar(true);
+                    }
+                  }}
+                  transition={{
+                    duration: loadPercent === 100 ? 0.25 : 1,
+                  }}
+                  initial={{ x: '-100%' }}
+                  animate={{ x: `${-100 + loadPercent / 2}%` }}
+                />
+              </LoadingBarContainer>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.3a3ded.svg" />
 
         <InputContainer
@@ -529,3 +563,21 @@ function InitLogRowTyper({ row, active, duration }) {
     </InitLogRow>
   );
 }
+
+const LoadingBarContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 4px;
+  width: 100%;
+`;
+
+const LoadingBarProgress = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: green;
+  height: 4px;
+  width: 200%;
+`;
