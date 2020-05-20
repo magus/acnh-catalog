@@ -4,12 +4,24 @@ import Page from 'src/pages/Page';
 import Search from './Search';
 import { GlobalStyle } from './styles.js';
 
-export default function SearchPage() {
+function SearchPage(props) {
   return (
     <Page>
       <GlobalStyle />
 
-      <Search />
+      <Search {...props} />
     </Page>
   );
 }
+
+const randItem = (catalog) => catalog[Math.floor(Math.random() * catalog.length)];
+
+SearchPage.getInitialProps = async () => {
+  const ITEM_CATALOG = (await import('../../../public/data/2020-05-17-items.json')).default;
+
+  const randItemName = randItem(ITEM_CATALOG).name;
+
+  return { randItemName };
+};
+
+export default SearchPage;

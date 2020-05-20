@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import CATEGORIES from 'src/data/categories.json';
+import CATEGORIES from '../../public/data/2020-05-17-categories.json';
 
 const spring = {
   type: 'spring',
@@ -74,6 +74,7 @@ const ActiveFilters = styled.div`
 `;
 
 const ShowToggle = styled.a`
+  cursor: pointer;
   margin: 0 0 4px 0;
   color: var(--blue-color);
   text-decoration: none;

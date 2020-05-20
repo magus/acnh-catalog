@@ -1,4 +1,5 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
@@ -20,20 +21,18 @@ import useReducerState from './hooks/useReducerState';
 import keyByField from 'src/utils/keyByField';
 import time from 'src/utils/time';
 
-import ITEM_CATALOG from 'src/data/items.json';
-
-const ITEM_CATALOG_BY_ID = Object.freeze(keyByField(ITEM_CATALOG, 'id'));
-
 const noop = () => {};
 
 const filterItem = (filters) => (item) => (filters.size ? filters.has(item.category) : true);
 
-function sortedSetList(set) {
+function sortedSetList(set, ITEM_CATALOG) {
+  if (!ITEM_CATALOG) return [];
+
   return (
     // convert set to array
     [...set]
       // hydrate ids into items
-      .map((id) => ITEM_CATALOG_BY_ID[id])
+      .map((id) => ITEM_CATALOG.lookup[id])
       // sort by name
 
       .sort((a, b) => {
@@ -49,10 +48,10 @@ function sortedSetList(set) {
   );
 }
 
-function searchCatalog(fullQuery, filters) {
+function searchCatalog(fullQuery, filters, items) {
   const queries = fullQuery.split(/\s/);
 
-  const filteredCatalog = filters.size === 0 ? ITEM_CATALOG : ITEM_CATALOG.filter(filterItem(filters));
+  const filteredCatalog = filters.size === 0 ? items : items.filter(filterItem(filters));
 
   // search against substrings
   const allResults = {};
@@ -168,15 +167,16 @@ function searchCatalog(fullQuery, filters) {
   });
 }
 
-export default function App() {
+export default function SearchPage(props) {
   const analytics = useGoogleAnalytics();
   const { inputFocusEvents, keyboardPaddingBottom } = useKeyboard();
   const modal = React.useContext(ModalProvider.Context);
 
   const [isInitLogExited, didInitLogExit] = React.useState(false);
   const [hideLoadingBar, removeLoadingBar] = React.useState(false);
+  const [ITEM_CATALOG, setItemCatalog] = React.useState(null);
 
-  const [state, dispatch] = useReducerState();
+  const [state, dispatch] = useReducerState(props);
   const refs = React.useRef({
     input: React.createRef(),
   });
@@ -195,9 +195,18 @@ export default function App() {
 
   // on mount
   React.useEffect(() => {
-    // initialize search by warming query engine
-    time('search', () => searchCatalog('f', filters));
-    dispatch('init-search');
+    setTimeout(() => {
+      fetch('data/2020-05-17-items.json')
+        .then((resp) => resp.json())
+        .then((items) => {
+          // save item catalog
+          setItemCatalog({ items, lookup: Object.freeze(keyByField(items, 'id')) });
+
+          // once we have catalog, initialize search
+          time('search', () => searchCatalog('f', filters, items));
+          dispatch('init-search');
+        });
+    }, 5000);
   }, []);
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
@@ -267,7 +276,7 @@ export default function App() {
 
   const filteredResults = React.useMemo(() => {
     if (search) {
-      const timed = time('search', () => searchCatalog(search, filters));
+      const timed = time('search', () => searchCatalog(search, filters, ITEM_CATALOG.items));
 
       analytics.event('search', {
         category: 'search',
@@ -279,7 +288,7 @@ export default function App() {
     }
 
     return [];
-  }, [search, filters]);
+  }, [search, filters, ITEM_CATALOG]);
 
   const buildItemProps = (item) => ({
     isCatalog: catalog.has(item.id),
@@ -314,7 +323,7 @@ export default function App() {
   }, [catalog, wishlist, filteredResults]);
 
   const wishlistItems = React.useMemo(() => {
-    const filteredItems = sortedSetList(wishlist).filter(filterItem(filters));
+    const filteredItems = sortedSetList(wishlist, ITEM_CATALOG).filter(filterItem(filters));
 
     const items = !filteredItems.length ? (
       <NoResults empty={!search} />
@@ -340,10 +349,10 @@ export default function App() {
         {items}
       </ItemsContainer>
     );
-  }, [wishlist, catalog, filters]);
+  }, [wishlist, catalog, filters, ITEM_CATALOG]);
 
   const catalogItems = React.useMemo(() => {
-    const filteredCatalog = sortedSetList(catalog).filter(filterItem(filters));
+    const filteredCatalog = sortedSetList(catalog, ITEM_CATALOG).filter(filterItem(filters));
 
     const items = !filteredCatalog.length ? (
       <NoResults />
@@ -369,7 +378,7 @@ export default function App() {
         {items}
       </ItemsContainer>
     );
-  }, [wishlist, catalog, filters]);
+  }, [wishlist, catalog, filters, ITEM_CATALOG]);
 
   return (
     <>
@@ -435,8 +444,13 @@ export default function App() {
 
       <AnimatePresence onExitComplete={() => didInitLogExit(true)}>
         {initialized ? null : (
-          <InitLog initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            {initializedLog.map((row, i) => (
+          <InitLog animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            {!initializedLog[0] ? null : (
+              <InitLogRow error={initializedLog[0].error}>
+                <InitLogRowText active={false} dangerouslySetInnerHTML={{ __html: initializedLog[0].log }} />
+              </InitLogRow>
+            )}
+            {initializedLog.slice(1).map((row, i) => (
               <InitLogRowTyper key={i} row={row} active={i === initializedLog.length - 1} duration={500} />
             ))}
           </InitLog>

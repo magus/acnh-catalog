@@ -33,8 +33,8 @@ module.exports = withSourceMaps(
 
     // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
     // turn on the SW in dev mode so that we can actually test it
-    // NOTE
-    // Must run > ln -s $PWD/.next/static/service-worker.js public
+    // NOTE: TO GET THIS TO WORK YOU MUST RUN BELOW
+    //   > ln -s $PWD/.next/static/service-worker.js public
     // This will symmlink the generated service-worker into public folder so its served
     // HOWEVER we must delete it to allow local build / deploy to work
     // > rm public/service-worker.js
@@ -46,6 +46,21 @@ module.exports = withSourceMaps(
       // Read more on available handlers
       // https://developers.google.com/web/tools/workbox/modules/workbox-strategies
       runtimeCaching: [
+        {
+          // json files from cache first
+          urlPattern: /^https?:\/\/.*\.json$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'catalog-json',
+            cacheableResponse: {
+              statuses: [0, 200, 304], // some cdns may respond with 304 on success
+            },
+            expiration: {
+              maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+              purgeOnQuotaError: true,
+            },
+          },
+        },
         {
           // acnhcdn images from cache first
           urlPattern: /^https?:\/\/acnhcdn\.com\/.*\.png$/,
@@ -63,7 +78,7 @@ module.exports = withSourceMaps(
         },
         // non-acnhcdn image https calls
         {
-          urlPattern: /^((?!acnhcdn).)*$/,
+          urlPattern: /^((?!acnhcdn|\.json).)*$/,
           handler: 'NetworkFirst',
           options: {
             cacheName: 'https-calls',

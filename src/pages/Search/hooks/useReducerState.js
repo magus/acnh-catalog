@@ -1,9 +1,7 @@
 import React from 'react';
 
-import ITEM_CATALOG from 'src/data/items.json';
 import keyMirror from 'src/utils/keyMirror';
 
-const randItem = () => ITEM_CATALOG[Math.floor(Math.random() * ITEM_CATALOG.length)];
 const sleep = async (timeMs) => new Promise((resolve) => setTimeout(resolve, timeMs));
 
 const LOG_DELAY = 500;
@@ -71,8 +69,8 @@ function buildStoredState(state) {
   return JSON.stringify(storedState);
 }
 
-export default function useReducerState() {
-  const [state, _dispatch] = React.useReducer(reducer, initialState);
+export default function useReducerState(props) {
+  const [state, _dispatch] = React.useReducer(reducer, { ...initialState, placeholder: props.randItemName });
   const dispatch = (type, data) => _dispatch({ type, ...data });
 
   // initialize lookup from local storage
@@ -195,7 +193,6 @@ function reducer(state, action) {
 
       return {
         ...state,
-        placeholder: randItem().name,
         initializedState: true,
         initialized,
         loadPercent,
@@ -203,7 +200,7 @@ function reducer(state, action) {
     }
     case 'init-search': {
       const initialized = state.initializedState;
-      const loadPercent = initialized ? 95 : Math.min(95, state.loadPercent + 20);
+      const loadPercent = initialized ? 100 : Math.min(95, state.loadPercent + 20);
 
       return {
         ...state,
