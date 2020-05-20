@@ -82,7 +82,6 @@ module.exports = withSourceMaps(
           handler: 'StaleWhileRevalidate',
           options: {
             cacheName: 'https-calls',
-            networkTimeoutSeconds: 15,
             expiration: {
               maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
               purgeOnQuotaError: true,
