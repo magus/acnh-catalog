@@ -195,18 +195,17 @@ export default function SearchPage(props) {
 
   // on mount
   React.useEffect(() => {
-    setTimeout(() => {
-      fetch('data/2020-05-17-items.json')
-        .then((resp) => resp.json())
-        .then((items) => {
-          // save item catalog
-          setItemCatalog({ items, lookup: Object.freeze(keyByField(items, 'id')) });
+    dispatch('+init-log', { log: 'Downloading item catalog...' });
+    fetch('data/2020-05-17-items.json')
+      .then((resp) => resp.json())
+      .then((items) => {
+        // save item catalog
+        setItemCatalog({ items, lookup: Object.freeze(keyByField(items, 'id')) });
 
-          // once we have catalog, initialize search
-          time('search', () => searchCatalog('f', filters, items));
-          dispatch('init-search');
-        });
-    }, 5000);
+        // once we have catalog, initialize search
+        time('search', () => searchCatalog('f', filters, items));
+        dispatch('init-search');
+      });
   }, []);
 
   const debouncedSearch = React.useRef(_debounce(() => dispatch('search'), 100));
