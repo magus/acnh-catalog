@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import _debounce from 'lodash/debounce';
 import fuzzysort from 'fuzzysort';
+import { AnimateSharedLayout, AnimatePresence, motion } from 'framer-motion';
 
 import ModalProvider from 'src/components/ModalProvider';
 import Filters from 'src/components/Filters';
@@ -171,6 +172,7 @@ export default function App() {
   const analytics = useGoogleAnalytics();
   const { inputFocusEvents, keyboardPaddingBottom } = useKeyboard();
   const modal = React.useContext(ModalProvider.Context);
+  const [isInitLogExited, didInitLogExit] = React.useState(false);
   const [state, dispatch] = useReducerState();
   const refs = React.useRef({
     input: React.createRef(),
@@ -361,48 +363,54 @@ export default function App() {
       <div className="sticky-header">
         <Image alt="animal crossing icon" className="app-icon" src="images/app-icon.3a3ded.svg" />
 
-        {!initialized ? null : (
-          <>
-            <form action="#" className="input">
-              <input
-                className="transition-colors ease-in-out"
-                ref={refs.current.input}
-                onChange={handleInputChange}
-                onKeyDown={handleKeyDown}
-                {...inputFocusEvents}
-                type="search"
-                id="search"
-                name="search"
-                autoComplete="off"
-                spellCheck="false"
-                placeholder={placeholder}
-                autoCorrect="off"
-                autoCapitalize="none"
-                value={inputValue}
-              />
-              {!inputValue ? null : (
-                <button className="icon-button input--clear" onClick={handleClear}>
-                  <X color="#fff" />
-                </button>
-              )}
-              <button onClick={noop} className="icon-button input--search">
-                <Search color="#fff" />
+        <InputContainer
+          initial={{ opacity: 0 }}
+          animate={initialized ? { opacity: 1 } : undefined}
+          isHidden={!initialized}
+        >
+          <form action="#" className="input">
+            <input
+              className="transition-colors ease-in-out"
+              ref={refs.current.input}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
+              {...inputFocusEvents}
+              type="search"
+              id="search"
+              name="search"
+              autoComplete="off"
+              spellCheck="false"
+              placeholder={placeholder}
+              autoCorrect="off"
+              autoCapitalize="none"
+              value={inputValue}
+            />
+            {!inputValue ? null : (
+              <button className="icon-button input--clear" onClick={handleClear}>
+                <X color="#fff" />
               </button>
-            </form>
+            )}
+            <button onClick={noop} className="icon-button input--search">
+              <Search color="#fff" />
+            </button>
+          </form>
 
-            <Filters filters={filters} onFilterClick={onFilterClick} />
-          </>
-        )}
+          <Filters filters={filters} onFilterClick={onFilterClick} />
+        </InputContainer>
       </div>
 
-      {!initialized ? (
-        <InitLog>
-          {initializedLog.map((row, i) => (
-            <InitLogRow key={i} error={row.error} dangerouslySetInnerHTML={{ __html: row.log }} />
-          ))}
-        </InitLog>
-      ) : (
-        <div className="item-container">
+      <AnimatePresence onExitComplete={() => didInitLogExit(true)}>
+        {initialized ? null : (
+          <InitLog initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            {initializedLog.map((row, i) => (
+              <InitLogRowTyper key={i} row={row} active={i === initializedLog.length - 1} duration={500} />
+            ))}
+          </InitLog>
+        )}
+      </AnimatePresence>
+
+      {!isInitLogExited ? null : (
+        <>
           {/* search results */}
           {renderSearchResults}
 
@@ -412,7 +420,7 @@ export default function App() {
               {catalogItems}
             </>
           )}
-        </div>
+        </>
       )}
 
       {/* handle keyboard and padding to allow scrolling entire view */}
@@ -445,13 +453,16 @@ const ClearAllButton = styled.button`
   align-self: flex-end;
 `;
 
-const InitLog = styled.div`
-  margin: 72px 24px;
+const InitLog = styled(motion.div)`
+  margin: 0 24px;
   display: flex;
   flex-direction: column;
+  height: calc(36px * 10);
+  max-height: 100%;
 `;
 
 const InitLogRow = styled.div`
+  height: 36px;
   padding: 8px 16px;
   border-color: ${(props) => (props.error ? 'var(--error-color)' : 'var(--app-color)')};
   border-style: solid;
@@ -464,3 +475,57 @@ const InitLogRow = styled.div`
     color: var(--app-color);
   }
 `;
+
+const InitLogRowText = styled.div`
+  display: inline-block;
+  padding: 0 0.15em 0 0;
+  letter-spacing: 0.15em;
+  border-right: ${(props) => (!props.active ? 'none' : '0.15em solid var(--app-color)')};
+  animation: ${(props) => (!props.active ? 'none' : 'blink-caret 0.75s step-end infinite')};
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--app-color);
+    }
+  }
+`;
+
+const InputContainer = styled(motion.div)`
+  width: 100%;
+  pointer-events: ${(props) => (props.isHidden ? 'none' : 'all')};
+`;
+
+function InitLogRowTyper({ row, active, duration }) {
+  const [typed, setTyped] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = duration / row.log.length;
+    let timeoutId;
+    let _typed = 0;
+
+    function typeCharacter() {
+      const nextTyped = ++_typed;
+      if (nextTyped <= row.log.length) {
+        setTyped(nextTyped);
+      }
+      timeoutId = setTimeout(typeCharacter, interval);
+    }
+
+    typeCharacter();
+
+    return function cleanup() {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+  return (
+    <InitLogRow error={row.error}>
+      <InitLogRowText active={active} dangerouslySetInnerHTML={{ __html: row.log.slice(0, typed) }} />
+    </InitLogRow>
+  );
+}

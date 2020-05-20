@@ -4,6 +4,7 @@ import ITEM_CATALOG from 'src/data/items.json';
 import keyMirror from 'src/utils/keyMirror';
 
 const randItem = () => ITEM_CATALOG[Math.floor(Math.random() * ITEM_CATALOG.length)];
+const sleep = async (timeMs) => new Promise((resolve) => setTimeout(resolve, timeMs));
 
 const LOCAL_STORAGE_KEY = 'ACNHCatalog--State';
 
@@ -74,42 +75,54 @@ export default function useReducerState() {
 
   // initialize lookup from local storage
   React.useEffect(() => {
-    console.debug('reading', `localStorage[${LOCAL_STORAGE_KEY}]`);
-    try {
-      const storedRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
-      if (!storedRaw) {
-        dispatch('+init-log', { log: 'No stored data found.' });
-        console.debug('No stored data');
-      } else {
-        const storedState = JSON.parse(storedRaw);
-        if (!storedState) {
-          console.debug('Invalid stored data');
-        } else {
-          dispatch('+init-log', { log: 'Found stored data.' });
-          dispatch('+init-log', { log: 'Restoring...' });
-          const restoreState = RestoreState[storedState.version];
-          if (!restoreState) {
-            dispatch('+init-log', { log: `Cannot restore <b>${storedState.version}</b> state`, error: true });
-            throw new Error(`Missing restore state function ${storedState.version}`);
-          } else {
-            const restoredState = restoreState(storedState);
-            dispatch('+init-log', { log: `Restored <b>${storedState.version}</b> state` });
-            console.debug(storedState.version, 'state migrated successfully');
+    async function main() {
+      console.debug('reading', `localStorage[${LOCAL_STORAGE_KEY}]`);
+      await sleep(1000);
 
-            // dispatch state with init-lookup
-            dispatch('restoreState', { restoredState });
+      try {
+        const storedRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
+        if (!storedRaw) {
+          dispatch('+init-log', { log: 'No stored data found.' });
+          await sleep(1000);
+          console.debug('No stored data');
+        } else {
+          const storedState = JSON.parse(storedRaw);
+          if (!storedState) {
+            console.debug('Invalid stored data');
+          } else {
+            dispatch('+init-log', { log: 'Loading saved data...' });
+            await sleep(1000);
+            const restoreState = RestoreState[storedState.version];
+            if (!restoreState) {
+              dispatch('+init-log', { log: `Cannot load <b>${storedState.version}</b> state`, error: true });
+              await sleep(1000);
+              throw new Error(`Missing restore state function ${storedState.version}`);
+            } else {
+              const restoredState = restoreState(storedState);
+              dispatch('+init-log', { log: `Loaded <b>${storedState.version}</b> state!` });
+              await sleep(1000);
+              console.debug(storedState.version, 'state migrated successfully');
+
+              // dispatch state with init-lookup
+              dispatch('restoreState', { restoredState });
+            }
           }
         }
-      }
 
-      // give some time for user to read logs
-      dispatch('+init-log', { log: 'Initializing...' });
-      setTimeout(() => dispatch('init'), 1000);
-    } catch (err) {
-      dispatch('+init-log', { log: 'Unable to read stored state.', error: true });
-      dispatch('+init-log', { log: err.message, error: true });
-      console.error('Unable to read stored state', err);
+        // give some time for user to read logs
+        dispatch('+init-log', { log: 'Launching...' });
+        await sleep(1000);
+        dispatch('init');
+      } catch (err) {
+        dispatch('+init-log', { log: 'Unable to read stored state.', error: true });
+        await sleep(1000);
+        dispatch('+init-log', { log: err.message, error: true });
+        await sleep(1000);
+        console.error('Unable to read stored state', err);
+      }
     }
+
+    main();
   }, []);
 
   // write every change to local storage

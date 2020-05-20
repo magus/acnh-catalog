@@ -36,7 +36,7 @@ function Page({ children }) {
 
   return (
     <Container>
-      <div>{children}</div>
+      <Content>{children}</Content>
 
       <Footer>
         <div>
@@ -63,7 +63,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 640px;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0 auto;
   padding: 8px;
   overflow: auto;
@@ -86,4 +86,8 @@ const CommunityLink = styled.a`
   :visited {
     color: var(--blue-color);
   }
+`;
+
+const Content = styled.div`
+  height: 100%;
 `;
