@@ -49,7 +49,7 @@ module.exports = withSourceMaps(
         {
           // json files from cache first
           urlPattern: /^https?:\/\/.*\.json$/,
-          handler: 'CacheFirst',
+          handler: 'Stale-While-Revalidate',
           options: {
             cacheName: 'catalog-json',
             cacheableResponse: {
@@ -79,7 +79,7 @@ module.exports = withSourceMaps(
         // non-acnhcdn image https calls
         {
           urlPattern: /^((?!acnhcdn|\.json).)*$/,
-          handler: 'NetworkFirst',
+          handler: 'Stale-While-Revalidate',
           options: {
             cacheName: 'https-calls',
             networkTimeoutSeconds: 15,
