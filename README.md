@@ -4,9 +4,6 @@
 
 - donate to cdn after successful setup https://acnhcdn.com/
 
-- disable or hide input while loading
-- fake loading bar, linear to 70% then increment by one every half second until 99% never hit 100
-
 - "imp part" vs "part imp", are the indices arrays needing to be joined in sorted order and removing duplicates (set > array)
 
 - focus input and (if necessary) scroll it into view after clicking search result (after scrolling down on search results we likely want to tap search and add another)
