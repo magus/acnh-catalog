@@ -4,6 +4,12 @@
 
 - donate to cdn after successful setup https://acnhcdn.com/
 
+- image loading shimmer (react-shimmer
+
+- mimic catalog ui in nook phone more
+  - less horizontal padding and vertical padding
+  - move buttons out of row or to side
+
 - "imp part" vs "part imp", are the indices arrays needing to be joined in sorted order and removing duplicates (set > array)
 
 - focus input and (if necessary) scroll it into view after clicking search result (after scrolling down on search results we likely want to tap search and add another)
