@@ -196,7 +196,7 @@ export default function SearchPage(props) {
   // on mount
   React.useEffect(() => {
     dispatch('+init-log', { log: 'Downloading item catalog...' });
-    fetch('data/2020-05-17-items.json')
+    fetch('data/2020-05-24-items.json')
       .then((resp) => resp.json())
       .then((items) => {
         // save item catalog

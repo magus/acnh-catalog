@@ -61,6 +61,8 @@ const minimalItems = ACNH_SPREADSHEET.map((item) => {
     variant = `${item.variation} / ${item.pattern}`;
   } else if (item.variation || item.pattern) {
     variant = `${item.variation || item.pattern}`;
+  } else if (typeof item.genuine === 'boolean') {
+    variant = item.genuine ? 'Real' : 'Fake';
   }
 
   let name;
