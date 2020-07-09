@@ -1,0 +1,36 @@
+{
+  "id": "marine-pop-wall",
+  "name": "Marine Pop Wall",
+  "category": "Wallpaper",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "interiorThemes": [
+        "Toy Shop"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 410
+      },
+      "sources": [
+        "Fishing Tourney"
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 805
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3220
+        }
+      ]
+    }
+  }
+}

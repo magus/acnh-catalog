@@ -1,0 +1,26 @@
+{
+  "id": "shell-stool",
+  "name": "Shell Stool",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 600
+      },
+      "recipe": {
+        "cowrie": 5
+      },
+      "variations": {
+        "white": "White",
+        "brown": "Brown",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "purple": "Purple",
+        "pearl": "Pearl"
+      }
+    }
+  },
+  "category": "Furniture"
+}

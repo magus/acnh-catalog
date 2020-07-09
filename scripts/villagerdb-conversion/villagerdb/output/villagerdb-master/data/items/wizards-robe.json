@@ -1,0 +1,23 @@
+{
+  "id": "wizards-robe",
+  "name": "Wizard's Robe",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1000
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 4000
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ladder-shades",
+  "name": "Ladder Shades",
+  "category": "Accessories",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "interiorThemes": [
+        "Trendy"
+      ],
+      "fashionThemes": [
+        "Rock-n'-roll"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "sources": [
+        "Summer Solstice (Isabelle)"
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 220
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 880
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "gold": "Gold"
+      }
+    }
+  }
+}

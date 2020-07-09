@@ -1,0 +1,28 @@
+{
+  "id": "king-salmon",
+  "name": "King Salmon",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1800
+      },
+      "sources": [
+        "Sea (early September)/River (late September)"
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Huge Shadows on River Mouth, Sep (All day)",
+        "Huge Shadows on River Mouth, Mar (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1800
+      }
+    }
+  }
+}

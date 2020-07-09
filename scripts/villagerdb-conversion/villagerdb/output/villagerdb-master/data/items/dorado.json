@@ -1,0 +1,28 @@
+{
+  "id": "dorado",
+  "name": "Dorado",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 15000
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Very Large Shadows on River, Jun-Sep (4am-9pm)",
+        "South: Very Large Shadows on River, Dec-Mar (4am-9pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 15000
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "moth",
+  "name": "Moth",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 60
+      },
+      "sources": [
+        "Around the lit up windows of Re-Tail",
+        "The Roost café",
+        "and around street lamps."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around lights and lamps outside, All year (7pm-4am)",
+        "South: Flying around lights and lamps outside, All year (7pm-4am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 130
+      }
+    }
+  }
+}

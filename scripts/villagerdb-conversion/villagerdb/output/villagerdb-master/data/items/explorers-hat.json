@@ -1,0 +1,49 @@
+{
+  "id": "explorers-hat",
+  "name": "Explorer's Hat",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Sporty"
+      ],
+      "set": "Explorer Outfit",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 40
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 160
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "camel": "Camel",
+        "avocado": "Avocado",
+        "beige": "Beige",
+        "blue": "Blue"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "shellfish-pochette",
+  "name": "Shellfish Pochette",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10800
+      },
+      "recipe": {
+        "giant-clam": 2,
+        "summer-shell": 6
+      },
+      "variations": {
+        "white": "White"
+      }
+    }
+  },
+  "category": "Accessories"
+}

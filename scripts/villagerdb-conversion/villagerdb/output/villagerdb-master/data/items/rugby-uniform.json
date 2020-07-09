@@ -1,0 +1,33 @@
+{
+  "id": "rugby-uniform",
+  "name": "Rugby Uniform",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 440
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1760
+        }
+      ],
+      "variations": {
+        "red-white": "Red & white",
+        "blue-white": "Blue & white",
+        "green-white": "Green & white",
+        "orange-white": "Orange & white",
+        "red-black": "Red & black",
+        "blue-black": "Blue & black",
+        "green-black": "Green & black",
+        "orange-black": "Orange & black"
+      }
+    }
+  },
+  "category": "Dresses"
+}

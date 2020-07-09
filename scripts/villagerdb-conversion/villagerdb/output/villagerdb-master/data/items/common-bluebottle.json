@@ -1,0 +1,18 @@
+{
+  "id": "common-bluebottle",
+  "name": "Common Bluebottle",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Apr-Aug, (4am-7pm)",
+        "South: Flying around, Oct-Feb, (4am-7pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      }
+    }
+  },
+  "category": "Bugs"
+}

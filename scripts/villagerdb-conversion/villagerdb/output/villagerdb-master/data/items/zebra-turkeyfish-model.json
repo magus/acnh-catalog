@@ -1,0 +1,14 @@
+{
+  "id": "zebra-turkeyfish-model",
+  "name": "Zebra Turkeyfish Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      }
+    }
+  },
+  "category": "Furniture"
+}

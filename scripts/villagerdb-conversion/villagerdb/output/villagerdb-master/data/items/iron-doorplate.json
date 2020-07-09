@@ -1,0 +1,32 @@
+{
+  "id": "iron-doorplate",
+  "name": "Iron Doorplate",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 6000
+        }
+      ],
+      "recipe": {
+        "iron-nugget": 2
+      },
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "blue": "Blue",
+        "silver": "Silver",
+        "ash-brown": "Ash brown",
+        "gold": "Gold",
+        "pink": "Pink",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Furniture"
+}

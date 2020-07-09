@@ -1,0 +1,29 @@
+{
+  "id": "helmet-with-goggles",
+  "name": "Helmet With Goggles",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "green": "Green",
+        "purple": "Purple",
+        "blue": "Blue",
+        "red": "Red",
+        "light-blue": "Light blue",
+        "black": "Black",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Hats"
+}

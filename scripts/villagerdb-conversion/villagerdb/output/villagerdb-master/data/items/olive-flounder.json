@@ -1,0 +1,28 @@
+{
+  "id": "olive-flounder",
+  "name": "Olive Flounder",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "sources": [
+        "In the sea."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Very Large Shadows at Sea, All year (All day)",
+        "South: Very Large Shadows at Sea, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      }
+    }
+  }
+}

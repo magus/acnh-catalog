@@ -1,0 +1,30 @@
+{
+  "id": "shell-arch",
+  "name": "Shell Arch",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 12360
+      },
+      "recipe": {
+        "sea-snail": 3,
+        "venus-comb": 3,
+        "sand-dollar": 3,
+        "coral": 3,
+        "giant-clam": 3
+      },
+      "variations": {
+        "white": "White",
+        "brown": "Brown",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "purple": "Purple",
+        "pearl": "Pearl"
+      }
+    }
+  },
+  "category": "Furniture"
+}

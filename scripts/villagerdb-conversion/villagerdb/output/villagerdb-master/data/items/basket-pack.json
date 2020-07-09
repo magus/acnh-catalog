@@ -1,0 +1,21 @@
+{
+  "id": "basket-pack",
+  "name": "Basket Pack",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2400
+      },
+      "recipe": {
+        "young-spring-bamboo": 6
+      },
+      "variations": {
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Accessories"
+}

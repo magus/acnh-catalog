@@ -1,0 +1,28 @@
+{
+  "id": "wooden-low-table",
+  "name": "Wooden Low Table",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      },
+      "recipe": {
+        "wood": 10
+      },
+      "variations": {
+        "light-wood": "Light wood",
+        "white-wood": "White wood",
+        "cherry-wood": "Cherry wood",
+        "dark-wood": "Dark wood",
+        "black": "Black",
+        "green": "Green",
+        "blue": "Blue",
+        "pink-wood": "Pink wood"
+      }
+    }
+  },
+  "category": "Furniture"
+}

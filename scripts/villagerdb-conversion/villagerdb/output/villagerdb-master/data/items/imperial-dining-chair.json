@@ -1,0 +1,23 @@
+{
+  "id": "imperial-dining-chair",
+  "name": "Imperial Dining Chair",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 7250
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 29000
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Furniture"
+}

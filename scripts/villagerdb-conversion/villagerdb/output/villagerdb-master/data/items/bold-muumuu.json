@@ -1,0 +1,23 @@
+{
+  "id": "bold-muumuu",
+  "name": "Bold Muumuu",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "walking-stick",
+  "name": "Walking Stick",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of trees, Jul-Nov (4am-8am and 5pm-7pm)",
+        "South: On the side of trees, Jan-May (4am-8am and 5pm-7pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 600
+      }
+    }
+  },
+  "category": "Bugs"
+}

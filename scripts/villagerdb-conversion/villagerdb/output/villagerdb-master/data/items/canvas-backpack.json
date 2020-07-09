@@ -1,0 +1,26 @@
+{
+  "id": "canvas-backpack",
+  "name": "Canvas Backpack",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Kicks"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "white": "White"
+      }
+    }
+  },
+  "category": "Accessories"
+}

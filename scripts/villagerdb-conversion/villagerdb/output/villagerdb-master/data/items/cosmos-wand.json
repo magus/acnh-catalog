@@ -1,0 +1,18 @@
+{
+  "id": "cosmos-wand",
+  "name": "Cosmos Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1580
+      },
+      "recipe": {
+        "white-cosmos": 1,
+        "star-fragment": 3
+      }
+    }
+  },
+  "category": "Tools"
+}

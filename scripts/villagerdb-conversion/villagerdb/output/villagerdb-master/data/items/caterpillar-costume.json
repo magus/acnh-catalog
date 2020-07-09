@@ -1,0 +1,24 @@
+{
+  "id": "caterpillar-costume",
+  "name": "Caterpillar Costume",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 425
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1700
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "yellow": "Yellow",
+        "rainbow": "Rainbow"
+      }
+    }
+  },
+  "category": "Dresses"
+}

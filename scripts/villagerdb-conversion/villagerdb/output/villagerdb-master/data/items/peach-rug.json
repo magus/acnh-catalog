@@ -1,0 +1,21 @@
+{
+  "id": "peach-rug",
+  "name": "Peach Rug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Villagers (recipe)"
+      ],
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      },
+      "recipe": {
+        "peach": 6
+      }
+    }
+  },
+  "category": "Flooring"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "music-fest-shirt",
+  "name": "Music-fest Shirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "red": "Red",
+        "purple": "Purple",
+        "light-blue": "Light blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "violin-beetle",
+  "name": "Violin Beetle",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "sources": [
+        "On tree stumps."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On stumps, May-Jun and Sep-Nov (All day)",
+        "South: On stumps, Mar-May and Nov-Dec (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      }
+    }
+  }
+}

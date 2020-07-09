@@ -1,0 +1,29 @@
+{
+  "id": "pixel-shades",
+  "name": "Pixel Shades",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 330
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1320
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "green": "Green",
+        "blue": "Blue",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Accessories"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "linen-dress",
+  "name": "Linen Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "red": "Red",
+        "mustard": "Mustard",
+        "white": "White",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Dresses"
+}

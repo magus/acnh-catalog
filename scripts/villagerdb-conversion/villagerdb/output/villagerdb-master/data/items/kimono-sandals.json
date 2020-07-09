@@ -1,0 +1,55 @@
+{
+  "id": "kimono-sandals",
+  "name": "Kimono Sandals",
+  "category": "Shoes",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Harmonious"
+      ],
+      "fashionThemes": [
+        "Iconic"
+      ],
+      "set": "Geisha Outfit",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 120
+      },
+      "sources": [
+        "Kicks"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 480
+        }
+      ]
+    },
+    "nh": {
+      "sources": [
+        "Kicks"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "red": "Red",
+        "pink": "Pink",
+        "dark-blue": "Dark blue",
+        "gray": "Gray",
+        "purple": "Purple",
+        "yellow": "Yellow",
+        "green": "Green"
+      }
+    }
+  }
+}

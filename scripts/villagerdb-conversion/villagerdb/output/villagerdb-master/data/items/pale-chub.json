@@ -1,0 +1,28 @@
+{
+  "id": "pale-chub",
+  "name": "Pale Chub",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Tiny Shadows on River, All year (All day)",
+        "South: Tiny Shadows on River, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      }
+    }
+  }
+}

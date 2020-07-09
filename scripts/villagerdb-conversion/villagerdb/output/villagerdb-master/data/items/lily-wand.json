@@ -1,0 +1,19 @@
+{
+  "id": "lily-wand",
+  "name": "Lily Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1580
+      },
+      "recipe": {
+        "white-lilies": 1,
+        "star-fragment": 3
+      }
+    }
+  },
+  "category": "Tools"
+}

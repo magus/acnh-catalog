@@ -1,0 +1,21 @@
+{
+  "id": "sky-egg-outfit",
+  "name": "Sky-egg Outfit",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      },
+      "recipe": {
+        "sky-egg": 3
+      },
+      "variations": {
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Dresses"
+}

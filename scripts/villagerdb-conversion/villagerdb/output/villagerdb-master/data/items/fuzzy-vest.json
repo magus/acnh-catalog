@@ -1,0 +1,26 @@
+{
+  "id": "fuzzy-vest",
+  "name": "Fuzzy Vest",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "beige": "Beige",
+        "brown": "Brown",
+        "green": "Green",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Tops"
+}

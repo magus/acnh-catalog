@@ -1,0 +1,29 @@
+{
+  "id": "fish-drying-rack",
+  "name": "Fish-drying Rack",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 750
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3000
+        }
+      ],
+      "variations": {
+        "fish": "Fish",
+        "squid": "Squid",
+        "octopus": "Octopus"
+      }
+    }
+  },
+  "category": "Furniture"
+}

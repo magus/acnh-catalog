@@ -1,0 +1,18 @@
+{
+  "id": "drone-beetle",
+  "name": "Drone Beetle",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of trees, Jun-Aug (All day)",
+        "South: On the side of trees, Dec-Feb (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      }
+    }
+  },
+  "category": "Bugs"
+}

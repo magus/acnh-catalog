@@ -1,0 +1,26 @@
+{
+  "id": "surfing-shorts",
+  "name": "Surfing Shorts",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 175
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 700
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "purple": "Purple",
+        "green": "Green",
+        "pink": "Pink",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

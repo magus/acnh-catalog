@@ -1,0 +1,31 @@
+{
+  "id": "athletic-shorts",
+  "name": "Athletic Shorts",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "green": "Green",
+        "black": "Black",
+        "blue": "Blue",
+        "berry-red": "Berry red",
+        "navy-blue": "Navy blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "layered-tank-dress",
+  "name": "Layered Tank Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "berry-red": "Berry red",
+        "beige": "Beige",
+        "blue": "Blue",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Dresses"
+}

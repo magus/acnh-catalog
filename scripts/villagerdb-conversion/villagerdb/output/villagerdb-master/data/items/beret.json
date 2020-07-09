@@ -1,0 +1,50 @@
+{
+  "id": "beret",
+  "name": "Beret",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Iconic"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 80
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 320
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 220
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 880
+        }
+      ],
+      "variations": {
+        "berry-red": "Berry red",
+        "blue": "Blue",
+        "green": "Green",
+        "mustard": "Mustard",
+        "gray": "Gray",
+        "white": "White"
+      }
+    }
+  }
+}

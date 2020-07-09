@@ -1,0 +1,28 @@
+{
+  "id": "soft-shelled-turtle",
+  "name": "Soft-shelled Turtle",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3750
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Large Shadows on River, Aug-Sep (4pm-9am)",
+        "South: Large Shadows on River, Feb-Mar (4pm-9am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3750
+      }
+    }
+  }
+}

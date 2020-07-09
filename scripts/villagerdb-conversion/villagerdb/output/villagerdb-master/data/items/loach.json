@@ -1,0 +1,28 @@
+{
+  "id": "loach",
+  "name": "Loach",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows on River, Mar-May (All day)",
+        "South: Small Shadows on River, Sep-Nov (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      }
+    }
+  }
+}

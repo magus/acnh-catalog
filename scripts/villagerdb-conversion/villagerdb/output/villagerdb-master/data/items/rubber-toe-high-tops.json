@@ -1,0 +1,33 @@
+{
+  "id": "rubber-toe-high-tops",
+  "name": "Rubber-toe High Tops",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 315
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1260
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "olive": "Olive",
+        "beige": "Beige",
+        "pink": "Pink",
+        "berry-red": "Berry red",
+        "coral": "Coral",
+        "ivory": "Ivory",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Shoes"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "camofrogs-photo",
+  "name": "Camofrog's Photo",
+  "games": {
+    "nh": {
+      "sources": [
+        "Gift from villager"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10
+      }
+    }
+  },
+  "category": "Photos"
+}

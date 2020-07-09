@@ -1,0 +1,28 @@
+{
+  "id": "pond-smelt",
+  "name": "Pond Smelt",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows on River, Dec-Feb (All day)",
+        "South: Small Shadows on River, Jun-Aug (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      }
+    }
+  }
+}

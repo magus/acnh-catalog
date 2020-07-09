@@ -1,0 +1,29 @@
+{
+  "id": "doublet",
+  "name": "Doublet",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 380
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1520
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "blue": "Blue",
+        "green": "Green",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Tops"
+}

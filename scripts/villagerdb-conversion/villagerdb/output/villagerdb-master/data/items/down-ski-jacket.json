@@ -1,0 +1,25 @@
+{
+  "id": "down-ski-jacket",
+  "name": "Down Ski Jacket",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 420
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1680
+        }
+      ],
+      "variations": {
+        "red-yellow": "Red & yellow",
+        "blue-green": "Blue & green",
+        "navy-blue": "Navy & blue",
+        "navy-red": "Navy & red"
+      }
+    }
+  },
+  "category": "Tops"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "common-butterfly-model",
+  "name": "Common Butterfly Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Flick"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 480
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "cyber-shades",
+  "name": "Cyber Shades",
+  "category": "Accessories",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Sci-Fi",
+        "Trendy"
+      ],
+      "fashionThemes": [
+        "Flashy"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 640
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "black": "Black",
+        "silver": "Silver",
+        "purple": "Purple",
+        "green": "Green",
+        "yellow": "Yellow"
+      }
+    }
+  }
+}

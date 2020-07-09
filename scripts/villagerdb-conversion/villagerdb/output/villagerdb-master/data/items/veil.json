@@ -1,0 +1,23 @@
+{
+  "id": "veil",
+  "name": "Veil",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Gulliver"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "variations": {
+        "blue": "Blue",
+        "purple": "Purple",
+        "pink": "Pink",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Hats"
+}

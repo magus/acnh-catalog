@@ -1,0 +1,18 @@
+{
+  "id": "ranchu-goldfish",
+  "name": "Ranchu Goldfish",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows in Pond, All year (9am-4pm)",
+        "South: Small Shadows in Pond, All year (9am-4pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4500
+      }
+    }
+  },
+  "category": "Fish"
+}

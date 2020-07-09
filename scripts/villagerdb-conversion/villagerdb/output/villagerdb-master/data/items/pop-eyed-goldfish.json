@@ -1,0 +1,18 @@
+{
+  "id": "pop-eyed-goldfish",
+  "name": "Pop-eyed Goldfish",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Tiny Shadows in Pond, All year (9am-4pm)",
+        "South: Tiny Shadows in Pond, All year (9am-4pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1300
+      }
+    }
+  },
+  "category": "Fish"
+}

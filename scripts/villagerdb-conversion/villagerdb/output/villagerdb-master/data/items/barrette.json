@@ -1,0 +1,22 @@
+{
+  "id": "barrette",
+  "name": "Barrette",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 122
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 490
+        }
+      ],
+      "variations": {
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Hats"
+}

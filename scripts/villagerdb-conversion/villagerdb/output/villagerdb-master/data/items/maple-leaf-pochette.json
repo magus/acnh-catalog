@@ -1,0 +1,20 @@
+{
+  "id": "maple-leaf-pochette",
+  "name": "Maple-leaf Pochette",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2400
+      },
+      "recipe": {
+        "maple-leaf": 6
+      },
+      "variations": {
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Accessories"
+}

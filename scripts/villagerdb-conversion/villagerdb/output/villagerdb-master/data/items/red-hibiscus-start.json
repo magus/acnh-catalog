@@ -1,0 +1,35 @@
+{
+  "id": "red-hibiscus-start",
+  "name": "Red-hibiscus Start",
+  "category": "Bushes and Trees",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sources": [
+        "Island Gift Shop"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 5
+        }
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Leif"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 70
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 280
+        }
+      ]
+    }
+  }
+}

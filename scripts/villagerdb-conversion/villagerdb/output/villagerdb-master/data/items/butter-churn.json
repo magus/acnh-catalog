@@ -1,0 +1,22 @@
+{
+  "id": "butter-churn",
+  "name": "Butter Churn",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1980
+      },
+      "recipe": {
+        "wood": 4,
+        "iron-nugget": 2
+      },
+      "variations": {
+        "dark-wood": "Dark wood",
+        "natural-wood": "Natural wood"
+      }
+    }
+  },
+  "category": "Furniture"
+}

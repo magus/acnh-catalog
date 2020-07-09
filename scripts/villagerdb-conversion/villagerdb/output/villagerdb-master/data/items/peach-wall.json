@@ -1,0 +1,17 @@
+{
+  "id": "peach-wall",
+  "name": "Peach Wall",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4000
+      },
+      "recipe": {
+        "peach": 20
+      }
+    }
+  },
+  "category": "Wallpaper"
+}

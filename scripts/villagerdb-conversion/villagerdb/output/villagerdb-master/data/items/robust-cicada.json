@@ -1,0 +1,28 @@
+{
+  "id": "robust-cicada",
+  "name": "Robust Cicada",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "sources": [
+        "On trees."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of trees, Jul-Aug (8am-5pm)",
+        "South: On the side of trees, Jan-Feb (8am-5pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      }
+    }
+  }
+}

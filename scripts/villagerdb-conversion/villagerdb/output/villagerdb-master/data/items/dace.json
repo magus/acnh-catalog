@@ -1,0 +1,28 @@
+{
+  "id": "dace",
+  "name": "Dace",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Medium Shadows on River, All Year (4pm-9am)",
+        "South: Medium Shadows on River, All Year (4pm-9am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 240
+      }
+    }
+  }
+}

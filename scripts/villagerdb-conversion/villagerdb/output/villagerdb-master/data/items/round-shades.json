@@ -1,0 +1,33 @@
+{
+  "id": "round-shades",
+  "name": "Round Shades",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "green": "Green",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "pink": "Pink",
+        "red": "Red",
+        "white": "White",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Accessories"
+}

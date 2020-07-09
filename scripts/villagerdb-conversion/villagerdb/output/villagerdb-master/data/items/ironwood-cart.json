@@ -1,0 +1,25 @@
+{
+  "id": "ironwood-cart",
+  "name": "Ironwood Cart",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3720
+      },
+      "recipe": {
+        "wood": 6,
+        "iron-nugget": 4
+      },
+      "variations": {
+        "birch": "Birch",
+        "teak": "Teak",
+        "walnut": "Walnut",
+        "old": "Old",
+        "oak": "Oak"
+      }
+    }
+  },
+  "category": "Furniture"
+}

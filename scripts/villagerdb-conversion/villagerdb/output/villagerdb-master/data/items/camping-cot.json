@@ -1,0 +1,34 @@
+{
+  "id": "camping-cot",
+  "name": "Camping Cot",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny",
+        "Tom Nook on your first day"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "yellow": "Yellow",
+        "red": "Red",
+        "blue": "Blue",
+        "snow-camouflage": "Snow camouflage",
+        "camouflage": "Camouflage",
+        "simple-pattern": "Simple pattern",
+        "pop-pattern": "Pop pattern"
+      }
+    }
+  },
+  "category": "Furniture"
+}

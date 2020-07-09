@@ -1,0 +1,16 @@
+{
+  "id": "phils-photo",
+  "name": "Phil's Photo",
+  "games": {
+    "nh": {
+      "sources": [
+        "Gift from villager"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10
+      }
+    }
+  },
+  "category": "Photos"
+}

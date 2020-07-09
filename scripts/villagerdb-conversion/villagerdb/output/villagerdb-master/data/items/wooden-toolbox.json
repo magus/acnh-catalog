@@ -1,0 +1,25 @@
+{
+  "id": "wooden-toolbox",
+  "name": "Wooden Toolbox",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1980
+      },
+      "recipe": {
+        "softwood": 4,
+        "iron-nugget": 2
+      },
+      "variations": {
+        "natural": "Natural",
+        "dark-brown": "Dark brown",
+        "pastel": "Pastel",
+        "avocado": "Avocado"
+      }
+    }
+  },
+  "category": "Furniture"
+}

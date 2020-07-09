@@ -1,0 +1,141 @@
+{{> rev-unit1 }}
+{{> random }}
+<h1>{{pageTitle}}</h1>
+<div class="text-right mb-3">
+    {{> social-media shareUrl=shareUrl showCopyButton=true }}
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-4 order-md-12 order-sm-1">
+        <div class="mt-3 mb-3 text-center">
+            {{> add-button entityType='villager' entityId=id entityImages=serializedImages
+                    fullBaseImage=image.full mediumBaseImage=image.medium }}
+        </div>
+        <div class="text-center">
+            {{#if hasQuotes}}
+                <ul class="list-unstyled">
+                    {{#each quotes}}
+                        <li class="mt-3">&quot;{{quote}}&quot; - <em>{{title}}</em></li>
+                    {{/each}}
+                </ul>
+            {{/if}}
+        </div>
+
+        <table class="table table-borderless mt-3">
+            <thead>
+            <tr>
+                <th class="bg-dark text-light font-weight-bold" colspan="2">Overview</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="bg-light text-dark font-weight-bold">Species</td>
+                <td>{{species}}</td>
+            </tr>
+            <tr>
+                <td class="bg-light text-dark font-weight-bold">Gender</td>
+                <td>{{gender}}</td>
+            </tr>
+            <tr>
+                <td class="bg-light text-dark font-weight-bold">Birthday</td>
+                <td>{{birthday}} ({{zodiac}})</td>
+            </tr>
+            {{#if collab}}
+                <tr>
+                    <td class="bg-light text-dark font-weight-bold">Collaboration</td>
+                    <td>{{collab}}</td>
+                </tr>
+            {{/if}}
+            </tbody>
+        </table>
+
+        <div class="sleep-table"></div>
+
+        <table class="table table-borderless">
+            <thead class="bg-dark text-light">
+            <th>Appears In</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <ul class="list-unstyled">
+                        {{#each gameTitles}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        {{#if hasCoffee}}
+            <table class="table table-borderless">
+                <thead class="bg-dark text-light">
+                <th>Coffee</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <ul class="list-unstyled">
+                            {{#each coffee}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        {{/if}}
+    </div>
+
+    <div class="col-sm-12 col-md-8 order-md-1 order-sm-12">
+        <h2 class="sr-only">Summary</h2>
+        <p>{{paragraph}}</p>
+
+        {{#each games}}
+            <h3>In {{gameTitle}}</h3>
+            <table class="table item-game-data">
+                <thead class="sr-only">
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#if hasClothes}}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Clothes</td>
+                        <td class="align-middle">
+                            {{#if clothesUrl}}
+                                <a href="{{clothesUrl}}">{{clothesName}}</a>
+                            {{else}}
+                                {{clothesName}}
+                            {{/if}}
+                        </td>
+                    </tr>
+                {{/if}}
+                {{#if hasPersonality}}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Personality</td>
+                        <td class="align-middle">{{personality}}</td>
+                    </tr>
+                {{/if}}
+                {{#if hasPhrase}}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Phrase</td>
+                        <td class="align-middle">{{phrase}}</td>
+                    </tr>
+                {{/if}}
+                {{#if hasSong}}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Song</td>
+                        <td class="align-middle">{{song}}</td>
+                    </tr>
+                {{/if}}
+                </tbody>
+            </table>
+        {{/each}}
+    </div>
+</div>
+
+<div id="personality-data" data-personality="{{ personalityMap }}"></div>
+{{> rev-unit2 }}

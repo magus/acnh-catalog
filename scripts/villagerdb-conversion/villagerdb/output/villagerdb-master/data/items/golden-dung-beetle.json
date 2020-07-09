@@ -1,0 +1,17 @@
+{
+  "id": "golden-dung-beetle",
+  "name": "Golden Dung Beetle",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 30000
+      },
+      "recipe": {
+        "gold-nugget": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

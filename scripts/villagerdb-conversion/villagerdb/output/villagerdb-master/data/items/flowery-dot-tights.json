@@ -1,0 +1,30 @@
+{
+  "id": "flowery-dot-tights",
+  "name": "Flowery-dot Tights",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "pink": "Pink",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Socks"
+}

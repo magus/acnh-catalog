@@ -1,0 +1,30 @@
+{
+  "id": "comfy-sandals",
+  "name": "Comfy Sandals",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "white": "White",
+        "green": "Green",
+        "blue": "Blue",
+        "red": "Red",
+        "orange": "Orange",
+        "yellow": "Yellow",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Shoes"
+}

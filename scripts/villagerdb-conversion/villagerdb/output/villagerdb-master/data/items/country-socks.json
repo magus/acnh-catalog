@@ -1,0 +1,25 @@
+{
+  "id": "country-socks",
+  "name": "Country Socks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "red-ribbons": "Red ribbons",
+        "green-ribbons": "Green ribbons",
+        "blue-ribbons": "Blue ribbons",
+        "black-ribbons": "Black ribbons"
+      }
+    }
+  },
+  "category": "Socks"
+}

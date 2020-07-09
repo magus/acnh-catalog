@@ -1,0 +1,25 @@
+{
+  "id": "moms-homemade-cake",
+  "name": "Mom's Homemade Cake",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "In the mail on your birthday"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 88
+      },
+      "variations": {
+        "cat": "Cat",
+        "strawberry-flowers": "Strawberry & flowers",
+        "carrot": "Carrot",
+        "dog": "Dog",
+        "bird": "Bird",
+        "chocolate": "Chocolate"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "house-print-dress",
+  "name": "House-print Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "stonehenge",
+  "name": "Stonehenge",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Gulliver"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2300
+      }
+    }
+  },
+  "category": "Furniture"
+}

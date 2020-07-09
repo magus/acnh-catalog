@@ -1,0 +1,22 @@
+{
+  "id": "fish-umbrella",
+  "name": "Fish Umbrella",
+  "games": {
+    "nh": {
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 80
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 320
+        }
+      ]
+    }
+  },
+  "category": "Umbrellas"
+}

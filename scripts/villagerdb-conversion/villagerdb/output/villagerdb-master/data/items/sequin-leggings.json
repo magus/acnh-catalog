@@ -1,0 +1,29 @@
+{
+  "id": "sequin-leggings",
+  "name": "Sequin Leggings",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 235
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 940
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "red": "Red",
+        "black": "Black",
+        "yellow": "Yellow",
+        "white": "White",
+        "blue": "Blue",
+        "purple": "Purple",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Socks"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "barred-knifejaw-model",
+  "name": "Barred Knifejaw Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "CJ"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 15000
+      }
+    }
+  },
+  "category": "Furniture"
+}

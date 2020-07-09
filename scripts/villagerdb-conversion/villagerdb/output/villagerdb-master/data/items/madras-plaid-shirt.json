@@ -1,0 +1,28 @@
+{
+  "id": "madras-plaid-shirt",
+  "name": "Madras Plaid Shirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "red": "Red",
+        "purple": "Purple",
+        "pink": "Pink",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Tops"
+}

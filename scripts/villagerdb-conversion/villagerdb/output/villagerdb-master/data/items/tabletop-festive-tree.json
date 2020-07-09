@@ -1,0 +1,32 @@
+{
+  "id": "tabletop-festive-tree",
+  "name": "Tabletop Festive Tree",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 930
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3720
+        }
+      ],
+      "recipe": {
+        "gold-ornament": 5,
+        "tree-branch": 3,
+        "clay": 2
+      },
+      "variations": {
+        "colorful": "Colorful",
+        "blue": "Blue",
+        "red": "Red",
+        "pink": "Pink",
+        "gold": "Gold",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

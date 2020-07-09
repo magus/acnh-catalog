@@ -1,0 +1,27 @@
+{
+  "id": "star-clock",
+  "name": "Star Clock",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2250
+      },
+      "recipe": {
+        "star-fragment": 3,
+        "iron-nugget": 1
+      },
+      "variations": {
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "purple": "Purple",
+        "pink": "Pink",
+        "orange": "Orange",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

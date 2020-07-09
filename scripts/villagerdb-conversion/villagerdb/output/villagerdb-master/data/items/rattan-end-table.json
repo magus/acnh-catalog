@@ -1,0 +1,27 @@
+{
+  "id": "rattan-end-table",
+  "name": "Rattan End Table",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1075
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 4300
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "reddish-brown": "Reddish brown",
+        "light-brown": "Light brown",
+        "white": "White",
+        "gray": "Gray",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Furniture"
+}

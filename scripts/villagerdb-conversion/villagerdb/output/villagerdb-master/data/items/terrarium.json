@@ -1,0 +1,24 @@
+{
+  "id": "terrarium",
+  "name": "Terrarium",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1740
+      },
+      "recipe": {
+        "clump-of-weeds": 12,
+        "iron-nugget": 2
+      },
+      "variations": {
+        "black": "Black",
+        "gold": "Gold",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Furniture"
+}

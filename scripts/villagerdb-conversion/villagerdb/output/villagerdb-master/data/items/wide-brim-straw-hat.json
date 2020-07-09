@@ -1,0 +1,24 @@
+{
+  "id": "wide-brim-straw-hat",
+  "name": "Wide-brim Straw Hat",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 330
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1320
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "beige": "Beige",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Hats"
+}

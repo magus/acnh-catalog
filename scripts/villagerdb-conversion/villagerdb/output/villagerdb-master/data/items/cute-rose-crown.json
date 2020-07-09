@@ -1,0 +1,26 @@
+{
+  "id": "cute-rose-crown",
+  "name": "Cute Rose Crown",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 960
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3840
+        }
+      ],
+      "recipe": {
+        "pink-roses": 3,
+        "orange-roses": 3
+      },
+      "variations": {
+        "colorful": "Colorful"
+      }
+    }
+  },
+  "category": "Hats"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "draped-skirt",
+  "name": "Draped Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 455
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1820
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "green": "Green",
+        "blue": "Blue",
+        "gray": "Gray",
+        "orange": "Orange",
+        "pink": "Pink",
+        "purple": "Purple",
+        "light-blue": "Light blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

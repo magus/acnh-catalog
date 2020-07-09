@@ -1,0 +1,29 @@
+{
+  "id": "fitness-tank",
+  "name": "Fitness Tank",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "mint": "Mint",
+        "pink": "Pink",
+        "light-blue": "Light blue",
+        "orange": "Orange",
+        "black": "Black",
+        "yellow": "Yellow",
+        "red": "Red",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Tops"
+}

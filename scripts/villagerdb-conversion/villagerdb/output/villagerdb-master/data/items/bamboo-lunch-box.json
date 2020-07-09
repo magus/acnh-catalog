@@ -1,0 +1,23 @@
+{
+  "id": "bamboo-lunch-box",
+  "name": "Bamboo Lunch Box",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 640
+      },
+      "recipe": {
+        "bamboo-piece": 4
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fish-doorplate",
+  "name": "Fish Doorplate",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 90
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 360
+        }
+      ],
+      "variations": {
+        "light-blue": "Light blue",
+        "red": "Red",
+        "orange": "Orange",
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "black": "Black",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Furniture"
+}

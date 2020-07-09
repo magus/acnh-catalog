@@ -1,0 +1,33 @@
+{
+  "id": "inflatable-sofa",
+  "name": "Inflatable Sofa",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "green": "Green",
+        "purple": "Purple",
+        "pink": "Pink",
+        "lime": "Lime",
+        "polka-dots": "Polka dots",
+        "rainbow": "Rainbow",
+        "camouflage": "Camouflage"
+      }
+    }
+  },
+  "category": "Furniture"
+}

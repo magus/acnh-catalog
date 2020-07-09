@@ -1,0 +1,20 @@
+{
+  "id": "apple-hat",
+  "name": "Apple Hat",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1000
+      },
+      "recipe": {
+        "apple": 5
+      },
+      "variations": {
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Hats"
+}

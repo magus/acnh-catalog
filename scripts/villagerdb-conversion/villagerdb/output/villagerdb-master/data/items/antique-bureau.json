@@ -1,0 +1,25 @@
+{
+  "id": "antique-bureau",
+  "name": "Antique Bureau",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 5000
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 20000
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "natural": "Natural",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Furniture"
+}

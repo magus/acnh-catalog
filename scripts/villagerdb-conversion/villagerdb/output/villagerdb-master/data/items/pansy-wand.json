@@ -1,0 +1,18 @@
+{
+  "id": "pansy-wand",
+  "name": "Pansy Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1580
+      },
+      "recipe": {
+        "yellow-pansies": 1,
+        "star-fragment": 3
+      }
+    }
+  },
+  "category": "Tools"
+}

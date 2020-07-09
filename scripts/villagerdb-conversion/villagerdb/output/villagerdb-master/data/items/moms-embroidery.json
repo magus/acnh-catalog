@@ -1,0 +1,27 @@
+{
+  "id": "moms-embroidery",
+  "name": "Mom's Embroidery",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 88
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 352
+        }
+      ],
+      "variations": {
+        "flowers": "Flowers",
+        "bird": "Bird",
+        "bouquet": "Bouquet",
+        "girl": "Girl",
+        "fairy-tale": "Fairy tale",
+        "trees": "Trees"
+      }
+    }
+  },
+  "category": "Furniture"
+}

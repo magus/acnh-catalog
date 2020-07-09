@@ -104,10 +104,10 @@ minimalItems.forEach((item) => {
 });
 
 console.debug('errors', errors);
-// if (errors.length) {
-//   console.debug('errors', errors);
-//   process.exit(1);
-// }
+if (errors.length) {
+  console.debug('errors', errors);
+  process.exit(1);
+}
 
 sampleArray('validItems', validItems);
 fs.writeFileSync('validItems.json', JSON.stringify(validItems, null, 2));

@@ -1,0 +1,106 @@
+// Bootstrap
+@import (inline) '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+// Font Awesome
+@import '../../node_modules/@fortawesome/fontawesome-free/less/fontawesome.less';
+@fa-font-path: '/webfonts/';
+@import '../../node_modules/@fortawesome/fontawesome-free/less/solid.less';
+
+// Slick Carousel
+@import '../../node_modules/slick-carousel/slick/slick.less';
+@import '../../node_modules/slick-carousel/slick/slick-theme.less';
+@slick-font-path: '/webfonts/';
+.slick-loading .slick-list
+{
+  background: #fff;
+}
+
+// Autocomplete
+@import 'autocomplete.less';
+
+// Entity browser
+@import 'browser.less';
+
+// AJAX loader styles
+@import 'loader.less';
+
+// Home page
+@import 'index.less';
+
+// User and list pages
+@import 'users.less';
+
+body {
+  background: #eee;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.3rem;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+
+  button {
+    border-radius: 0;
+  }
+}
+
+#content {
+  background: #fff;
+  padding: 1rem;
+}
+
+#footer {
+  padding: 1rem 0 1rem 0;
+}
+
+table.result-set {
+  th {
+    text-align: center;
+  }
+
+  td {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  td.result-image {
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+}
+
+#birthday-slider {
+  display: none;
+}
+
+#birthday-slider.slick-initialized {
+  display: block;
+  max-width: 275px;
+  margin: 0 auto;
+  .slick-prev:before, .slick-next:before {
+    color: black;
+  }
+}
+
+table.item-game-data {
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+a.no-link-underline:hover {
+  text-decoration: none;
+}

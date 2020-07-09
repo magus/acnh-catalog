@@ -1,0 +1,21 @@
+{
+  "id": "stone-egg-shoes",
+  "name": "Stone-egg Shoes",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "recipe": {
+        "stone-egg": 2
+      },
+      "variations": {
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Shoes"
+}

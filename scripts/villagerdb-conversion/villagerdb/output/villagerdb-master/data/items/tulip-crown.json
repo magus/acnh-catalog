@@ -1,0 +1,23 @@
+{
+  "id": "tulip-crown",
+  "name": "Tulip Crown",
+  "category": "Hats",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "recipe": {
+        "red-tulips": 2,
+        "yellow-tulips": 2,
+        "white-tulips": 1
+      },
+      "variations": {
+        "colorful": "Colorful"
+      }
+    }
+  }
+}

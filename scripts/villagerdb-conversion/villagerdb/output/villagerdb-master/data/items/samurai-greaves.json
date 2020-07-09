@@ -1,0 +1,26 @@
+{
+  "id": "samurai-greaves",
+  "name": "Samurai Greaves",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1075
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 4300
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "black": "Black",
+        "blue": "Blue",
+        "white": "White",
+        "golden-yellow": "Golden yellow"
+      }
+    }
+  },
+  "category": "Shoes"
+}

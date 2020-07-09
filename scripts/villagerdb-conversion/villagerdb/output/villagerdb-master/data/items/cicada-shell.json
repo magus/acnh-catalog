@@ -1,0 +1,28 @@
+{
+  "id": "cicada-shell",
+  "name": "Cicada Shell",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 100
+      },
+      "sources": [
+        "On trees."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of trees, Jul-Aug (All day)",
+        "South: On the side of trees, Jan-Feb (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10
+      }
+    }
+  }
+}

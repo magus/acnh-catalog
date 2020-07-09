@@ -1,0 +1,23 @@
+{
+  "id": "green-honeycomb-tile",
+  "name": "Green Honeycomb Tile",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 355
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1420
+        }
+      ]
+    }
+  },
+  "category": "Flooring"
+}

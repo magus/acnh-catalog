@@ -1,0 +1,25 @@
+{
+  "id": "retro-sweater",
+  "name": "Retro Sweater",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "purple": "Purple",
+        "yellow": "Yellow",
+        "white": "White",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

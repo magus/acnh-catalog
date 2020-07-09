@@ -1,0 +1,24 @@
+{
+  "id": "mush-partition",
+  "name": "Mush Partition",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1800
+      },
+      "recipe": {
+        "skinny-mushroom": 3
+      },
+      "variations": {
+        "ordinary-mushroom": "Ordinary mushroom",
+        "white-mushroom": "White mushroom",
+        "strange-mushroom": "Strange mushroom",
+        "red-mushroom": "Red mushroom",
+        "yellow-mushroom": "Yellow mushroom"
+      }
+    }
+  },
+  "category": "Furniture"
+}

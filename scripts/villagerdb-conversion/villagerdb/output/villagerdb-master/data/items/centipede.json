@@ -1,0 +1,28 @@
+{
+  "id": "centipede",
+  "name": "Centipede",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "sources": [
+        "Hidden under rocks (smack with a shovel)."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Hit rock with shovel or axe, Sep-Jun (4pm-11pm)",
+        "South: Hit rock with shovel or axe, Mar-Dec (4pm-11pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      }
+    }
+  }
+}

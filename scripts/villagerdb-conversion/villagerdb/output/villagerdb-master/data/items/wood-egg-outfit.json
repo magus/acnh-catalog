@@ -1,0 +1,21 @@
+{
+  "id": "wood-egg-outfit",
+  "name": "Wood-egg Outfit",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      },
+      "recipe": {
+        "wood-egg": 3
+      },
+      "variations": {
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "oarfish",
+  "name": "Oarfish",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 9000
+      },
+      "sources": [
+        "In the sea."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Huge Shadows at Sea, Dec-May (All day)",
+        "South: Huge Shadows at Sea, Jun-Nov (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 9000
+      }
+    }
+  }
+}

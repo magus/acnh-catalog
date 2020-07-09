@@ -1,0 +1,18 @@
+{
+  "id": "great-white-shark",
+  "name": "Great White Shark",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Finned Shadows at Sea, Jun-Sep (4pm-9am)",
+        "South: Finned Shadows at Sea, Dec-Mar (4pm-9am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 15000
+      }
+    }
+  },
+  "category": "Fish"
+}

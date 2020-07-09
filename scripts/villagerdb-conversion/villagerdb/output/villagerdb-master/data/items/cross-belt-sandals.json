@@ -1,0 +1,27 @@
+{
+  "id": "cross-belt-sandals",
+  "name": "Cross-belt Sandals",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "pink": "Pink",
+        "gray": "Gray",
+        "brown": "Brown",
+        "black": "Black",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Shoes"
+}

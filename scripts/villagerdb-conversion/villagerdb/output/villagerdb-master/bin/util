@@ -1,0 +1,367 @@
+#!/usr/bin/env node
+
+require('dotenv').config();
+
+const fs = require('fs');
+const path = require('path');
+const moment = require('moment');
+const es = require('../db/elasticsearch');
+
+const searchConfig = require('../config/search.js');
+const formatHelper = require('../helpers/format');
+const urlHelper = require('../helpers/url');
+const sitemap = require('../helpers/sitemap');
+const cache = require('../db/cache');
+
+async function generateSitemap() {
+    sitemap.generateMap();
+}
+
+/**
+ * Computes tags for items.
+ *
+ * @param item
+ * @returns {[]}
+ */
+function computeTags(item) {
+    const tags = [];
+
+    // Check if craftable - TODO dont like the way this is done but need 2 options to show as filterable!
+    if (item.games && item.games.nh && item.games.nh.recipe && Object.keys(item.games.nh.recipe).length > 0) {
+        tags.push('Craftable');
+    } else if (item.games && item.games.nh) {
+        tags.push('Not Craftable');
+    }
+
+    if (tags.length > 0) {
+        return tags;
+    }
+}
+
+/**
+ * Build the ElasticSearch index.
+ *
+ * @returns {Promise<void>}
+ */
+async function buildSearchIndex() {
+    const newIndexName = 'i' + Date.now();
+
+    // Create the index.
+    await es.indices.create({
+        index: newIndexName,
+        body: {
+            settings: {
+                max_ngram_diff: 8,
+                analysis: {
+                    analyzer: {
+                        vdb_ascii_fold: {
+                            tokenizer: 'standard',
+                            filter: ['with_orig_asciifolding', 'lowercase']
+                        },
+                        vdb_ascii_fold_partial_match: {
+                            tokenizer: 'vdb_tokenizer',
+                            filter: ['with_orig_asciifolding', 'lowercase']
+                        }
+                    },
+                    tokenizer: {
+                        vdb_tokenizer: {
+                            type: "ngram",
+                            min_gram: 2,
+                            max_gram: 10,
+                            token_chars: [
+                                'letter',
+                                'digit'
+                            ]
+
+                        }
+                    },
+                    filter: {
+                        with_orig_asciifolding: {
+                            type: 'asciifolding',
+                            preserve_original: true
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Define the index mappings properly.
+    await es.indices.putMapping({
+        index: newIndexName,
+        body: {
+            properties: {
+                suggest: {
+                    type: 'completion',
+                    analyzer: 'vdb_ascii_fold',
+                    contexts: {
+                        name: 'game',
+                        type: 'category',
+                        path: 'game' // tell ES to read it from the document 'game' property!
+                    }
+                },
+                type: {
+                    type: 'keyword'
+                },
+                keyword: {
+                    type: 'keyword'
+                },
+                gender: {
+                    type: 'keyword'
+                },
+                species: {
+                    type: 'keyword'
+                },
+                personality: {
+                    type: 'keyword'
+                },
+                game: {
+                    type: 'keyword'
+                },
+                zodiac: {
+                    type: 'keyword'
+                },
+                category: {
+                    type: 'keyword'
+                },
+                interiorTheme: {
+                    type: 'keyword',
+                },
+                fashionTheme: {
+                    type: 'keyword'
+                },
+                set: {
+                    type: 'keyword'
+                },
+                collab: {
+                    type: 'keyword'
+                },
+                ngram: {
+                    type: 'text',
+                    analyzer: 'vdb_ascii_fold_partial_match'
+                },
+                name: {
+                    type: 'text',
+                    analyzer: 'vdb_ascii_fold'
+                },
+                url: {
+                    type: 'object',
+                    enabled: false
+                },
+                image: {
+                    type: 'object',
+                    enabled: false
+                },
+                variations: {
+                    type: 'object',
+                    enabled: false
+                },
+                variationImages: {
+                    type: 'object',
+                    enabled: false
+                },
+                tag: {
+                    type: 'keyword'
+                }
+            }
+        }
+    });
+
+    // Add villagers and items.
+    await indexVillagers(es, newIndexName);
+    await indexItems(es, newIndexName);
+
+    // Save the new index name to the cache.
+    const oldIndexName = await cache.get(searchConfig.CACHE_INDEX_NAME);
+    await cache.set(searchConfig.CACHE_INDEX_NAME, newIndexName);
+    console.log('New index name: ' + newIndexName);
+
+    // Delete the old index if existing.
+    if (oldIndexName) {
+        await es.indices.delete({
+            index: oldIndexName
+        });
+        console.log('Deleted old index ' + oldIndexName);
+    }
+}
+
+/**
+ * Add villagers to the entity index.
+ *
+ * @param es
+ * @param newIndexName
+ * @returns {Promise<void>}
+ */
+async function indexVillagers(es, newIndexName) {
+    // We need Redis access to save time on re-computing hashes.
+    const villagers = require('../db/entity/villagers');
+
+    const files = fs.readdirSync(path.join('data', 'villagers'));
+    for (let file of files) {
+        const data = fs.readFileSync(path.join('data', 'villagers', file), 'utf8');
+        const parsed = JSON.parse(data);
+        const redisVillager = await villagers.getById(parsed.id);
+        if (!redisVillager) {
+            throw new Error('Villager not found in redis, giving up: ' + parsed.id);
+        }
+
+        // Build document.
+        const document = {
+            type: searchConfig.villagerEntityType,
+            suggest: {
+                input: parsed.name
+            },
+            keyword: parsed.id,
+            gender: parsed.gender,
+            species: parsed.species,
+            name: parsed.name,
+            ngram: parsed.name,
+            url: urlHelper.getEntityUrl(searchConfig.villagerEntityType, parsed.id),
+            image: redisVillager.image,
+            game: [],
+            personality: [],
+            collab: parsed.collab ? parsed.collab : 'Standard'
+        };
+
+        // Get unique personalities.
+        for (let game in parsed.games) {
+            document.game.push(game);
+
+            const personality = parsed.games[game].personality;
+            if (personality && !document.personality.includes(personality)) {
+                document.personality.push(personality);
+            }
+        }
+
+        // Zodiac?
+        if (parsed.birthday) {
+            document.zodiac = formatHelper.getZodiac(moment(parsed.birthday + '-2000', 'MM-DD-YYYY')).toLowerCase();
+        }
+
+        // Create the villager document.
+        await es.index({
+            index: newIndexName,
+            id: searchConfig.villagerEntityType + '-' + parsed.id,
+            body: document
+        });
+        console.log('Indexed ' + parsed.id);
+    }
+}
+
+/**
+ * Add items to the entity index.
+ *
+ * @param es
+ * @param newIndexName
+ * @returns {Promise<void>}
+ */
+async function indexItems(es, newIndexName) {
+    // We need Redis access to save time on re-computing hashes.
+    const items = require('../db/entity/items');
+
+    const files = fs.readdirSync(path.join('data', 'items'));
+    for (let file of files) {
+        const data = fs.readFileSync(path.join('data', 'items', file), 'utf8');
+        const parsed = JSON.parse(data);
+        const redisItem = await items.getById(parsed.id);
+        if (!redisItem) {
+            throw new Error('Item not found in redis, giving up: ' + parsed.id);
+        }
+
+        // Build document.
+        const document = {
+            type: searchConfig.itemEntityType,
+            suggest: {
+                input: parsed.name
+            },
+            keyword: parsed.id,
+            name: parsed.name,
+            ngram: parsed.name,
+            category: parsed.category,
+            game: [],
+            url: urlHelper.getEntityUrl(searchConfig.itemEntityType, parsed.id),
+            image: redisItem.image,
+            variations: redisItem.variations,
+            variationImages: redisItem.variationImages,
+            tag: computeTags(redisItem)
+        };
+
+        for (let game in parsed.games) {
+            document.game.push(game);
+            document.interiorTheme = parsed.games[game].interiorThemes;
+            document.fashionTheme = parsed.games[game].fashionThemes;
+            document.set = parsed.games[game].set;
+        }
+
+        // Create the item document.
+        await es.index({
+            index: newIndexName,
+            id: searchConfig.itemEntityType + '-' + parsed.id,
+            body: document
+        });
+        console.log('Indexed ' + parsed.id);
+    }
+}
+
+/**
+ * Build the villager and item databases. This will clear them before building them.
+ *
+ */
+async function buildRedisDb() {
+    const villagers = require('../db/entity/villagers');
+    const items = require('../db/entity/items');
+
+    console.log('Populating villagers database...');
+    await villagers.populateRedis()
+    console.log('Villager database populated.');
+    console.log('Populating items database...');
+    await items.populateRedis();
+    console.log('Items database populated.');
+}
+
+/**
+ * Entry point starts here.
+ */
+if (process.argv.length !== 3) {
+    process.exit(1);
+}
+
+const command = process.argv[2];
+if (!command) {
+    usage();
+} else if (command === 'generate-sitemap') {
+    generateSitemap()
+        .then(() => {
+            console.log('Generated new sitemap.');
+            process.exit(0);
+        })
+        .catch((e) => {
+            console.log('Failed to generate new sitemap.');
+            console.error(e);
+            process.exit(1);
+        });
+} else if (command === 'build-search-index') {
+    buildSearchIndex()
+        .then(() => {
+            console.log('Built search index successfully.');
+            process.exit(0);
+        })
+        .catch((e) => {
+            console.log('Failed to build search index.');
+            console.error(e);
+            process.exit(1);
+        });
+} else if (command === 'build-redis-db') {
+    buildRedisDb()
+        .then(() => {
+            process.exit(0);
+        })
+        .catch((e) => {
+            console.log('Error building redis db.');
+            console.error(e);
+            process.exit(1);
+        })
+} else {
+    console.error('Invalid command: ' + command);
+    process.exit(1);
+}

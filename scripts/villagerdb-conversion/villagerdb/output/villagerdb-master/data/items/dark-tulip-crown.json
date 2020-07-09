@@ -1,0 +1,25 @@
+{
+  "id": "dark-tulip-crown",
+  "name": "Dark Tulip Crown",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3200
+        }
+      ],
+      "recipe": {
+        "black-tulips": 5
+      },
+      "variations": {
+        "dark-red": "Dark red"
+      }
+    }
+  },
+  "category": "Hats"
+}

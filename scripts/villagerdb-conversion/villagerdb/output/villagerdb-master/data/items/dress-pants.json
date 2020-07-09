@@ -1,0 +1,29 @@
+{
+  "id": "dress-pants",
+  "name": "Dress Pants",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "navy-blue": "Navy blue",
+        "beige": "Beige",
+        "berry-red": "Berry red"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "front-tie-button-down-shirt",
+  "name": "Front-tie Button-down Shirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Tops"
+}

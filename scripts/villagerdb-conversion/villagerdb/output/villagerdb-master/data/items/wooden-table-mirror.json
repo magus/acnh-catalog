@@ -1,0 +1,29 @@
+{
+  "id": "wooden-table-mirror",
+  "name": "Wooden Table Mirror",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1100
+      },
+      "recipe": {
+        "wood": 3,
+        "iron-nugget": 1
+      },
+      "variations": {
+        "light-wood": "Light wood",
+        "white-wood": "White wood",
+        "cherry-wood": "Cherry wood",
+        "dark-wood": "Dark wood",
+        "black": "Black",
+        "green": "Green",
+        "blue": "Blue",
+        "pink-wood": "Pink wood"
+      }
+    }
+  },
+  "category": "Furniture"
+}

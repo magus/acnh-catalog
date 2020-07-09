@@ -1,0 +1,26 @@
+{
+  "id": "short-sleeve-dress-shirt",
+  "name": "Short-sleeve Dress Shirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "red": "Red",
+        "green": "Green",
+        "yellow": "Yellow",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

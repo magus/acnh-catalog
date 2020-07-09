@@ -1,0 +1,28 @@
+{
+  "id": "monstera",
+  "name": "Monstera",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 425
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1700
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "brown": "Brown",
+        "red": "Red",
+        "yellow": "Yellow",
+        "blue": "Blue",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

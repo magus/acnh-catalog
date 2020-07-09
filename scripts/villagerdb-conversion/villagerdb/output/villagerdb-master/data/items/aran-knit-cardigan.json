@@ -1,0 +1,25 @@
+{
+  "id": "aran-knit-cardigan",
+  "name": "Aran-knit Cardigan",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "beige": "Beige",
+        "light-blue": "Light blue",
+        "pink": "Pink",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Tops"
+}

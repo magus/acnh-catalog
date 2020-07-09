@@ -1,0 +1,28 @@
+{
+  "id": "acoustic-guitar",
+  "name": "Acoustic Guitar",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3210
+      },
+      "recipe": {
+        "softwood": 8,
+        "iron-nugget": 3
+      },
+      "variations": {
+        "natural": "Natural",
+        "cherry": "Cherry",
+        "brown": "Brown",
+        "blue": "Blue",
+        "white": "White",
+        "black": "Black",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Furniture"
+}

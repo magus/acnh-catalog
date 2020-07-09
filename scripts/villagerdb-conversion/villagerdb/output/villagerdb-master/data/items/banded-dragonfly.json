@@ -1,0 +1,28 @@
+{
+  "id": "banded-dragonfly",
+  "name": "Banded Dragonfly",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4500
+      },
+      "sources": [
+        "Anywhere other than above salt water (the sea)."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, May-Oct (8am-5pm)",
+        "South: Flying around, Nov-Apr (8am-5pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4500
+      }
+    }
+  }
+}

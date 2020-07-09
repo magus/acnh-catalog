@@ -1,0 +1,28 @@
+{
+  "id": "sweetfish",
+  "name": "Sweetfish",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 900
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Medium Shadows on River, Jul-Sep (All day)",
+        "South: Medium Shadows on River, Jan-Mar (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 900
+      }
+    }
+  }
+}

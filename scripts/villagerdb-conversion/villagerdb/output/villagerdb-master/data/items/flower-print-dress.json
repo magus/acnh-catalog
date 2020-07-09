@@ -1,0 +1,27 @@
+{
+  "id": "flower-print-dress",
+  "name": "Flower-print Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Dresses"
+}

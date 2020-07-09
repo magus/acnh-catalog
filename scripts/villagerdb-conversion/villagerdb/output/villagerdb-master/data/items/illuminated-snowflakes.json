@@ -1,0 +1,24 @@
+{
+  "id": "illuminated-snowflakes",
+  "name": "Illuminated Snowflakes",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3150
+      },
+      "recipe": {
+        "blue-ornament": 9,
+        "iron-nugget": 3
+      },
+      "variations": {
+        "white": "White",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "rainbow": "Rainbow"
+      }
+    }
+  },
+  "category": "Furniture"
+}

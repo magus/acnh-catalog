@@ -1,0 +1,29 @@
+{
+  "id": "square-glasses",
+  "name": "Square Glasses",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 220
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 880
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "black": "Black",
+        "gray": "Gray",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Accessories"
+}

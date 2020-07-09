@@ -1,0 +1,25 @@
+{
+  "id": "spider-web-tights",
+  "name": "Spider-web Tights",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "orange": "Orange",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Socks"
+}

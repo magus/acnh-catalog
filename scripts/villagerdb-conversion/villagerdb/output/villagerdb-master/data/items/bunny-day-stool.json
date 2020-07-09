@@ -1,0 +1,21 @@
+{
+  "id": "bunny-day-stool",
+  "name": "Bunny Day Stool",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Recipe obtained during Bunny Day event (April)"
+      ],
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      },
+      "recipe": {
+        "water-egg": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

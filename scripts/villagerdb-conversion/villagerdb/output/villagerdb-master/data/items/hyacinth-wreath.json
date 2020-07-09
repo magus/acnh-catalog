@@ -1,0 +1,20 @@
+{
+  "id": "hyacinth-wreath",
+  "name": "Hyacinth Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 720
+      },
+      "recipe": {
+        "white-hyacinths": 3,
+        "red-hyacinths": 3,
+        "yellow-hyacinths": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

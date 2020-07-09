@@ -1,0 +1,17 @@
+{
+  "id": "dark-bamboo-rug",
+  "name": "Dark Bamboo Rug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 960
+      },
+      "recipe": {
+        "bamboo-piece": 6
+      }
+    }
+  },
+  "category": "Flooring"
+}

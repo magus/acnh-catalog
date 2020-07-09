@@ -1,0 +1,23 @@
+{
+  "id": "gong",
+  "name": "Gong",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 5100
+      },
+      "recipe": {
+        "iron-nugget": 6,
+        "wood": 5
+      },
+      "variations": {
+        "brown": "Brown",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Furniture"
+}

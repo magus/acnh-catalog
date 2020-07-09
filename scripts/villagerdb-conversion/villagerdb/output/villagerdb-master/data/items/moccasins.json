@@ -1,0 +1,32 @@
+{
+  "id": "moccasins",
+  "name": "Moccasins",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 270
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1080
+        }
+      ],
+      "variations": {
+        "camel": "Camel",
+        "red": "Red",
+        "light-blue": "Light blue",
+        "white": "White",
+        "pink": "Pink",
+        "gray": "Gray",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Shoes"
+}

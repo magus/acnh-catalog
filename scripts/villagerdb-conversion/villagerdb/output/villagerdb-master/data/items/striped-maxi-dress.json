@@ -1,0 +1,25 @@
+{
+  "id": "striped-maxi-dress",
+  "name": "Striped Maxi Dress",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 350
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1400
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Dresses"
+}

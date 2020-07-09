@@ -1,0 +1,30 @@
+{
+  "id": "sandbox",
+  "name": "Sandbox",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "set": "Welcome amiibo Update",
+      "sources": [
+        "DLC (JP)"
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 12000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 2400
+        }
+      ]
+    }
+  }
+}

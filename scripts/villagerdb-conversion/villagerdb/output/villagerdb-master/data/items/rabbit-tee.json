@@ -1,0 +1,26 @@
+{
+  "id": "rabbit-tee",
+  "name": "Rabbit Tee",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Shopping"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "browline-glasses",
+  "name": "Browline Glasses",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "brown": "Brown",
+        "green": "Green",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Accessories"
+}

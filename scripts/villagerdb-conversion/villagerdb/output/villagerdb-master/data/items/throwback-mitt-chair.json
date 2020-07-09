@@ -1,0 +1,28 @@
+{
+  "id": "throwback-mitt-chair",
+  "name": "Throwback Mitt Chair",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 350
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1400
+        }
+      ],
+      "variations": {
+        "camel": "Camel",
+        "brown": "Brown",
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "goggles",
+  "name": "Goggles",
+  "category": "Accessories",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Sporty"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 70
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 280
+        }
+      ]
+    },
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "blue": "Blue",
+        "pink": "Pink",
+        "green": "Green",
+        "purple": "Purple",
+        "red": "Red"
+      }
+    }
+  }
+}

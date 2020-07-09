@@ -1,0 +1,49 @@
+{
+  "id": "tall-lantern",
+  "name": "Tall Lantern",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Harmonious",
+        "Quirky"
+      ],
+      "set": "Zen Garden",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1495
+      },
+      "sources": [
+        "Nookling stores"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 5980
+        }
+      ]
+    },
+    "nh": {
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2700
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 10800
+        }
+      ],
+      "recipe": {
+        "stone": 18
+      },
+      "variations": {
+        "natural": "Natural",
+        "white": "White",
+        "mossy": "Mossy"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gaucho-pants",
+  "name": "Gaucho Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 220
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 880
+        }
+      ],
+      "variations": {
+        "gray": "Gray",
+        "brown": "Brown",
+        "avocado": "Avocado",
+        "pink": "Pink",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

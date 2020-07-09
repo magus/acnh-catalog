@@ -1,0 +1,28 @@
+{
+  "id": "gar",
+  "name": "Gar",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6000
+      },
+      "sources": [
+        "Location:In lakes."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Huge Shadows in Pond, Jun-Sep (4pm-9am)",
+        "South: Huge Shadows in Pond, Dec-Mar (4pm-9am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6000
+      }
+    }
+  }
+}

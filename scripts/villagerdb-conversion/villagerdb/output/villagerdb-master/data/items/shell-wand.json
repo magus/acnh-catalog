@@ -1,0 +1,18 @@
+{
+  "id": "shell-wand",
+  "name": "Shell Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 5100
+      },
+      "recipe": {
+        "summer-shell": 3,
+        "star-fragment": 3
+      }
+    }
+  },
+  "category": "Tools"
+}

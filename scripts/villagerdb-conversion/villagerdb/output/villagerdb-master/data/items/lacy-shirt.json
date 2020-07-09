@@ -1,0 +1,23 @@
+{
+  "id": "lacy-shirt",
+  "name": "Lacy Shirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 212
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 850
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Tops"
+}

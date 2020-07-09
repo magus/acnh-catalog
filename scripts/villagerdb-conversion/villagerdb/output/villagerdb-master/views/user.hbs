@@ -1,0 +1,50 @@
+{{#if isOwnUser}}
+    <h1>Your Profile</h1>
+{{else}}
+    <h1>{{username}}'s Profile</h1>
+{{/if}}
+
+<div class="text-right mb-3">
+    {{> social-media shareUrl=shareUrl showCopyButton=true }}
+</div>
+
+{{#if isOwnUser}}
+    <div class="text-right mb-3">
+        <a href="/list/create">
+            <span class="fas fa-plus"></span>
+            Create a new list
+        </a>
+    </div>
+{{/if}}
+
+{{#if hasLists}}
+    <ul class="list-group user-list-view">
+        {{#each lists}}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="/user/{{../username}}/list/{{id}}">{{name}}</a>
+                </div>
+                {{#if ../isOwnUser}}
+                    <a href="/list/delete/{{id}}" class="btn btn-danger delete-list-button" role="button">
+                        <span class="fa fa-trash"></span>
+                        <span class="sr-only">Delete</span>
+                    </a>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+{{else}}
+    {{#if isOwnUser}}
+        <p>
+            You have not added any lists yet. You can create one by using the <span class="fas fa-plus"></span> link on
+            the top right, or
+            <a href="/list/create">clicking here</a>.
+        </p>
+    {{else}}
+        <p>This user has not created any lists yet.</p>
+    {{/if}}
+{{/if}}
+
+{{#if isOwnUser}}
+    <p class="mt-4">You can manage your account by clicking <a href="/auth/manage">here</a>.</p>
+{{/if}}

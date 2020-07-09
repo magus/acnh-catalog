@@ -1,0 +1,28 @@
+{
+  "id": "puffer-fish",
+  "name": "Puffer Fish",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 240
+      },
+      "sources": [
+        "In the sea."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Medium Shadows at Sea, Jul-Sep (All day)",
+        "South: Medium Shadows at Sea, Jan-Mar (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 250
+      }
+    }
+  }
+}

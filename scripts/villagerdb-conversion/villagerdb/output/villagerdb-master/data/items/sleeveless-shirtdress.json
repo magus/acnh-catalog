@@ -1,0 +1,25 @@
+{
+  "id": "sleeveless-shirtdress",
+  "name": "Sleeveless Shirtdress",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "white": "White",
+        "pink": "Pink",
+        "lime": "Lime"
+      }
+    }
+  },
+  "category": "Dresses"
+}

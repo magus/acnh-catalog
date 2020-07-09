@@ -1,0 +1,23 @@
+{
+  "id": "blossom-viewing-lantern",
+  "name": "Blossom-viewing Lantern",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2880
+      },
+      "recipe": {
+        "cherry-blossom-petal": 6,
+        "hardwood": 4
+      },
+      "variations": {
+        "dark-wood": "Dark wood",
+        "light-wood": "Light wood"
+      }
+    }
+  },
+  "category": "Furniture"
+}

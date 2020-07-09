@@ -1,0 +1,29 @@
+{
+  "id": "frilly-knee-high-socks",
+  "name": "Frilly Knee-high Socks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 210
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 840
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "green": "Green",
+        "red": "Red",
+        "brown": "Brown",
+        "mint": "Mint",
+        "pink": "Pink",
+        "purple": "Purple",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Socks"
+}

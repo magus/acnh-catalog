@@ -1,0 +1,29 @@
+{
+  "id": "system-kitchen",
+  "name": "System Kitchen",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 32500
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 130000
+        }
+      ],
+      "variations": {
+        "off-white": "Off-white",
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "black": "Black",
+        "brown": "Brown",
+        "natural": "Natural",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

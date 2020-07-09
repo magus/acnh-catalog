@@ -1,0 +1,25 @@
+{
+  "id": "simple-checkered-dress",
+  "name": "Simple Checkered Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "green": "Green",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Dresses"
+}

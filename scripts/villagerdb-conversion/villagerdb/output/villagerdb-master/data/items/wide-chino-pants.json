@@ -1,0 +1,31 @@
+{
+  "id": "wide-chino-pants",
+  "name": "Wide Chino Pants",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Shopping",
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "beige": "Beige",
+        "navy-blue": "Navy blue",
+        "avocado": "Avocado",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

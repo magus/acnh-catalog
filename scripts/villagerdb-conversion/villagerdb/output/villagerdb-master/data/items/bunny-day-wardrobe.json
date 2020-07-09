@@ -1,0 +1,21 @@
+{
+  "id": "bunny-day-wardrobe",
+  "name": "Bunny Day Wardrobe",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Recipe obtained during Bunny Day event (April)"
+      ],
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1600
+      },
+      "recipe": {
+        "stone-egg": 4
+      }
+    }
+  },
+  "category": "Furniture"
+}

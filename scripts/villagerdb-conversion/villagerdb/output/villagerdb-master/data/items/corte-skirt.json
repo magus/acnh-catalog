@@ -1,0 +1,28 @@
+{
+  "id": "corte-skirt",
+  "name": "Corte Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 220
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 880
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "magenta": "Magenta",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

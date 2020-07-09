@@ -1,0 +1,23 @@
+{
+  "id": "dark-rose-wreath",
+  "name": "Dark Rose Wreath",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4320
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 17280
+        }
+      ],
+      "recipe": {
+        "black-roses": 3,
+        "purple-roses": 6
+      }
+    }
+  },
+  "category": "Furniture"
+}

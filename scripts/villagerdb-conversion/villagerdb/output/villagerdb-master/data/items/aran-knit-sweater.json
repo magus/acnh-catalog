@@ -1,0 +1,28 @@
+{
+  "id": "aran-knit-sweater",
+  "name": "Aran-knit Sweater",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "white": "White",
+        "gray": "Gray",
+        "green": "Green",
+        "black": "Black",
+        "orange": "Orange",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ornament-mobile",
+  "name": "Ornament Mobile",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 340
+      },
+      "recipe": {
+        "red-ornament": 1,
+        "blue-ornament": 1,
+        "gold-ornament": 1,
+        "tree-branch": 4
+      },
+      "variations": {
+        "colorful": "Colorful",
+        "blue": "Blue",
+        "red": "Red",
+        "pink": "Pink",
+        "gold": "Gold",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dreamy-pants",
+  "name": "Dreamy Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 360
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1440
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "green": "Green",
+        "yellow": "Yellow",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

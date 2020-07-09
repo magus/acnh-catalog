@@ -1,0 +1,26 @@
+{
+  "id": "nook-inc-cap",
+  "name": "Nook Inc. Cap",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2500
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 500
+        }
+      ],
+      "variations": {
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Hats"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "work-shirt",
+  "name": "Work Shirt",
+  "category": "Tops",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Official"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 105
+      },
+      "sources": [
+        "Able Sisters"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 420
+        }
+      ]
+    },
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "red-striped-necktie": "Red-striped necktie",
+        "blue-striped-necktie": "Blue-striped necktie",
+        "purple-striped-necktie": "Purple-striped necktie",
+        "green-striped-necktie": "Green-striped necktie",
+        "white-striped-necktie": "White-striped necktie"
+      }
+    }
+  }
+}

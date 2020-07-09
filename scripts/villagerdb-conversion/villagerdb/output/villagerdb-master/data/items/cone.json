@@ -1,0 +1,33 @@
+{
+  "id": "cone",
+  "name": "Cone",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 157
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 630
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "white": "White",
+        "red-stripes": "Red stripes",
+        "green-stripes": "Green stripes",
+        "reflective-stripes": "Reflective stripes",
+        "caution-stripes": "Caution stripes"
+      }
+    }
+  },
+  "category": "Furniture"
+}

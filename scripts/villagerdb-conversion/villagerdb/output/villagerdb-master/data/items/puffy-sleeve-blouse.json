@@ -1,0 +1,25 @@
+{
+  "id": "puffy-sleeve-blouse",
+  "name": "Puffy-sleeve Blouse",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "light-blue": "Light blue",
+        "yellow": "Yellow",
+        "pink": "Pink",
+        "lime": "Lime"
+      }
+    }
+  },
+  "category": "Tops"
+}

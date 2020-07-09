@@ -1,0 +1,20 @@
+{
+  "id": "stone-egg",
+  "name": "Stone Egg",
+  "category": "Usables",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sources": [
+        "Bunny Day (breakable rock)"
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "yellow-perch",
+  "name": "Yellow Perch",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 240
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Medium Shadows on River, Oct-Mar (All day)",
+        "South: Medium Shadows on River, Apr-Sep (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      }
+    }
+  }
+}

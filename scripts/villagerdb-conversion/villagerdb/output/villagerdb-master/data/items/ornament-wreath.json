@@ -1,0 +1,28 @@
+{
+  "id": "ornament-wreath",
+  "name": "Ornament Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "recipe": {
+        "blue-ornament": 6,
+        "gold-ornament": 2
+      },
+      "variations": {
+        "blue": "Blue",
+        "gold": "Gold",
+        "silver": "Silver",
+        "green": "Green",
+        "red": "Red",
+        "light-green": "Light green",
+        "pink": "Pink",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Furniture"
+}

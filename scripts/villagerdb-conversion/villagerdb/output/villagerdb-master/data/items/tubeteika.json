@@ -1,0 +1,23 @@
+{
+  "id": "tubeteika",
+  "name": "Tubeteika",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Gulliver"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 500
+      },
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "camel": "Camel",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Hats"
+}

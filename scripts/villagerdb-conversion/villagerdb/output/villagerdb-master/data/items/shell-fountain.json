@@ -1,0 +1,27 @@
+{
+  "id": "shell-fountain",
+  "name": "Shell Fountain",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 9450
+      },
+      "recipe": {
+        "giant-clam": 5,
+        "stone": 3
+      },
+      "variations": {
+        "white": "White",
+        "brown": "Brown",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "purple": "Purple",
+        "pearl": "Pearl"
+      }
+    }
+  },
+  "category": "Furniture"
+}

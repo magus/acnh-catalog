@@ -1,0 +1,29 @@
+{
+  "id": "kurta",
+  "name": "Kurta",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "gray": "Gray",
+        "blue": "Blue",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Tops"
+}

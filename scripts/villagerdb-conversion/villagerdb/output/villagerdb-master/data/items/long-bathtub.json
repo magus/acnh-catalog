@@ -1,0 +1,29 @@
+{
+  "id": "long-bathtub",
+  "name": "Long Bathtub",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1950
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 7800
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "black-marble": "Black marble",
+        "white-marble": "White marble",
+        "pink": "Pink",
+        "light-blue": "Light blue",
+        "green": "Green",
+        "two-toned-tile": "Two-toned tile"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "peacock-butterfly-model",
+  "name": "Peacock Butterfly Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Flick"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 7500
+      }
+    }
+  },
+  "category": "Furniture"
+}

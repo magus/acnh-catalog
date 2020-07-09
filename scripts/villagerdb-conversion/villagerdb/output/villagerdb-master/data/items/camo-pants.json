@@ -1,0 +1,28 @@
+{
+  "id": "camo-pants",
+  "name": "Camo Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "avocado": "Avocado",
+        "pink": "Pink",
+        "blue": "Blue",
+        "gray": "Gray",
+        "purple": "Purple",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

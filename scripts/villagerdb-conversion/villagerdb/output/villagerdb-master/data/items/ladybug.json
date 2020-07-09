@@ -1,0 +1,28 @@
+{
+  "id": "ladybug",
+  "name": "Ladybug",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "sources": [
+        "On flowers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On flowers, Mar-Jun and Oct (8am-5pm)",
+        "South: On flowers, Apr and Sep-Dec (8am-5pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      }
+    }
+  }
+}

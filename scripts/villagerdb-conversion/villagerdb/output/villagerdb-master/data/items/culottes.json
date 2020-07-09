@@ -1,0 +1,26 @@
+{
+  "id": "culottes",
+  "name": "Culottes",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 175
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 700
+        }
+      ],
+      "variations": {
+        "light-blue": "Light blue",
+        "white": "White",
+        "pink": "Pink",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

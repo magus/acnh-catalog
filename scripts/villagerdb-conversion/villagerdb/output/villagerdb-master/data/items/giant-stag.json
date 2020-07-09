@@ -1,0 +1,28 @@
+{
+  "id": "giant-stag",
+  "name": "Giant Stag",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      },
+      "sources": [
+        "On trees."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of trees, Jul-Aug (11pm-8am)",
+        "South: On the side of trees, Jan-Feb (11pm-8am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      }
+    }
+  }
+}

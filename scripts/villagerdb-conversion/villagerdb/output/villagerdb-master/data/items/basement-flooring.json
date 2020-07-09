@@ -1,0 +1,17 @@
+{
+  "id": "basement-flooring",
+  "name": "Basement Flooring",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      },
+      "recipe": {
+        "stone": 10
+      }
+    }
+  },
+  "category": "Flooring"
+}

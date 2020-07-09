@@ -1,0 +1,25 @@
+{
+  "id": "punk-pants",
+  "name": "Punk Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 455
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1820
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

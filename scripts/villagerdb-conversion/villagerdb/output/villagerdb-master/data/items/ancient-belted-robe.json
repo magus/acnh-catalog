@@ -1,0 +1,26 @@
+{
+  "id": "ancient-belted-robe",
+  "name": "Ancient Belted Robe",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 910
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3640
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "green": "Green",
+        "beige": "Beige",
+        "white": "White",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Dresses"
+}

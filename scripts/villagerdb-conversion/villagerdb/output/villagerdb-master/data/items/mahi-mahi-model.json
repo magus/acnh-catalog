@@ -1,0 +1,13 @@
+{
+  "id": "mahi-mahi-model",
+  "name": "Mahi-mahi Model",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 18000
+      }
+    }
+  },
+  "category": "Furniture"
+}

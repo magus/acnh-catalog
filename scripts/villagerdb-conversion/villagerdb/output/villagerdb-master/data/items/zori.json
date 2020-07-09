@@ -1,0 +1,29 @@
+{
+  "id": "zori",
+  "name": "Zori",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1075
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 4300
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "gold": "Gold",
+        "pink": "Pink",
+        "light-pink": "Light pink",
+        "green": "Green",
+        "white": "White",
+        "aqua": "Aqua",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Shoes"
+}

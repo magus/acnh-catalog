@@ -1,0 +1,27 @@
+{
+  "id": "shell-lamp",
+  "name": "Shell Lamp",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4200
+      },
+      "recipe": {
+        "giant-clam": 2,
+        "clay": 3
+      },
+      "variations": {
+        "white": "White",
+        "brown": "Brown",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "purple": "Purple",
+        "pearl": "Pearl"
+      }
+    }
+  },
+  "category": "Furniture"
+}

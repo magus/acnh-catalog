@@ -1,0 +1,28 @@
+{
+  "id": "antique-mini-table",
+  "name": "Antique Mini Table",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1675
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 6700
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "natural": "Natural",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Furniture"
+}

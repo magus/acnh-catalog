@@ -1,0 +1,20 @@
+{
+  "id": "gold-rose-crown",
+  "name": "Gold Rose Crown",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 12000
+      },
+      "recipe": {
+        "gold-roses": 6
+      },
+      "variations": {
+        "gold": "Gold"
+      }
+    }
+  },
+  "category": "Hats"
+}

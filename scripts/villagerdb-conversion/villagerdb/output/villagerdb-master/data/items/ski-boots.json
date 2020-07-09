@@ -1,0 +1,27 @@
+{
+  "id": "ski-boots",
+  "name": "Ski Boots",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "orange": "Orange",
+        "red": "Red",
+        "lime": "Lime",
+        "light-blue": "Light blue",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Shoes"
+}

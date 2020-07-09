@@ -1,0 +1,24 @@
+{
+  "id": "antique-boots",
+  "name": "Antique Boots",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 660
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2640
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "black": "Black",
+        "greige": "Greige"
+      }
+    }
+  },
+  "category": "Shoes"
+}

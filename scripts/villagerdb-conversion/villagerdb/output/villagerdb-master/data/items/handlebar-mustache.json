@@ -1,0 +1,26 @@
+{
+  "id": "handlebar-mustache",
+  "name": "Handlebar Mustache",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Accessories"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "wooden-chair",
+  "name": "Wooden Chair",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 720
+      },
+      "recipe": {
+        "wood": 6
+      },
+      "variations": {
+        "light-wood": "Light wood",
+        "white-wood": "White wood",
+        "cherry-wood": "Cherry wood",
+        "dark-wood": "Dark wood",
+        "black": "Black",
+        "green": "Green",
+        "blue": "Blue",
+        "pink-wood": "Pink wood"
+      }
+    }
+  },
+  "category": "Furniture"
+}

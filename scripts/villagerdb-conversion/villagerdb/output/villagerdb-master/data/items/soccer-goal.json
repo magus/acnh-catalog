@@ -1,0 +1,30 @@
+{
+  "id": "soccer-goal",
+  "name": "Soccer Goal",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "set": "Welcome amiibo Update",
+      "sources": [
+        "DLC (JP)"
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 20000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 4000
+        }
+      ]
+    }
+  }
+}

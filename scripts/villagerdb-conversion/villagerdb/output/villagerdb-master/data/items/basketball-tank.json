@@ -1,0 +1,52 @@
+{
+  "id": "basketball-tank",
+  "name": "Basketball Tank",
+  "category": "Tops",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Sporty"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 105
+      },
+      "sources": [
+        "Able Sisters (summer)"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 420
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "purple": "Purple",
+        "red": "Red",
+        "green": "Green",
+        "orange": "Orange",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "light-blue": "Light blue",
+        "black": "Black"
+      }
+    }
+  }
+}

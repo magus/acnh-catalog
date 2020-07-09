@@ -1,0 +1,33 @@
+{
+  "id": "fish-print",
+  "name": "Fish Print",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 700
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2800
+        }
+      ],
+      "variations": {
+        "giant-trevally": "Giant trevally",
+        "red-snapper": "Red snapper",
+        "blue-marlin": "Blue marlin",
+        "squid": "Squid",
+        "black-bass": "Black bass",
+        "carp": "Carp",
+        "giant-snakehead": "Giant snakehead"
+      }
+    }
+  },
+  "category": "Furniture"
+}

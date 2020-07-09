@@ -1,0 +1,28 @@
+{
+  "id": "plain-sink",
+  "name": "Plain Sink",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2270
+      },
+      "recipe": {
+        "wood": 6,
+        "clay": 4,
+        "iron-nugget": 1
+      },
+      "variations": {
+        "natural": "Natural",
+        "brown-wood": "Brown wood",
+        "dark-wood": "Dark wood",
+        "white-wood-tile": "White wood & tile",
+        "gray-wood-tile": "Gray wood & tile",
+        "black-wood-tile": "Black wood & tile"
+      }
+    }
+  },
+  "category": "Furniture"
+}

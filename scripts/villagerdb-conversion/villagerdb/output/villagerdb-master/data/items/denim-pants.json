@@ -1,0 +1,30 @@
+{
+  "id": "denim-pants",
+  "name": "Denim Pants",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "light-blue": "Light blue",
+        "navy-blue": "Navy blue",
+        "black": "Black",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

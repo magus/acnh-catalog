@@ -1,0 +1,28 @@
+{
+  "id": "long-locust",
+  "name": "Long Locust",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "sources": [
+        "In grassy patches."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the ground, Apr-Nov (8am-7pm)",
+        "South: On the ground, Oct-May (8am-7pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      }
+    }
+  }
+}

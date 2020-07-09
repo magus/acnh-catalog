@@ -1,0 +1,30 @@
+{
+  "id": "fishing-boat-flag",
+  "name": "Fishing-boat Flag",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 550
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2200
+        }
+      ],
+      "variations": {
+        "nintenmaru-big-catch": "Nintenmaru - Big Catch",
+        "tsurukamemaru-longevity": "Tsurukamemaru - Longevity",
+        "marufukumaru-bounty": "Marufukumaru - Bounty",
+        "uomasamaru-iii-launch": "Uomasamaru III - Launch"
+      }
+    }
+  },
+  "category": "Furniture"
+}

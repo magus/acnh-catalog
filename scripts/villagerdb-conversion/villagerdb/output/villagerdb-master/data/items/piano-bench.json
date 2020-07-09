@@ -1,0 +1,30 @@
+{
+  "id": "piano-bench",
+  "name": "Piano Bench",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 247
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 990
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "red": "Red",
+        "white": "White",
+        "blue": "Blue",
+        "brown": "Brown",
+        "green": "Green",
+        "light-green": "Light green",
+        "camel": "Camel"
+      }
+    }
+  },
+  "category": "Furniture"
+}

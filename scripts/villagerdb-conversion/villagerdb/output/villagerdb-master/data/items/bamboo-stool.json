@@ -1,0 +1,22 @@
+{
+  "id": "bamboo-stool",
+  "name": "Bamboo Stool",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "recipe": {
+        "bamboo-piece": 5
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

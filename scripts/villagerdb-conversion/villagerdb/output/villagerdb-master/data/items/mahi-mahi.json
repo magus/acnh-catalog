@@ -1,0 +1,18 @@
+{
+  "id": "mahi-mahi",
+  "name": "Mahi-mahi",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Large Shadows at Pier, May-Oct (All day)",
+        "South: Large Shadows at Pier, Nov-Apr (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6000
+      }
+    }
+  },
+  "category": "Fish"
+}

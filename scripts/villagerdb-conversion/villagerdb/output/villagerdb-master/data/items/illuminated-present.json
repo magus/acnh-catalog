@@ -1,0 +1,25 @@
+{
+  "id": "illuminated-present",
+  "name": "Illuminated Present",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2950
+      },
+      "recipe": {
+        "red-ornament": 3,
+        "gold-ornament": 4,
+        "iron-nugget": 3
+      },
+      "variations": {
+        "yellow-with-red-ribbon": "Yellow with red ribbon",
+        "pink-with-green-ribbon": "Pink with green ribbon",
+        "blue-with-yellow-ribbon": "Blue with yellow ribbon",
+        "white-with-blue-ribbon": "White with blue ribbon"
+      }
+    }
+  },
+  "category": "Furniture"
+}

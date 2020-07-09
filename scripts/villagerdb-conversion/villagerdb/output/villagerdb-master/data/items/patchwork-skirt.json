@@ -1,0 +1,29 @@
+{
+  "id": "patchwork-skirt",
+  "name": "Patchwork Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters (Summer)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 525
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2100
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "red": "Red",
+        "yellow": "Yellow",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "nightgown",
+  "name": "Nightgown",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 525
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2100
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "pink": "Pink",
+        "purple": "Purple",
+        "beige": "Beige",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Dresses"
+}

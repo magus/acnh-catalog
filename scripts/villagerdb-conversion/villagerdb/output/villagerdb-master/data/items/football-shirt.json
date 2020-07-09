@@ -1,0 +1,29 @@
+{
+  "id": "football-shirt",
+  "name": "Football Shirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "white": "White",
+        "yellow": "Yellow",
+        "berry-red": "Berry red",
+        "blue": "Blue",
+        "turquoise": "Turquoise",
+        "red": "Red",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Tops"
+}

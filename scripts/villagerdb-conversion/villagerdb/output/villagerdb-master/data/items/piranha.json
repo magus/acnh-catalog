@@ -1,0 +1,28 @@
+{
+  "id": "piranha",
+  "name": "Piranha",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2500
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows on River, Jun-Sep (9am-4pm and 9pm-4am)",
+        "South: Small Shadows on River, Dec-Mar (9am-4pm and 9pm-4am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2500
+      }
+    }
+  }
+}

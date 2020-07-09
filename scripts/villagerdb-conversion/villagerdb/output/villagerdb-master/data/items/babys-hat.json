@@ -1,0 +1,51 @@
+{
+  "id": "babys-hat",
+  "name": "Baby's Hat",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Fairy Tale"
+      ],
+      "fashionThemes": [
+        "Cute"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 100
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 400
+        }
+      ]
+    },
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "baby-mint": "Baby mint",
+        "baby-purple": "Baby purple",
+        "baby-yellow": "Baby yellow",
+        "baby-green": "Baby green",
+        "baby-pink": "Baby pink",
+        "baby-gray": "Baby gray",
+        "baby-blue": "Baby blue",
+        "baby-orange": "Baby orange"
+      }
+    }
+  }
+}

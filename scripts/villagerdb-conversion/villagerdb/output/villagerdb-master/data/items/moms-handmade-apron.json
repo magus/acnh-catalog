@@ -1,0 +1,29 @@
+{
+  "id": "moms-handmade-apron",
+  "name": "Mom's Handmade Apron",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 88
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 352
+        }
+      ],
+      "variations": {
+        "m": "M",
+        "flowers": "Flowers",
+        "animals": "Animals",
+        "quilted-pattern": "Quilted pattern",
+        "fruits": "Fruits",
+        "denim": "Denim",
+        "forest-print": "Forest print",
+        "family": "Family"
+      }
+    }
+  },
+  "category": "Tops"
+}

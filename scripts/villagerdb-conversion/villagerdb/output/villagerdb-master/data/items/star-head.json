@@ -1,0 +1,25 @@
+{
+  "id": "star-head",
+  "name": "Star Head",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2500
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 10000
+        }
+      ],
+      "recipe": {
+        "star-fragment": 5
+      },
+      "variations": {
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Hats"
+}

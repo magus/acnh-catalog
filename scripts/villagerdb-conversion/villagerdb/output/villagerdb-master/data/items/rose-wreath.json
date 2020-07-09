@@ -1,0 +1,20 @@
+{
+  "id": "rose-wreath",
+  "name": "Rose Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 720
+      },
+      "recipe": {
+        "red-roses": 3,
+        "white-roses": 3,
+        "yellow-roses": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

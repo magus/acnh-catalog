@@ -1,0 +1,28 @@
+{
+  "id": "embroidered-floral-skirt",
+  "name": "Embroidered Floral Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters (Summer)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 330
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1320
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "berry-red": "Berry red"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

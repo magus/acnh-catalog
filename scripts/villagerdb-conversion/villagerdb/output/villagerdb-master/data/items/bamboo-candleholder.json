@@ -1,0 +1,24 @@
+{
+  "id": "bamboo-candleholder",
+  "name": "Bamboo Candleholder",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 880
+      },
+      "recipe": {
+        "bamboo-piece": 3,
+        "clay": 2
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

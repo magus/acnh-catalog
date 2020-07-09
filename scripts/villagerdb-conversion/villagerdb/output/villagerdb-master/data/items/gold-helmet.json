@@ -1,0 +1,20 @@
+{
+  "id": "gold-helmet",
+  "name": "Gold Helmet",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 50000
+      },
+      "recipe": {
+        "gold-nugget": 5
+      },
+      "variations": {
+        "gold": "Gold"
+      }
+    }
+  },
+  "category": "Hats"
+}

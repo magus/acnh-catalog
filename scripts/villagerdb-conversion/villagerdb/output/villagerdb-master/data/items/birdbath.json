@@ -1,0 +1,41 @@
+{
+  "id": "birdbath",
+  "name": "Birdbath",
+  "category": "Furniture",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 900
+      },
+      "recipe": {
+        "stone": 6
+      },
+      "variations": {
+        "natural": "Natural",
+        "red": "Red",
+        "white": "White",
+        "black": "Black"
+      }
+    },
+    "nl": {
+      "orderable": true,
+      "set": "Mossy Garden",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 363
+      },
+      "sources": [
+        "Nookling stores"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1452
+        }
+      ]
+    }
+  }
+}

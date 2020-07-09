@@ -1,0 +1,28 @@
+{
+  "id": "timber-doorplate",
+  "name": "Timber Doorplate",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "recipe": {
+        "wood": 2,
+        "pink-roses": 1
+      },
+      "variations": {
+        "natural-wood": "Natural wood",
+        "brown": "Brown",
+        "dark-brown": "Dark brown",
+        "light-brown": "Light brown",
+        "ash-brown": "Ash brown",
+        "black": "Black",
+        "blue": "Blue",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Furniture"
+}

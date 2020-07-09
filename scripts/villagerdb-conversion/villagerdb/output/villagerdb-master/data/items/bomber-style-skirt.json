@@ -1,0 +1,29 @@
+{
+  "id": "bomber-style-skirt",
+  "name": "Bomber-style Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 330
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1320
+        }
+      ],
+      "variations": {
+        "avocado": "Avocado",
+        "black": "Black",
+        "blue": "Blue",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

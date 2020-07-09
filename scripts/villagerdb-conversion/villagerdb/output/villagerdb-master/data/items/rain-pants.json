@@ -1,0 +1,29 @@
+{
+  "id": "rain-pants",
+  "name": "Rain Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 175
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 700
+        }
+      ],
+      "variations": {
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "purple": "Purple",
+        "pink": "Pink",
+        "red": "Red",
+        "beige": "Beige",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "tiered-skirt",
+  "name": "Tiered Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "purple": "Purple",
+        "mint": "Mint",
+        "avocado": "Avocado",
+        "yellow": "Yellow",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

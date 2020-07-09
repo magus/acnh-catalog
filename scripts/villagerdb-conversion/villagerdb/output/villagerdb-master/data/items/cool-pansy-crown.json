@@ -1,0 +1,21 @@
+{
+  "id": "cool-pansy-crown",
+  "name": "Cool Pansy Crown",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 960
+      },
+      "recipe": {
+        "orange-pansies": 3,
+        "blue-pansies": 3
+      },
+      "variations": {
+        "colorful": "Colorful"
+      }
+    }
+  },
+  "category": "Hats"
+}

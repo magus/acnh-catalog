@@ -1,0 +1,25 @@
+{
+  "id": "iron-garden-bench",
+  "name": "Iron Garden Bench",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6000
+      },
+      "recipe": {
+        "iron-nugget": 8
+      },
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "brown": "Brown",
+        "black": "Black",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

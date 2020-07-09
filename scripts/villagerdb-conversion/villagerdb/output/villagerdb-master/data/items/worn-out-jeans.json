@@ -1,0 +1,48 @@
+{
+  "id": "worn-out-jeans",
+  "name": "Worn-out Jeans",
+  "category": "Bottoms",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "fashionThemes": [
+        "Rock-n'-roll"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 900
+      },
+      "sources": [
+        "GracieGrace (during sales)"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3600
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "light-blue": "Light blue",
+        "blue": "Blue",
+        "white": "White",
+        "black": "Black"
+      }
+    }
+  }
+}

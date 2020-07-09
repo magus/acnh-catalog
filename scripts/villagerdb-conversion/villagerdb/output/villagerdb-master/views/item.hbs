@@ -1,0 +1,200 @@
+{{> rev-unit1 }}
+{{> random }}
+<h1>{{pageTitle}}</h1>
+<div class="text-right mb-3">
+    {{> social-media shareUrl=shareUrl showCopyButton=true }}
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-4 order-md-12 order-sm-1">
+        <div class="mt-3 mb-3 text-center">
+            {{> add-button entityType='item' entityId=id entityVariations=variations
+                    entityImages=serializedImages entityVariationImages=variationImages
+                    fullBaseImage=image.full mediumBaseImage=image.medium }}
+        </div>
+        <table class="table table-borderless">
+            <tbody>
+            <tr class="bg-dark text-light font-weight-bold">
+                <td>Category</td>
+            </tr>
+            <tr>
+                <td>{{category}}</td>
+            </tr>
+            <tr class="bg-dark text-light font-weight-bold">
+                <td>Appears In</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="list-unstyled">
+                        {{#each games}}
+                            <li>{{gameTitle}}</li>
+                        {{/each}}
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-sm-12 col-md-8 order-md-1 order-sm-12">
+        <h2 class="sr-only">Summary</h2>
+        <p>{{paragraph}}</p>
+
+        {{#each games}}
+            <h3>In {{gameTitle}}</h3>
+            <table class="table item-game-data">
+                <thead class="sr-only">
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#if orderableText}}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Orderable?</td>
+                        <td class="align-middle">{{orderableText}}</td>
+                    </tr>
+                {{/if}}
+
+                {{#if hasRecipe }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Recipe</td>
+                        <td class="align-middle">
+                            <div>As shown in-game:</div>
+                            <ul class="list-unstyled">
+                                {{#each normalRecipe}}
+                                    <li>
+                                        {{#if url}}
+                                            <a href="{{url}}">{{name}}</a>:
+                                        {{else}}
+                                            {{name}}:
+                                        {{/if}}
+                                        {{count}}
+                                    </li>
+                                {{/each}}
+                            </ul>
+                            {{#if fullRecipe}}
+                                <div class="mt-2">All required materials:</div>
+                                <ul class="list-unstyled">
+                                    {{#each fullRecipe}}
+                                        <li>
+                                            {{#if url}}
+                                                <a href="{{url}}">{{name}}</a>:
+                                            {{else}}
+                                                {{name}}:
+                                            {{/if}}
+                                            {{count}}
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            {{/if}}
+                        </td>
+                    </tr>
+                {{/if}}
+
+                {{#if hasSource }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Where to get</td>
+                        <td class="align-middle">
+                            <ul class="list-unstyled">
+                                {{#each source}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                {{/if}}
+
+                {{#if sizeText }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Item Size (tiles)</td>
+                        <td class="align-middle">{{sizeText}}</td>
+                    </tr>
+                {{/if}}
+
+                {{#if buyable}}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Cost</td>
+                        <td class="align-middle">
+                            <ul class="list-unstyled">
+                                {{#each bellCost }}
+                                    <li> <span class="fas fa-bell"></span> {{this}} bells</li>
+                                {{/each}}
+                                {{#each meowCost }}
+                                    <li><span class="fas fa-money-bill-wave"></span> {{this}} MEOW coupons</li>
+                                {{/each}}
+                                {{#each milesCost }}
+                                    <li><span class="fas fa-money-bill-wave"></span> {{this}} Nook miles</li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                {{/if}}
+
+                {{#if sellable }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Sells for</td>
+                        <td class="align-middle">
+                            {{#if sellable }}
+                                <ul class="list-unstyled">
+                                    {{#each bellPrice }}
+                                        <li><span class="fas fa-bell"></span> {{this}} bells</li>
+                                    {{/each}}
+                                </ul>
+                            {{else}}
+                                Not sellable
+                            {{/if}}
+                        </td>
+                    </tr>
+                {{/if}}
+
+                {{#if hasFashionTheme }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Fashion Themes</td>
+                        <td class="align-middle">
+                            <ul class="list-unstyled">
+                                {{#each fashionTheme}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                {{/if}}
+
+                {{#if hasInteriorTheme }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Interior Themes</td>
+                        <td class="align-middle">
+                            <ul class="list-unstyled">
+                                {{#each interiorTheme}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                {{/if}}
+
+                {{#if hasSet }}
+                    <tr>
+                        <td class="bg-light text-dark font-weight-bold align-middle">Set</td>
+                        <td class="align-middle">
+                            {{set}}
+                        </td>
+                    </tr>
+                {{/if}}
+                </tbody>
+            </table>
+        {{/each}}
+        {{#if hasOwnership}}
+            <h3>Ownership</h3>
+            <p>The following villagers own this item:</p>
+            <ul>
+                {{#each owners}}
+                    <li><a href="{{url}}">{{name}}</a></li>
+                {{/each}}
+            </ul>
+        {{/if}}
+    </div>
+</div>
+
+{{> rev-unit2 }}

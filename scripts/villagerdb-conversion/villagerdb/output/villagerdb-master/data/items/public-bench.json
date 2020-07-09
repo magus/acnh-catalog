@@ -1,0 +1,33 @@
+{
+  "id": "public-bench",
+  "name": "Public Bench",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 2000
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "green": "Green",
+        "red": "Red",
+        "white": "White",
+        "blue-yellow": "Blue & yellow",
+        "green-orange": "Green & orange",
+        "light-blue-pink": "Light blue & pink",
+        "monotone": "Monotone"
+      }
+    }
+  },
+  "category": "Furniture"
+}

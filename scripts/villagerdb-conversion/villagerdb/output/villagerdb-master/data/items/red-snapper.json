@@ -1,0 +1,28 @@
+{
+  "id": "red-snapper",
+  "name": "Red Snapper",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      },
+      "sources": [
+        "In the sea."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Large Shadows at Sea, All year (All day)",
+        "South: Large Shadows at Sea, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      }
+    }
+  }
+}

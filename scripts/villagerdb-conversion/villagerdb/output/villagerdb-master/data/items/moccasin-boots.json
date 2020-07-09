@@ -1,0 +1,28 @@
+{
+  "id": "moccasin-boots",
+  "name": "Moccasin Boots",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "camel": "Camel",
+        "olive": "Olive",
+        "beige": "Beige",
+        "pink": "Pink",
+        "black": "Black",
+        "blue": "Blue",
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Shoes"
+}

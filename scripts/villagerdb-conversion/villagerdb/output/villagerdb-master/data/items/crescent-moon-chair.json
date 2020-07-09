@@ -1,0 +1,32 @@
+{
+  "id": "crescent-moon-chair",
+  "name": "Crescent-moon Chair",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 8500
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 34000
+        }
+      ],
+      "recipe": {
+        "star-fragment": 7,
+        "large-star-fragment": 1
+      },
+      "variations": {
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "purple": "Purple",
+        "pink": "Pink",
+        "orange": "Orange",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

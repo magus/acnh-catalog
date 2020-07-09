@@ -1,0 +1,52 @@
+{
+  "id": "sailor-skirt",
+  "name": "Sailor Skirt",
+  "category": "Bottoms",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Official"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 150
+      },
+      "sources": [
+        "Able Sisters"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 600
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 245
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 980
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "orange": "Orange",
+        "light-blue": "Light blue",
+        "green": "Green",
+        "brown": "Brown",
+        "purple": "Purple",
+        "red": "Red",
+        "pink": "Pink"
+      }
+    }
+  }
+}

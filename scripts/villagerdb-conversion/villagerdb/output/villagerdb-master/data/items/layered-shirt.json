@@ -1,0 +1,29 @@
+{
+  "id": "layered-shirt",
+  "name": "Layered Shirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "white": "White",
+        "green": "Green",
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Tops"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "whiteboard",
+  "name": "Whiteboard",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Sci-Fi"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "sources": [
+        "Nookling stores"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 650
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2600
+        }
+      ],
+      "variations": {
+        "blank": "Blank",
+        "schedule": "Schedule",
+        "sales-meeting": "Sales meeting",
+        "language-classroom": "Language classroom",
+        "strategy-meeting": "Strategy meeting",
+        "brainstorming-meeting": "Brainstorming meeting",
+        "fact-finding-meeting": "Fact-finding meeting"
+      }
+    }
+  }
+}

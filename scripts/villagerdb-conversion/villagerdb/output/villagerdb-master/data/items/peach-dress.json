@@ -1,0 +1,20 @@
+{
+  "id": "peach-dress",
+  "name": "Peach Dress",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1600
+      },
+      "recipe": {
+        "peach": 8
+      },
+      "variations": {
+        "peach": "Peach"
+      }
+    }
+  },
+  "category": "Dresses"
+}

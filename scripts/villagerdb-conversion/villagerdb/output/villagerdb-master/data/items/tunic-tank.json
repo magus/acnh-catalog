@@ -1,0 +1,25 @@
+{
+  "id": "tunic-tank",
+  "name": "Tunic Tank",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "yellow": "Yellow",
+        "pink": "Pink",
+        "mint": "Mint"
+      }
+    }
+  },
+  "category": "Tops"
+}

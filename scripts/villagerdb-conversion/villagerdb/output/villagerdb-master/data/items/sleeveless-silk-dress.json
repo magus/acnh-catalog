@@ -1,0 +1,32 @@
+{
+  "id": "sleeveless-silk-dress",
+  "name": "Sleeveless Silk Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 630
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2520
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "green": "Green",
+        "navy-blue": "Navy blue",
+        "white": "White",
+        "pink": "Pink",
+        "light-blue": "Light blue",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Dresses"
+}

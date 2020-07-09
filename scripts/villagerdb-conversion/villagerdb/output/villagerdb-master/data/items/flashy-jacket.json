@@ -1,0 +1,27 @@
+{
+  "id": "flashy-jacket",
+  "name": "Flashy Jacket",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 490
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1960
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "black": "Black",
+        "purple": "Purple",
+        "berry-red": "Berry red",
+        "aquamarine": "Aquamarine",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Tops"
+}

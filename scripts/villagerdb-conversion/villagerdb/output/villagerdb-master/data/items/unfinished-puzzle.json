@@ -1,0 +1,28 @@
+{
+  "id": "unfinished-puzzle",
+  "name": "Unfinished Puzzle",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 72
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 290
+        }
+      ],
+      "variations": {
+        "sunset": "Sunset",
+        "light-through-the-trees": "Light Through the Trees",
+        "snow": "Snow",
+        "sepia-art": "Sepia art",
+        "castle": "Castle"
+      }
+    }
+  },
+  "category": "Furniture"
+}

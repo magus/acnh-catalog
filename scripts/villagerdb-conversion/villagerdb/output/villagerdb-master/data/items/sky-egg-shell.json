@@ -1,0 +1,21 @@
+{
+  "id": "sky-egg-shell",
+  "name": "Sky-egg Shell",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "recipe": {
+        "sky-egg": 2
+      },
+      "variations": {
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Hats"
+}

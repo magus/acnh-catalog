@@ -1,0 +1,43 @@
+{
+  "id": "ribboned-straw-hat",
+  "name": "Ribboned Straw Hat",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Cute"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 80
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 320
+        }
+      ]
+    },
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 122
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 490
+        }
+      ],
+      "variations": {
+        "light-blue": "Light blue",
+        "pink": "Pink",
+        "black": "Black"
+      }
+    }
+  }
+}

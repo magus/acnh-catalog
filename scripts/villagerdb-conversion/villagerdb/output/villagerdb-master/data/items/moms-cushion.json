@@ -1,0 +1,27 @@
+{
+  "id": "moms-cushion",
+  "name": "Mom's Cushion",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 88
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 352
+        }
+      ],
+      "variations": {
+        "red-with-hearts": "Red with hearts",
+        "blue-with-flowers": "Blue with flowers",
+        "colorful-quilt": "Colorful quilt",
+        "pop-flowers": "Pop flowers",
+        "animal": "Animal",
+        "denim": "Denim"
+      }
+    }
+  },
+  "category": "Furniture"
+}

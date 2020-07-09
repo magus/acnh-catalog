@@ -1,0 +1,25 @@
+{
+  "id": "loose-fall-dress",
+  "name": "Loose Fall Dress",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "peacock-blue": "Peacock blue",
+        "orange": "Orange",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Dresses"
+}

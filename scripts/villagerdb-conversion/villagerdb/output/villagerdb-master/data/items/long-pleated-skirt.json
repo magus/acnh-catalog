@@ -1,0 +1,27 @@
+{
+  "id": "long-pleated-skirt",
+  "name": "Long Pleated Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "ruby-red": "Ruby red",
+        "white": "White",
+        "yellow": "Yellow",
+        "cyan": "Cyan",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rocket-lamp",
+  "name": "Rocket Lamp",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook shopping"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 375
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1500
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "red": "Red",
+        "yellow": "Yellow",
+        "turquoise": "Turquoise",
+        "purple": "Purple",
+        "green": "Green",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Furniture"
+}

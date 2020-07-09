@@ -1,0 +1,17 @@
+{
+  "id": "purple-hyacinth-wreath",
+  "name": "Purple Hyacinth Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4800
+      },
+      "recipe": {
+        "purple-hyacinths": 10
+      }
+    }
+  },
+  "category": "Furniture"
+}

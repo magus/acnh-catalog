@@ -1,0 +1,33 @@
+{
+  "id": "jumper-work-suit",
+  "name": "Jumper Work Suit",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 262
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1050
+        }
+      ],
+      "variations": {
+        "orange": "Orange",
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "green": "Green",
+        "pink": "Pink",
+        "brown": "Brown",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Dresses"
+}

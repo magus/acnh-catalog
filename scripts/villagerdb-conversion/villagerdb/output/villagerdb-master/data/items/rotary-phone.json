@@ -1,0 +1,29 @@
+{
+  "id": "rotary-phone",
+  "name": "Rotary Phone",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 640
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "green": "Green",
+        "blue": "Blue",
+        "red": "Red",
+        "yellow": "Yellow",
+        "orange": "Orange",
+        "silver": "Silver"
+      }
+    }
+  },
+  "category": "Furniture"
+}

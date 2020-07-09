@@ -1,0 +1,28 @@
+{
+  "id": "horse-mackerel",
+  "name": "Horse Mackerel",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 150
+      },
+      "sources": [
+        "In the sea."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows at Sea, All Year (All day)",
+        "South: Small Shadows at Sea, All Year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 150
+      }
+    }
+  }
+}

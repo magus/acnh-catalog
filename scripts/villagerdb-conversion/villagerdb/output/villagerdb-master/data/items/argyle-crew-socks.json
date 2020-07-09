@@ -1,0 +1,29 @@
+{
+  "id": "argyle-crew-socks",
+  "name": "Argyle Crew Socks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "red": "Red",
+        "green": "Green",
+        "beige": "Beige",
+        "gray": "Gray",
+        "white": "White",
+        "orange": "Orange",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Socks"
+}

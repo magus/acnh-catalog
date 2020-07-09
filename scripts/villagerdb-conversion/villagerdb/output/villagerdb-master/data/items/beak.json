@@ -1,0 +1,45 @@
+{
+  "id": "beak",
+  "name": "Beak",
+  "category": "Accessories",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Cute"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 640
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 122
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 490
+        }
+      ],
+      "variations": {
+        "yellow": "Yellow"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "boa-skirt",
+  "name": "Boa Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "purple": "Purple",
+        "red": "Red",
+        "yellow": "Yellow",
+        "light-blue": "Light blue",
+        "beige": "Beige",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

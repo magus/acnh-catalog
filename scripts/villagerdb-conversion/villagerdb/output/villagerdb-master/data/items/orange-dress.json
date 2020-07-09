@@ -1,0 +1,26 @@
+{
+  "id": "orange-dress",
+  "name": "Orange Dress",
+  "games": {
+    "nh": {
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1600
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 6400
+        }
+      ],
+      "recipe": {
+        "orange": 8
+      },
+      "variations": {
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Dresses"
+}

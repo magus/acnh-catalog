@@ -1,0 +1,24 @@
+{
+  "id": "windflower-fan",
+  "name": "Windflower Fan",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1740
+      },
+      "recipe": {
+        "red-windflowers": 3,
+        "iron-nugget": 2
+      },
+      "variations": {
+        "red": "Red",
+        "pink": "Pink",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "firefly",
+  "name": "Firefly",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "sources": [
+        "In the air above freshwater (rivers",
+        "etc.)."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Jun (7pm-4am)",
+        "South: Flying around, Dec (7pm-4am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      }
+    }
+  }
+}

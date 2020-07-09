@@ -1,0 +1,28 @@
+{
+  "id": "nibble-fish",
+  "name": "Nibble Fish",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Tiny Shadows on River, May-Sep (9am-4pm)",
+        "South: Tiny Shadows on River, Nov-Mar (9am-4pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      }
+    }
+  }
+}

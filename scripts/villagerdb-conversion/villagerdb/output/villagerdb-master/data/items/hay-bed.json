@@ -1,0 +1,23 @@
+{
+  "id": "hay-bed",
+  "name": "Hay Bed",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "recipe": {
+        "clump-of-weeds": 20
+      },
+      "variations": {
+        "brown": "Brown",
+        "pale-green": "Pale green",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Furniture"
+}

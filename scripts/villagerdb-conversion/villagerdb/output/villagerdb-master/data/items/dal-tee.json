@@ -1,0 +1,20 @@
+{
+  "id": "dal-tee",
+  "name": "DAL Tee",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Receive in mail"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1010
+      },
+      "variations": {
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

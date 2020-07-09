@@ -1,0 +1,18 @@
+{
+  "id": "honeycomb-wall",
+  "name": "Honeycomb Wall",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3600
+      },
+      "recipe": {
+        "wasp-nest": 6
+      }
+    }
+  },
+  "category": "Wallpaper"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "bamboo-partition",
+  "name": "Bamboo Partition",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2020
+      },
+      "recipe": {
+        "bamboo-piece": 7,
+        "stone": 6
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

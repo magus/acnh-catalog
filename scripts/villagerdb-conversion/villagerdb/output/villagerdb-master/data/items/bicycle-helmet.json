@@ -1,0 +1,49 @@
+{
+  "id": "bicycle-helmet",
+  "name": "Bicycle Helmet",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Sporty"
+      ],
+      "set": "Cyclist Outfit",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 100
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 400
+        }
+      ]
+    },
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "navy-blue": "Navy blue",
+        "red": "Red",
+        "lime": "Lime",
+        "green": "Green",
+        "orange": "Orange",
+        "purple": "Purple",
+        "pink": "Pink"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "kung-fu-pants",
+  "name": "Kung-fu Pants",
+  "category": "Bottoms",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Harmonious"
+      ],
+      "fashionThemes": [
+        "Sporty"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 90
+      },
+      "sources": [
+        "Able Sisters"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 360
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 420
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1680
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "white": "White",
+        "light-blue": "Light blue",
+        "yellow": "Yellow",
+        "green": "Green"
+      }
+    }
+  }
+}

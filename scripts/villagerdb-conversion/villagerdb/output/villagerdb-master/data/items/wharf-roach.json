@@ -1,0 +1,28 @@
+{
+  "id": "wharf-roach",
+  "name": "Wharf Roach",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "sources": [
+        "On the beach."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On shore rocks, All year (All day)",
+        "South: On shore rocks, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      }
+    }
+  }
+}

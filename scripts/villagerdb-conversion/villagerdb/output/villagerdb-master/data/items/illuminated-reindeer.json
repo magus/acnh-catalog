@@ -1,0 +1,25 @@
+{
+  "id": "illuminated-reindeer",
+  "name": "Illuminated Reindeer",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4350
+      },
+      "recipe": {
+        "gold-ornament": 6,
+        "iron-nugget": 5
+      },
+      "variations": {
+        "yellow": "Yellow",
+        "pink": "Pink",
+        "blue": "Blue",
+        "green": "Green",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

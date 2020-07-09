@@ -1,0 +1,29 @@
+{
+  "id": "gym-tee",
+  "name": "Gym Tee",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 640
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Tops"
+}

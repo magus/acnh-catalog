@@ -1,0 +1,47 @@
+{
+  "id": "sombrero",
+  "name": "Sombrero",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Iconic"
+      ],
+      "set": "Vaquero Outfit",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 60
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 240
+        }
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Gulliver"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 500
+      },
+      "variations": {
+        "natural-red": "Natural & red",
+        "natural-green": "Natural & green",
+        "navy-blue": "Navy blue",
+        "green": "Green",
+        "white": "White",
+        "red": "Red",
+        "blue": "Blue",
+        "orange": "Orange"
+      }
+    }
+  }
+}

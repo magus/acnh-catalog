@@ -1,0 +1,22 @@
+{
+  "id": "reflector",
+  "name": "Reflector",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Accessories"
+}

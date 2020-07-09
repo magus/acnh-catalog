@@ -1,0 +1,28 @@
+{
+  "id": "diner-apron",
+  "name": "Diner Apron",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 210
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 840
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "aquamarine": "Aquamarine",
+        "cream": "Cream",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Tops"
+}

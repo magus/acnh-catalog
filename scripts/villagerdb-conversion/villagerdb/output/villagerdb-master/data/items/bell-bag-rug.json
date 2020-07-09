@@ -1,0 +1,14 @@
+{
+  "id": "bell-bag-rug",
+  "name": "Bell-bag Rug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6000
+      }
+    }
+  },
+  "category": "Flooring"
+}

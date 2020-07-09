@@ -1,0 +1,20 @@
+{
+  "id": "mum-wreath",
+  "name": "Mum Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 720
+      },
+      "recipe": {
+        "white-mums": 3,
+        "yellow-mums": 3,
+        "red-mums": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

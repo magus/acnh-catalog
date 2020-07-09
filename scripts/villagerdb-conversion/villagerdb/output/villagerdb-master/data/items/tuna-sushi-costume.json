@@ -1,0 +1,22 @@
+{
+  "id": "tuna-sushi-costume",
+  "name": "Tuna-sushi Costume",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 480
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1920
+        }
+      ],
+      "variations": {
+        "white": "White"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "mages-robe",
+  "name": "Mage's Robe",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1000
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 4000
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "blue": "Blue",
+        "white": "White",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Dresses"
+}

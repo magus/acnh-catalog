@@ -1,0 +1,24 @@
+{
+  "id": "holey-socks",
+  "name": "Holey Socks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 40
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "navy-blue": "Navy blue",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Socks"
+}

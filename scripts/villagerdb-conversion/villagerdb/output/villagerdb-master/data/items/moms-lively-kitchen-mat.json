@@ -1,0 +1,22 @@
+{
+  "id": "moms-lively-kitchen-mat",
+  "name": "Mom's Lively Kitchen Mat",
+  "games": {
+    "nh": {
+      "sources": [
+        "In the mail"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 88
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 352
+        }
+      ]
+    }
+  },
+  "category": "Flooring"
+}

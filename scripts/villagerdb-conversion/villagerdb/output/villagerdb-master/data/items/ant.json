@@ -1,0 +1,31 @@
+{
+  "id": "ant",
+  "name": "Ant",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 80
+      },
+      "sources": [
+        "Appears when spoiled turnips",
+        "candies",
+        "lollipops",
+        "and rotten fruits are left on the ground."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Near rotten food on the ground, All year (All day)",
+        "South: Near rotten food on the ground, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 80
+      }
+    }
+  }
+}

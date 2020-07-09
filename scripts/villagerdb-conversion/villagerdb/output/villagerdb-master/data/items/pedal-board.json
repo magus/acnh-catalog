@@ -1,0 +1,28 @@
+{
+  "id": "pedal-board",
+  "name": "Pedal Board",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 350
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1400
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "pink": "Pink",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Furniture"
+}

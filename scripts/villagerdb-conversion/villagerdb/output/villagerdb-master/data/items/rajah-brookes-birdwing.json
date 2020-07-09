@@ -1,0 +1,18 @@
+{
+  "id": "rajah-brookes-birdwing",
+  "name": "Rajah Brooke's Birdwing",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Dec-Feb and Apr-Sep (8am-5pm)",
+        "South: Flying around, Oct-Mar and Jun-Aug (8am-5pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2500
+      }
+    }
+  },
+  "category": "Bugs"
+}

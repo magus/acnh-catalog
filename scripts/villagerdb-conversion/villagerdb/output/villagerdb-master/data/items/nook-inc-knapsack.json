@@ -1,0 +1,26 @@
+{
+  "id": "nook-inc-knapsack",
+  "name": "Nook Inc. Knapsack",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Accessories"
+}

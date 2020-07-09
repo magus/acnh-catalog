@@ -1,0 +1,25 @@
+{
+  "id": "racing-outfit",
+  "name": "Racing Outfit",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 612
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2450
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Dresses"
+}

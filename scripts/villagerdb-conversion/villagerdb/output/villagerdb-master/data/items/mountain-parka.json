@@ -1,0 +1,29 @@
+{
+  "id": "mountain-parka",
+  "name": "Mountain Parka",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 350
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1400
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Tops"
+}

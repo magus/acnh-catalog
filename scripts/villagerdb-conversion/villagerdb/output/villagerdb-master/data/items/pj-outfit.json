@@ -1,0 +1,26 @@
+{
+  "id": "pj-outfit",
+  "name": "Pj Outfit",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 262
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1050
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "navy-blue": "Navy blue",
+        "gray": "Gray",
+        "green": "Green",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Dresses"
+}

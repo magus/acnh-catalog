@@ -1,0 +1,51 @@
+{
+  "id": "corkboard",
+  "name": "Corkboard",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Sci-Fi",
+        "Trendy"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "sources": [
+        "Nookling stores (wall)"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ]
+    },
+    "nh": {
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 350
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1400
+        }
+      ],
+      "variations": {
+        "natural-apple": "Natural / Apple",
+        "natural-fish": "Natural / Fish",
+        "natural-flower": "Natural / Flower",
+        "white-apple": "White / Apple",
+        "white-fish": "White / Fish",
+        "white-flower": "White / Flower",
+        "blue-apple": "Blue / Apple",
+        "blue-fish": "Blue / Fish",
+        "blue-flower": "Blue / Flower"
+      }
+    }
+  }
+}

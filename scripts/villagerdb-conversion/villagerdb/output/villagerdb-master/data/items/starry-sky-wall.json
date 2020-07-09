@@ -1,0 +1,23 @@
+{
+  "id": "starry-sky-wall",
+  "name": "Starry-sky Wall",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 7500
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 30000
+        }
+      ],
+      "recipe": {
+        "star-fragment": 5,
+        "large-star-fragment": 1
+      }
+    }
+  },
+  "category": "Wallpaper"
+}

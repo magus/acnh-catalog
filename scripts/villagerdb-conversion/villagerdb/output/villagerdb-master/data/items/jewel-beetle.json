@@ -1,0 +1,28 @@
+{
+  "id": "jewel-beetle",
+  "name": "Jewel Beetle",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2400
+      },
+      "sources": [
+        "On trees."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On stumps, Apr-Aug (All day)",
+        "North: On stumps, Oct-Feb (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2400
+      }
+    }
+  }
+}

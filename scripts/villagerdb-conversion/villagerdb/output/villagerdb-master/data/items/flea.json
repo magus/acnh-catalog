@@ -1,0 +1,28 @@
+{
+  "id": "flea",
+  "name": "Flea",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 70
+      },
+      "sources": [
+        "On neighbors walking outside."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Bouncing on villagers heads, Apr-Nov (All day)",
+        "South: Bouncing on villagers heads, Oct-May (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 70
+      }
+    }
+  }
+}

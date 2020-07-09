@@ -1,0 +1,25 @@
+{
+  "id": "peach-hat",
+  "name": "Peach Hat",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1000
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 4000
+        }
+      ],
+      "recipe": {
+        "peach": 5
+      },
+      "variations": {
+        "peach": "Peach"
+      }
+    }
+  },
+  "category": "Hats"
+}

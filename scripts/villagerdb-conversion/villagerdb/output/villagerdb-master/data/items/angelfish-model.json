@@ -1,0 +1,14 @@
+{
+  "id": "angelfish-model",
+  "name": "Angelfish Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 9000
+      }
+    }
+  },
+  "category": "Furniture"
+}

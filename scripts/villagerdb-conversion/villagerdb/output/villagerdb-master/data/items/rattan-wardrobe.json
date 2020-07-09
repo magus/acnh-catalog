@@ -1,0 +1,31 @@
+{
+  "id": "rattan-wardrobe",
+  "name": "Rattan Wardrobe",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook shopping"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1725
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 6900
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "reddish-brown": "Reddish brown",
+        "light-brown": "Light brown",
+        "white": "White",
+        "gray": "Gray",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Furniture"
+}

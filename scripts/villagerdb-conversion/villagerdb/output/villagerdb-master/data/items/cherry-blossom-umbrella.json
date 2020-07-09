@@ -1,0 +1,18 @@
+{
+  "id": "cherry-blossom-umbrella",
+  "name": "Cherry-blossom Umbrella",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2800
+      },
+      "recipe": {
+        "cherry-blossom-petal": 7
+      }
+    }
+  },
+  "category": "Umbrellas"
+}

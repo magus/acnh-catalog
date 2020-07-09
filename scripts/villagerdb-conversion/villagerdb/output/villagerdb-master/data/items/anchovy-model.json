@@ -1,0 +1,14 @@
+{
+  "id": "anchovy-model",
+  "name": "Anchovy Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 600
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cropped-pants",
+  "name": "Cropped Pants",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 230
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 920
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "pink": "Pink",
+        "light-blue": "Light blue",
+        "beige": "Beige",
+        "orange": "Orange",
+        "blue": "Blue",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

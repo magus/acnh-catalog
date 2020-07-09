@@ -1,0 +1,33 @@
+{
+  "id": "striped-dress",
+  "name": "Striped Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "orange": "Orange",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "red": "Red",
+        "gray": "Gray",
+        "green": "Green",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Dresses"
+}

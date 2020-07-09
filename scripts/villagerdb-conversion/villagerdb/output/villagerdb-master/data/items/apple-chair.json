@@ -1,0 +1,23 @@
+{
+  "id": "apple-chair",
+  "name": "Apple Chair",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2480
+      },
+      "recipe": {
+        "apple": 10,
+        "wood": 4
+      },
+      "variations": {
+        "red-apple": "Red apple",
+        "green-apple": "Green apple"
+      }
+    }
+  },
+  "category": "Furniture"
+}

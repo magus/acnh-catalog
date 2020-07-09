@@ -1,0 +1,29 @@
+{
+  "id": "ice-hockey-uniform",
+  "name": "Ice-hockey Uniform",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 660
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2640
+        }
+      ],
+      "variations": {
+        "white-red": "White & red",
+        "white-blue": "White & blue",
+        "berry-red": "Berry red",
+        "blue": "Blue",
+        "green": "Green",
+        "orange": "Orange",
+        "light-blue": "Light blue",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "new-years-hat",
+  "name": "New Year's Hat",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 125
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 500
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "green": "Green",
+        "orange": "Orange",
+        "purple": "Purple",
+        "pink": "Pink",
+        "light-blue": "Light blue"
+      }
+    }
+  },
+  "category": "Hats"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hi-tech-sneakers",
+  "name": "Hi-tech Sneakers",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 315
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1260
+        }
+      ],
+      "variations": {
+        "orange": "Orange",
+        "pink": "Pink",
+        "green": "Green",
+        "light-blue": "Light blue",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Shoes"
+}

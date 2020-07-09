@@ -1,0 +1,19 @@
+{
+  "id": "bunny-day-wand",
+  "name": "Bunny Day Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 11100
+      },
+      "recipe": {
+        "wobbling-zipper-toy": 1,
+        "star-fragment": 3
+      }
+    }
+  },
+  "category": "Tools"
+}

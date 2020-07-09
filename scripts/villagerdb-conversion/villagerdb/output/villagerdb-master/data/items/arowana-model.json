@@ -1,0 +1,14 @@
+{
+  "id": "arowana-model",
+  "name": "Arowana Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 30000
+      }
+    }
+  },
+  "category": "Furniture"
+}

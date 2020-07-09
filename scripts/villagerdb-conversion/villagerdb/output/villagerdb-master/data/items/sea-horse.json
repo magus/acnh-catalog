@@ -1,0 +1,28 @@
+{
+  "id": "sea-horse",
+  "name": "Sea Horse",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1100
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Tiny Shadows at Sea, Apr-Nov (All day)",
+        "South: Tiny Shadows at Sea, Oct-May (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1100
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "candy-skull-mask",
+  "name": "Candy-skull Mask",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Gulliver"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "variations": {
+        "purple": "Purple",
+        "orange": "Orange",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Accessories"
+}

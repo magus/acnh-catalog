@@ -1,0 +1,29 @@
+{
+  "id": "sheep-costume",
+  "name": "Sheep Costume",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 425
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1700
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "pink": "Pink",
+        "light-blue": "Light blue",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Dresses"
+}

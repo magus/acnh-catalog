@@ -1,0 +1,27 @@
+{
+  "id": "buttoned-wraparound-skirt",
+  "name": "Buttoned Wraparound Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 455
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1820
+        }
+      ],
+      "variations": {
+        "gray": "Gray",
+        "blue": "Blue",
+        "orange": "Orange",
+        "pink": "Pink",
+        "green": "Green",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

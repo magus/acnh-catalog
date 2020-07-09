@@ -1,0 +1,17 @@
+{
+  "id": "bell-cricket-model",
+  "name": "Bell Cricket Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Flick"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1290
+      }
+    }
+  },
+  "category": "Furniture"
+}

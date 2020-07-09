@@ -1,0 +1,24 @@
+{
+  "id": "pretty-tulip-wreath",
+  "name": "Pretty Tulip Wreath",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 9600
+        }
+      ],
+      "recipe": {
+        "orange-tulips": 3,
+        "pink-tulips": 3,
+        "purple-tulips": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

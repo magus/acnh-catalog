@@ -1,0 +1,18 @@
+{
+  "id": "giant-water-bug",
+  "name": "Giant Water Bug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Walking on top of rivers and ponds, Apr-Sep (7pm-8am)",
+        "South: Walking on top of rivers and ponds, Oct-Mar (7pm-8am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2000
+      }
+    }
+  },
+  "category": "Bugs"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "star-net",
+  "name": "Star Net",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 625
+      },
+      "variations": {
+        "yellow": "Yellow",
+        "red": "Red",
+        "blue": "Blue",
+        "light-green": "Light green",
+        "pink": "Pink",
+        "purple": "Purple",
+        "light-blue": "Light blue",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Tools"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "beaded-sandals",
+  "name": "Beaded Sandals",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ],
+      "variations": {
+        "orange": "Orange",
+        "purple": "Purple",
+        "yellow": "Yellow",
+        "red": "Red",
+        "green": "Green",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Shoes"
+}

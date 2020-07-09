@@ -1,0 +1,18 @@
+{
+  "id": "yellow-leaf-pile",
+  "name": "Yellow-leaf Pile",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1300
+      },
+      "recipe": {
+        "acorn": 3,
+        "clump-of-weeds": 5
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "down-pants",
+  "name": "Down Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "black": "Black",
+        "red": "Red",
+        "white": "White",
+        "green": "Green",
+        "yellow": "Yellow",
+        "orange": "Orange",
+        "lime": "Lime"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

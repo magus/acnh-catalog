@@ -1,0 +1,23 @@
+{
+  "id": "nook-inc-silk-rug",
+  "name": "Nook Inc. Silk Rug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Nook Miles System (Nintendo Online members)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 600
+        }
+      ]
+    }
+  },
+  "category": "Flooring"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "wild-log-bench",
+  "name": "Wild Log Bench",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 960
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3840
+        }
+      ],
+      "recipe": {
+        "hardwood": 8
+      },
+      "variations": {
+        "dark-wood": "Dark wood",
+        "orange-wood": "Orange wood",
+        "white-wood": "White wood",
+        "white-birch": "White birch"
+      }
+    }
+  },
+  "category": "Furniture"
+}

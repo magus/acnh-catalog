@@ -1,0 +1,29 @@
+{
+  "id": "football-pants",
+  "name": "Football Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 245
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 980
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "white": "White",
+        "yellow": "Yellow",
+        "berry-red": "Berry red",
+        "blue": "Blue",
+        "turquoise": "Turquoise",
+        "red": "Red",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

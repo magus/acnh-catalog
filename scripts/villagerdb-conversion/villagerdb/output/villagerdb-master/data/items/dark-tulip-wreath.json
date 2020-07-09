@@ -1,0 +1,22 @@
+{
+  "id": "dark-tulip-wreath",
+  "name": "Dark Tulip Wreath",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1600
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 6400
+        }
+      ],
+      "recipe": {
+        "black-tulips": 10
+      }
+    }
+  },
+  "category": "Furniture"
+}

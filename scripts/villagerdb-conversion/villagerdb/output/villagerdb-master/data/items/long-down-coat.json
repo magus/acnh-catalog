@@ -1,0 +1,26 @@
+{
+  "id": "long-down-coat",
+  "name": "Long Down Coat",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 475
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1900
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "green": "Green",
+        "white": "White",
+        "purple": "Purple",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "pleather-flare-skirt",
+  "name": "Pleather Flare Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "black": "Black",
+        "pink": "Pink",
+        "blue": "Blue",
+        "green": "Green",
+        "orange": "Orange",
+        "light-blue": "Light blue",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

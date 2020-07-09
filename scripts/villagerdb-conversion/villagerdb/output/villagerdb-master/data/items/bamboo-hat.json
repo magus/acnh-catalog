@@ -1,0 +1,21 @@
+{
+  "id": "bamboo-hat",
+  "name": "Bamboo Hat",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "recipe": {
+        "clump-of-weeds": 10
+      },
+      "variations": {
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Hats"
+}

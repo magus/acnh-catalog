@@ -1,0 +1,19 @@
+{
+  "id": "mossy-garden-rock",
+  "name": "Mossy Garden Rock",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2550
+      },
+      "recipe": {
+        "stone": 15,
+        "clump-of-weeds": 15
+      }
+    }
+  },
+  "category": "Furniture"
+}

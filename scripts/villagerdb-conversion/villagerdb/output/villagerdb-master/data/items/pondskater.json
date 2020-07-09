@@ -1,0 +1,28 @@
+{
+  "id": "pondskater",
+  "name": "Pondskater",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 130
+      },
+      "sources": [
+        "On the surface of lakes and ponds."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Walking on top of rivers and ponds, May-Sep (8am-5pm)",
+        "South: Walking on top of rivers and ponds, Nov-Mar (8am-5pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 130
+      }
+    }
+  }
+}

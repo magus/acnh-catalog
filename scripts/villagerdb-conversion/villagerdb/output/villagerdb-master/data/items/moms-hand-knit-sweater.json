@@ -1,0 +1,29 @@
+{
+  "id": "moms-hand-knit-sweater",
+  "name": "Mom's Hand-knit Sweater",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 88
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 352
+        }
+      ],
+      "variations": {
+        "m": "M",
+        "flowers": "Flowers",
+        "star": "Star",
+        "animal": "Animal",
+        "teddy-bear": "Teddy bear",
+        "accent-patch": "Accent patch",
+        "quilted-pattern": "Quilted pattern",
+        "chicks": "Chicks"
+      }
+    }
+  },
+  "category": "Tops"
+}

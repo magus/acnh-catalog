@@ -1,0 +1,25 @@
+{
+  "id": "hanten-jacket",
+  "name": "Hanten Jacket",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "dark-blue": "Dark blue",
+        "green": "Green",
+        "brown": "Brown",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Tops"
+}

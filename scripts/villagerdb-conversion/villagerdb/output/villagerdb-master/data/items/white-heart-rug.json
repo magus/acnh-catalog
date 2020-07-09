@@ -1,0 +1,23 @@
+{
+  "id": "white-heart-rug",
+  "name": "White Heart Rug",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Saharah"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 375
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1500
+        }
+      ]
+    }
+  },
+  "category": "Flooring"
+}

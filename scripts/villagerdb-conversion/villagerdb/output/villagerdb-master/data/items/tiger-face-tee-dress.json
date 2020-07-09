@@ -1,0 +1,30 @@
+{
+  "id": "tiger-face-tee-dress",
+  "name": "Tiger-face Tee Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "purple": "Purple",
+        "pink": "Pink",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Dresses"
+}

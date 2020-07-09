@@ -1,0 +1,14 @@
+{
+  "id": "ant-model",
+  "name": "Ant Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 240
+      }
+    }
+  },
+  "category": "Furniture"
+}

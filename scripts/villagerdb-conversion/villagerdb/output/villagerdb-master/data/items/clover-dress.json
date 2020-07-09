@@ -1,0 +1,23 @@
+{
+  "id": "clover-dress",
+  "name": "Clover Dress",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "dark-green": "Dark green"
+      }
+    }
+  },
+  "category": "Dresses"
+}

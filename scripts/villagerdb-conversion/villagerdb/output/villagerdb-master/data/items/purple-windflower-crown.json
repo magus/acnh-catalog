@@ -1,0 +1,25 @@
+{
+  "id": "purple-windflower-crown",
+  "name": "Purple Windflower Crown",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2880
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 11520
+        }
+      ],
+      "recipe": {
+        "purple-windflowers": 6
+      },
+      "variations": {
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Hats"
+}

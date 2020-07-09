@@ -1,0 +1,32 @@
+{
+  "id": "frozen-sculpture",
+  "name": "Frozen Sculpture",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6600
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 26400
+        }
+      ],
+      "recipe": {
+        "large-snowflake": 1,
+        "snowflake": 4
+      },
+      "variations": {
+        "ice": "Ice",
+        "ice-blue": "Ice blue",
+        "ice-pink": "Ice pink",
+        "ice-yellow": "Ice yellow",
+        "ice-orange": "Ice orange",
+        "ice-green": "Ice green",
+        "ice-purple": "Ice purple"
+      }
+    }
+  },
+  "category": "Furniture"
+}

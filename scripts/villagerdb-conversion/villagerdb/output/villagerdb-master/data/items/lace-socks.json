@@ -1,0 +1,30 @@
+{
+  "id": "lace-socks",
+  "name": "Lace Socks",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "pink": "Pink",
+        "green": "Green",
+        "black": "Black",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Socks"
+}

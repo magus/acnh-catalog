@@ -1,0 +1,19 @@
+{
+  "id": "kettle-bathtub",
+  "name": "Kettle Bathtub",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 6270
+      },
+      "recipe": {
+        "iron-nugget": 8,
+        "wood": 2,
+        "campfire": 1
+      }
+    }
+  },
+  "category": "Furniture"
+}

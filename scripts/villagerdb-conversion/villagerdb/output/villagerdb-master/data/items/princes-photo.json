@@ -1,0 +1,16 @@
+{
+  "id": "princes-photo",
+  "name": "Prince's Photo",
+  "games": {
+    "nh": {
+      "sources": [
+        "Gift from villager"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10
+      }
+    }
+  },
+  "category": "Photos"
+}

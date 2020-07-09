@@ -1,0 +1,28 @@
+{
+  "id": "frog",
+  "name": "Frog",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 120
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows in Pond, May-Aug (All day)",
+        "South: Small Shadows in Pond, Nov-Feb (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 120
+      }
+    }
+  }
+}

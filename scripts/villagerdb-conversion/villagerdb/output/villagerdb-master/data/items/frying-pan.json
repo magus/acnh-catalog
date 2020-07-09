@@ -1,0 +1,37 @@
+{
+  "id": "frying-pan",
+  "name": "Frying Pan",
+  "category": "Furniture",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      },
+      "recipe": {
+        "iron-nugget": 2
+      },
+      "variations": {
+        "empty": "Empty",
+        "veggie-saute": "Veggie sauté",
+        "pasta": "Pasta",
+        "ratatouille": "Ratatouille",
+        "pizza": "Pizza",
+        "failed-attempt": "Failed attempt"
+      }
+    },
+    "nl": {
+      "orderable": false,
+      "set": "Welcome amiibo Update",
+      "sellPrice": {
+        "currency": "bells",
+        "value": 500
+      },
+      "sources": [
+        "Clear six advanced levels in Desert Island Escape"
+      ]
+    }
+  }
+}

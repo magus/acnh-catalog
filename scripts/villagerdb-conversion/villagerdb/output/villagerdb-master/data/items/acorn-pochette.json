@@ -1,0 +1,21 @@
+{
+  "id": "acorn-pochette",
+  "name": "Acorn Pochette",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2400
+      },
+      "recipe": {
+        "acorn": 6
+      },
+      "variations": {
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Accessories"
+}

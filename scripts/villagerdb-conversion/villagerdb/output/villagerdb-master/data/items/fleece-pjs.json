@@ -1,0 +1,27 @@
+{
+  "id": "fleece-pjs",
+  "name": "Fleece Pj's",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1800
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Dresses"
+}

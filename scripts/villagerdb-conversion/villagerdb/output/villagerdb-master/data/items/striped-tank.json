@@ -1,0 +1,30 @@
+{
+  "id": "striped-tank",
+  "name": "Striped Tank",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "orange": "Orange",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "red": "Red",
+        "gray": "Gray",
+        "black": "Black",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Tops"
+}

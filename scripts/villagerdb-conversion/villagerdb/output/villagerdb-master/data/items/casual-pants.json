@@ -1,0 +1,28 @@
+{
+  "id": "casual-pants",
+  "name": "Casual Pants",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "gray": "Gray",
+        "green": "Green",
+        "beige": "Beige",
+        "black": "Black",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

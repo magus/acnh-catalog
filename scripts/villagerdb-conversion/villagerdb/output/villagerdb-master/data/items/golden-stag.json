@@ -1,0 +1,28 @@
+{
+  "id": "golden-stag",
+  "name": "Golden Stag",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 12000
+      },
+      "sources": [
+        "On palm trees."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of coconut trees, Jul-Aug (5pm-8am)",
+        "South: On the side of coconut trees, Jan-Feb (5pm-8am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 12000
+      }
+    }
+  }
+}

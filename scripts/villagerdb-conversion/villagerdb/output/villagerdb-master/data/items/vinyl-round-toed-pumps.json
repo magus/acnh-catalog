@@ -1,0 +1,31 @@
+{
+  "id": "vinyl-round-toed-pumps",
+  "name": "Vinyl Round-toed Pumps",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 375
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1500
+        }
+      ],
+      "variations": {
+        "beige": "Beige",
+        "mint": "Mint",
+        "brown": "Brown",
+        "pink": "Pink",
+        "white": "White",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Shoes"
+}

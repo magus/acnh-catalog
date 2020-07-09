@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> ga gaId=gaId}}
+    {{> rev revUrl=revUrl enableRev=enableRev}}
+    <title>{{#if pageTitle}}{{pageTitle}} | {{/if}}Animal Crossing Item and Villager Database - VillagerDB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{#if pageDescription}}
+        <meta name="description" content="{{pageDescription}}">
+        <meta name="twitter:description" content="{{pageDescription}}" />
+        <meta property="og:description" content="{{pageDescription}}" />
+    {{/if}}
+    {{#if pageImage}}
+        <meta name="twitter:image" content="{{pageImage}}" />
+        <meta property="og:image" content="{{pageImage}}" />
+    {{/if}}
+    {{#if pageUrl}}
+        <meta property="og:url" content="{{pageUrl}}" />
+    {{/if}}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@villagerdb" />
+    <meta name="twitter:title" content="{{#if pageTitle}}{{pageTitle}} | {{/if}}Animal Crossing Item and Villager Database - VillagerDB" />
+    <meta property="og:title" content="{{#if pageTitle}}{{pageTitle}} | {{/if}}Animal Crossing Item and Villager Database - VillagerDB" />
+    <meta property="og:type" content="website" />
+    <link rel='stylesheet' href="{{stylesheetUrl}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+{{> nav userState=userState }}
+{{> search-bar searchQuery=searchQuery }}
+<div id="content">
+    <main role="main" class="container-fluid">
+        {{{body}}}
+    </main>
+</div>
+<footer id="footer" class="page-footer mt-4">
+    <div class="container">
+        <p class="text-center">
+            Find news and guides for New Horizons at
+            <a target="_blank" href="https://animalcrossingworld.com">Animal Crossing World</a>!
+        </p>
+        <p class="text-center">
+            <a href="/terms-of-service">Terms of Service</a> |
+            <a href="/privacy-policy">Privacy Policy</a> |
+            <a target="_blank" href="https://discordapp.com/invite/n4527pm">Discord</a> |
+            <a target="_blank" href="https://twitter.com/villagerdb">Twitter</a> |
+            <a target="_blank" href="https://github.com/jefflomacy/villagerdb">GitHub</a>
+        </p>
+        <p class="text-center">
+            <a target="_blank" href="https://animal-crossing.com/">Animal Crossing</a> is a registered trademark of
+            <a target="_blank" href="https://www.nintendo.com/">Nintendo</a>.
+            VillagerDB in no way claims ownership of any
+            intellectual property associated with Animal Crossing.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript" src="{{javascriptUrl}}"></script>
+</body>
+</html>

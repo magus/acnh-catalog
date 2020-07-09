@@ -1,0 +1,17 @@
+{
+  "id": "fish-wand",
+  "name": "Fish Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1500
+      }
+    }
+  },
+  "category": "Tools"
+}

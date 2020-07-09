@@ -1,0 +1,28 @@
+{
+  "id": "nintendo-switch",
+  "name": "Nintendo Switch",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Receive in mail on your second day"
+      ],
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 7495
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 29980
+        }
+      ],
+      "variations": {
+        "gray": "Gray",
+        "neon-blue-neon-red": "Neon blue & neon red"
+      }
+    }
+  },
+  "category": "Furniture"
+}

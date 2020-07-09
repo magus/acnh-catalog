@@ -1,0 +1,22 @@
+{
+  "id": "log-pack",
+  "name": "Log Pack",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 960
+      },
+      "recipe": {
+        "wood": 3,
+        "hardwood": 5
+      },
+      "variations": {
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Accessories"
+}

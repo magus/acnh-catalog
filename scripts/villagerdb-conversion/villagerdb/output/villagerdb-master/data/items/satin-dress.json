@@ -1,0 +1,30 @@
+{
+  "id": "satin-dress",
+  "name": "Satin Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "berry-red": "Berry red",
+        "purple": "Purple",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Dresses"
+}

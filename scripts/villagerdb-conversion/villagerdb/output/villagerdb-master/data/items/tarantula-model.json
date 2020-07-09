@@ -1,0 +1,17 @@
+{
+  "id": "tarantula-model",
+  "name": "Tarantula Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Flick"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 24000
+      }
+    }
+  },
+  "category": "Furniture"
+}

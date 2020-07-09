@@ -1,0 +1,25 @@
+{
+  "id": "striped-bell-bottoms",
+  "name": "Striped Bell-bottoms",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 330
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1320
+        }
+      ],
+      "variations": {
+        "yellow": "Yellow",
+        "red": "Red",
+        "green": "Green",
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

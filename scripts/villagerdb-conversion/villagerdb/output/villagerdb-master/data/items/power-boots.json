@@ -1,0 +1,25 @@
+{
+  "id": "power-boots",
+  "name": "Power Boots",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 787
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3150
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Shoes"
+}

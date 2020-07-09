@@ -1,0 +1,18 @@
+{
+  "id": "man-faced-stink-bug",
+  "name": "Man-faced Stink Bug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On flowers, Mar-Oct (7pm-8am)",
+        "South: On flowers, Sep-Apr (7pm-8am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1000
+      }
+    }
+  },
+  "category": "Bugs"
+}

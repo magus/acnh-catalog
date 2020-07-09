@@ -1,0 +1,22 @@
+{
+  "id": "coral-nook-inc-aloha-shirt",
+  "name": "Coral Nook Inc. Aloha Shirt",
+  "games": {
+    "nh": {
+      "sources": [
+        "Nook Miles Rewards"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 600
+        }
+      ]
+    }
+  },
+  "category": "Tops"
+}

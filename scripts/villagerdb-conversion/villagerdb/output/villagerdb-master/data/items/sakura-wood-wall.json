@@ -1,0 +1,23 @@
+{
+  "id": "sakura-wood-wall",
+  "name": "Sakura-wood Wall",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 12800
+        }
+      ],
+      "recipe": {
+        "cherry-blossom-petal": 5,
+        "wood": 10
+      }
+    }
+  },
+  "category": "Wallpaper"
+}

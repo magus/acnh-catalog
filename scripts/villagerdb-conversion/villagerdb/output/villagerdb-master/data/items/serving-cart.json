@@ -1,0 +1,45 @@
+{
+  "id": "serving-cart",
+  "name": "Serving Cart",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "set": "Welcome amiibo Update",
+      "rvs": [
+        "ellie",
+        "sandy"
+      ],
+      "buyPrices": [
+        {
+          "currency": "meow",
+          "value": 3
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "natural": "Natural",
+        "brown": "Brown",
+        "white": "White",
+        "white-silver": "White & silver",
+        "red": "Red",
+        "black": "Black"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "golden-arowana-model",
+  "name": "Golden Arowana Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 30000
+      },
+      "recipe": {
+        "gold-nugget": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "outdoor-hat",
+  "name": "Outdoor Hat",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Shopping",
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "orange": "Orange",
+        "blue": "Blue",
+        "purple": "Purple",
+        "red": "Red",
+        "yellow": "Yellow",
+        "light-blue": "Light blue",
+        "green": "Green",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Hats"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "mosquito",
+  "name": "Mosquito",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 130
+      },
+      "sources": [
+        "In the air."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Jun-Sep (5pm-4am)",
+        "South: Flying around, Dec-Mar (5pm-4am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 130
+      }
+    }
+  }
+}

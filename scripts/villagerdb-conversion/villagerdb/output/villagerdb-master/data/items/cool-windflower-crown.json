@@ -1,0 +1,22 @@
+{
+  "id": "cool-windflower-crown",
+  "name": "Cool Windflower Crown",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 960
+      },
+      "recipe": {
+        "blue-windflowers": 3,
+        "pink-windflowers": 3
+      },
+      "variations": {
+        "colorful": "Colorful"
+      }
+    }
+  },
+  "category": "Hats"
+}

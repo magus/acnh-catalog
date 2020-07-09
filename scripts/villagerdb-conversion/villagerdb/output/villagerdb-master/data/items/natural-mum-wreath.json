@@ -1,0 +1,17 @@
+{
+  "id": "natural-mum-wreath",
+  "name": "Natural Mum Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4800
+      },
+      "recipe": {
+        "green-mums": 10
+      }
+    }
+  },
+  "category": "Furniture"
+}

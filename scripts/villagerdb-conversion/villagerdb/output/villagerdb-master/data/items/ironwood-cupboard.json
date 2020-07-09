@@ -1,0 +1,27 @@
+{
+  "id": "ironwood-cupboard",
+  "name": "Ironwood Cupboard",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 9780
+      },
+      "recipe": {
+        "wood": 12,
+        "iron-nugget": 6,
+        "ironwood-dresser": 1
+      },
+      "variations": {
+        "birch": "Birch",
+        "teak": "Teak",
+        "walnut": "Walnut",
+        "old": "Old",
+        "oak": "Oak"
+      }
+    }
+  },
+  "category": "Furniture"
+}

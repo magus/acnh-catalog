@@ -1,0 +1,30 @@
+{
+  "id": "paw-slippers",
+  "name": "Paw Slippers",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Kicks"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 315
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1260
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "brown": "Brown",
+        "white": "White",
+        "blue": "Blue",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Shoes"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "earth-boring-dung-beetle",
+  "name": "Earth-boring Dung Beetle",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the ground, Jul-Aug (All day)",
+        "South: On the ground, Jan-Mar (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      }
+    }
+  },
+  "category": "Bugs"
+}

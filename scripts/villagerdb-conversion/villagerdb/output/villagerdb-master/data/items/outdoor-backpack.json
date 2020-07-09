@@ -1,0 +1,28 @@
+{
+  "id": "outdoor-backpack",
+  "name": "Outdoor Backpack",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Kicks"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "avocado": "Avocado",
+        "orange": "Orange",
+        "navy-blue": "Navy blue"
+      }
+    }
+  },
+  "category": "Accessories"
+}

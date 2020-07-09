@@ -1,0 +1,29 @@
+{
+  "id": "pleather-ankle-booties",
+  "name": "Pleather Ankle Booties",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 320
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1280
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "black": "Black",
+        "green": "Green",
+        "mustard": "Mustard"
+      }
+    }
+  },
+  "category": "Shoes"
+}

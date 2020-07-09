@@ -1,0 +1,27 @@
+{
+  "id": "pennant",
+  "name": "Pennant",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "sports": "Sports",
+        "university": "University",
+        "classic": "Classic",
+        "sponsor": "Sponsor",
+        "souvenir": "Souvenir"
+      }
+    }
+  },
+  "category": "Furniture"
+}

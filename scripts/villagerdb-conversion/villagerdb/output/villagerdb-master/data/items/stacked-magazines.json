@@ -1,0 +1,41 @@
+{
+  "id": "stacked-magazines",
+  "name": "Stacked Magazines",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "set": "Welcome amiibo Update",
+      "rvs": [
+        "candi",
+        "hornsby",
+        "jacob"
+      ],
+      "buyPrices": [
+        {
+          "currency": "meow",
+          "value": 3
+        }
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 630
+      },
+      "recipe": {
+        "magazine": 6
+      },
+      "variations": {
+        "gardening": "Gardening",
+        "travel": "Travel",
+        "fashion": "Fashion",
+        "sports": "Sports",
+        "comics": "Comics",
+        "kids": "Kids",
+        "weekly-news": "Weekly news"
+      }
+    }
+  }
+}

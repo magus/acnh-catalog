@@ -1,0 +1,34 @@
+{
+  "id": "rubber-toe-sneakers",
+  "name": "Rubber-toe Sneakers",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters",
+        "Nook Shopping"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 270
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1080
+        }
+      ],
+      "variations": {
+        "purple": "Purple",
+        "green": "Green",
+        "yellow": "Yellow",
+        "light-blue": "Light blue",
+        "red": "Red",
+        "pink": "Pink",
+        "blue": "Blue",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Shoes"
+}

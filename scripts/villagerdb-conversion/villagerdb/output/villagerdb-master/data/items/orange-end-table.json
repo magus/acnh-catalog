@@ -1,0 +1,23 @@
+{
+  "id": "orange-end-table",
+  "name": "Orange End Table",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2480
+      },
+      "recipe": {
+        "orange": 10,
+        "wood": 4
+      },
+      "variations": {
+        "orange": "Orange",
+        "blood-orange": "Blood orange"
+      }
+    }
+  },
+  "category": "Furniture"
+}

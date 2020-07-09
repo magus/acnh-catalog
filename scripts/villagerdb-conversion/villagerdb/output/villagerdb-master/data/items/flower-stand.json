@@ -1,0 +1,35 @@
+{
+  "id": "flower-stand",
+  "name": "Flower Stand",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2880
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 11520
+        }
+      ],
+      "recipe": {
+        "red-roses": 1,
+        "pink-roses": 2,
+        "orange-roses": 2,
+        "white-lilies": 2,
+        "yellow-lilies": 1
+      },
+      "variations": {
+        "colorful": "Colorful",
+        "red": "Red",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "purple": "Purple",
+        "blue": "Blue",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

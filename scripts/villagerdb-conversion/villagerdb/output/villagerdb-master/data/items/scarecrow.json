@@ -1,0 +1,43 @@
+{
+  "id": "scarecrow",
+  "name": "Scarecrow",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Harmonious"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 105
+      },
+      "sources": [
+        "Nookling stores"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 420
+        }
+      ]
+    },
+    "nh": {
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 130
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 520
+        }
+      ],
+      "recipe": {
+        "tree-branch": 3,
+        "clump-of-weeds": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bamboo-stopblock",
+  "name": "Bamboo Stopblock",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 480
+      },
+      "recipe": {
+        "bamboo-piece": 3
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

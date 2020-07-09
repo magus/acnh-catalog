@@ -1,0 +1,24 @@
+{
+  "id": "hyacinth-lamp",
+  "name": "Hyacinth Lamp",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      },
+      "recipe": {
+        "purple-hyacinths": 5,
+        "clay": 3
+      },
+      "variations": {
+        "purple": "Purple",
+        "blue": "Blue",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Furniture"
+}

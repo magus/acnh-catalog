@@ -1,0 +1,26 @@
+{
+  "id": "pile-of-zen-cushions",
+  "name": "Pile Of Zen Cushions",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 750
+      },
+      "recipe": {
+        "zen-cushion": 3
+      },
+      "variations": {
+        "deep-blue": "Deep blue",
+        "indigo": "Indigo",
+        "azuki-red": "Azuki red",
+        "deep-green": "Deep green",
+        "goldfish": "Goldfish",
+        "crane": "Crane",
+        "gold": "Gold"
+      }
+    }
+  },
+  "category": "Furniture"
+}

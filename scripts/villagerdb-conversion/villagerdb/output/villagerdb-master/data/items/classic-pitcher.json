@@ -1,0 +1,26 @@
+{
+  "id": "classic-pitcher",
+  "name": "Classic Pitcher",
+  "category": "Furniture",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "recipe": {
+        "clay": 4
+      },
+      "variations": {
+        "unglazed": "Unglazed",
+        "simple": "Simple",
+        "sky-blue": "Sky blue",
+        "yellow-amber": "Yellow amber",
+        "fruits": "Fruits",
+        "artistic": "Artistic"
+      }
+    }
+  }
+}

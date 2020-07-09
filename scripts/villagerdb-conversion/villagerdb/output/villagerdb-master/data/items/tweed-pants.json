@@ -1,0 +1,27 @@
+{
+  "id": "tweed-pants",
+  "name": "Tweed Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "blue": "Blue",
+        "beige": "Beige",
+        "berry-red": "Berry red",
+        "green": "Green",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

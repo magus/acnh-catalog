@@ -1,0 +1,28 @@
+{
+  "id": "painters-coverall",
+  "name": "Painter's Coverall",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ],
+      "variations": {
+        "beige": "Beige",
+        "green": "Green",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Dresses"
+}

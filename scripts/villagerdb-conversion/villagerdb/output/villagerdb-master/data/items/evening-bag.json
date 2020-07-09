@@ -1,0 +1,24 @@
+{
+  "id": "evening-bag",
+  "name": "Evening Bag",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 312
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1250
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "blue": "Blue",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Accessories"
+}

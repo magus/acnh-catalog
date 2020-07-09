@@ -1,0 +1,28 @@
+{
+  "id": "tiger-butterfly",
+  "name": "Tiger Butterfly",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "sources": [
+        "Around red/pink flowers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Mar-Sep (4am-7pm)",
+        "South: Flying around, Sep-Mar (4am-7pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 240
+      }
+    }
+  }
+}

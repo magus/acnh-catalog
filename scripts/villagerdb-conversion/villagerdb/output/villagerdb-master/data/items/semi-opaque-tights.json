@@ -1,0 +1,33 @@
+{
+  "id": "semi-opaque-tights",
+  "name": "Semi-opaque Tights",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "brown": "Brown",
+        "yellow": "Yellow",
+        "green": "Green",
+        "purple": "Purple",
+        "blue": "Blue",
+        "pink": "Pink",
+        "red": "Red",
+        "yellow-green": "Yellow-green"
+      }
+    }
+  },
+  "category": "Socks"
+}

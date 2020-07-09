@@ -1,0 +1,27 @@
+{
+  "id": "gold-fish-trophy",
+  "name": "Gold Fish Trophy",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2450
+      },
+      "sources": [
+        "Fishing Tourney"
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Prize for reaching 300 points in fishing tournament (January, April, July, October)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 450
+      }
+    }
+  }
+}

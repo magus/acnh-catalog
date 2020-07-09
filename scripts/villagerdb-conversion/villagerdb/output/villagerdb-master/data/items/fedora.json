@@ -1,0 +1,31 @@
+{
+  "id": "fedora",
+  "name": "Fedora",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "beige": "Beige",
+        "black": "Black",
+        "green": "Green",
+        "gray": "Gray",
+        "white": "White",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Hats"
+}

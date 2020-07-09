@@ -1,0 +1,28 @@
+{
+  "id": "fly",
+  "name": "Fly",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 60
+      },
+      "sources": [
+        "Around rafflesia and spoiled turnips and trash left on the ground."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around trash or rotten food, All year (All day)",
+        "South: Flying around trash or rotten food, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 60
+      }
+    }
+  }
+}

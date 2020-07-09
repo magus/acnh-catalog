@@ -1,0 +1,29 @@
+{
+  "id": "sheep-hood",
+  "name": "Sheep Hood",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 245
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 980
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "pink": "Pink",
+        "light-blue": "Light blue",
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Hats"
+}

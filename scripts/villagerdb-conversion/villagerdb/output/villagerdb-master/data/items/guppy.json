@@ -1,0 +1,28 @@
+{
+  "id": "guppy",
+  "name": "Guppy",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1300
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Tiny Shadows in Pond, Apr-Nov (9am-4pm)",
+        "South: Tiny Shadows in Pond, Oct-May (9am-4pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1300
+      }
+    }
+  }
+}

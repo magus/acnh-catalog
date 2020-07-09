@@ -1,0 +1,28 @@
+{
+  "id": "dung-beetle",
+  "name": "Dung Beetle",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "sources": [
+        "Next to snowballs."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Rolling snowballs on ground, Dec-Feb (All day)",
+        "South: Rolling snowballs on ground, Jun-Aug (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      }
+    }
+  }
+}

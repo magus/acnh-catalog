@@ -1,0 +1,17 @@
+{
+  "id": "ladybug-rug",
+  "name": "Ladybug Rug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Bug-Off"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 375
+      }
+    }
+  },
+  "category": "Flooring"
+}

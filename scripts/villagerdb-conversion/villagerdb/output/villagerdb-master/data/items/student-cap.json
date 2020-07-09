@@ -1,0 +1,47 @@
+{
+  "id": "student-cap",
+  "name": "Student Cap",
+  "category": "Hats",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Official"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      },
+      "sources": [
+        "Labelle"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1600
+        }
+      ]
+    },
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "berry-red": "Berry red",
+        "green": "Green",
+        "white": "White",
+        "purple": "Purple",
+        "gray": "Gray",
+        "blue": "Blue"
+      }
+    }
+  }
+}

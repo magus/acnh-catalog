@@ -1,0 +1,33 @@
+{
+  "id": "house-slippers",
+  "name": "House Slippers",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 122
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 490
+        }
+      ],
+      "variations": {
+        "gray": "Gray",
+        "navy-blue": "Navy blue",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "red": "Red",
+        "beige": "Beige"
+      }
+    }
+  },
+  "category": "Shoes"
+}

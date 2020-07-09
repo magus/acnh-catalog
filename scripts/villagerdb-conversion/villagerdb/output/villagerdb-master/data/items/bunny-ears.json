@@ -1,0 +1,29 @@
+{
+  "id": "bunny-ears",
+  "name": "Bunny Ears",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 280
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1120
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "pink": "Pink",
+        "red": "Red",
+        "light-blue": "Light blue"
+      }
+    }
+  },
+  "category": "Hats"
+}

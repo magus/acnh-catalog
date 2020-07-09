@@ -1,0 +1,23 @@
+{
+  "id": "bamboo-floor-lamp",
+  "name": "Bamboo Floor Lamp",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1280
+      },
+      "recipe": {
+        "bamboo-piece": 8
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

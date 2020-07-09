@@ -1,0 +1,29 @@
+{
+  "id": "fancy-kimono",
+  "name": "Fancy Kimono",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 5200
+        }
+      ],
+      "variations": {
+        "vermilion": "Vermilion",
+        "green": "Green",
+        "indigo-blue": "Indigo blue",
+        "pink": "Pink",
+        "purple": "Purple",
+        "aqua": "Aqua",
+        "pale-orange": "Pale orange",
+        "parrot-green": "Parrot green"
+      }
+    }
+  },
+  "category": "Dresses"
+}

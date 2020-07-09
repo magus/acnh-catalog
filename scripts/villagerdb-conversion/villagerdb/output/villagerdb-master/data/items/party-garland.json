@@ -1,0 +1,28 @@
+{
+  "id": "party-garland",
+  "name": "Party Garland",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 162
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 650
+        }
+      ],
+      "variations": {
+        "colorful": "Colorful",
+        "pastel": "Pastel",
+        "boating-stripes": "Boating stripes",
+        "orange-black": "Orange & black",
+        "pop": "Pop",
+        "gorgeous": "Gorgeous"
+      }
+    }
+  },
+  "category": "Furniture"
+}

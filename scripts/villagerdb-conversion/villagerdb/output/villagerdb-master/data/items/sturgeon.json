@@ -1,0 +1,18 @@
+{
+  "id": "sturgeon",
+  "name": "Sturgeon",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Huge Shadows on River Mouth, Sep-Mar (All day)",
+        "South: Huge Shadows on River Mouth, Mar-Sep (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      }
+    }
+  },
+  "category": "Fish"
+}

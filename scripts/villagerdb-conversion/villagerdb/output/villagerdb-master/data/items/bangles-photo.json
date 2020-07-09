@@ -1,0 +1,16 @@
+{
+  "id": "bangles-photo",
+  "name": "Bangle's Photo",
+  "games": {
+    "nh": {
+      "sources": [
+        "Gift from villager"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10
+      }
+    }
+  },
+  "category": "Photos"
+}

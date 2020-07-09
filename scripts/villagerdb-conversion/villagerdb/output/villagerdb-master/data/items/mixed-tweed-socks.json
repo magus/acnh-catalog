@@ -1,0 +1,33 @@
+{
+  "id": "mixed-tweed-socks",
+  "name": "Mixed-tweed Socks",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 800
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "avocado": "Avocado",
+        "light-blue": "Light blue",
+        "purple": "Purple",
+        "blue": "Blue",
+        "orange": "Orange",
+        "lime": "Lime",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Socks"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "damselfly",
+  "name": "Damselfly",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Nov-Feb (All day)",
+        "South: Flying around, May-Aug (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 500
+      }
+    }
+  },
+  "category": "Bugs"
+}

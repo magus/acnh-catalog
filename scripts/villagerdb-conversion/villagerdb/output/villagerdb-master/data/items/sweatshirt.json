@@ -1,0 +1,31 @@
+{
+  "id": "sweatshirt",
+  "name": "Sweatshirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 175
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 700
+        }
+      ],
+      "variations": {
+        "gray": "Gray",
+        "green": "Green",
+        "yellow": "Yellow",
+        "purple": "Purple",
+        "red": "Red",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Tops"
+}

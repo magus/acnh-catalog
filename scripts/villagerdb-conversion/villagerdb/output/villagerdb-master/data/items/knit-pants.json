@@ -1,0 +1,25 @@
+{
+  "id": "knit-pants",
+  "name": "Knit Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 227
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 910
+        }
+      ],
+      "variations": {
+        "gray": "Gray",
+        "brown": "Brown",
+        "light-blue": "Light blue",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

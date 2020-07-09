@@ -1,0 +1,30 @@
+{
+  "id": "tourist-telescope",
+  "name": "Tourist Telescope",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 2000
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "white": "White",
+        "gray": "Gray",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Furniture"
+}

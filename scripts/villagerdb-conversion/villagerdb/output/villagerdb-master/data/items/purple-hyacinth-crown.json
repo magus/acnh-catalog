@@ -1,0 +1,25 @@
+{
+  "id": "purple-hyacinth-crown",
+  "name": "Purple Hyacinth Crown",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2880
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 11520
+        }
+      ],
+      "recipe": {
+        "purple-hyacinths": 6
+      },
+      "variations": {
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Hats"
+}

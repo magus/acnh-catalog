@@ -1,0 +1,26 @@
+{
+  "id": "gears",
+  "name": "Gears",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 375
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1500
+        }
+      ],
+      "variations": {
+        "silver": "Silver",
+        "copper": "Copper",
+        "black": "Black",
+        "colorful": "Colorful",
+        "wooden": "Wooden"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "folding-floor-lamp",
+  "name": "Folding Floor Lamp",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 475
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1900
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "yellow": "Yellow",
+        "red": "Red",
+        "blue": "Blue",
+        "light-green": "Light green",
+        "gray": "Gray",
+        "silver": "Silver"
+      }
+    }
+  },
+  "category": "Furniture"
+}

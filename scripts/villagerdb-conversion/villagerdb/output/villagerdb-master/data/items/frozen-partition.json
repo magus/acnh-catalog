@@ -1,0 +1,32 @@
+{
+  "id": "frozen-partition",
+  "name": "Frozen Partition",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 7400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 29600
+        }
+      ],
+      "recipe": {
+        "large-snowflake": 1,
+        "snowflake": 6
+      },
+      "variations": {
+        "ice": "Ice",
+        "ice-blue": "Ice blue",
+        "ice-pink": "Ice pink",
+        "ice-yellow": "Ice yellow",
+        "ice-orange": "Ice orange",
+        "ice-green": "Ice green",
+        "ice-purple": "Ice purple"
+      }
+    }
+  },
+  "category": "Furniture"
+}

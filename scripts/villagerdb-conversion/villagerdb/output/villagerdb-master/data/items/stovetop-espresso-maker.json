@@ -1,0 +1,28 @@
+{
+  "id": "stovetop-espresso-maker",
+  "name": "Stovetop Espresso Maker",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 425
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1700
+        }
+      ],
+      "variations": {
+        "silver": "Silver",
+        "black": "Black",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Furniture"
+}

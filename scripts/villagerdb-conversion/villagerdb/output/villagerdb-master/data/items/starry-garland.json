@@ -1,0 +1,27 @@
+{
+  "id": "starry-garland",
+  "name": "Starry Garland",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 5000
+      },
+      "recipe": {
+        "star-fragment": 10
+      },
+      "variations": {
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "purple": "Purple",
+        "pink": "Pink",
+        "orange": "Orange",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

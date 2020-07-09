@@ -1,0 +1,18 @@
+{
+  "id": "golden-dishes",
+  "name": "Golden Dishes",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      },
+      "recipe": {
+        "gold-nugget": 1
+      }
+    }
+  },
+  "category": "Furniture"
+}

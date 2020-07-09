@@ -1,0 +1,24 @@
+{
+  "id": "recycled-boots",
+  "name": "Recycled Boots",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "DIY (Fishing up a boot)"
+      ],
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 40
+      },
+      "recipe": {
+        "boot": 2
+      },
+      "variations": {
+        "brown": "Brown"
+      }
+    }
+  },
+  "category": "Shoes"
+}

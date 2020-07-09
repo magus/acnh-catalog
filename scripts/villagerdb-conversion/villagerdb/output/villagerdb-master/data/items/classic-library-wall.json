@@ -1,0 +1,18 @@
+{
+  "id": "classic-library-wall",
+  "name": "Classic-library Wall",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1450
+      },
+      "recipe": {
+        "book": 10
+      }
+    }
+  },
+  "category": "Wallpaper"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "lettered-cap",
+  "name": "Lettered Cap",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "beige": "Beige",
+        "olive": "Olive"
+      }
+    }
+  },
+  "category": "Hats"
+}

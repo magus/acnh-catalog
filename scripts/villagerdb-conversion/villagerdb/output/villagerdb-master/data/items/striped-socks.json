@@ -1,0 +1,33 @@
+{
+  "id": "striped-socks",
+  "name": "Striped Socks",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 150
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 600
+        }
+      ],
+      "variations": {
+        "monotone": "Monotone",
+        "light-blue": "Light blue",
+        "green": "Green",
+        "yellow": "Yellow",
+        "orange": "Orange",
+        "red": "Red",
+        "purple": "Purple",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Socks"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "sea-bass",
+  "name": "Sea Bass",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 200
+      },
+      "sources": [
+        "In the sea."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Very Large Shadows at Sea, All year (All day)",
+        "South: Very Large Shadows at Sea, All year (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      }
+    }
+  }
+}

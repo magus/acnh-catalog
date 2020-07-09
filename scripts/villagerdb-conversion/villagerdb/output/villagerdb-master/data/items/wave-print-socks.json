@@ -1,0 +1,27 @@
+{
+  "id": "wave-print-socks",
+  "name": "Wave-print Socks",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 150
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 600
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "brown": "Brown",
+        "purple": "Purple",
+        "green": "Green",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Socks"
+}

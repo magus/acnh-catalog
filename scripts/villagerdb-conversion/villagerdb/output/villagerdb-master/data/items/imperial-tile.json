@@ -1,0 +1,43 @@
+{
+  "id": "imperial-tile",
+  "name": "Imperial Tile",
+  "category": "Flooring",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Antique",
+        "Harmonious"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 745
+      },
+      "sources": [
+        "Nookling stores"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2980
+        }
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Saharah"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 750
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 3000
+        }
+      ]
+    }
+  }
+}

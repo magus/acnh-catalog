@@ -1,0 +1,29 @@
+{
+  "id": "drinking-straw-glasses",
+  "name": "Drinking-straw Glasses",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "blue": "Blue",
+        "pink": "Pink",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Accessories"
+}

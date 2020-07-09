@@ -1,0 +1,26 @@
+{
+  "id": "crest-doorplate",
+  "name": "Crest Doorplate",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      },
+      "recipe": {
+        "iron-nugget": 4
+      },
+      "variations": {
+        "silver": "Silver",
+        "gold-silver": "Gold & silver",
+        "silver-blue": "Silver & blue",
+        "red-white": "Red & white",
+        "silver-green": "Silver & green",
+        "colorful": "Colorful"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "long-denim-skirt",
+  "name": "Long Denim Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "light-blue": "Light blue",
+        "navy-blue": "Navy blue",
+        "black": "Black",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

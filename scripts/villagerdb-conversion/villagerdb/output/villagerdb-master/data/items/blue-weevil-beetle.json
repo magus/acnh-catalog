@@ -1,0 +1,18 @@
+{
+  "id": "blue-weevil-beetle",
+  "name": "Blue Weevil Beetle",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of coconut trees, Jul-Aug (All day)",
+        "South: On the side of coconut trees, Jan-Feb (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      }
+    }
+  },
+  "category": "Bugs"
+}

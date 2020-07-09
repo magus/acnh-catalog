@@ -1,0 +1,21 @@
+{
+  "id": "cherry-dress",
+  "name": "Cherry Dress",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1600
+      },
+      "recipe": {
+        "cherry": 8
+      },
+      "variations": {
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Dresses"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fancy-rose-wreath",
+  "name": "Fancy Rose Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      },
+      "recipe": {
+        "orange-roses": 3,
+        "pink-roses": 3,
+        "yellow-roses": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

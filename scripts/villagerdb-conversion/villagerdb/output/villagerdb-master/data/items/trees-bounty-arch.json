@@ -1,0 +1,29 @@
+{
+  "id": "trees-bounty-arch",
+  "name": "Tree's Bounty Arch",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 5750
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 23000
+        }
+      ],
+      "recipe": {
+        "pine-cone": 4,
+        "acorn": 5,
+        "maple-leaf": 5,
+        "tree-branch": 15
+      },
+      "variations": {
+        "brown": "Brown",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

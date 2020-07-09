@@ -1,0 +1,23 @@
+{
+  "id": "dark-block-flooring",
+  "name": "Dark-block Flooring",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 345
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1380
+        }
+      ]
+    }
+  },
+  "category": "Flooring"
+}

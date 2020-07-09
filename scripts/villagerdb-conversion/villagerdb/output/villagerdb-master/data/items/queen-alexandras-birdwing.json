@@ -1,0 +1,18 @@
+{
+  "id": "queen-alexandras-birdwing",
+  "name": "Queen Alexandra's Birdwing",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, May-Sep (8am-4pm)",
+        "South: Flying around, Nov-Mar (8am-4pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 4000
+      }
+    }
+  },
+  "category": "Bugs"
+}

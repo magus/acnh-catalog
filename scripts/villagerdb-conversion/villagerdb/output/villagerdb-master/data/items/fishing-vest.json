@@ -1,0 +1,52 @@
+{
+  "id": "fishing-vest",
+  "name": "Fishing Vest",
+  "category": "Tops",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "fashionThemes": [
+        "Sporty"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 105
+      },
+      "sources": [
+        "Able Sisters"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 420
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 360
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1440
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "orange": "Orange",
+        "purple": "Purple",
+        "black": "Black",
+        "pink": "Pink",
+        "green": "Green",
+        "avocado": "Avocado"
+      }
+    }
+  }
+}

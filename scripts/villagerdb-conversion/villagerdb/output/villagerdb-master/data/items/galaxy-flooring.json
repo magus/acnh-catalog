@@ -1,0 +1,28 @@
+{
+  "id": "galaxy-flooring",
+  "name": "Galaxy Flooring",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Celeste"
+      ],
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 7500
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 30000
+        }
+      ],
+      "recipe": {
+        "star-fragment": 5,
+        "large-star-fragment": 1
+      }
+    }
+  },
+  "category": "Flooring"
+}

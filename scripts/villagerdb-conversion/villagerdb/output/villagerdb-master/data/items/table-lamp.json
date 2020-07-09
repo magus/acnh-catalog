@@ -1,0 +1,49 @@
+{
+  "id": "table-lamp",
+  "name": "Table Lamp",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": true,
+      "interiorThemes": [
+        "Sci-Fi"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "sources": [
+        "Nookling stores"
+      ],
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 640
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "black": "Black",
+        "red-flowers": "Red flowers",
+        "blue-flowers": "Blue flowers",
+        "green-flowers": "Green flowers",
+        "yellow-flowers": "Yellow flowers",
+        "pink-flowers": "Pink flowers"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "butterfly-fish-model",
+  "name": "Butterfly Fish Model",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 3000
+      }
+    }
+  },
+  "category": "Furniture"
+}

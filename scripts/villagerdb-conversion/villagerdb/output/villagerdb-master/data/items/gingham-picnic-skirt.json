@@ -1,0 +1,33 @@
+{
+  "id": "gingham-picnic-skirt",
+  "name": "Gingham Picnic Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 220
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 880
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "green": "Green",
+        "blue": "Blue",
+        "gray": "Gray",
+        "orange": "Orange",
+        "pink": "Pink",
+        "purple": "Purple",
+        "light-blue": "Light blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

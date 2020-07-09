@@ -1,0 +1,29 @@
+{
+  "id": "cycling-shorts",
+  "name": "Cycling Shorts",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 175
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 700
+        }
+      ],
+      "variations": {
+        "blue-red": "Blue & red",
+        "black-blue": "Black & blue",
+        "black-red": "Black & red",
+        "black-yellow": "Black & yellow",
+        "red-green": "Red & green",
+        "orange-red": "Orange & red",
+        "green-purple": "Green & purple",
+        "purple-pink": "Purple & pink"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

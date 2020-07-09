@@ -1,0 +1,25 @@
+{
+  "id": "mush-log",
+  "name": "Mush Log",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1680
+      },
+      "recipe": {
+        "skinny-mushroom": 2,
+        "log-stool": 1
+      },
+      "variations": {
+        "ordinary-mushroom": "Ordinary mushroom",
+        "white-mushroom": "White mushroom",
+        "strange-mushroom": "Strange mushroom",
+        "red-mushroom": "Red mushroom",
+        "yellow-mushroom": "Yellow mushroom"
+      }
+    }
+  },
+  "category": "Furniture"
+}

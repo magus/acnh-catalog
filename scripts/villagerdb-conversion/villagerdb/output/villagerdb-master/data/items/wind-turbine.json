@@ -1,0 +1,27 @@
+{
+  "id": "wind-turbine",
+  "name": "Wind Turbine",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 20000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 4000
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Furniture"
+}

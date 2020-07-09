@@ -1,0 +1,32 @@
+{
+  "id": "fringe-skirt",
+  "name": "Fringe Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "camel": "Camel",
+        "black": "Black",
+        "white": "White",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "green": "Green",
+        "berry-red": "Berry red"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

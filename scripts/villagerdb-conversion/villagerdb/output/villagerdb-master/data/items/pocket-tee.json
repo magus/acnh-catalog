@@ -1,0 +1,29 @@
+{
+  "id": "pocket-tee",
+  "name": "Pocket Tee",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 560
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "black": "Black",
+        "purple": "Purple",
+        "light-blue": "Light blue",
+        "red": "Red",
+        "yellow": "Yellow",
+        "pink": "Pink",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Tops"
+}

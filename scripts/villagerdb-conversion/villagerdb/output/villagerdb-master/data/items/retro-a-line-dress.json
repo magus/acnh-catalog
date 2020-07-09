@@ -1,0 +1,30 @@
+{
+  "id": "retro-a-line-dress",
+  "name": "Retro A-line Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 637
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2550
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "blue": "Blue",
+        "light-blue": "Light blue",
+        "yellow": "Yellow",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Dresses"
+}

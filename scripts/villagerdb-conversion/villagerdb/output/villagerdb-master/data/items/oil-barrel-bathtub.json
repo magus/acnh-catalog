@@ -1,0 +1,28 @@
+{
+  "id": "oil-barrel-bathtub",
+  "name": "Oil Barrel Bathtub",
+  "category": "Furniture",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 655
+      },
+      "recipe": {
+        "oil-barrel": 1,
+        "campfire": 1,
+        "stone": 2
+      },
+      "variations": {
+        "no-coating": "No coating",
+        "green": "Green",
+        "yellow": "Yellow",
+        "red": "Red",
+        "white": "White",
+        "retro": "Retro"
+      }
+    }
+  }
+}

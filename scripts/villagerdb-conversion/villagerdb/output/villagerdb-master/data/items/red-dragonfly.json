@@ -1,0 +1,28 @@
+{
+  "id": "red-dragonfly",
+  "name": "Red Dragonfly",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 80
+      },
+      "sources": [
+        "Anywhere other than above salt water (the sea)."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Sep-Oct (8am-7pm)",
+        "South: Flying around, Mar-Apr (8am-7pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      }
+    }
+  }
+}

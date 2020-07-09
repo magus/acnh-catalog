@@ -1,0 +1,10 @@
+{
+  "id": "square-mailbox",
+  "name": "Square Mailbox",
+  "games": {
+    "nh": {
+      "orderable": false
+    }
+  },
+  "category": "Furniture"
+}

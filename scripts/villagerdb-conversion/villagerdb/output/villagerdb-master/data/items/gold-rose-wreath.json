@@ -1,0 +1,17 @@
+{
+  "id": "gold-rose-wreath",
+  "name": "Gold Rose Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 20000
+      },
+      "recipe": {
+        "gold-roses": 10
+      }
+    }
+  },
+  "category": "Furniture"
+}

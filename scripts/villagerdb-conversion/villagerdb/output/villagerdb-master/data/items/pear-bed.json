@@ -1,0 +1,23 @@
+{
+  "id": "pear-bed",
+  "name": "Pear Bed",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2720
+      },
+      "recipe": {
+        "pear": 10,
+        "softwood": 6
+      },
+      "variations": {
+        "la-france": "La France",
+        "le-lectier": "Le Lectier"
+      }
+    }
+  },
+  "category": "Furniture"
+}

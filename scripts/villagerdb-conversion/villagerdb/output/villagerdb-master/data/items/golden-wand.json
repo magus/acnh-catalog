@@ -1,0 +1,19 @@
+{
+  "id": "golden-wand",
+  "name": "Golden Wand",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 20750
+      },
+      "recipe": {
+        "gold-nugget": 2,
+        "star-fragment": 3
+      }
+    }
+  },
+  "category": "Tools"
+}

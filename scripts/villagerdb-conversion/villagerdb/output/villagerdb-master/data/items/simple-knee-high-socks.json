@@ -1,0 +1,25 @@
+{
+  "id": "simple-knee-high-socks",
+  "name": "Simple Knee-high Socks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 150
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 600
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "white": "White",
+        "red": "Red",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Socks"
+}

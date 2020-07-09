@@ -1,0 +1,26 @@
+{
+  "id": "colorful-skirt",
+  "name": "Colorful Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "pink": "Pink",
+        "green": "Green",
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

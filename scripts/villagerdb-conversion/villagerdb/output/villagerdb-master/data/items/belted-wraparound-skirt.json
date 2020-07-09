@@ -1,0 +1,25 @@
+{
+  "id": "belted-wraparound-skirt",
+  "name": "Belted Wraparound Skirt",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 260
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1040
+        }
+      ],
+      "variations": {
+        "yellow": "Yellow",
+        "red": "Red",
+        "green": "Green",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

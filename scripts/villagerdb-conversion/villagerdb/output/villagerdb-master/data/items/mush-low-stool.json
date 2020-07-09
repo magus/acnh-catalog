@@ -1,0 +1,24 @@
+{
+  "id": "mush-low-stool",
+  "name": "Mush Low Stool",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 800
+      },
+      "recipe": {
+        "round-mushroom": 2
+      },
+      "variations": {
+        "ordinary-mushroom": "Ordinary mushroom",
+        "white-mushroom": "White mushroom",
+        "strange-mushroom": "Strange mushroom",
+        "red-mushroom": "Red mushroom",
+        "yellow-mushroom": "Yellow mushroom"
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bamboo-wall-decoration",
+  "name": "Bamboo Wall Decoration",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 160
+      },
+      "recipe": {
+        "bamboo-piece": 1
+      },
+      "variations": {
+        "green-bamboo": "Green bamboo",
+        "dried-bamboo": "Dried bamboo",
+        "smoke-cured-bamboo": "Smoke-cured bamboo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

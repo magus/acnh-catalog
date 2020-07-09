@@ -1,0 +1,27 @@
+{
+  "id": "layered-socks",
+  "name": "Layered Socks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 180
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 720
+        }
+      ],
+      "variations": {
+        "purple": "Purple",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "green": "Green",
+        "red": "Red",
+        "orange": "Orange"
+      }
+    }
+  },
+  "category": "Socks"
+}

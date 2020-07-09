@@ -1,0 +1,27 @@
+{
+  "id": "flashy-slacks",
+  "name": "Flashy Slacks",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 325
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1300
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "black": "Black",
+        "purple": "Purple",
+        "berry-red": "Berry red",
+        "aquamarine": "Aquamarine",
+        "yellow": "Yellow"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

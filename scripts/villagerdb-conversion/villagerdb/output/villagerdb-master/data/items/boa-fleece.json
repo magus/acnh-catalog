@@ -1,0 +1,29 @@
+{
+  "id": "boa-fleece",
+  "name": "Boa Fleece",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 350
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1400
+        }
+      ],
+      "variations": {
+        "white": "White",
+        "green": "Green",
+        "navy-blue": "Navy blue",
+        "beige": "Beige",
+        "blue": "Blue",
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "lime": "Lime"
+      }
+    }
+  },
+  "category": "Tops"
+}

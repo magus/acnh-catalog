@@ -1,0 +1,18 @@
+{
+  "id": "golden-toilet",
+  "name": "Golden Toilet",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 60000
+      },
+      "recipe": {
+        "gold-nugget": 6
+      }
+    }
+  },
+  "category": "Furniture"
+}

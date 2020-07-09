@@ -1,0 +1,28 @@
+{
+  "id": "freshwater-goby",
+  "name": "Freshwater Goby",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "sources": [
+        "In rivers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Small Shadows on River, All year (4pm-9am)",
+        "South: Small Shadows on River, All year (4pm-9am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 400
+      }
+    }
+  }
+}

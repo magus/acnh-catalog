@@ -1,0 +1,23 @@
+{
+  "id": "cosmos-crown",
+  "name": "Cosmos Crown",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 560
+      },
+      "recipe": {
+        "red-cosmos": 2,
+        "yellow-cosmos": 2,
+        "white-cosmos": 3
+      },
+      "variations": {
+        "colorful": "Colorful"
+      }
+    }
+  },
+  "category": "Hats"
+}

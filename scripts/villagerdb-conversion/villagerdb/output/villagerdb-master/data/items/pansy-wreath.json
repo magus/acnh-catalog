@@ -1,0 +1,20 @@
+{
+  "id": "pansy-wreath",
+  "name": "Pansy Wreath",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 720
+      },
+      "recipe": {
+        "yellow-pansies": 3,
+        "white-pansies": 3,
+        "red-pansies": 3
+      }
+    }
+  },
+  "category": "Furniture"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "arabesque-flooring",
+  "name": "Arabesque Flooring",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook's Cranny"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 530
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2120
+        }
+      ]
+    }
+  },
+  "category": "Flooring"
+}

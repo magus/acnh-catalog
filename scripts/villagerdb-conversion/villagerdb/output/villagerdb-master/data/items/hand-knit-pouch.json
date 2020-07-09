@@ -1,0 +1,27 @@
+{
+  "id": "hand-knit-pouch",
+  "name": "Hand-knit Pouch",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Kicks"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 312
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1250
+        }
+      ],
+      "variations": {
+        "green": "Green",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Accessories"
+}

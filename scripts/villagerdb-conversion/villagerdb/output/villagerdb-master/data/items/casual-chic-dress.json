@@ -1,0 +1,27 @@
+{
+  "id": "casual-chic-dress",
+  "name": "Casual Chic Dress",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 600
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2400
+        }
+      ],
+      "variations": {
+        "yellow": "Yellow",
+        "light-blue": "Light blue",
+        "pink": "Pink",
+        "green": "Green",
+        "navy-blue": "Navy blue",
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Dresses"
+}

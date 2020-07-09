@@ -1,0 +1,24 @@
+{
+  "id": "butterfly-visiting-kimono",
+  "name": "Butterfly Visiting Kimono",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 665
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2660
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "indigo-blue": "Indigo blue",
+        "fuchsia": "Fuchsia"
+      }
+    }
+  },
+  "category": "Dresses"
+}

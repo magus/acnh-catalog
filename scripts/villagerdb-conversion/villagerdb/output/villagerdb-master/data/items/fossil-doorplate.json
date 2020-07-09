@@ -1,0 +1,23 @@
+{
+  "id": "fossil-doorplate",
+  "name": "Fossil Doorplate",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 500
+      },
+      "recipe": {
+        "fossil": 1,
+        "stone": 2
+      },
+      "variations": {
+        "gray": "Gray",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Furniture"
+}

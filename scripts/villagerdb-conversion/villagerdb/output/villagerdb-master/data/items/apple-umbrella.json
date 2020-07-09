@@ -1,0 +1,23 @@
+{
+  "id": "apple-umbrella",
+  "name": "Apple Umbrella",
+  "games": {
+    "nh": {
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1400
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 5600
+        }
+      ],
+      "recipe": {
+        "apple": 7
+      }
+    }
+  },
+  "category": "Umbrellas"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "chic-rose-crown",
+  "name": "Chic Rose Crown",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 2880
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 11520
+        }
+      ],
+      "recipe": {
+        "purple-roses": 3,
+        "black-roses": 3
+      },
+      "variations": {
+        "purple": "Purple"
+      }
+    }
+  },
+  "category": "Hats"
+}

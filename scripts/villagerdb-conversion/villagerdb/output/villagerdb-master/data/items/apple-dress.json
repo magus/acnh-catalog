@@ -1,0 +1,21 @@
+{
+  "id": "apple-dress",
+  "name": "Apple Dress",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1600
+      },
+      "recipe": {
+        "apple": 8
+      },
+      "variations": {
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Dresses"
+}

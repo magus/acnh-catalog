@@ -1,0 +1,17 @@
+{
+  "id": "bunny-day-basket",
+  "name": "Bunny Day Basket",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Recipe obtained during Bunny Day event (April)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1200
+      }
+    }
+  },
+  "category": "Furniture"
+}

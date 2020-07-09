@@ -1,0 +1,27 @@
+{
+  "id": "new-years-silk-hat",
+  "name": "New Year's Silk Hat",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Gulliver"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 125
+      },
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "yellow": "Yellow",
+        "green": "Green",
+        "orange": "Orange",
+        "purple": "Purple",
+        "pink": "Pink",
+        "light-blue": "Light blue"
+      }
+    }
+  },
+  "category": "Hats"
+}

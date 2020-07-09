@@ -1,0 +1,30 @@
+{
+  "id": "poncho-style-sweater",
+  "name": "Poncho-style Sweater",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 375
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1500
+        }
+      ],
+      "variations": {
+        "purple": "Purple",
+        "peacock-blue": "Peacock blue",
+        "orange": "Orange",
+        "blue": "Blue",
+        "gray": "Gray"
+      }
+    }
+  },
+  "category": "Tops"
+}

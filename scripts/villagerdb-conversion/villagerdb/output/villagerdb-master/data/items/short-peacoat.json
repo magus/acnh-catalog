@@ -1,0 +1,28 @@
+{
+  "id": "short-peacoat",
+  "name": "Short Peacoat",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 420
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1680
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "navy-blue": "Navy blue",
+        "beige": "Beige",
+        "orange": "Orange",
+        "green": "Green",
+        "gray": "Gray",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Tops"
+}

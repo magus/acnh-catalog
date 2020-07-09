@@ -1,0 +1,30 @@
+{
+  "id": "shower-sandals",
+  "name": "Shower Sandals",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 87
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 350
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "gold": "Gold",
+        "red": "Red",
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Shoes"
+}

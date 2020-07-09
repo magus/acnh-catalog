@@ -1,0 +1,24 @@
+{
+  "id": "rose-bed",
+  "name": "Rose Bed",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1400
+      },
+      "recipe": {
+        "red-roses": 10,
+        "wood": 5
+      },
+      "variations": {
+        "red": "Red",
+        "purple": "Purple",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Furniture"
+}

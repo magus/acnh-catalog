@@ -1,0 +1,20 @@
+{
+  "id": "campsite-sign",
+  "name": "Campsite Sign",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 625
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2500
+        }
+      ]
+    }
+  },
+  "category": "Furniture"
+}

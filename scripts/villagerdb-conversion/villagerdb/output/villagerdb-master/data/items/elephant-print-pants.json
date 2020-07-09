@@ -1,0 +1,27 @@
+{
+  "id": "elephant-print-pants",
+  "name": "Elephant-print Pants",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 275
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1100
+        }
+      ],
+      "variations": {
+        "red": "Red",
+        "blue": "Blue",
+        "orange": "Orange",
+        "green": "Green",
+        "purple": "Purple",
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

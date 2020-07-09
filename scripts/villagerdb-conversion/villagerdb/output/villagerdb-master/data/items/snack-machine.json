@@ -1,0 +1,42 @@
+{
+  "id": "snack-machine",
+  "name": "Snack Machine",
+  "category": "Furniture",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "set": "Welcome amiibo Update",
+      "rvs": [
+        "huck"
+      ],
+      "buyPrices": [
+        {
+          "currency": "meow",
+          "value": 3
+        }
+      ]
+    },
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 10000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 2000
+        }
+      ],
+      "variations": {
+        "black": "Black",
+        "white": "White",
+        "red": "Red",
+        "silver": "Silver"
+      }
+    }
+  }
+}

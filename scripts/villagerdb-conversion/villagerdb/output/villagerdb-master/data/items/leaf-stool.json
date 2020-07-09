@@ -1,0 +1,24 @@
+{
+  "id": "leaf-stool",
+  "name": "Leaf Stool",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 1560
+      },
+      "recipe": {
+        "maple-leaf": 3,
+        "wood": 3
+      },
+      "variations": {
+        "brown": "Brown",
+        "red": "Red",
+        "yellow": "Yellow",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Furniture"
+}

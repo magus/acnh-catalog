@@ -1,0 +1,29 @@
+{
+  "id": "dreamy-dress",
+  "name": "Dreamy Dress",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 520
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 2080
+        }
+      ],
+      "variations": {
+        "pink": "Pink",
+        "yellow": "Yellow",
+        "blue": "Blue",
+        "green": "Green"
+      }
+    }
+  },
+  "category": "Dresses"
+}

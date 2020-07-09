@@ -1,0 +1,28 @@
+{
+  "id": "parabolic-antenna",
+  "name": "Parabolic Antenna",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 20000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 4000
+        }
+      ],
+      "variations": {
+        "plain": "Plain",
+        "red-logo": "Red logo",
+        "green-logo": "Green logo"
+      }
+    }
+  },
+  "category": "Furniture"
+}

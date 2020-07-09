@@ -1,0 +1,18 @@
+{
+  "id": "stinkbug",
+  "name": "Stinkbug",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On flowers, Mar-Oct (All day)",
+        "South: On flowers, Sep-Apr (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 120
+      }
+    }
+  },
+  "category": "Bugs"
+}

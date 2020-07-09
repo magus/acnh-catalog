@@ -1,0 +1,28 @@
+{
+  "id": "monarch-butterfly",
+  "name": "Monarch Butterfly",
+  "category": "Bugs",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      },
+      "sources": [
+        "Around flowers."
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Flying around, Sep-Nov (4am-5pm)",
+        "South: Flying around, Mar-May (4am-5pm)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 140
+      }
+    }
+  }
+}

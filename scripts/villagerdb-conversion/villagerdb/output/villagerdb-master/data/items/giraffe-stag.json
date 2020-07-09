@@ -1,0 +1,18 @@
+{
+  "id": "giraffe-stag",
+  "name": "Giraffe Stag",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: On the side of coconut trees, Jul-Aug (5pm-8am)",
+        "South: On the side of coconut trees, Jan-Feb (5pm-8am)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 12000
+      }
+    }
+  },
+  "category": "Bugs"
+}

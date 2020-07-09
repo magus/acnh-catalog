@@ -1,0 +1,26 @@
+{
+  "id": "night-vision-goggles",
+  "name": "Night-vision Goggles",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "black": "Black"
+      }
+    }
+  },
+  "category": "Accessories"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "tackle-bag",
+  "name": "Tackle Bag",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "Fishing tournament prize pool (January, April, July, October)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 175
+      },
+      "variations": {
+        "blue": "Blue"
+      }
+    }
+  },
+  "category": "Accessories"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "lifeguard-chair",
+  "name": "Lifeguard Chair",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Nook Miles System"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 5000
+      },
+      "buyPrices": [
+        {
+          "currency": "miles",
+          "value": 1000
+        }
+      ],
+      "variations": {
+        "blue": "Blue",
+        "white": "White",
+        "yellow": "Yellow",
+        "green": "Green",
+        "red": "Red"
+      }
+    }
+  },
+  "category": "Furniture"
+}

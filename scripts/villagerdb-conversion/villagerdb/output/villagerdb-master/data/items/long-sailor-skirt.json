@@ -1,0 +1,33 @@
+{
+  "id": "long-sailor-skirt",
+  "name": "Long Sailor Skirt",
+  "games": {
+    "nh": {
+      "orderable": true,
+      "sources": [
+        "Able Sisters"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 390
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1560
+        }
+      ],
+      "variations": {
+        "navy-blue": "Navy blue",
+        "orange": "Orange",
+        "light-blue": "Light blue",
+        "green": "Green",
+        "brown": "Brown",
+        "purple": "Purple",
+        "red": "Red",
+        "pink": "Pink"
+      }
+    }
+  },
+  "category": "Bottoms"
+}

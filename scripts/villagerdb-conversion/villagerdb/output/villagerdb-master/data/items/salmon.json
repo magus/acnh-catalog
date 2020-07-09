@@ -1,0 +1,28 @@
+{
+  "id": "salmon",
+  "name": "Salmon",
+  "category": "Fish",
+  "games": {
+    "nl": {
+      "orderable": false,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 700
+      },
+      "sources": [
+        "Sea (early September)/River (late September)"
+      ]
+    },
+    "nh": {
+      "orderable": false,
+      "sources": [
+        "North: Large Shadows on River Mouth, Sep (All day)",
+        "South: Large Shadows on River Mouth, Mar (All day)"
+      ],
+      "sellPrice": {
+        "currency": "bells",
+        "value": 700
+      }
+    }
+  }
+}

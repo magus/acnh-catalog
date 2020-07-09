@@ -1,0 +1,22 @@
+{
+  "id": "iron-closet",
+  "name": "Iron Closet",
+  "games": {
+    "nh": {
+      "orderable": false,
+      "customizable": true,
+      "sellPrice": {
+        "currency": "bells",
+        "value": 9000
+      },
+      "recipe": {
+        "iron-nugget": 12
+      },
+      "variations": {
+        "black": "Black",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Furniture"
+}

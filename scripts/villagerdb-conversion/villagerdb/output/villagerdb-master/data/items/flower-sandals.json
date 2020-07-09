@@ -1,0 +1,28 @@
+{
+  "id": "flower-sandals",
+  "name": "Flower Sandals",
+  "games": {
+    "nh": {
+      "sellPrice": {
+        "currency": "bells",
+        "value": 300
+      },
+      "buyPrices": [
+        {
+          "currency": "bells",
+          "value": 1200
+        }
+      ],
+      "variations": {
+        "yellow": "Yellow",
+        "pink": "Pink",
+        "green": "Green",
+        "purple": "Purple",
+        "blue": "Blue",
+        "black": "Black",
+        "white": "White"
+      }
+    }
+  },
+  "category": "Shoes"
+}
