@@ -1,0 +1,117 @@
+# Changelog
+
+## 2020-07-08
+
+- Bamboo Grass
+- Leaf Campfire
+- Mermaid Bed
+- Mermaid Chair
+- Mermaid Closet
+- Mermaid Dresser
+- Mermaid Lamp
+- Mermaid Screen
+- Mermaid Shelf
+- Mermaid Sofa
+- Mermaid Table
+- Mermaid Vanity
+- Pirate Barrel
+- Pirate-Ship Cannon
+- Pirate-Ship Helm
+- Pirate-Treasure Chest
+- Sideways Pirate Barrel
+- Mermaid Wall Clock
+- Mermaid Wall
+- Pirate Wall
+- Mermaid Flooring
+- Pirate Flooring
+- Mermaid Rug
+- Pirate Rug
+- Sea Captain's Coat (Black)
+- Sea Captain's Coat (Red)
+- Sea Captain's Coat (Blue)
+- Pirate Pants
+- Mermaid Fishy Dress (Pink)
+- Mermaid Fishy Dress (Light blue)
+- Mermaid Princess Dress (Pink)
+- Mermaid Princess Dress (Light blue)
+- Pirate Dress (Black)
+- Pirate Dress (Red)
+- Pirate Dress (Blue)
+- Pirate Outfit (Black)
+- Pirate Outfit (Red)
+- Pirate Outfit (Blue)
+- Pirate-Treasure Robe
+- Mermaid Tiara
+- Pirate Bandanna (Black)
+- Pirate Bandanna (Red)
+- Pirate Bandanna (Blue)
+- Pirate-Treasure Crown
+- Pirate's Hat
+- Nook Inc. Snorkel
+- Pirate Beard
+- Pirate Eye Patch
+- Snorkel Mask (Black)
+- Snorkel Mask (Red)
+- Snorkel Mask (Pink)
+- Snorkel Mask (Orange)
+- Snorkel Mask (Green)
+- Snorkel Mask (Blue)
+- Mermaid Shoes (Pink)
+- Mermaid Shoes (Light blue)
+- Pirate Boots
+- Horizontal-Striped Wet Suit (Black)
+- Horizontal-Striped Wet Suit (Red)
+- Horizontal-Striped Wet Suit (Yellow)
+- Horizontal-Striped Wet Suit (Blue)
+- Leaf-Print Wet Suit (Yellow)
+- Leaf-Print Wet Suit (Green)
+- Leaf-Print Wet Suit (Light blue)
+- Leaf-Print Wet Suit (Purple)
+- Nook Inc. Wet Suit
+- Lost Item
+- Lost Item
+- Lost Item
+- Pearl
+- What Was This Again?
+- What Was This Again?
+- What Was This Again?
+- Abalone
+- Acorn Barnacle
+- Chambered Nautilus
+- Dungeness Crab
+- Firefly Squid
+- Flatworm
+- Gazami Crab
+- Giant Isopod
+- Gigas Giant Clam
+- Horseshoe Crab
+- Lobster
+- Mantis Shrimp
+- Moon Jellyfish
+- Mussel
+- Octopus
+- Oyster
+- Pearl Oyster
+- Red King Crab
+- Scallop
+- Sea Anemone
+- Sea Cucumber
+- Sea Grapes
+- Sea Pig
+- Sea Pineapple
+- Sea Slug
+- Sea Star
+- Sea Urchin
+- Seaweed
+- Slate Pencil Urchin
+- Snow Crab
+- Spider Crab
+- Spiny Lobster
+- Spotted Garden Eel
+- Sweet Shrimp
+- Tiger Prawn
+- Turban Shell
+- Umbrella Octopus
+- Vampire Squid
+- Venus' Flower Basket
+- Whelk
