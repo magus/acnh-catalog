@@ -42,11 +42,9 @@ public/service-worker.js
 
 # scripts
 # ignore script credentials and outputs
-scripts/acnh-spreadsheet/export-spreadsheet/tokens.json
-scripts/acnh-spreadsheet/export-spreadsheet/credentials.json
-scripts/acnh-spreadsheet/export-spreadsheet/node_modules
-scripts/acnh-spreadsheet/export-spreadsheet/cache
-scripts/acnh-spreadsheet/export-spreadsheet/out
-scripts/acnh-spreadsheet/output/*
+scripts/acnh-spreadsheet/in/*
+scripts/acnh-spreadsheet/out/*
+!scripts/acnh-spreadsheet/in/__anchor
+!scripts/acnh-spreadsheet/out/__anchor
 scripts/villagerdb/output/*
 

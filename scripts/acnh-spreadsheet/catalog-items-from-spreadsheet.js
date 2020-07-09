@@ -13,14 +13,9 @@ function readJSON(filename) {
   return JSON.parse(rawFileString);
 }
 const sampleArray = (name, _) => console.warn(name, _.length, 'SAMPLE', JSON.stringify(_[0], null, 2));
-const villagerDBUrlName = (str) =>
-  str
-    .toLowerCase()
-    .replace(/\s/g, '-')
-    .replace(/\.|\'|\(|\)/g, '');
 
 // MAIN
-const ACNH_SPREADSHEET = readJSON('./ACNH_SPREADSHEET.json');
+const ACNH_SPREADSHEET = readJSON('./out/ACNH_SPREADSHEET.json');
 sampleArray('ACNH_SPREADSHEET', ACNH_SPREADSHEET);
 
 // {
@@ -43,6 +38,8 @@ function capitalize(text) {
       .replace(/'S/g, "'s")
   );
 }
+
+const ERRORS = [];
 
 const minimalItems = ACNH_SPREADSHEET.map((item) => {
   const {
@@ -85,36 +82,64 @@ const minimalItems = ACNH_SPREADSHEET.map((item) => {
     image = imageUrl.replace(/https\:\/\/acnhcdn\.com\/.*?\//, '');
   }
 
-  return { id: __id, category, name, variant, image };
-});
+  const gItem = { id: __id, category, name, variant, image };
 
-// validate output
-const errors = [];
-const validItems = [];
-minimalItems.forEach((item) => {
-  const err = (msg) => errors.push([msg, item]);
-
+  // validate each generated item (gItem)
+  const err = (msg, gitem) => {
+    ERRORS.push([msg, item, gitem]);
+  };
   // images?
-  if (!item.image) return err('missing image');
-  if (!item.name) return err('missing name');
-  if (item.name && typeof item.name !== 'string') return err('name must be a string');
-  if (item.variant && typeof item.variant !== 'string') return err('variant must be a string');
+  if (!gItem.image) return err('missing image', gItem);
+  if (!gItem.name) return err('missing name', gItem);
+  if (gItem.name && typeof gItem.name !== 'string') return err('name must be a string', gItem);
+  if (gItem.variant && typeof gItem.variant !== 'string') return err('variant must be a string', gItem);
 
-  validItems.push(item);
+  return gItem;
 });
 
-console.debug('errors', errors);
-if (errors.length) {
-  console.debug('errors', errors);
-  process.exit(1);
+console.debug('ERRORS', ERRORS);
+fs.writeFileSync('out/ERRORS.json', JSON.stringify(ERRORS, null, 2));
+if (ERRORS.length) {
+  // process.exit(1);
 }
 
-sampleArray('validItems', validItems);
-fs.writeFileSync('validItems.json', JSON.stringify(validItems, null, 2));
+// validate output
+const UPDATED_ITEMS = minimalItems.filter((_) => !!_);
+sampleArray('UPDATED_ITEMS', UPDATED_ITEMS);
+fs.writeFileSync('out/items.json', JSON.stringify(UPDATED_ITEMS, null, 2));
 
 const categories = new Set();
-validItems.forEach((item) => {
+UPDATED_ITEMS.forEach((item) => {
+  if (!item.category) {
+    console.error('missing category', { item });
+    throw new Error('missing category');
+  }
   categories.add(item.category);
 });
-console.debug(categories);
-fs.writeFileSync('categories.json', JSON.stringify([...categories], null, 2));
+fs.writeFileSync('out/categories.json', JSON.stringify([...categories], null, 2));
+
+// output new items (excluding errors) for logging into changelog
+const NEW_ITEMS = readJSON('./out/NEW_ITEMS.json');
+const ACNH_SPREADSHEET_LOOKUP = keyByField(ACNH_SPREADSHEET, (_) => _.uniqueEntryId);
+const UPDATED_ITEMS_LOOKUP = keyByField(UPDATED_ITEMS, (_) => _.id);
+const ERROR_LOOKUP = keyByField(ERRORS, (_) => _[1].uniqueEntryId);
+console.debug('NEW_ITEMS');
+NEW_ITEMS.forEach((_) => {
+  if (ERROR_LOOKUP[_.uniqueEntryId]) {
+    // console.error('error skip', { _ });
+    // throw new Error('error skip');
+    return;
+  }
+
+  // use spreadsheet data to lookup by uniqueEntryId
+  // then use the simple catalog data to lookup by __id
+  const spreadsheetItem = ACNH_SPREADSHEET_LOOKUP[_.uniqueEntryId];
+  const item = UPDATED_ITEMS_LOOKUP[spreadsheetItem.__id];
+  // console.debug({ spreadsheetItem, item });
+  if (item) {
+    console.debug('-', capitalize(item.name), item.variant ? `(${item.variant})` : '');
+  }
+});
+console.debug('\n\n');
+console.debug('***************************************************');
+console.debug('**!!!**', 'Record new items in changelog', '**!!!**');

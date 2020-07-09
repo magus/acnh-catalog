@@ -1,10 +1,30 @@
 # ACNH Spreadsheet
 
-## Guide
+`google-sheets-to-json` contains scripts to pull from Google Sheets via API
 
-- `google-sheets-to-json` contains scripts to pull from Google Sheets via API
+## Runbook
+
+- Inside `scripts/acnh-spreadsheet/in` gather inputs for running catalog update
+  - Copy `ACNH_SPREADSHEET.json` from latest `data/` into `scripts/acnh-spreadsheet/in`
+  - `cd google-sheets-to-json`
+  - `node build`
+  - Copy `out/items.json` & `out/creatures.json` into `scripts/acnh-spreadsheet/in`
+- Run the catalog update scripts
+  - `node google-sheet-to-acnh-spreadsheet.js`
+  - `node catalog-items-from-spreadsheet.js`
+- Generated files are in `scripts/acnh-spreadsheet/out`
+  - `ACNH_SPREADSHEET.json` contains the updated master item json (spreadsheet + existing current `items.json`)
+  - `ERRORS.json` contains the items which are invalid (missing images, etc.)
+  - `items.json` contains the new catalog
+  - `categories.json` contains the new catalog categories
 
 ## History
+
+### July 8, 2020
+- 14903 items
+- Update Runbook above for updating catalog items from spreadsheet items
+- Uses existing `ACNH_SPREADSHEET.json` to compare `uniqueEntryId` values
+- Mostly sea creatures, mermaid and pirate items
 
 ### May 17, 2020
 - Initially we used data from villagerdb and moved to the community ACNH spreadsheet
