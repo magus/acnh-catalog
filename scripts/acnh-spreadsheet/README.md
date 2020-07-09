@@ -17,6 +17,12 @@
   - `ERRORS.json` contains the items which are invalid (missing images, etc.)
   - `items.json` contains the new catalog
   - `categories.json` contains the new catalog categories
+- Manually organize `categories.json` to match previous format (i.e. Furniture, Clothes & Misc.)
+- Add new timestamped `items.json` and `categories.json` to `public/data`
+- Replace references to `public/data/*` with new timestamped json files
+  - `src/components/Filters.js`
+  - `src/pages/Search/index.js`
+  - `src/pages/Search/Search.js`
 
 ## History
 
