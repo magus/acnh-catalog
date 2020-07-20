@@ -20,7 +20,7 @@
     "framer-motion": "^1.11.0",
     "fuzzysort": "^1.1.4",
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "next": "^9.4.0",
     "next-offline": "^5.0.2",
     "react": "^16.13.1",
