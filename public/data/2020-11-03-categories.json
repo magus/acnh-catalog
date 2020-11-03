@@ -1,0 +1,35 @@
+{
+  "Furniture": [
+    "Housewares",
+    "Miscellaneous",
+    "Wall-mounted",
+    "Wallpaper",
+    "Floors",
+    "Rugs"
+  ],
+  "Clothes": [
+    "Tops",
+    "Bottoms",
+    "Dress-Up",
+    "Headwear",
+    "Accessories",
+    "Socks",
+    "Shoes",
+    "Bags",
+    "Umbrellas"
+  ],
+  "Misc": [
+    "Fencing",
+    "Photos",
+    "Posters",
+    "Tools",
+    "Clothing Other",
+    "Music",
+    "Fossils",
+    "Other",
+    "Art",
+    "Fish",
+    "Insects",
+    "Sea Creatures"
+  ]
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import CATEGORIES from '../../public/data/2020-07-08-categories.json';
+import CATEGORIES from '../../public/data/2020-11-03-categories.json';
 
 const spring = {
   type: 'spring',

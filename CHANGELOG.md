@@ -1,5 +1,197 @@
 # Changelog
 
+## 2020-11-03
+
+- Luna's Bed
+- Rodeo-Style Springy Ride-On
+- Spooky Arch (Orange)
+- Spooky Arch (Yellow)
+- Spooky Arch (Green)
+- Spooky Arch (Monochrome)
+- Spooky Carriage (Orange)
+- Spooky Carriage (Yellow)
+- Spooky Carriage (Green)
+- Spooky Carriage (Monochrome)
+- Spooky Chair (Orange)
+- Spooky Chair (Yellow)
+- Spooky Chair (Green)
+- Spooky Chair (Monochrome)
+- Spooky Lantern (Orange)
+- Spooky Lantern (Yellow)
+- Spooky Lantern (Green)
+- Spooky Lantern (Monochrome)
+- Spooky Lantern Set (Orange)
+- Spooky Lantern Set (Yellow)
+- Spooky Lantern Set (Green)
+- Spooky Lantern Set (Monochrome)
+- Spooky Scarecrow (Orange)
+- Spooky Scarecrow (Yellow)
+- Spooky Scarecrow (Green)
+- Spooky Scarecrow (Monochrome)
+- Spooky Standing Lamp (Orange)
+- Spooky Standing Lamp (Yellow)
+- Spooky Standing Lamp (Green)
+- Spooky Standing Lamp (Monochrome)
+- Spooky Table (Orange)
+- Spooky Table (Yellow)
+- Spooky Table (Green)
+- Spooky Table (Monochrome)
+- Spooky Tower (Orange)
+- Spooky Tower (Yellow)
+- Spooky Tower (Green)
+- Spooky Tower (Monochrome)
+- Ring-Con
+- Spooky Candy Set (Orange)
+- Spooky Candy Set (Yellow)
+- Spooky Candy Set (Green)
+- Spooky Candy Set (Monochrome)
+- Spooky Table Setting (Orange)
+- Spooky Table Setting (Yellow)
+- Spooky Table Setting (Green)
+- Spooky Table Setting (Monochrome)
+- Jack's Portrait
+- Spooky Garland (Orange)
+- Spooky Garland (Yellow)
+- Spooky Garland (Green)
+- Spooky Garland (Monochrome)
+- Fireworks-Show Wall
+- Spooky Wall
+- Spooky Flooring
+- Moon Rug
+- Spooky Rug
+- Spooky Fence
+- Blue Balloon
+- Blue Sparkler
+- Bubble Blower
+- Green Balloon
+- Nook Inc. Handheld Pennant
+- Pink Balloon
+- Pinwheel
+- Red Balloon
+- Red Sparkler
+- Spooky Wand
+- Tweeter
+- Uchiwa Fan
+- Yellow Balloon
+- Flashy Animal Costume (White)
+- Flashy Animal Costume (Black)
+- Flashy Animal Costume (Red)
+- Flashy Animal Costume (Orange)
+- Flashy Animal Costume (Green)
+- Flashy Animal Costume (Purple)
+- Hikoboshi Outfit
+- Jack's Robe
+- Mage's Dress (White)
+- Mage's Dress (Black)
+- Mage's Dress (Red)
+- Mage's Dress (Orange)
+- Mage's Dress (Green)
+- Mage's Dress (Purple)
+- Magic-Academy Robe (White)
+- Magic-Academy Robe (Black)
+- Magic-Academy Robe (Red)
+- Magic-Academy Robe (Orange)
+- Magic-Academy Robe (Green)
+- Magic-Academy Robe (Purple)
+- Orihime Outfit
+- Raggedy Outfit (White)
+- Raggedy Outfit (Black)
+- Raggedy Outfit (Red)
+- Raggedy Outfit (Orange)
+- Raggedy Outfit (Green)
+- Raggedy Outfit (Purple)
+- Bulb Bopper
+- Flashy Pointy-Ear Animal Hat (White)
+- Flashy Pointy-Ear Animal Hat (Black)
+- Flashy Pointy-Ear Animal Hat (Red)
+- Flashy Pointy-Ear Animal Hat (Orange)
+- Flashy Pointy-Ear Animal Hat (Green)
+- Flashy Pointy-Ear Animal Hat (Purple)
+- Flashy Round-Ear Animal Hat (White)
+- Flashy Round-Ear Animal Hat (Black)
+- Flashy Round-Ear Animal Hat (Red)
+- Flashy Round-Ear Animal Hat (Orange)
+- Flashy Round-Ear Animal Hat (Green)
+- Flashy Round-Ear Animal Hat (Purple)
+- Flower Bopper
+- Heart Bopper
+- Impish Horns (White)
+- Impish Horns (Black)
+- Impish Horns (Red)
+- Impish Horns (Orange)
+- Impish Horns (Green)
+- Impish Horns (Purple)
+- Jack's Face
+- King Tut Mask
+- Mage's Striped Hat (White)
+- Mage's Striped Hat (Black)
+- Mage's Striped Hat (Red)
+- Mage's Striped Hat (Orange)
+- Mage's Striped Hat (Green)
+- Mage's Striped Hat (Purple)
+- Magic-Academy Hood (White)
+- Magic-Academy Hood (Black)
+- Magic-Academy Hood (Red)
+- Magic-Academy Hood (Orange)
+- Magic-Academy Hood (Green)
+- Magic-Academy Hood (Purple)
+- Star Bopper
+- Animal Nose
+- Horizontal-Striped Tights (White)
+- Horizontal-Striped Tights (Black)
+- Horizontal-Striped Tights (Red)
+- Horizontal-Striped Tights (Orange)
+- Horizontal-Striped Tights (Green)
+- Horizontal-Striped Tights (Purple)
+- Flashy Animal Boots (White)
+- Flashy Animal Boots (Black)
+- Flashy Animal Boots (Red)
+- Flashy Animal Boots (Orange)
+- Flashy Animal Boots (Green)
+- Flashy Animal Boots (Purple)
+- Mage's Boots (White)
+- Mage's Boots (Black)
+- Mage's Boots (Red)
+- Mage's Boots (Orange)
+- Mage's Boots (Green)
+- Mage's Boots (Purple)
+- Grape-Harvest Basket
+- Impish Wings (White)
+- Impish Wings (Black)
+- Impish Wings (Red)
+- Impish Wings (Orange)
+- Impish Wings (Green)
+- Impish Wings (Purple)
+- Body-Paint Costume Tips
+- Candy
+- Dream Bell Exchange Ticket
+- Exploring New Eye Colors
+- Fountain Firework
+- Green Pumpkin
+- Lg. Green-Pumpkin Sprout
+- Lg. Orange-Pumpkin Sprout
+- Lg. White-Pumpkin Sprout
+- Lg. Yellow-Pumpkin Sprout
+- Lollipop
+- M. Green-Pumpkin Sprout
+- M. Orange-Pumpkin Sprout
+- M. White-Pumpkin Sprout
+- M. Yellow-Pumpkin Sprout
+- Orange Pumpkin
+- Pumpkin Start
+- Ripe Green-Pumpkin Plant
+- Ripe Orange-Pumpkin Plant
+- Ripe White-Pumpkin Plant
+- Ripe Yellow-Pumpkin Plant
+- S. Green-Pumpkin Sprout
+- S. Orange-Pumpkin Sprout
+- S. White-Pumpkin Sprout
+- S. Yellow-Pumpkin Sprout
+- Used Fountain Firework
+- What Was This Again?
+- White Pumpkin
+- Yellow Pumpkin
+
 ## 2020-07-08
 
 - Bamboo Grass

@@ -26,6 +26,8 @@ function sessionCookie(req, res, next) {
   next();
 }
 
+// Allow only authenticated requests for the sourcemaps
+// See https://docs.sentry.io/platforms/javascript/config/sourcemaps/#hosting-source-map-files
 const sourcemapsForSentryOnly = (token) => (req, res, next) => {
   // In production we only want to serve source maps for Sentry
   if (!dev && !!token && req.headers['x-sentry-token'] !== token) {
@@ -52,11 +54,17 @@ app.prepare().then(() => {
     .use(Sentry.Handlers.requestHandler())
     .use(cookieParser())
     .use(sessionCookie)
+
+    // Allow only authenticated requests for the sourcemaps
+    // See https://docs.sentry.io/platforms/javascript/config/sourcemaps/#hosting-source-map-files
     .get(/\.map$/, sourcemapsForSentryOnly(process.env.SENTRY_TOKEN))
+
     // Regular next.js request handler
     .use(handler)
+
     // This handles errors if they are thrown before reaching the app
     .use(Sentry.Handlers.errorHandler())
+
     .listen(port, (err) => {
       if (err) {
         throw err;
