@@ -1,5 +1,7 @@
 # Animal Crossing New Horizons Catalog
 
+## [Click here to see a changelog for all item updates](CHANGELOG.md)
+
 ## TODO
 
 - donate to cdn after successful setup https://acnhcdn.com/
