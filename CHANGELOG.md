@@ -1,6 +1,7 @@
 # Changelog
 
-## 2020-11-03
+## 2020-11-03: Fall 🍁🎃 & Halloween 👻 items
+**15088 items**
 
 - Luna's Bed
 - Rodeo-Style Springy Ride-On
