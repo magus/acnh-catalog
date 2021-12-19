@@ -2,6 +2,8 @@
 
 `google-sheets-to-json` contains scripts to pull from Google Sheets via API
 
+Originally from https://github.com/NooksBazaar/google-sheets-to-json
+
 ## Runbook
 
 - Inside `scripts/acnh-spreadsheet/in` gather inputs for running catalog update
@@ -12,21 +14,20 @@
     - `rm -rf cache`
     - `node build`
 
-    - **IMPORTANT** Be sure to remove the `cache` otherwise you will get old results
+    - **IMPORTANT**
+      - Be sure to remove the `cache` otherwise you will get old results
+      - `400 Bad request`, refresh `credentials.json`, instructions in `README.md` under **Setup**
 
-    - Copy into `scripts/acnh-spreadsheet/in`
+    - Copy the items below into `scripts/acnh-spreadsheet/in`
       - `out/items.json`
       - `out/creatures.json`
 
-  - Get previous catalog spreadsheet database from from latest `data-backup/`
-  - Copy into `scripts/acnh-spreadsheet/in`
-
+  - Now we need to copy the previous catalog spreadsheet database
+  - Copy into `scripts/acnh-spreadsheet/in` from `data-backup/`
     - `ACNH_SPREADSHEET.json`
     - `categories.json`
 
-
 - Run the catalog update scripts (`scripts/acnh-spreadsheet`)
-
   - `node google-sheet-to-acnh-spreadsheet.js`
   - `node catalog-items-from-spreadsheet.js`
   - `node format-categories.js`
@@ -37,6 +38,13 @@
 
   - `ACNH_SPREADSHEET.json` contains the updated master item json (spreadsheet + existing current `items.json`)
   - `ERRORS.json` contains the items which are invalid (missing images, etc.)
+
+    - **IMPORTANT** `ERRORS.json` should be very small (e.g. 3 music items)
+    - If there are many errors, check why
+    - Missing images?
+      - Update `imageUrl` inside `minimalItems` `map` function to include new image keys
+      - e.g. Added `storageImage` on 2021-12-19
+
   - `items.json` contains the new catalog
   - `categories.json` contains the new catalog categories
 
@@ -44,13 +52,30 @@
 
 - **IMPORTANT** Replace references to `public/data/*` with new timestamped json files
 
-  - **CTRL+SHIFT+F** for `2020-11-03-` and replace all with new timestamped data files
+  - **CTRL+SHIFT+F** for `2021-12-19-` and replace all with new timestamped data files
 
   - `src/components/Filters.js`
   - `src/pages/Search/index.js`
   - `src/pages/Search/Search.js`
 
 ## History
+
+### 2021-12-19
+
+- 551 new items, 15609 total items
+- Update Runbook above for updating catalog items from spreadsheet items
+- Error when trying to `yarn deploy:prod`; see `next.config.js` notes on `service-worker.js`
+- Delete `service-worker.js` to allow `yarn build` to run
+
+  ```sh
+  rm public/service-worker.js
+  yarn build
+  ```
+- Now we can link generated `service-worker.js` to `public` folder
+
+  ```sh
+  ln -s $PWD/.next/static/service-worker.js public
+  ```
 
 ### 2020-11-03
 

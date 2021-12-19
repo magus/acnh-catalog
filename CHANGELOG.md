@@ -1,5 +1,562 @@
 # Changelog
 
+## 2021-12-19: A Year of 2020 update items
+
+**551 new items**
+**15609 total items**
+
+- ? Block
+- 2021 Celebratory Arch
+- Block
+- Bunny Day Garden Flag
+- Bunny Day Topiary
+- Bunny Day Tree
+- Carp Banner
+- Cinnamoroll Parasol
+- Cinnamoroll Signage
+- Cinnamoroll Sofa
+- Cinnamoroll Stool
+- Cinnamoroll Table
+- Festivale Balloon Lamp (Green)
+- Festivale Balloon Lamp (Red)
+- Festivale Balloon Lamp (Blue)
+- Festivale Balloon Lamp (Purple)
+- Festivale Balloon Lamp (Rainbow)
+- Festivale Flag (Green)
+- Festivale Flag (Red)
+- Festivale Flag (Blue)
+- Festivale Flag (Purple)
+- Festivale Flag (Rainbow)
+- Festivale Float
+- Festivale Garland (Green)
+- Festivale Garland (Red)
+- Festivale Garland (Blue)
+- Festivale Garland (Purple)
+- Festivale Garland (Rainbow)
+- Festivale Parasol (Green)
+- Festivale Parasol (Red)
+- Festivale Parasol (Blue)
+- Festivale Parasol (Purple)
+- Festivale Parasol (Rainbow)
+- Festivale Stage (Green)
+- Festivale Stage (Red)
+- Festivale Stage (Blue)
+- Festivale Stage (Purple)
+- Festivale Stage (Rainbow)
+- Festivale Stall (Green)
+- Festivale Stall (Red)
+- Festivale Stall (Blue)
+- Festivale Stall (Purple)
+- Festivale Stall (Rainbow)
+- Floating Block
+- Forsythia
+- Gift Pile (Red & green)
+- Gift Pile (Colorful)
+- Gift Pile (Cute)
+- Gift Pile (Cool)
+- Gift Pile (Chic)
+- Gift Pile (Elegant)
+- Gift Pile (Natural)
+- Goal Pole
+- Hello Kitty Bed
+- Hello Kitty Chair
+- Hello Kitty Drawers
+- Hello Kitty Table
+- Hinaningyo
+- Kadomatsu
+- Kerokerokeroppi Bridge
+- Kerokerokeroppi Hallway
+- Kerokerokeroppi Lantern
+- Kerokerokeroppi Tray
+- Kids' Tent (White)
+- Kids' Tent (Pink)
+- Kids' Tent (Black)
+- Kids' Tent (Stripes)
+- Kids' Tent (Floral)
+- Kids' Tent (Blue)
+- Kids' Tent (Brown)
+- Kids' Tent (Colorful)
+- Kiki & Lala Bed
+- Kiki & Lala Cloud Maker
+- Kiki & Lala Sofa
+- Kiki & Lala Table
+- Large Mushroom Platform (Red)
+- Large Mushroom Platform (Blue)
+- Large Mushroom Platform (Green)
+- My Melody Bed
+- My Melody Chair
+- My Melody Dresser
+- My Melody Table
+- Nuptial Bell (White)
+- Nuptial Bell (Blue)
+- Nuptial Bell (Brown)
+- Pipe
+- Pompompurin Bed
+- Pompompurin Chair
+- Pompompurin Rack
+- Pompompurin Table
+- RC Helicopter (Blue)
+- RC Helicopter (Red)
+- RC Helicopter (Yellow)
+- RC Helicopter (Green)
+- RC Helicopter (Pink)
+- RC Helicopter (Light blue)
+- RC Helicopter (Purple)
+- Small Mushroom Platform (Yellow)
+- Small Mushroom Platform (Pink)
+- Small Mushroom Platform (Green)
+- Thwomp
+- Toy Day Sleigh
+- Turkey Day Chair (Fall harvest)
+- Turkey Day Chair (Spring blooming)
+- Turkey Day Garden Stand (Fall harvest)
+- Turkey Day Garden Stand (Spring blooming)
+- Turkey Day Hearth (Fall harvest)
+- Turkey Day Hearth (Spring blooming)
+- Turkey Day Table (Fall harvest)
+- Turkey Day Table (Spring blooming)
+- 1-Up Mushroom
+- Aloha-Edition Carrying Case
+- Berliner
+- Blossom Lantern
+- Bunny Day Candy
+- Bunny Day Planter Box
+- Carnations
+- Chocolate Heart (Milk chocolate)
+- Chocolate Heart (Dark chocolate)
+- Chocolate Heart (White chocolate)
+- Chocolate Heart (Strawberry chocolate)
+- Cinnamoroll Tray
+- Coin
+- Cool Globe
+- Cornucopia
+- Dinosaur Toy (Gray)
+- Dinosaur Toy (Brown)
+- Dinosaur Toy (Green)
+- Dinosaur Toy (Blue)
+- Dinosaur Toy (Red)
+- Dollhouse (Red)
+- Dollhouse (Brown)
+- Dollhouse (Blue)
+- Dollhouse (Orange)
+- Dollhouse (Green)
+- Dollhouse (Pink)
+- Dollhouse (Purple)
+- Double Gloucester Cheese
+- Festival Zongzi
+- Festivale Confetti Machine (Green)
+- Festivale Confetti Machine (Red)
+- Festivale Confetti Machine (Blue)
+- Festivale Confetti Machine (Purple)
+- Festivale Confetti Machine (Rainbow)
+- Festivale Drum (Green)
+- Festivale Drum (Red)
+- Festivale Drum (Blue)
+- Festivale Drum (Purple)
+- Festivale Drum (Rainbow)
+- Festivale Lamp (Green)
+- Festivale Lamp (Red)
+- Festivale Lamp (Blue)
+- Festivale Lamp (Purple)
+- Festivale Lamp (Rainbow)
+- Fire Flower
+- First-Anniversary Cake
+- Heart-Shaped Bouquet (Red)
+- Heart-Shaped Bouquet (Pink)
+- Heart-Shaped Bouquet (Yellow)
+- Heart-Shaped Bouquet (Purple)
+- Heart-Shaped Bouquet (White)
+- Heart-Shaped Bouquet (Black)
+- Hello Kitty Planter
+- Kagamimochi
+- Kerokerokeroppi Doll
+- Kerokerokeroppi Snack
+- Mini Circuit (Red & white)
+- Mini Circuit (Blue & yellow)
+- Mini Circuit (Black & silver)
+- Mini Circuit (Pink & purple)
+- New Year's Noodles
+- Nintendo Switch Lite (Turquoise)
+- Nintendo Switch Lite (Gray)
+- Nintendo Switch Lite (Coral)
+- Nintendo Switch Lite (Yellow)
+- Nuptial Ring Pillow (White)
+- Nuptial Ring Pillow (Blue)
+- Nuptial Ring Pillow (Red & white)
+- Olivier Salad
+- Pompompurin Pudding
+- Pop-Up Book (The ocean blue)
+- Pop-Up Book (The Mesozoic world)
+- Pop-Up Book (Savannah)
+- Pop-Up Book (Flowers)
+- Puppy Plushie (Beige)
+- Puppy Plushie (Red)
+- Puppy Plushie (Lemon & white)
+- Puppy Plushie (Spotted)
+- Puppy Plushie (Black)
+- Puppy Plushie (Tricolored)
+- Puppy Plushie (Gray & white)
+- Puppy Plushie (Pink)
+- Resetti Model
+- Shell (Green)
+- Shell (Red)
+- Super Mushroom
+- Super Star
+- Surichwi Tteok
+- Tin Robot (Silver)
+- Tin Robot (Blue)
+- Tin Robot (Red)
+- Tin Robot (Orange)
+- Tin Robot (Yellow)
+- Tin Robot (Green)
+- Tin Robot (Pink)
+- Tin Robot (Black)
+- Turkey Day Casserole (Fall harvest)
+- Turkey Day Casserole (Spring blooming)
+- Turkey Day Decorations (Fall harvest)
+- Turkey Day Decorations (Spring blooming)
+- Turkey Day Table Setting (Fall harvest)
+- Turkey Day Table Setting (Spring blooming)
+- Turkey Day Wheat Decor (Fall harvest)
+- Turkey Day Wheat Decor (Spring blooming)
+- Twelve-Grape Dish
+- Whoopee Cushion (Red)
+- Whoopee Cushion (Green)
+- Whoopee Cushion (Yellow)
+- Yule Log (Chocolate)
+- Yule Log (Chestnut)
+- Yule Log (Whipped-cream topping)
+- Yule Log (Strawberry)
+- Yule Log (Green tea)
+- Yut Nori
+- Zodiac Ox Figurine
+- π Pie
+- Art Plaque
+- Festive Wreath
+- Hello Kitty Clock
+- Kiki & Lala Clock
+- Lunar New Year Decoration
+- My Melody Clock
+- New Year's Shimekazari
+- Nook Inc. Doorplate
+- Nook Inc. Poster
+- Nuptial Doorplate (White / Gold)
+- Nuptial Doorplate (White / Blue)
+- Nuptial Doorplate (White / Pink)
+- Nuptial Doorplate (Blue / Gold)
+- Nuptial Doorplate (Blue / Blue)
+- Nuptial Doorplate (Blue / Pink)
+- Nuptial Doorplate (Red & white / Gold)
+- Nuptial Doorplate (Red & white / Blue)
+- Nuptial Doorplate (Red & white / Pink)
+- Pompompurin TV
+- Set Of Stockings (Colorful)
+- Set Of Stockings (Cute)
+- Set Of Stockings (Cool)
+- Set Of Stockings (Chic)
+- Set Of Stockings (Elegant)
+- Set Of Stockings (Natural)
+- Shamrock Doorplate
+- Ship-Wheel Door Decoration
+- Toy Day Stockings
+- Aurora Wall
+- Cinnamoroll Wall
+- Falling-Snow Wall
+- Hello Kitty Wall
+- Kerokerokeroppi Wall
+- Kiki & Lala Wall
+- Mushroom Mural
+- My Melody Wall
+- Pompompurin Wall
+- Prom Wall
+- Turkey Day Wall
+- Block Flooring
+- Cinnamoroll Flooring
+- Hello Kitty Flooring
+- Kerokerokeroppi Flooring
+- Kiki & Lala Flooring
+- My Melody Flooring
+- Pompompurin Flooring
+- Prom Flooring
+- Turkey Day Flooring
+- Cinnamoroll Rug
+- Festive Rug
+- Football Rug
+- Hello Kitty Rug
+- Kerokerokeroppi Rug
+- Kiki & Lala Rug
+- Lakitu's Cloud Rug
+- My Melody Rug
+- Pompompurin Rug
+- Shamrock Rug
+- Summer-Shell Rug
+- Sunflower Rug
+- Turkey Day Rug
+- Yoshi's Egg Rug
+- Chai's Photo (Natural wood)
+- Chai's Photo (Dark wood)
+- Chai's Photo (Pastel)
+- Chai's Photo (White)
+- Chai's Photo (Pop)
+- Chai's Photo (Colorful)
+- Chai's Photo (Silver)
+- Chai's Photo (Gold)
+- Chelsea's Photo (Natural wood)
+- Chelsea's Photo (Dark wood)
+- Chelsea's Photo (Pastel)
+- Chelsea's Photo (White)
+- Chelsea's Photo (Pop)
+- Chelsea's Photo (Colorful)
+- Chelsea's Photo (Silver)
+- Chelsea's Photo (Gold)
+- ÉToile's Photo (Natural wood)
+- ÉToile's Photo (Dark wood)
+- ÉToile's Photo (Pastel)
+- ÉToile's Photo (White)
+- ÉToile's Photo (Pop)
+- ÉToile's Photo (Colorful)
+- ÉToile's Photo (Silver)
+- ÉToile's Photo (Gold)
+- Isabelle's Photo (Natural wood)
+- Isabelle's Photo (Dark wood)
+- Isabelle's Photo (Pastel)
+- Isabelle's Photo (White)
+- Isabelle's Photo (Pop)
+- Isabelle's Photo (Colorful)
+- Isabelle's Photo (Silver)
+- Isabelle's Photo (Gold)
+- Jingle's Photo (Natural wood)
+- Jingle's Photo (Dark wood)
+- Jingle's Photo (Pastel)
+- Jingle's Photo (White)
+- Jingle's Photo (Pop)
+- Jingle's Photo (Colorful)
+- Jingle's Photo (Silver)
+- Jingle's Photo (Gold)
+- Marty's Photo (Natural wood)
+- Marty's Photo (Dark wood)
+- Marty's Photo (Pastel)
+- Marty's Photo (White)
+- Marty's Photo (Pop)
+- Marty's Photo (Colorful)
+- Marty's Photo (Silver)
+- Marty's Photo (Gold)
+- Rilla's Photo (Natural wood)
+- Rilla's Photo (Dark wood)
+- Rilla's Photo (Pastel)
+- Rilla's Photo (White)
+- Rilla's Photo (Pop)
+- Rilla's Photo (Colorful)
+- Rilla's Photo (Silver)
+- Rilla's Photo (Gold)
+- Rover's Photo (Natural wood)
+- Rover's Photo (Dark wood)
+- Rover's Photo (Pastel)
+- Rover's Photo (White)
+- Rover's Photo (Pop)
+- Rover's Photo (Colorful)
+- Rover's Photo (Silver)
+- Rover's Photo (Gold)
+- Timmy And Tommy's Photo (Natural wood)
+- Timmy And Tommy's Photo (Dark wood)
+- Timmy And Tommy's Photo (Pastel)
+- Timmy And Tommy's Photo (White)
+- Timmy And Tommy's Photo (Pop)
+- Timmy And Tommy's Photo (Colorful)
+- Timmy And Tommy's Photo (Silver)
+- Timmy And Tommy's Photo (Gold)
+- Toby's Photo (Natural wood)
+- Toby's Photo (Dark wood)
+- Toby's Photo (Pastel)
+- Toby's Photo (White)
+- Toby's Photo (Pop)
+- Toby's Photo (Colorful)
+- Toby's Photo (Silver)
+- Toby's Photo (Gold)
+- Tom Nook's Photo (Natural wood)
+- Tom Nook's Photo (Dark wood)
+- Tom Nook's Photo (Pastel)
+- Tom Nook's Photo (White)
+- Tom Nook's Photo (Pop)
+- Tom Nook's Photo (Colorful)
+- Tom Nook's Photo (Silver)
+- Tom Nook's Photo (Gold)
+- Chai's Poster
+- Chelsea's Poster
+- ÉToile's Poster
+- Marty's Poster
+- Rilla's Poster
+- Toby's Poster
+- Bean-Tossing Kit
+- Fiery Cheer Megaphone
+- Flower-Petal Basket
+- Football Cheer Megaphone
+- Glittery Cheer Megaphone
+- Kiki & Lala Wand
+- Magic Bag
+- Maracas
+- Shamrock Soda
+- Shamrock Wand
+- Sparkling Cider
+- Starry Cheer Megaphone
+- Mermaid Fence
+- Cinnamoroll Jacket
+- Cinnamoroll Puffy Blouse
+- Hello Kitty Tee
+- Kerokerokeroppi Tank Top
+- Kiki & Lala Tee
+- My Melody Shirt
+- Pompompurin Tee
+- Santa Coat
+- Thank-You Dad Apron (Black)
+- Thank-You Dad Apron (Red)
+- Thank-You Dad Apron (Green)
+- Thank-You Dad Apron (Blue)
+- Thank-You Dad Apron (Brown)
+- Santa Pants
+- Bubble-Skirt Party Dress (Red)
+- Bubble-Skirt Party Dress (Pink)
+- Bubble-Skirt Party Dress (Orange)
+- Bubble-Skirt Party Dress (Yellow)
+- Bubble-Skirt Party Dress (Green)
+- Bubble-Skirt Party Dress (Light blue)
+- Bubble-Skirt Party Dress (Blue)
+- Bubble-Skirt Party Dress (Purple)
+- Festivale Costume (Red)
+- Festivale Costume (Green)
+- Festivale Costume (Blue)
+- Festivale Costume (Purple)
+- Festivale Tank Dress (Red)
+- Festivale Tank Dress (Green)
+- Festivale Tank Dress (Blue)
+- Festivale Tank Dress (Purple)
+- Hello Kitty Dress
+- Kerokerokeroppi Outfit
+- Kiki & Lala Dress
+- Luigi Outfit
+- Mario Outfit
+- My Melody Dress
+- Ogre Costume (Red)
+- Ogre Costume (Green)
+- Ogre Costume (Blue)
+- Pompompurin Outfit
+- Princess Peach Dress
+- Reindeer Costume
+- Sequin Dress (White)
+- Sequin Dress (Black)
+- Sequin Dress (Red)
+- Sequin Dress (Pink)
+- Sequin Dress (Yellow)
+- Sequin Dress (Green)
+- Sequin Dress (Blue)
+- Sequin Dress (Purple)
+- Shamrock Suit
+- Shiromuku
+- Slip Dress (Gray)
+- Slip Dress (Black)
+- Slip Dress (Red)
+- Slip Dress (Orange)
+- Slip Dress (Yellow)
+- Slip Dress (Blue)
+- Vibrant Tuxedo (Monotone)
+- Vibrant Tuxedo (Red)
+- Vibrant Tuxedo (Orange)
+- Vibrant Tuxedo (Yellow)
+- Vibrant Tuxedo (Green)
+- Vibrant Tuxedo (Blue)
+- Vibrant Tuxedo (Purple)
+- Vibrant Tuxedo (Brown)
+- Wario Outfit
+- White Hakama With Crest
+- Cinnamoroll Hat
+- Festivale Accessory (Red)
+- Festivale Accessory (Green)
+- Festivale Accessory (Blue)
+- Festivale Accessory (Purple)
+- Hello Kitty Hat
+- Horned-Ogre Mask (Red)
+- Horned-Ogre Mask (Green)
+- Horned-Ogre Mask (Blue)
+- Kerokerokeroppi Pin
+- Kiki & Lala Pin
+- Luigi Hat
+- Mario Hat
+- My Melody Hood
+- Newsprint Helmet
+- Okame Mask
+- Phrygian Cap (Red)
+- Phrygian Cap (Orange)
+- Phrygian Cap (Green)
+- Phrygian Cap (Light blue)
+- Phrygian Cap (Purple)
+- Pompompurin Hat
+- Princess Peach Crown
+- Prom Crown (Silver)
+- Prom Crown (Gold)
+- Prom Tiara (Silver)
+- Prom Tiara (Gold)
+- Reindeer Hat
+- Santa Hat
+- Shamrock Hat
+- Tsunokakushi
+- Wario Hat
+- Ballroom Mask (White)
+- Ballroom Mask (Black)
+- Elegant Masquerade Mask (Red)
+- Elegant Masquerade Mask (Blue)
+- Luigi 'stache
+- Mario 'stache
+- Santa Beard
+- Shamrock Sunglasses
+- Wario 'stache
+- Kerokerokeroppi Socks
+- Kiki & Lala Socks
+- Cinnamoroll Sneakers
+- Dance Shoes (Silver)
+- Dance Shoes (Black)
+- Dance Shoes (Pink)
+- Dance Shoes (Orange)
+- Dance Shoes (Gold)
+- Dance Shoes (Green)
+- Dance Shoes (Blue)
+- Dance Shoes (Purple)
+- Hello Kitty Shoes
+- Kerokerokeroppi Boots
+- Kiki & Lala Shoes
+- Luigi Shoes
+- Mario Shoes
+- My Melody Boots
+- Pompompurin Boots
+- Princess Peach Shoes
+- Shamrock Shoes
+- Wario Shoes
+- Prom Sash (White)
+- Prom Sash (Black)
+- Prom Sash (Red)
+- Prom Sash (Gold)
+- Prom Sash (Green)
+- Prom Sash (Blue)
+- Prom Sash (Purple)
+- Blue Feather
+- Bokjumeoni Lucky Pouch
+- Cozy Turkey Day DIY
+- Custom Design Pro Editor+
+- Custom Designs Portal
+- Festive Wrapping Paper
+- Gift
+- Green Feather
+- Hip Reaction Collection
+- Lucky Money
+- Lucky Red Envelope
+- Pocket Camp Phone Case
+- Purple Feather
+- Rainbow Feather
+- Red Feather
+- Sebaetdon
+- Top 6 Stylish Hairstyles
+- Transfer Kit
+- Viva Festivale Reaction Set
+
 ## 2020-11-03: Fall 🍁🎃 & Halloween 👻 items
 **15088 items**
 
